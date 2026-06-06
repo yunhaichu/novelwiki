@@ -2,11 +2,11 @@
 
 ## Review Result
 
-ALLOW after rewrite.
+ALLOW after literacy-logic revision.
 
 ## Chapter Summary
 
-Zhou Ping and Wang Man arrive at Qingheng Sect for recruitment. The three-month servant probation pressure is visible before they are tested. Both have ordinary aptitude and no family resources for offering, so they enter the servant probation track. Zhao Steward explains that each month adds a mark to the wood token, and those who still cannot draw qi into the body after three months will be sent down the mountain.
+Zhou Ping and Wang Man arrive at Qingheng Sect for recruitment. The three-month servant probation pressure is shown through a carved notice, someone reading the notice aloud, and a string of probation wood tokens with monthly marks. Both boys have ordinary aptitude and no family resources for offering, so they enter the servant probation track. Zhao Steward explains that each month adds one mark to the wood token, and those who still cannot draw qi into the body after three months will be sent down the mountain.
 
 ## Core Drive
 
@@ -46,6 +46,9 @@ Zhou Ping receives the East Shed bamboo slip. A splinter from the bamboo slip re
 - Zhou Ping receives a wood token marked as servant probation.
 - Zhao Steward registers Zhou Ping and Wang Man.
 - Servant probation lasts three months.
+- A carved notice near the servant-registration table states the three-month probation rule.
+- The notice is also read aloud nearby, so the rule is not only available to literate recruits.
+- Zhou Ping can recognize some characters, including "three months" and "send away", but he does not read easily or fluently.
 - A servant probationer's token receives one mark each month.
 - If a probationer still cannot draw qi into the body after three months, the probationer is sent down the mountain.
 - The East Shed is assigned as Zhou Ping and Wang Man's lodging.
@@ -57,7 +60,7 @@ Zhou Ping receives the East Shed bamboo slip. A splinter from the bamboo slip re
 
 - Wants to join Qingheng Sect and leave the limits of village life.
 - Has limited confidence and limited knowledge of real sect life.
-- Notices the three-month warning before he is tested.
+- Notices the three-month warning before he is tested, but he does not rely only on fluent reading to understand it.
 - Asks whether he can cultivate, then immediately feels embarrassed because the question sounds too eager.
 - Notices practical details such as clean registers, wood-token marks, the bamboo slip, and the difference between outer disciples and servant probationers.
 - Initially thinks a quarter-hour qi-guiding lesson is too short, then realizes other probationers treat it as valuable access.
@@ -82,10 +85,11 @@ Zhou Ping receives the East Shed bamboo slip. A splinter from the bamboo slip re
 
 ## Story Memory Points
 
-- The public sign states that servant probation lasts three months.
+- The public three-month probation rule is both carved and read aloud.
 - The servant probation wood tokens receive one mark per month.
 - A token with three marks and no name hangs alone at the edge.
 - The daily qi-guiding lesson lasts only a short window of time.
+- Zhou Ping initially sees a quarter-hour lesson as short, then understands it as a narrow opening.
 - The chapter ends with the bamboo splinter still in Zhou Ping's palm.
 
 ## Open Questions
@@ -104,4 +108,4 @@ Zhou Ping receives the East Shed bamboo slip. A splinter from the bamboo slip re
 - Do not make Zhou Ping immediately competent at cultivation.
 - Do not shift the main engine into isolated strange incidents.
 - Early events should connect to Qingheng Sect's cultivation hierarchy, resources, selection pressure, work assignment, learning access, or servant probation system.
-- Avoid repeating the food/bread motif unless it creates new information, cost, choice, or relationship change.
+- Avoid repeating the food motif unless it creates new information, cost, choice, or relationship change.
