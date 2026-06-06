@@ -26,15 +26,28 @@ Return one of:
 
 Check main drive, wiki consistency, knowledge boundaries, character behavior, style, long-form direction, and anti-AI taste.
 
-Pay special attention to:
+## Hard Anti-AI Checks
+
+These are high-priority checks:
+
+1. Adjacent template reuse.
+   If two similar events appear close together, check whether the second event changes narrative focus. If it repeats the same sequence with different names or details, mark REVISE.
+
+2. Ending over-summary.
+   If the chapter ending defaults to a polished, symmetrical, aphoristic, or explanatory summary line, check whether it can be replaced by action, object, bodily sensation, unfinished choice, concrete consequence, or changed relationship. If yes, mark REVISE.
+
+## Conditional Anti-AI Checks
+
+These are context-dependent checks:
 
 - repeated jokes, objects, phrases, or reactions
-- side characters used only as response machines
-- overly polished closing lines
-- protagonist solving too many problems cleanly
-- chapter lacking a concrete memory point
-- chapter not advancing the current novel's long-term pressure or consequence
+- recurring side characters used only as response machines
+- protagonist solving too many problems cleanly over time
+- chapter lacking a concrete memory point when the chapter is an opening, new arc, or major turn
+- chapter not advancing long-term pressure unless it is intentionally a breather
 - guesses, claims, or observations being treated as confirmed facts
+
+Do not apply every conditional check as a hard rule to every chapter.
 
 ## Output Format
 
