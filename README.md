@@ -31,6 +31,7 @@ novels/
     wiki/
       project.md
       style.md
+      name_registry.md
       timeline.md
       relationships.md
       foreshadowing.md
@@ -60,6 +61,7 @@ Each novel has its own:
 
 - project direction
 - style rules
+- name registry
 - character files
 - world rules
 - timeline
@@ -67,6 +69,12 @@ Each novel has its own:
 - foreshadowing state
 - chapter states
 - drafts
+
+## Name Rule
+
+Character names should be simple, natural, and easy to remember.
+
+Each novel should maintain its own `wiki/name_registry.md` to avoid repeated model-favored names and to keep approved names stable.
 
 ## Wiki Safety
 
