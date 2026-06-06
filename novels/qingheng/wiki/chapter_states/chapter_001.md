@@ -2,7 +2,7 @@
 
 ## Review Result
 
-ALLOW.
+ALLOW, with knowledge-boundary correction.
 
 ## Chapter Summary
 
@@ -26,27 +26,38 @@ Li Cheng successfully enters Qingheng Sect as a servant disciple.
 
 ## New Trouble
 
-Servant disciple life is unsafe. The first night includes a midnight bell and a dragging sound outside the East Shed.
+Servant disciple life appears unsafe. The first night includes a midnight bell and a dragging sound outside the East Shed.
 
 ## Ending Hook
 
-The dragging sound stops outside Li Cheng's room before the third bell.
+A dragging sound stops outside Li Cheng's room before the third bell.
 
 ## Confirmed Facts
 
 - Li Cheng is from East Ditch of Qingshui Town.
 - Li Cheng saw Qingheng Sect's mountain gate at age twelve.
-- Qingheng Sect's gate has three old sword marks left by the Liu family sword cultivators.
-- Qingheng Sect is not presented as clean or righteous.
-- Li Cheng wants to join Qingheng Sect because it is near, visible, and powerful.
-- Qingheng Sect recruitment has at least three stages: bone age check, spiritual root check, and servant registration.
+- Qingheng Sect's gate has three old sword marks.
+- Li Cheng enters Qingheng Sect as a C-rank servant disciple.
 - Li Cheng has a thin earth spiritual root.
-- Li Cheng becomes a C-rank servant disciple.
-- Zhou Xiaoman is the second son of the east-town rice shop and has mixed spiritual roots.
-- Zhou Xiaoman receives a registered disciple option through yearly grain offering.
-- Servant rules include: rise at yin hour, missing work reduces food, do not leave the shed when bells ring at midnight.
+- Qingheng Sect recruitment includes bone age checking, spiritual root checking, and servant registration.
+- Zhou Xiaoman is the second son of the east-town rice shop.
+- Zhou Xiaoman has mixed spiritual roots.
+- Zhou Xiaoman is offered a registered disciple option through yearly grain offering.
+- Servant rules shown in the East Shed include: rise at yin hour, missing work reduces food, do not leave the shed when bells ring at midnight.
 - Li Cheng sleeps in the East Shed.
 - A dragging sound passes outside the shed at midnight and stops outside their room.
+
+## Character Claims / Hearsay
+
+- Old Liu says the three sword marks on Qingheng Sect's gate were left by Liu family sword cultivators.
+- Old Liu says Qingheng Sect kept the marks to show that the Liu family came and died there.
+- These claims are not yet objective canon unless later confirmed.
+
+## Framing / Presentation
+
+- Qingheng Sect is presented as powerful, cold, and unsafe.
+- The chapter does not present Qingheng Sect as clean or purely righteous.
+- The broader world is treated as sect-and-clan dominated, without a simple righteous-versus-demonic frame.
 
 ## Character State
 
@@ -77,9 +88,11 @@ The dragging sound stops outside Li Cheng's room before the third bell.
 - What causes the dragging sound?
 - What happens if someone leaves the shed at midnight?
 - What kind of work will Li Cheng receive at dawn?
+- Are Old Liu's claims about the sword marks accurate?
 
 ## Must Inherit Next Chapter
 
 - Start from the aftermath of the midnight bell or the next morning's servant assignment.
 - Do not ignore the dragging sound.
+- Do not treat hearsay about the sword marks as confirmed truth unless the narrative provides confirmation.
 - Do not jump into an unrelated task without resolving or at least acknowledging the first night's disturbance.
