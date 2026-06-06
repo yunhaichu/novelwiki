@@ -24,6 +24,14 @@ Use this checklist after a chapter draft is written and before any wiki update i
 - Does it change a character's appearance, clothing, items, speech style, or behavior without cause?
 - Does it reveal or explain unresolved secrets too early?
 
+### Knowledge Boundary
+
+- Does any character know information they should not reasonably know?
+- Does the narration confirm something that should only be rumor, belief, inference, or partial observation?
+- Does the wiki update turn a character's guess, rumor, or suspicion into confirmed fact?
+- Are observed facts, hearsay, inference, and unknowns clearly separated?
+- If a fact is only known through a character's words, record it as that character's claim, not as objective canon.
+
 ### Character
 
 - Does each major character speak like themselves?
