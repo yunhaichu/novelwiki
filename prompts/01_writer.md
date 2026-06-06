@@ -33,25 +33,31 @@ Do not write detailed claims about a character, object, place, rule, or unresolv
 
 Write one chapter with one clear drive.
 
-The chapter should move the story toward the current novel project's long-term pressure, status change, relationship change, resource change, or irreversible consequence.
+The chapter should normally move the story toward the current novel project's long-term pressure, status change, relationship change, resource change, or irreversible consequence. Breather chapters are allowed when the novel wiki supports that pacing.
 
 The protagonist should stay within known ability limits.
 
-The protagonist should not solve every problem cleanly. Hesitation, misunderstanding, partial success, cost, or missed chance can be more believable than perfect action.
+The protagonist should not solve every problem cleanly over time. Hesitation, misunderstanding, partial success, cost, or missed chance can be more believable than perfect action.
 
-Side characters should have their own pressure, desire, fear, or possible loss. They should not exist only to make the protagonist look calm, clever, or funny.
+Recurring side characters should have their own pressure, desire, fear, or possible loss. They should not exist only to make the protagonist look calm, clever, or funny.
 
-## Anti-AI Taste Rules
+Temporary characters may be functional, but their lines should not feel like forced prompts for the protagonist.
 
-Do not overuse the same joke, object, phrase, or reaction in a single chapter.
+## Hard Anti-AI Taste Rules
 
-If an element repeats, it must add new information, a new cost, a new choice, or a relationship change.
+When two similar events appear close together, do not use the same narrative sequence twice. The second pass must change focus, such as bodily sensation, visible detail, social reaction, mistake, hesitation, consequence, or missing information.
 
-Do not let dialogue become repeated setup-and-response rhythm.
+Chapter endings should usually land on action, object, bodily sensation, unfinished choice, concrete consequence, or changed relationship.
 
-Do not rely on polished, symmetrical, or aphoristic closing lines. Prefer action, object, and consequence.
+Avoid defaulting to polished, symmetrical, aphoristic, or explanatory closing lines.
 
-Each chapter should have one concrete memory point that belongs to this story.
+## Conditional Anti-AI Taste Rules
+
+Do not overuse the same joke, object, phrase, or reaction in a single chapter unless each repetition adds new information, a new cost, a new choice, or a relationship change.
+
+Do not let recurring-character dialogue become repeated setup-and-response rhythm.
+
+Each chapter should ideally have one concrete memory point that belongs to this story, especially for first chapters, new arcs, and major turning chapters.
 
 ## Output
 
