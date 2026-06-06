@@ -19,9 +19,19 @@ He grew up near Qingheng Sect and has wanted to enter the sect since childhood. 
 Early chapters focus on:
 
 - servant disciple life
-- dangerous sect rules
-- low-level tasks that are also tests
 - the gap between what Li Cheng imagined and what Qingheng Sect actually is
+- low-level work as the visible edge of a larger cultivation system
+- Li Cheng moving from survival toward contact with basic cultivation access
+
+## Direction Guardrail
+
+Strange events may appear, but they should serve this novel's cultivation-world direction rather than replace it.
+
+Do not let the story remain only a chain of isolated strange tasks.
+
+Do not keep adding unexplained phenomena without giving the reader cultivation-world context or progress.
+
+Within the early arc, establish a concrete pressure that pushes Li Cheng beyond day-to-day survival.
 
 ## Style
 
