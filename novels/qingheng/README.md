@@ -1,3 +1,0 @@
-# Qingheng
-
-Independent novel workspace.
