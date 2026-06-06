@@ -2,11 +2,11 @@
 
 ## Review Result
 
-ALLOW after minor wording revision.
+ALLOW after rewrite.
 
 ## Chapter Summary
 
-Zhou Ping and Wang Man arrive at Qingheng Sect for recruitment. Both have ordinary aptitude and no family resources for offering, so they are assigned to servant probation. Zhao Steward tells them that the probation lasts three months: those who can draw qi into the body may become servant disciples; those who cannot will be sent back down the mountain.
+Zhou Ping and Wang Man arrive at Qingheng Sect for recruitment. The three-month servant probation pressure is visible before they are tested. Both have ordinary aptitude and no family resources for offering, so they enter the servant probation track. Zhao Steward explains that each month adds a mark to the wood token, and those who still cannot draw qi into the body after three months will be sent down the mountain.
 
 ## Core Drive
 
@@ -26,16 +26,16 @@ Zhou Ping enters Qingheng Sect's servant probation track and receives an East Sh
 
 ## New Trouble
 
-Servant probation has a three-month limit. If Zhou Ping cannot draw qi into the body within three months, he will be sent back down the mountain.
+Servant probation has a three-month limit. Each month leaves one mark on the probation wood token. If Zhou Ping cannot draw qi into the body within three months, he will be sent down the mountain.
 
 ## Ending Hook
 
-Zhou Ping understands that entering the gate is not the real beginning. The real pressure is the three-month probation.
+Zhou Ping receives the East Shed bamboo slip. A splinter from the bamboo slip remains in his palm as he is pushed toward the side gate.
 
 ## Confirmed Facts
 
 - Zhou Ping comes from Hewan Village.
-- Zhou Ping came to Qingheng Sect with other village youths, including Wang Man.
+- Zhou Ping arrives at Qingheng Sect with other village youths, including Wang Man.
 - Wang Man carries food from home and worries about food after entering the sect.
 - Qingheng Sect's recruitment has at least four stations: age check, spiritual root test, family resource inquiry, and servant registration.
 - Qingheng Sect considers aptitude, resources, and usefulness in recruitment.
@@ -46,8 +46,8 @@ Zhou Ping understands that entering the gate is not the real beginning. The real
 - Zhou Ping receives a wood token marked as servant probation.
 - Zhao Steward registers Zhou Ping and Wang Man.
 - Servant probation lasts three months.
-- A servant probationer who draws qi into the body within three months may become a servant disciple.
-- A servant probationer who fails may be sent back down the mountain.
+- A servant probationer's token receives one mark each month.
+- If a probationer still cannot draw qi into the body after three months, the probationer is sent down the mountain.
 - The East Shed is assigned as Zhou Ping and Wang Man's lodging.
 - Servant probationers receive a short daily qi-guiding lesson before evening class.
 
@@ -56,27 +56,37 @@ Zhou Ping understands that entering the gate is not the real beginning. The real
 ### Zhou Ping
 
 - Wants to join Qingheng Sect and leave the limits of village life.
-- Has only limited confidence and limited knowledge.
-- Asks whether he can cultivate, then feels embarrassed because the question sounds too eager.
-- Understands that the three-month probation is not a gentle adaptation period.
-- Notices practical details such as food, registration words, bamboo slip, and difference between outer disciples and servant probationers.
+- Has limited confidence and limited knowledge of real sect life.
+- Notices the three-month warning before he is tested.
+- Asks whether he can cultivate, then immediately feels embarrassed because the question sounds too eager.
+- Notices practical details such as clean registers, wood-token marks, the bamboo slip, and the difference between outer disciples and servant probationers.
+- Initially thinks a quarter-hour qi-guiding lesson is too short, then realizes other probationers treat it as valuable access.
 - Does not yet know how cultivation actually works.
 
 ### Wang Man
 
 - Same recruitment batch as Zhou Ping.
 - Nervous, practical, and food-conscious.
-- Carries food from home and keeps eating when nervous.
+- Carries food from home as a response to uncertainty rather than as a pure joke.
 - Has mixed and thin spiritual roots.
-- No family resources for offering.
-- Assigned to servant probation with Zhou Ping.
+- Has no family resources for offering.
+- Is assigned to servant probation with Zhou Ping.
+- Reacts to pressure through small movements, silence, and practical worry rather than constant comic lines.
 
 ### Zhao Steward
 
 - Handles servant registration.
 - Asks practical questions about background, skills, literacy, and household status.
-- Explains the three-month probation rule and the daily qi-guiding lesson.
+- Explains the three-month probation rule, monthly token marks, and the daily qi-guiding lesson.
 - Does not explain higher-level sect structure.
+
+## Story Memory Points
+
+- The public sign states that servant probation lasts three months.
+- The servant probation wood tokens receive one mark per month.
+- A token with three marks and no name hangs alone at the edge.
+- The daily qi-guiding lesson lasts only a short window of time.
+- The chapter ends with the bamboo splinter still in Zhou Ping's palm.
 
 ## Open Questions
 
@@ -85,6 +95,7 @@ Zhou Ping understands that entering the gate is not the real beginning. The real
 - What happens to those sent down the mountain if they have nowhere secure to return?
 - What servant work will Zhou Ping and Wang Man receive first?
 - What does Qingheng Sect actually need servant probationers for?
+- Why is the three-mark wood token without a name hanging separately?
 
 ## Must Inherit Next Chapter
 
@@ -92,4 +103,5 @@ Zhou Ping understands that entering the gate is not the real beginning. The real
 - Do not ignore the three-month probation pressure.
 - Do not make Zhou Ping immediately competent at cultivation.
 - Do not shift the main engine into isolated strange incidents.
-- Early events should connect to Qingheng Sect's cultivation hierarchy, resources, selection pressure, or servant probation system.
+- Early events should connect to Qingheng Sect's cultivation hierarchy, resources, selection pressure, work assignment, learning access, or servant probation system.
+- Avoid repeating the food/bread motif unless it creates new information, cost, choice, or relationship change.
