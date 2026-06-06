@@ -24,6 +24,13 @@ Use this checklist after a chapter draft is written and before any wiki update i
 - Does it change a character's appearance, clothing, items, speech style, or behavior without cause?
 - Does it reveal or explain unresolved secrets too early?
 
+### Character Wiki Coverage
+
+- Does every named character have an initial character wiki before or immediately after first formal use?
+- Does every speaking role or role that affects the plot have at least a minimal character file?
+- If a character is unnamed, does the wiki assign a stable placeholder ID or role label?
+- Does the character file define what the character knows, does not know, wants, fears, speech style, and current function?
+
 ### Knowledge Boundary
 
 - Does any character know information they should not reasonably know?
