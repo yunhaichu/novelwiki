@@ -33,13 +33,28 @@ Files read:
 
 Do not write detailed claims about a character, object, place, rule, or unresolved question if the matching wiki was not read.
 
+## Emotional Ledger
+
+Before drafting, decide the chapter's emotional ledger:
+
+```text
+What pressure or injustice does the reader feel through the protagonist?
+What active choice does the protagonist make?
+What visible cost does that choice create?
+What visible compensation does the protagonist receive?
+Who notices the change?
+What new expectation does this create?
+```
+
+The chapter should not only add pressure. It should repay at least part of the reader's emotional debt unless the arc outline explicitly calls for a short-term loss.
+
 ## Chapter Drafting Rules
 
 Write one chapter with one clear drive.
 
 The chapter should normally move the story toward the current novel project's long-term pressure, status change, relationship change, resource change, or irreversible consequence. Breather chapters are allowed only when the arc outline supports that pacing.
 
-Each chapter should provide a webnovel-style reader payoff. The payoff can be small, but it must be felt on the page: a win, reversal, discovery, humiliation returned, status shift, resource gain, relationship turn, new leverage, or clearer threat.
+Each chapter should provide a webnovel-style reader payoff. The payoff can be small, but it must be visible on the page: a win, reversal, discovery, humiliation returned, status shift, resource gain, relationship turn, new leverage, clearer threat, or a pressure that becomes usable advantage.
 
 Avoid pure process narration. A chapter should not read like a log of events unless the log itself creates conflict, reward, or consequence.
 
@@ -53,11 +68,13 @@ Temporary characters may be functional, but their lines should not feel like for
 
 ## Dialogue Rules
 
-Dialogue should sound like people speaking under the current pressure.
+Dialogue should sound like people speaking under the current pressure and should be easy to process.
 
 Avoid lines that exist only to explain the plot, ask the reader's question, set up a punchline, or make the protagonist look sharp.
 
 A character's line should usually come from one of these: desire, fear, impatience, habit, status, misunderstanding, concealment, bargaining, or immediate practical need.
+
+Do not overuse hidden meaning. For fast-paced fiction, most lines should be clear, some may carry emotion, and only a small portion should be left unsaid.
 
 ## Hard Anti-AI Taste Rules
 
