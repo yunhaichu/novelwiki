@@ -33,6 +33,23 @@ Files read:
 
 Do not write detailed claims about a character, object, place, rule, or unresolved question if the matching wiki was not read.
 
+## Reader Reward Ledger
+
+Before drafting, decide:
+
+```text
+Reader expectation:
+Obstacle:
+Protagonist action:
+Visible gain:
+Witness or reaction:
+Next possibility:
+```
+
+The chapter should answer a reader motivation, not only repay pressure.
+
+The visible gain can be small, but it must change position, access, information, treatment, relationship, leverage, or next-step possibility.
+
 ## Emotional Ledger
 
 Before drafting, decide the chapter's emotional ledger:
@@ -54,7 +71,7 @@ Write one chapter with one clear drive.
 
 The chapter should normally move the story toward the current novel project's long-term pressure, status change, relationship change, resource change, or irreversible consequence. Breather chapters are allowed only when the arc outline supports that pacing.
 
-Each chapter should provide a webnovel-style reader payoff. The payoff can be small, but it must be visible on the page: a win, reversal, discovery, humiliation returned, status shift, resource gain, relationship turn, new leverage, clearer threat, or a pressure that becomes usable advantage.
+Each chapter should provide a webnovel-style reader payoff. The payoff can be small, but it must be visible on the page: a win, reversal, discovery, returned humiliation, status shift, resource gain, relationship turn, new leverage, clearer threat, or a pressure that becomes usable advantage.
 
 Avoid pure process narration. A chapter should not read like a log of events unless the log itself creates conflict, reward, or consequence.
 
