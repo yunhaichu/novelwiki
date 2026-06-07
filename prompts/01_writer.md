@@ -10,6 +10,7 @@ Read the current novel wiki before writing:
 - current arc outline or chapter roadmap
 - opening design or golden-three design when writing chapters 1-3 or a new major opening
 - style rules
+- glossary / approved term list
 - name registry
 - protagonist file
 - planned character files
@@ -20,6 +21,8 @@ Read the current novel wiki before writing:
 Do not write a new chapter if the current novel has no usable arc outline or near-term chapter roadmap. Create or update the outline first.
 
 Do not write chapters 1-3 of a new story or major opening if there is no usable opening design or golden-three design. Create or update the opening design first.
+
+Do not write a chapter if the current novel has no glossary or approved term list. Create or update the glossary first.
 
 ## Retrieval Plan
 
@@ -32,10 +35,30 @@ Expected objects:
 Relevant open questions:
 Arc beat being served:
 Opening/golden-three beat if applicable:
+Glossary terms likely to appear:
 Files read:
 ```
 
 Do not write detailed claims about a character, object, place, rule, or unresolved question if the matching wiki was not read.
+
+## Terminology Gate
+
+Use plain ordinary language unless a glossary-approved term is necessary.
+
+Do not introduce new sect terms, place names, job labels, evaluation labels, or shorthand in the draft unless they are already in the glossary.
+
+If a new term is necessary, update the glossary first with:
+
+```text
+Term:
+Meaning:
+Allowed first-use wording:
+Forbidden shorthand:
+```
+
+A term that only sounds genre-appropriate is not enough.
+
+Do not use compact labels such as "track," "line," "path," "mark," or similar system-like shorthand unless the story has already taught them and the glossary allows them.
 
 ## Reader Reward Ledger
 
