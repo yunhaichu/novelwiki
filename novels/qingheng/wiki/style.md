@@ -33,6 +33,30 @@ Avoid:
 - side characters becoming fixed joke machines
 - dialogue becoming a repeated setup-and-response rhythm
 
+## Terminology Rules
+
+Use plain words unless a special term is necessary.
+
+Do not create unexplained sect terms, job names, place names, evaluation words, or shorthand labels.
+
+If a new term appears, it must satisfy at least one condition:
+
+- it already exists in the wiki
+- its meaning is clear from the sentence itself
+- another character explains it naturally through action or consequence
+- the scene immediately shows what it means
+
+Avoid terms that feel like system labels without grounding.
+
+Prefer concrete ordinary language:
+
+- use "册上的数" or "粮账上的数字" instead of vague "账数"
+- use "灵根弱" or "灵根很差" instead of unexplained "薄"
+- use "外门不收只是来试运气的人" instead of abstract phrasing
+- use "牌背刻痕" or "木牌背后的刻痕" instead of bare "痕"
+- use concrete locations such as "灶房后面" or "厨房后墙外" instead of shorthand like "灶后" until the place is established
+- use "山腰下的水井" or "下山挑水的地方" instead of unexplained place labels like "下泉" until the route is shown
+
 ## Chapter Memory Point
 
 Each chapter should have one concrete memory point that belongs to this story.
