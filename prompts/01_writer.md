@@ -7,6 +7,7 @@ Use this prompt to draft the next chapter of any novel in this repository.
 Read the current novel wiki before writing:
 
 - project direction
+- current arc outline or chapter roadmap
 - style rules
 - name registry
 - protagonist file
@@ -14,6 +15,8 @@ Read the current novel wiki before writing:
 - relevant world, location, item, or relationship files
 - previous chapter state
 - relevant open questions
+
+Do not write a new chapter if the current novel has no usable arc outline or near-term chapter roadmap. Create or update the outline first.
 
 ## Retrieval Plan
 
@@ -24,6 +27,7 @@ Expected characters:
 Expected locations:
 Expected objects:
 Relevant open questions:
+Arc beat being served:
 Files read:
 ```
 
@@ -33,7 +37,11 @@ Do not write detailed claims about a character, object, place, rule, or unresolv
 
 Write one chapter with one clear drive.
 
-The chapter should normally move the story toward the current novel project's long-term pressure, status change, relationship change, resource change, or irreversible consequence. Breather chapters are allowed when the novel wiki supports that pacing.
+The chapter should normally move the story toward the current novel project's long-term pressure, status change, relationship change, resource change, or irreversible consequence. Breather chapters are allowed only when the arc outline supports that pacing.
+
+Each chapter should provide a webnovel-style reader payoff. The payoff can be small, but it must be felt on the page: a win, reversal, discovery, humiliation returned, status shift, resource gain, relationship turn, new leverage, or clearer threat.
+
+Avoid pure process narration. A chapter should not read like a log of events unless the log itself creates conflict, reward, or consequence.
 
 The protagonist should stay within known ability limits.
 
@@ -42,6 +50,14 @@ The protagonist should not solve every problem cleanly over time. Hesitation, mi
 Recurring side characters should have their own pressure, desire, fear, or possible loss. They should not exist only to make the protagonist look calm, clever, or funny.
 
 Temporary characters may be functional, but their lines should not feel like forced prompts for the protagonist.
+
+## Dialogue Rules
+
+Dialogue should sound like people speaking under the current pressure.
+
+Avoid lines that exist only to explain the plot, ask the reader's question, set up a punchline, or make the protagonist look sharp.
+
+A character's line should usually come from one of these: desire, fear, impatience, habit, status, misunderstanding, concealment, bargaining, or immediate practical need.
 
 ## Hard Anti-AI Taste Rules
 
