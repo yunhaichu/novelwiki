@@ -28,7 +28,27 @@ Possible ways to break it:
 - let another character act first
 - make the protagonist's previous method fail or backfire
 
-## 2. Repeated Detail Attachment
+## 2. Chronological Log Structure
+
+Do not replace task repetition with time-order repetition.
+
+Common failure pattern:
+
+```text
+morning setup
+midday work
+small trade
+evening lesson
+after-lesson conversation
+```
+
+This is still a process log if the events only follow the clock.
+
+Mark REVISE if the chapter mainly advances through time labels rather than conflict, decision, pressure, reversal, or consequence.
+
+A chapter may use time progression only when each time segment escalates the same central conflict.
+
+## 3. Repeated Detail Attachment
 
 Do not let a physical detail become a permanent tag unless it is meant to be permanent.
 
@@ -52,7 +72,7 @@ If a wound, smell, stain, or pain is repeated, it must either:
 
 Do not repeat the same hand wound, smell, mud, sweat, or pain as a default reminder.
 
-## 3. Character Concealment
+## 4. Character Concealment
 
 Characters should not always say their real emotional thesis directly.
 
@@ -72,11 +92,11 @@ Use mixed signals:
 - polite words with resentful actions
 - joking words with anxious hands
 - agreement followed by avoidance
-- help offered for selfish reasons
+- help offered for practical benefit
 - silence, delay, or unnecessary force in a small action
 - a character imitating the protagonist without admitting it
 
-## 4. Work Must Convert Into Cultivation Relevance
+## 5. Work Must Convert Into Cultivation Relevance
 
 If a chapter gives the protagonist a work-related advantage, it must connect to cultivation access, cultivation information, resource flow, timing, instruction clarity, false-response correction, or first-month evaluation.
 
@@ -90,7 +110,25 @@ What did the protagonist learn, access, or change that affects the three-month d
 What is the next step toward qi, not just status?
 ```
 
-## 5. Long-Horizon Hook
+## 6. Low-Anchor Phrase Drift
+
+Do not let pseudo-old-fashioned or compact phrases carry the chapter's meaning.
+
+Examples that should usually be revised:
+
+```text
+多坐了几口气
+几口气
+几息
+旧人
+路子
+在册上了
+册上有人
+```
+
+Use plain speech or plain narration instead.
+
+## 7. Long-Horizon Hook
 
 A sequence of chapters must create a web, not only a chain.
 
@@ -109,7 +147,9 @@ Examples:
 Mark REVISE if:
 
 - adjacent chapters repeat the same skeleton
+- the chapter is mainly a morning-noon-evening log
 - physical details are repeated without state change
 - side characters state emotions too directly too often
+- low-anchor phrases carry important meaning
 - work-related progress does not affect cultivation pressure
 - the chapter only extends a chain and does not strengthen the broader web
