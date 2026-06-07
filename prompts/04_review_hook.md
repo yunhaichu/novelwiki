@@ -19,6 +19,7 @@ Read:
 - `governance/anti_ai_taste_check.md`
 - `governance/emotional_payoff_check.md`
 - `governance/reader_reward_check.md`
+- `governance/longform_ai_inertia_check.md`
 - `prompts/05_golden_three_review.md` when reviewing chapters 1-3 or the opening as a unit
 
 ## Decision
@@ -30,7 +31,7 @@ Return one of:
 
 ## Checks
 
-Check main drive, wiki consistency, terminology, knowledge boundaries, character behavior, style, long-form direction, reader reward, emotional repayment, dialogue naturalness, and anti-AI taste.
+Check main drive, wiki consistency, terminology, knowledge boundaries, character behavior, style, long-form direction, reader reward, emotional repayment, dialogue naturalness, anti-AI taste, and long-form AI inertia.
 
 For chapters 1-3 or a new major opening, also check whether the chapter serves the opening design and whether the three-chapter retention unit remains strong.
 
@@ -65,6 +66,12 @@ For chapters 1-3 or a new major opening, also check whether the chapter serves t
 
 10. Dialogue readability.
    Dialogue may have subtext, but it should not make the reader work too hard. If too many lines are half-said, indirect, or ambiguous, mark REVISE.
+
+11. Long-form AI inertia.
+   Check for repeated chapter skeleton, repeated detail attachment, characters stating emotions too directly, work progress disconnected from cultivation relevance, and chain-like progression without a larger web. If any is severe, mark REVISE.
+
+12. Cultivation relevance.
+   If the chapter gives the protagonist work-related status, attention, assignment, or access, it must also connect to cultivation access, cultivation information, resource flow, instruction clarity, false-response correction, timing, or the three-month deadline. If it only creates workplace status, mark REVISE.
 
 ## Golden Three Unit Review
 
@@ -106,6 +113,13 @@ Terminology check:
 - Undefined terms:
 - Terms needing clearer first use:
 - Required replacements:
+
+Long-form inertia check:
+- Repeated skeleton:
+- Repeated physical/detail tags:
+- Character concealment issue:
+- Cultivation relevance:
+- Web connection:
 
 Opening/golden-three check if applicable:
 - Opening beat:
