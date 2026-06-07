@@ -8,6 +8,7 @@ Read the current novel wiki before writing:
 
 - project direction
 - current arc outline or chapter roadmap
+- opening design or golden-three design when writing chapters 1-3 or a new major opening
 - style rules
 - name registry
 - protagonist file
@@ -17,6 +18,8 @@ Read the current novel wiki before writing:
 - relevant open questions
 
 Do not write a new chapter if the current novel has no usable arc outline or near-term chapter roadmap. Create or update the outline first.
+
+Do not write chapters 1-3 of a new story or major opening if there is no usable opening design or golden-three design. Create or update the opening design first.
 
 ## Retrieval Plan
 
@@ -28,6 +31,7 @@ Expected locations:
 Expected objects:
 Relevant open questions:
 Arc beat being served:
+Opening/golden-three beat if applicable:
 Files read:
 ```
 
@@ -70,6 +74,8 @@ The chapter should not only add pressure. It should repay at least part of the r
 Write one chapter with one clear drive.
 
 The chapter should normally move the story toward the current novel project's long-term pressure, status change, relationship change, resource change, or irreversible consequence. Breather chapters are allowed only when the arc outline supports that pacing.
+
+Chapters 1-3 should serve the opening design as a three-chapter retention unit, not only as separate chapters.
 
 Each chapter should provide a webnovel-style reader payoff. The payoff can be small, but it must be visible on the page: a win, reversal, discovery, returned humiliation, status shift, resource gain, relationship turn, new leverage, clearer threat, or a pressure that becomes usable advantage.
 
