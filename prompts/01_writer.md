@@ -8,6 +8,7 @@ Read the current novel wiki before writing:
 
 - project direction
 - current arc outline or chapter roadmap
+- approved chapter brief for this chapter
 - opening design or golden-three design when writing chapters 1-3 or a new major opening
 - style rules
 - glossary / approved term list
@@ -16,6 +17,7 @@ Read the current novel wiki before writing:
 - planned character files
 - relevant world, location, item, or relationship files
 - previous chapter state
+- continuity files, including body state if present
 - relevant open questions
 
 Do not write a new chapter if the current novel has no usable arc outline or near-term chapter roadmap. Create or update the outline first.
@@ -23,6 +25,8 @@ Do not write a new chapter if the current novel has no usable arc outline or nea
 Do not write chapters 1-3 of a new story or major opening if there is no usable opening design or golden-three design. Create or update the opening design first.
 
 Do not write a chapter if the current novel has no glossary or approved term list. Create or update the glossary first.
+
+Do not write a chapter until `prompts/02_chapter_brief.md` has been used and the chapter brief has passed `governance/chapter_brief_review.md`.
 
 ## Retrieval Plan
 
@@ -35,7 +39,9 @@ Expected objects:
 Relevant open questions:
 Arc beat being served:
 Opening/golden-three beat if applicable:
+Approved chapter brief:
 Glossary terms likely to appear:
+Continuity/body-state files read:
 Files read:
 ```
 
@@ -60,6 +66,46 @@ A term that only sounds genre-appropriate is not enough.
 
 Do not use compact labels such as "track," "line," "path," "mark," or similar system-like shorthand unless the story has already taught them and the glossary allows them.
 
+Also avoid low-anchor phrases that are not formal terms but still feel pseudo-archaic or over-compressed. Check `governance/low_anchor_phrase_check.md` before drafting.
+
+## Structure Gate
+
+Do not draft from a time-of-day outline unless the approved brief says why it is necessary.
+
+Avoid this default structure:
+
+```text
+morning setup
+midday work
+small trade
+evening lesson
+after-lesson conversation
+```
+
+The chapter should be driven by conflict, external pressure, a choice, a trade, a mistake, a reveal, or a consequence.
+
+## Physical State Gate
+
+Use body state continuity.
+
+Do not repeat old wounds, smells, stains, hunger, fatigue, or pain as default atmosphere. If a physical detail returns, it must change state or create a new consequence.
+
+## Character Concealment Gate
+
+Recurring side characters should not state their full emotional position directly.
+
+Before drafting side-character dialogue, check the relevant character file for:
+
+```text
+surface behavior
+hidden pressure
+will say
+will not say
+stress action
+```
+
+If the character file lacks these fields and the character matters in the chapter, update the character file first.
+
 ## Reader Reward Ledger
 
 Before drafting, decide:
@@ -76,6 +122,20 @@ Next possibility:
 The chapter should answer a reader motivation, not only repay pressure.
 
 The visible gain can be small, but it must change position, access, information, treatment, relationship, leverage, or next-step possibility.
+
+## Cultivation Conversion Ledger
+
+Before drafting, decide:
+
+```text
+Work/status event if any:
+Cultivation-relevant conversion:
+Three-month deadline relevance:
+What changes in protagonist practice:
+What remains unsolved:
+```
+
+Do not let work-related status replace cultivation relevance.
 
 ## Emotional Ledger
 
