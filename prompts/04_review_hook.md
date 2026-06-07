@@ -16,6 +16,7 @@ Read:
 - `governance/review_checklist.md`
 - `governance/anti_ai_taste_check.md`
 - `governance/emotional_payoff_check.md`
+- `governance/reader_reward_check.md`
 
 ## Decision
 
@@ -26,26 +27,29 @@ Return one of:
 
 ## Checks
 
-Check main drive, wiki consistency, knowledge boundaries, character behavior, style, long-form direction, reader payoff, emotional repayment, dialogue naturalness, and anti-AI taste.
+Check main drive, wiki consistency, knowledge boundaries, character behavior, style, long-form direction, reader reward, emotional repayment, dialogue naturalness, and anti-AI taste.
 
 ## Required Story Checks
 
 1. Arc alignment.
    The chapter must serve a known arc beat, roadmap beat, or explicitly approved course correction. If it reads like the story is inventing direction chapter by chapter, mark REVISE.
 
-2. Emotional ledger.
+2. Reader reward ledger.
+   Identify the reader expectation, the obstacle, the protagonist's action, the visible gain, who notices, and what next possibility opens. If the chapter creates no visible gain or next possibility, mark REVISE.
+
+3. Emotional ledger.
    Identify what pressure, humiliation, injustice, fear, or frustration the reader feels through the protagonist. Then identify what visible compensation the chapter gives back. If the chapter only adds pressure and repays nothing visible, mark REVISE unless the arc outline explicitly calls for a short-term loss.
 
-3. Visible payoff.
-   The payoff must be visible on the page. It can be a win, reversal, discovery, humiliation returned, status shift, resource gain, relationship turn, new leverage, risk avoided, hostile reaction, watcher notice, or clearer threat. A hidden clue alone is not enough.
+4. Visible payoff.
+   The payoff must be visible on the page. It can be a win, reversal, discovery, returned humiliation, status shift, resource gain, relationship turn, new leverage, risk avoided, hostile reaction, watcher notice, or clearer threat. A hidden clue alone is not enough.
 
-4. Social confirmation.
+5. Social confirmation.
    If the chapter contains a payoff, check whether someone notices or reacts. A reaction is not always required, but it often makes the payoff legible. If the payoff is too private to feel real, mark REVISE.
 
-5. Dialogue naturalness.
+6. Dialogue naturalness.
    Dialogue should arise from desire, fear, impatience, status, misunderstanding, concealment, bargaining, or practical need. If lines mainly explain the plot, ask reader questions, set up jokes, or make the protagonist look sharp, mark REVISE.
 
-6. Dialogue readability.
+7. Dialogue readability.
    Dialogue may have subtext, but it should not make the reader work too hard. If too many lines are half-said, indirect, or ambiguous, mark REVISE.
 
 ## Hard Anti-AI Checks
@@ -77,6 +81,14 @@ Do not apply every conditional check as a hard rule to every chapter.
 Decision: ALLOW / REVISE
 
 Main reason:
+
+Reader reward ledger:
+- Reader expectation:
+- Obstacle:
+- Protagonist action:
+- Visible gain:
+- Witness or reaction:
+- Next possibility:
 
 Emotional ledger:
 - Pressure:
