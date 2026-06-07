@@ -2,54 +2,61 @@
 
 ## Review Result
 
-ALLOW as golden-three chapter 1.
+ALLOW as golden-three chapter 1 after glossary rewrite.
 
 ## Golden-Three Function
 
 Chapter 1 serves: Entry Means Low Status.
 
-It establishes Zhou Ping's desire to enter Qingheng Sect, the three-month probation pressure, his low status, his thin aptitude, his lack of family offering, and one small usable trait: sensitivity to accounts, numbers, and allocation from lower-level life experience.
+It establishes Zhou Ping's desire to enter Qingheng Sect, the three-month probation pressure, his low status, his weak earth spiritual root, his lack of family money and grain support, and one small usable trait: he can recognize numbers in a grain-shop account book.
 
 ## Chapter Summary
 
-Zhou Ping arrives at Qingheng Sect and first sees a three-mark probation wood token being removed into a small box. The three-month servant probation rule is announced aloud for literate and illiterate recruits alike. Wang Man and Zhou Ping are both tested and found unsuitable for outer sect entry. They are sent to servant probation. Zhao Steward questions Zhou Ping, learns that he can recognize account numbers from grain-shop work, and adds a small note beside Zhou Ping's name in the register. Zhou Ping receives an East Shed bamboo slip and learns that servant probationers have only a short daily qi-guiding lesson before evening class.
+Zhou Ping arrives at Qingheng Sect and first sees a gray wood token with three marks on the back being removed into a small box. The three-month servant probation rule is announced aloud for those who can and cannot read. Wang Man and Zhou Ping are both tested and found unsuitable for outer sect entry. They are sent to servant probation. Zhao Steward questions Zhou Ping, learns that he can recognize numbers in a grain-shop account book, and adds a small note beside Zhou Ping's name in the register. Zhou Ping receives an East Shed bamboo slip and learns that servant probationers have only a short daily qi-guiding lesson before evening class.
 
 ## Reader Reward Ledger
 
 - Reader expectation: An ordinary low-status boy should still have a crack to climb through.
-- Obstacle: Zhou Ping has thin aptitude, no offering, limited literacy, and is assigned to servant probation.
-- Protagonist action: Zhou Ping shows he can recognize account numbers and notices marks, registration order, and the difference between probation and disciple.
+- Obstacle: Zhou Ping has a weak earth spiritual root, no family money or grain support, limited literacy, and is assigned to servant probation.
+- Protagonist action: Zhou Ping shows he can recognize numbers from a grain-shop account book and notices the gray wood tokens, their back marks, and the difference between servant probation and formal disciple status.
 - Visible gain: Zhao Steward pauses, looks at him again, and adds a small note beside his name in the register.
 - Witness or reaction: Zhou Ping sees Zhao Steward's pause and later sees the pen return to his name; Wang Man is beside him but does not understand the meaning.
-- Next possibility: The register note may become a hidden evaluation layer, but it is not yet confirmed.
+- Next possibility: The register note may matter later, but it is not yet confirmed.
 
 ## Emotional Ledger
 
-- Pressure: A three-mark token is removed, making the three-month failure risk visible from the opening.
+- Pressure: A three-mark gray wood token is removed, making the three-month failure risk visible from the opening.
 - Protagonist action: Zhou Ping goes through testing, asks whether he can cultivate, and answers Zhao Steward honestly about what he can do.
-- Cost: He is embarrassed during testing, confirmed as low aptitude, and placed into servant probation rather than formal disciple status.
+- Cost: He is embarrassed during testing, confirmed as weak in aptitude, and placed into servant probation rather than formal disciple status.
 - Visible compensation: He is not completely ignored; Zhao Steward records an extra note.
 - Who notices: Zhou Ping notices Zhao Steward's pen and look.
 - New expectation: Zhou Ping may not have status, but he may be noticed through usefulness.
+
+## Terminology Check
+
+- No use of "薄" as an unexplained aptitude label.
+- No use of bare "痕" shorthand; use "木牌背后的刻痕" or equivalent plain wording.
+- No use of "账数"; use "粮铺账本上的数字" or plain account-number wording.
+- No use of unexplained "供奉"; use money-and-grain wording.
+- "东棚" is introduced as a sleeping shed.
 
 ## Confirmed Facts
 
 - Zhou Ping comes from Hewan Village.
 - Zhou Ping arrives at Qingheng Sect with other village youths, including Wang Man.
-- Qingheng Sect has a servant probation system with wood tokens.
-- A servant probation token can receive monthly marks.
-- A three-mark token is removed into a small box near the servant registration table.
+- Qingheng Sect uses gray wood tokens for servant probationers.
+- A servant probationer's gray wood token can receive one mark on the back each month.
+- A gray wood token with three marks on the back is removed into a small box near the servant registration table.
 - The servant probation rule is announced aloud: probation lasts three months; those who draw qi into the body stay; those who do not are sent down the mountain.
-- Qingheng Sect recruitment includes age checking, spiritual-root testing, family-resource inquiry, and servant registration.
+- Qingheng Sect recruitment includes age checking, spiritual-root testing, asking whether the family can provide money and grain, and servant registration.
 - Qingheng Sect considers aptitude, family resources, and usefulness.
-- Wang Man has mixed and thin spiritual roots and no offering.
-- Zhou Ping has a thin earth spiritual root and no offering.
+- Wang Man has three kinds of weak mixed spiritual roots and no family resources to provide.
+- Zhou Ping has a weak earth spiritual root and no family resources to provide.
 - Zhou Ping asks whether he can cultivate and feels embarrassed afterward.
-- Zhou Ping receives a wood token marked as servant probation.
-- Zhou Ping recognizes limited characters and account numbers but is not fluently literate.
-- Zhou Ping has experience seeing numbers in grain-shop work.
+- Zhou Ping receives a gray wood token marked as servant probation.
+- Zhou Ping recognizes limited characters and numbers from a grain-shop account book but is not fluently literate.
 - Zhao Steward records Zhou Ping for servant probation and adds a small note beside Zhou Ping's name after hearing about his account-number ability.
-- Zhou Ping and Wang Man are assigned to the East Shed.
+- Zhou Ping and Wang Man are assigned to the East Shed, a sleeping shed.
 - Servant probationers receive a short daily qi-guiding lesson before evening class.
 
 ## Character State
@@ -59,7 +66,7 @@ Zhou Ping arrives at Qingheng Sect and first sees a three-mark probation wood to
 - Wants to enter Qingheng Sect and leave village limits.
 - Is ordinary in aptitude and has no family resources.
 - Understands that servant probation is not the same as becoming a disciple.
-- Notices marks, registration order, and small administrative details.
+- Notices wood-token marks, registration order, and small administrative details.
 - Has limited literacy, especially with numbers and common words.
 - Is embarrassed but not broken by public low evaluation.
 - Has one visible but unexplained foothold: Zhao Steward's extra note beside his name.
@@ -68,9 +75,9 @@ Zhou Ping arrives at Qingheng Sect and first sees a three-mark probation wood to
 
 - Same recruitment batch as Zhou Ping.
 - Carries food from home and worries practically.
-- Has mixed thin roots and no offering.
+- Has three kinds of weak mixed spiritual roots and no family resources to provide.
 - Is placed into servant probation with Zhou Ping.
-- Feels fear around the three-mark token and three-month rule.
+- Feels fear around the removed three-mark token and three-month rule.
 - Does not yet understand Zhou Ping's small usefulness in account numbers.
 
 ### Zhao Steward
@@ -83,10 +90,10 @@ Zhou Ping arrives at Qingheng Sect and first sees a three-mark probation wood to
 
 ## Story Memory Points
 
-- The chapter opens with a three-mark wood token being removed into a box.
+- The chapter opens with a three-mark gray wood token being removed into a box.
 - The three-month probation rule is announced aloud.
 - "Servant probation" is visibly not the same as "disciple".
-- Zhou Ping's thin earth root places him at the bottom, but his account-number ability causes Zhao Steward to pause.
+- Zhou Ping's weak earth spiritual root places him at the bottom, but his account-number ability causes Zhao Steward to pause.
 - The bamboo slip splinter remains in Zhou Ping's palm.
 - Zhao Steward's register contains a small note beside Zhou Ping's name.
 
@@ -108,3 +115,4 @@ Zhou Ping arrives at Qingheng Sect and first sees a three-mark probation wood to
 - Wang Man should witness or react to Zhou Ping's changed treatment.
 - Do not let Zhou Ping draw qi yet.
 - Do not explain the full meaning of Zhao Steward's register note yet.
+- Continue using glossary-approved terms only.
