@@ -2,107 +2,110 @@
 
 ## Review Result
 
-ALLOW after ending revision.
+ALLOW as post-golden-three chapter 4.
+
+## Arc Function
+
+Chapter 4 serves: Register Consequence.
+
+It converts Zhao Steward's register marks from hidden hook into visible treatment change, while keeping the meaning of the marks unexplained.
 
 ## Chapter Summary
 
-Zhou Ping wakes early and tries to avoid another damaging assignment. Liu Shun hints that he should not wait for formal assignment, so Zhou Ping volunteers for the dirty work of emptying and washing buckets. This gives him a nearer task and lets him arrive earlier at the qi-guiding lesson, but it also marks him with smell, worsens his hand injury, separates him from Wang Man, and only earns an unclear small mark in Zhao Steward's register. During the lesson, Zhou Ping hears the full instruction about not chasing sensations, sits through the incense without moving, and still feels no qi.
+After the golden-three opening, Zhou Ping expects to return to dirty work, but Zhao Steward calls him early before ordinary new-probationer assignment and sends him to prepare the incense used for the qi-guiding lesson. This creates a visible change: Zhou Ping is handled differently because he is already in Zhao Steward's register. The task is not a clean reward. If the incense line is wrong, the whole lesson timing may be shortened and others may blame him. Liu Shun warns him that being assigned to incense timing is useful but risky. During the lesson, the incense burns correctly, Zhao Steward says the timing is accurate, and others hear it. Wang Man confronts Zhou Ping again, wanting to be called next time, while Liu Er suggests Zhou Ping has someone in the register. Zhou Ping still has no wood-token mark, but others now know he is "on the register."
 
-## Core Drive
+## Reader Reward Ledger
 
-Zhou Ping wants to improve his access to the qi-guiding lesson despite having no token mark.
+- Reader expectation: The register marks should matter visibly.
+- Obstacle: Register attention may mean being used for pressure-bearing work, not rewarded cleanly.
+- Protagonist action: Zhou Ping accepts the incense-preparation task and handles the red-line timing carefully.
+- Visible gain: Zhao Steward calls him early, gives him a task near the qi-guiding lesson, and publicly confirms the timing as accurate.
+- Witness or reaction: Wang Man, Liu Er, Liu Shun, and nearby probationers notice; Liu Er comments that Zhou Ping has someone in the register.
+- Next possibility: The register path is now a visible second track beside wood-token marks, but it may attract resentment or blame.
 
-## Current Trigger
+## Emotional Ledger
 
-Liu Shun's prior advice made clear that Zhou Ping should avoid the woodshed, but Zhou Ping lacks the one-mark token status needed to receive better assignments through normal order.
-
-## Core Obstacle
-
-Without a token mark, Zhou Ping cannot choose good work through formal assignment. He can only create a small opening by taking work others avoid, and that work carries social and physical cost.
-
-## Local Progress
-
-Zhou Ping volunteers early for bucket-cleaning work, avoids the lower-spring and woodshed tasks, arrives earlier to the lesson, and stands closer than before.
-
-## New Trouble
-
-The opportunity comes with cost: smell, social avoidance, hand pain, separation from Wang Man, and only an unclear small dot in Zhao Steward's register rather than a visible token mark. Zhou Ping hears clearly but still feels no qi.
-
-## Ending Hook
-
-Zhou Ping sees Zhao Steward place a small fresh dot beside his name in the register, but he does not know what it means. He decides only to see what assignment comes next.
+- Pressure: Zhou Ping's register marks now expose him to visible responsibility; a wrong incense mark could shorten the lesson for everyone.
+- Protagonist action: Zhou Ping applies his number/measure sensitivity to mark incense timing.
+- Cost: The task is delicate, public, and blame-bearing; Wang Man remains resentful; Liu Er frames it as favoritism.
+- Visible compensation: The incense timing is accepted as accurate, and Zhao Steward confirms it aloud.
+- Who notices: Wang Man, Liu Er, Liu Shun, other probationers, and Zhao Steward.
+- New expectation: Zhou Ping can gain access through precision and responsibility, not only dirty work.
 
 ## Confirmed Facts
 
-- Zhou Ping wakes earlier than Liu Shun after pain keeps him from sleeping well.
-- Liu Shun hints that Zhou Ping should not wait for formal assignment if he wants to avoid the woodshed.
-- Zhou Ping chooses to take the unwanted bucket-emptying and bucket-washing work before assignment.
-- Zhao Steward notices that Zhou Ping took the work voluntarily and marks a small dot beside his name in the register.
-- Wang Man is assigned to lower-spring water carrying while Zhou Ping is assigned to wash buckets behind the kitchen.
-- Bucket-washing work is closer and finishes earlier than the previous assignments, but it is dirty and socially unpleasant.
-- Zhou Ping's hand blister breaks while washing buckets.
-- Zhou Ping arrives earlier to the qi-guiding lesson and stands outside the fifth line.
-- Other probationers notice the smell from Zhou Ping's clothes.
-- Wang Man arrives later and stands behind Zhou Ping.
-- Zhao Steward teaches that beginners should not chase heat, pain, itching, light, or other sensations.
-- Zhou Ping sits through the incense without moving, despite pain and itching.
-- Zhou Ping still does not feel qi.
-- Zhao Steward puts another small dot beside Zhou Ping's name after the lesson or day's work, but its meaning is not yet confirmed.
+- Zhou Ping's wood token remains unmarked after chapter 3.
+- Zhou Ping is now known by some peers as someone recorded in Zhao Steward's register.
+- Zhao Steward can call Zhou Ping before ordinary new-probationer assignments.
+- Zhao Steward assigns Zhou Ping to prepare qi-guiding incense by tying red line at the correct portion.
+- Incense timing affects the qi-guiding lesson's length and fairness.
+- Mistiming incense could cause others to blame Zhou Ping.
+- Zhou Ping uses practical measuring habits from grain-shop and lower-level work to handle the task.
+- Liu Shun recognizes that the incense task is useful but risky.
+- Wang Man is still assigned to lower-spring work and remains under pressure.
+- During the lesson, Zhao Steward states that the incense timing is accurate.
+- Zhou Ping gains no qi sense in this chapter.
+- Liu Er publicly implies Zhou Ping is receiving special register treatment.
 
 ## Character State
 
 ### Zhou Ping
 
-- Begins to act instead of only waiting for assignment.
-- Understands that taking unwanted work can create a small opportunity.
-- Pays social and physical cost for that opportunity.
-- Does not gain qi sense despite improved lesson access.
-- Separates from Wang Man for the first time through different work assignment and lesson position.
-- Does not know the meaning of Zhao Steward's small register dot.
+- Is treated differently because of Zhao Steward's register marks.
+- Gains a new kind of access through precision rather than dirty work alone.
+- Still has no wood-token monthly mark and no qi sense.
+- Understands that register treatment can create blame and attention.
+- Promises Wang Man that he will call him if another chance appears.
 
 ### Wang Man
 
-- Is assigned to lower-spring water carrying again.
-- Arrives late and stands behind Zhou Ping in the qi-guiding lesson.
-- Notices Zhou Ping's smell and improved position.
-- Is disappointed that clearer access does not mean immediate progress.
+- Remains behind Zhou Ping in treatment and opportunity.
+- Wants to be included next time instead of only watching Zhou Ping move ahead.
+- Pushes back against Liu Er when Liu Er frames Zhou Ping's register attention negatively.
+- Still has no register advantage and no wood-token mark.
 
 ### Liu Shun
 
-- Gives another limited hint instead of a full explanation.
-- Confirms indirectly that unwanted work can be used as a workaround.
-- Still does not act as a full mentor.
-- Notices Zhou Ping's choice and asks whether he will do it again.
+- Gives a limited practical warning about the incense task.
+- Still does not become a mentor.
+- Indicates that some assignments are both useful and dangerous.
 
 ### Zhao Steward
 
-- Notices Zhou Ping's voluntary bucket work.
-- Marks a small dot in the register, but does not explain it.
-- Teaches beginners not to chase sensations.
-- Does not personally correct Zhou Ping.
+- Calls Zhou Ping early due to register attention.
+- Assigns responsibility without warmth or explanation.
+- Publicly confirms the incense timing as accurate.
+- Does not explain the register marks.
+
+### Liu Er
+
+- Notices Zhou Ping's different treatment.
+- Frames it as being "on the register," creating social pressure around Zhou Ping's treatment.
 
 ## Story Memory Points
 
-- Zhou Ping takes dirty work before formal assignment to create a small chance.
-- Dirty work lets him stand closer but makes others avoid him.
-- The lesson says not to chase sensations, turning previous confusion into a new discipline problem.
-- Zhou Ping sits through pain and itching but still feels no qi.
-- Zhao Steward's small register dot appears as a possible hidden evaluation mark.
+- Zhao Steward calls Zhou Ping before ordinary assignment.
+- Zhou Ping prepares the incense red line that controls lesson timing.
+- The task is delicate: if wrong, the whole lesson could be affected.
+- Zhao Steward says "today accurate" after the lesson.
+- Liu Er gives public wording to the new status: Zhou Ping is "on the register."
+- Zhou Ping's wood token remains blank while the register path becomes visible.
 
 ## Open Questions
 
-- What does Zhao Steward's small dot in the register mean?
-- Can repeated unwanted work improve Zhou Ping's assignment or status?
-- Will the smell and social cost isolate Zhou Ping from other probationers?
-- Can Zhou Ping continue using this strategy without damaging his body further?
-- What counts as real qi response rather than a false sensation?
-- How will Wang Man react if Zhou Ping continues separating from him in position and opportunity?
+- What exactly does being on Zhao Steward's register mean?
+- Will register attention help Zhou Ping or turn him into someone used for risky tasks?
+- Will Wang Man take the next chance or hesitate again?
+- Will Liu Er spread suspicion or create friction around Zhou Ping?
+- Can Zhou Ping use precision, numbers, timing, or memory as a path beyond dirty work?
+- How will the first month mark or check evaluate Zhou Ping?
 
 ## Must Inherit Next Chapter
 
-- Do not turn the register dot into confirmed advancement unless a scene confirms it.
-- Zhou Ping still has no qi sense.
-- Zhou Ping has an injured hand and lingering smell/social cost from bucket work.
-- The difference between hearing clearly and actually progressing should remain important.
-- Wang Man's position relative to Zhou Ping has shifted and should not be ignored.
-- Continue connecting servant labor choices to cultivation access, resource distribution, and probation pressure.
+- The story should move beyond dirty work as the only crack.
+- Chapter 5 should serve the roadmap target: Trade Instead of Dirt.
+- Zhou Ping should use number sense, timing, memory, silence, or observation to exchange for something.
+- Wang Man must remain involved and cannot reset into a simple companion.
+- Liu Er's suspicion that Zhou Ping is "on the register" should matter.
+- Do not explain the register system fully yet.
+- Do not let Zhou Ping gain true qi sense yet.
