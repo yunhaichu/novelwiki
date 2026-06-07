@@ -7,6 +7,7 @@ Use this prompt after a chapter draft is written and before chapter state is cre
 Read:
 
 - the chapter draft
+- the approved chapter brief for this chapter
 - the current novel project file
 - the current novel style file
 - the current novel glossary / approved term list
@@ -14,12 +15,15 @@ Read:
 - opening design or golden-three design when reviewing chapters 1-3 or a new major opening
 - relevant character files
 - relevant world or object files
+- continuity files, including body state if present
 - previous chapter state
 - `governance/review_checklist.md`
 - `governance/anti_ai_taste_check.md`
 - `governance/emotional_payoff_check.md`
 - `governance/reader_reward_check.md`
 - `governance/longform_ai_inertia_check.md`
+- `governance/low_anchor_phrase_check.md`
+- `governance/chapter_brief_review.md`
 - `prompts/05_golden_three_review.md` when reviewing chapters 1-3 or the opening as a unit
 
 ## Decision
@@ -31,46 +35,52 @@ Return one of:
 
 ## Checks
 
-Check main drive, wiki consistency, terminology, knowledge boundaries, character behavior, style, long-form direction, reader reward, emotional repayment, dialogue naturalness, anti-AI taste, and long-form AI inertia.
+Check main drive, approved brief alignment, wiki consistency, terminology, low-anchor phrases, knowledge boundaries, character behavior, style, long-form direction, reader reward, emotional repayment, dialogue naturalness, anti-AI taste, and long-form AI inertia.
 
 For chapters 1-3 or a new major opening, also check whether the chapter serves the opening design and whether the three-chapter retention unit remains strong.
 
 ## Required Story Checks
 
-1. Arc alignment.
+1. Brief alignment.
+   The chapter must follow the approved chapter brief. If it changes the engine, repeats a forbidden skeleton, or slips back into a time-order log that the brief was meant to avoid, mark REVISE.
+
+2. Arc alignment.
    The chapter must serve a known arc beat, roadmap beat, opening beat, or explicitly approved course correction. If it reads like the story is inventing direction chapter by chapter, mark REVISE.
 
-2. Terminology gate.
+3. Terminology gate.
    Scan for unexplained terms, new place labels, job labels, system labels, evaluation labels, shorthand phrases, and genre-sounding compact terms. If a term is not ordinary language and is not approved by the glossary, mark REVISE.
 
-3. First-use clarity.
+4. Low-anchor phrase gate.
+   Scan for pseudo-archaic quantities, vague group labels, compressed system-like labels, polished contrast lines, and motto-like narration. If an important meaning depends on such a phrase, mark REVISE.
+
+5. First-use clarity.
    If an approved term appears for the first time in the current draft but the scene does not make its meaning clear, mark REVISE.
 
-4. Golden-three alignment.
+6. Golden-three alignment.
    For chapters 1-3, the chapter must serve its specified opening function. If chapter 1 does not create immediate reader pull, chapter 2 does not create visible payoff, or chapter 3 does not expand the hook into a longer arc, mark REVISE.
 
-5. Reader reward ledger.
+7. Reader reward ledger.
    Identify the reader expectation, the obstacle, the protagonist's action, the visible gain, who notices, and what next possibility opens. If the chapter creates no visible gain or next possibility, mark REVISE.
 
-6. Emotional ledger.
+8. Emotional ledger.
    Identify what pressure, humiliation, injustice, fear, or frustration the reader feels through the protagonist. Then identify what visible compensation the chapter gives back. If the chapter only adds pressure and repays nothing visible, mark REVISE unless the arc outline explicitly calls for a short-term loss.
 
-7. Visible payoff.
+9. Visible payoff.
    The payoff must be visible on the page. It can be a win, reversal, discovery, returned humiliation, status shift, resource gain, relationship turn, new leverage, risk avoided, hostile reaction, watcher notice, or clearer threat. A hidden clue alone is not enough.
 
-8. Social confirmation.
+10. Social confirmation.
    If the chapter contains a payoff, check whether someone notices or reacts. A reaction is not always required, but it often makes the payoff legible. If the payoff is too private to feel real, mark REVISE.
 
-9. Dialogue naturalness.
+11. Dialogue naturalness.
    Dialogue should arise from desire, fear, impatience, status, misunderstanding, concealment, bargaining, or practical need. If lines mainly explain the plot, ask reader questions, set up jokes, or make the protagonist look sharp, mark REVISE.
 
-10. Dialogue readability.
+12. Dialogue readability.
    Dialogue may have subtext, but it should not make the reader work too hard. If too many lines are half-said, indirect, or ambiguous, mark REVISE.
 
-11. Long-form AI inertia.
-   Check for repeated chapter skeleton, repeated detail attachment, characters stating emotions too directly, work progress disconnected from cultivation relevance, and chain-like progression without a larger web. If any is severe, mark REVISE.
+13. Long-form AI inertia.
+   Check for repeated chapter skeleton, chronological log structure, repeated detail attachment, characters stating emotions too directly, work progress disconnected from cultivation relevance, and chain-like progression without a larger web. If any is severe, mark REVISE.
 
-12. Cultivation relevance.
+14. Cultivation relevance.
    If the chapter gives the protagonist work-related status, attention, assignment, or access, it must also connect to cultivation access, cultivation information, resource flow, instruction clarity, false-response correction, timing, or the three-month deadline. If it only creates workplace status, mark REVISE.
 
 ## Golden Three Unit Review
@@ -109,13 +119,23 @@ Decision: ALLOW / REVISE
 
 Main reason:
 
+Brief alignment:
+- Approved engine:
+- Draft engine:
+- Drift:
+
 Terminology check:
 - Undefined terms:
 - Terms needing clearer first use:
 - Required replacements:
 
+Low-anchor phrase check:
+- Suspicious phrases:
+- Required plain replacements:
+
 Long-form inertia check:
 - Repeated skeleton:
+- Chronological log structure:
 - Repeated physical/detail tags:
 - Character concealment issue:
 - Cultivation relevance:
