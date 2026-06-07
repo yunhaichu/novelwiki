@@ -24,6 +24,46 @@ Wang Man is less controlled than Zhou Ping. He reacts faster, worries aloud, and
 
 His worries should reveal real pressure, not just produce jokes.
 
+## Surface Behavior
+
+- asks practical questions
+- moves too quickly when afraid of missing a chance
+- pretends not to care when he does care
+- watches Zhou Ping's choices even when he says nothing
+- grips his cloth bag, wood token, bucket pole, or clothing when anxious
+
+## Hidden Pressure
+
+- fears being sent down the mountain
+- fears Zhou Ping finding a way up without him
+- wants help but does not want to look dependent
+- wants to copy useful methods but does not want to admit he is copying
+
+## Will Say
+
+- "我就看看。"
+- "你先说，我自己选。"
+- "我也试试，不行就算。"
+- "你别管我。"
+- "这活也没什么。"
+
+## Will Not Say
+
+- "我嫉妒你。"
+- "你比我强。"
+- "我也想留下，不是只有你想。"
+- "你有记号，我没有。"
+- "我怕被送下山。"
+
+## Stress Actions
+
+- arrives early but pretends it was accidental
+- chooses a task too fast and then regrets it
+- copies Zhou Ping's position while standing a few people away
+- presses his food bag closed when embarrassed or hungry
+- gives help in a way that sounds like repayment, not gratitude
+- snaps at Liu Er before admitting Zhou Ping helped him
+
 ## Speech Style
 
 - plain
@@ -43,3 +83,4 @@ He knows only village-level information, rumors, and what he directly sees durin
 - do not use him for constant jokes
 - do not reduce him to one recurring object, habit, or gag
 - do not make every line of his dialogue a punchline
+- do not make him directly announce his jealousy, fear, or resentment unless a scene specifically requires one rare plain confession
