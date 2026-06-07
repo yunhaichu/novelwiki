@@ -9,6 +9,7 @@ Read:
 - the chapter draft
 - the current novel project file
 - the current novel style file
+- the current arc outline or chapter roadmap
 - relevant character files
 - relevant world or object files
 - previous chapter state
@@ -24,7 +25,18 @@ Return one of:
 
 ## Checks
 
-Check main drive, wiki consistency, knowledge boundaries, character behavior, style, long-form direction, and anti-AI taste.
+Check main drive, wiki consistency, knowledge boundaries, character behavior, style, long-form direction, reader payoff, dialogue naturalness, and anti-AI taste.
+
+## Required Story Checks
+
+1. Arc alignment.
+   The chapter must serve a known arc beat, roadmap beat, or explicitly approved course correction. If it reads like the story is inventing direction chapter by chapter, mark REVISE.
+
+2. Reader payoff.
+   The chapter must give a felt payoff. This can be a win, reversal, discovery, humiliation returned, status shift, resource gain, relationship turn, new leverage, or clearer threat. If the chapter only records process, mark REVISE.
+
+3. Dialogue naturalness.
+   Dialogue should arise from desire, fear, impatience, status, misunderstanding, concealment, bargaining, or practical need. If lines mainly explain the plot, ask reader questions, set up jokes, or make the protagonist look sharp, mark REVISE.
 
 ## Hard Anti-AI Checks
 
