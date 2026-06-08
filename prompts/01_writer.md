@@ -4,44 +4,16 @@ Use this prompt to draft the next chapter of any novel in this repository.
 
 ## Required Inputs
 
-Read the current novel wiki and workflow artifacts before writing:
+Read the current novel wiki before writing:
 
-- approved type contract if present
-- approved reader entry gate when writing chapter 1-3, a new volume opening, or a new major arc opening
 - project direction
-- current project outline
-- current volume outline
-- current beat plan
-- current arc outline or chapter roadmap
-- approved opening chapter brief for openings, or approved normal chapter brief for ordinary chapters
-- opening design or golden-three design when writing chapters 1-3 or a new major opening
 - style rules
-- glossary / approved term list
 - name registry
 - protagonist file
 - planned character files
 - relevant world, location, item, or relationship files
-- story bible / world state if present
 - previous chapter state
-- continuity files, including body state if present
 - relevant open questions
-- `governance/consequence_chain_check.md`
-- `governance/conflict_escalation_check.md`
-- `governance/anti_ai_novel_phrase_check.md` if available
-- `prompts/00_character_action_logic.md` if relevant
-
-Do not write a new chapter if the current novel has no usable project outline, volume outline, and near-term beat plan. Create or update those first.
-
-Do not write chapters 1-3 of a new story or major opening if there is no usable reader entry gate and opening brief. Create or update those first.
-
-Do not write a chapter if the current novel has no glossary or approved term list. Create or update the glossary first.
-
-Do not write a chapter until the appropriate brief has passed review:
-
-```text
-openings: prompts/02_opening_chapter_brief.md + governance/opening_chapter_brief_review.md
-ordinary chapters: prompts/02_chapter_brief.md + governance/chapter_brief_review.md
-```
 
 ## Retrieval Plan
 
@@ -52,200 +24,16 @@ Expected characters:
 Expected locations:
 Expected objects:
 Relevant open questions:
-Project / volume / beat being served:
-Type contract read:
-Reader entry gate read if applicable:
-Opening/golden-three beat if applicable:
-Approved chapter brief:
-Glossary terms likely to appear:
-Story bible / world-state files read:
-Continuity/body-state files read:
 Files read:
 ```
 
 Do not write detailed claims about a character, object, place, rule, or unresolved question if the matching wiki was not read.
 
-## Reader Entry Gate For Openings
-
-For chapter 1-3, new volume openings, and new major arc openings:
-
-- reader entry is more important than setting completeness;
-- do not expose all known story-bible information;
-- introduce fewer names, terms, systems, and mysteries than the system knows;
-- the protagonist should enter as a person under pressure, not as a job function or setting observer;
-- the first 500 words should make clear protagonist, immediate trouble, present desire, stake, and reason to continue;
-- the opening should have one concrete memory point.
-
-If the chapter cannot pass the one-sentence recap test, do not draft yet. Fix the reader entry gate or opening brief first.
-
-## Terminology Gate
-
-Use plain ordinary language unless a glossary-approved term is necessary.
-
-Do not introduce new sect terms, place names, job labels, evaluation labels, system labels, or shorthand in the draft unless they are already in the glossary.
-
-If a new term is necessary, update the glossary first with:
-
-```text
-Term:
-Meaning:
-Allowed first-use wording:
-Forbidden shorthand:
-```
-
-A term that only sounds genre-appropriate is not enough.
-
-Do not use compact labels such as "track," "line," "path," "mark," or similar system-like shorthand unless the story has already taught them and the glossary allows them.
-
-Also avoid low-anchor phrases that are not formal terms but still feel pseudo-archaic or over-compressed. Check `governance/low_anchor_phrase_check.md` before drafting.
-
-## Structure Gate
-
-Do not draft from a time-of-day outline unless the approved brief says why it is necessary.
-
-Avoid this default structure:
-
-```text
-morning setup
-midday work
-small trade
-evening lesson
-after-lesson conversation
-```
-
-The chapter should be driven by conflict, external pressure, a choice, a trade, a mistake, a reveal, a consequence, an opponent/system response, or a method failure.
-
-## Consequence Chain Ledger
-
-Before drafting, decide:
-
-```text
-Opening state:
-Protagonist action:
-Immediate consequence:
-Who reacts:
-What becomes harder:
-What path closes:
-What new path opens:
-What must happen next because of this chapter:
-If this chapter is removed, what later event collapses:
-```
-
-Do not write a chapter that only adds information, atmosphere, or local movement.
-
-## Conflict Escalation Ledger
-
-Before drafting, decide:
-
-```text
-Conflict before chapter:
-Conflict after chapter:
-Obstacle stronger? yes/no:
-Cost higher? yes/no:
-Retreat path reduced? yes/no:
-Opponent / system adapts? yes/no:
-Protagonist method still works? yes/no:
-If method fails or partially fails, how:
-Escalation type:
-```
-
-If this is an approved breather or aftermath chapter, still make sure information, method, relationship, or future pressure changes.
-
-## Physical State Gate
-
-Use body state continuity.
-
-Do not repeat old wounds, smells, stains, hunger, fatigue, or pain as default atmosphere. If a physical detail returns, it must change state or create a new consequence.
-
-## Character Action Logic Gate
-
-Recurring characters should act from desire, fear, flaw, pressure, or decision pattern.
-
-Before drafting important actions or dialogue, check:
-
-```text
-What does the character want now?
-What does the character protect first?
-What fear, flaw, or pressure is triggered?
-What partial or wrong choice can this create?
-What consequence follows?
-What will this character not say directly?
-```
-
-If the character file lacks these fields and the character matters in the chapter, update or create character action logic first.
-
-Recurring side characters should not state their full emotional position directly.
-
-## Reader Reward Ledger
-
-Before drafting, decide:
-
-```text
-Reader expectation:
-Obstacle:
-Protagonist action:
-Visible gain:
-Witness or reaction:
-Next possibility:
-```
-
-The chapter should answer a reader motivation, not only repay pressure.
-
-The visible gain can be small, but it must change position, access, information, treatment, relationship, leverage, or next-step possibility.
-
-## Main-System Conversion Ledger
-
-Before drafting, decide:
-
-```text
-Primary genre promise:
-Work/status/event if any:
-Main-system relevance:
-Deadline or long-term pressure relevance:
-What changes in protagonist method, resource, position, knowledge, or relationship:
-What remains unsolved:
-```
-
-Do not let local status or daily process replace the novel's primary genre promise.
-
-Examples:
-
-```text
-cultivation/progression: resource access, rule understanding, power progress, sect survival
-urban/workplace: money, reputation, career leverage, relationship consequence, legal/social pressure
-science fiction: anomaly proof, technical limit, rule discovery, human cost
-officialdom/political: position, procedure, alliance, policy risk, reputation
-farming/management: resource chain, production, land, market, community defense
-mystery: clue, contradiction, suspect relation, proof chain
-romance: relationship movement, emotional risk, repair, intimacy
-```
-
-## Emotional Ledger
-
-Before drafting, decide the chapter's emotional ledger:
-
-```text
-What pressure or injustice does the reader feel through the protagonist?
-What active choice does the protagonist make?
-What visible cost does that choice create?
-What visible compensation does the protagonist receive?
-Who notices the change?
-What new expectation does this create?
-```
-
-The chapter should not only add pressure. It should repay at least part of the reader's emotional debt unless the arc outline explicitly calls for a short-term loss.
-
 ## Chapter Drafting Rules
 
 Write one chapter with one clear drive.
 
-The chapter should normally move the story toward the current novel project's long-term pressure, status change, relationship change, resource change, proof chain, rule discovery, or irreversible consequence. Breather chapters are allowed only when the arc outline supports that pacing.
-
-Chapters 1-3 should serve the opening design as a three-chapter retention unit, not only as separate chapters.
-
-Each chapter should provide a webnovel-style reader payoff. The payoff can be small, but it must be visible on the page: a win, reversal, discovery, returned humiliation, status shift, resource gain, relationship turn, new leverage, clearer threat, false path eliminated, or a pressure that becomes usable advantage.
-
-Avoid pure process narration. A chapter should not read like a log of events unless the log itself creates conflict, reward, or consequence.
+The chapter should normally move the story toward the current novel project's long-term pressure, status change, relationship change, resource change, or irreversible consequence. Breather chapters are allowed when the novel wiki supports that pacing.
 
 The protagonist should stay within known ability limits.
 
@@ -255,25 +43,13 @@ Recurring side characters should have their own pressure, desire, fear, or possi
 
 Temporary characters may be functional, but their lines should not feel like forced prompts for the protagonist.
 
-## Dialogue Rules
-
-Dialogue should sound like people speaking under the current pressure and should be easy to process.
-
-Avoid lines that exist only to explain the plot, ask the reader's question, set up a punchline, or make the protagonist look sharp.
-
-A character's line should usually come from one of these: desire, fear, impatience, habit, status, misunderstanding, concealment, bargaining, or immediate practical need.
-
-Do not overuse hidden meaning. For fast-paced fiction, most lines should be clear, some may carry emotion, and only a small portion should be left unsaid.
-
 ## Hard Anti-AI Taste Rules
 
 When two similar events appear close together, do not use the same narrative sequence twice. The second pass must change focus, such as bodily sensation, visible detail, social reaction, mistake, hesitation, consequence, or missing information.
 
 Chapter endings should usually land on action, object, bodily sensation, unfinished choice, concrete consequence, or changed relationship.
 
-Avoid defaulting to polished, symmetrical, aphoristic, explanatory, or fake-suspense closing lines.
-
-Check `governance/anti_ai_novel_phrase_check.md` if available.
+Avoid defaulting to polished, symmetrical, aphoristic, or explanatory closing lines.
 
 ## Conditional Anti-AI Taste Rules
 

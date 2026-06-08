@@ -2,7 +2,7 @@
 
 Each novel must be created from this template.
 
-Every novel has an independent wiki, independent drafts, independent chapter states, and an independent name registry.
+Every novel has an independent wiki, independent drafts, independent chapter states, and independent name registry.
 
 Recommended structure:
 
