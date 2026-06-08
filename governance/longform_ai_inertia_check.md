@@ -96,21 +96,48 @@ Use mixed signals:
 - silence, delay, or unnecessary force in a small action
 - a character imitating the protagonist without admitting it
 
-## 5. Work Must Convert Into Cultivation Relevance
+## 5. Local Process Must Convert Into Declared Main Genre Promise
 
-If a chapter gives the protagonist a work-related advantage, it must connect to cultivation access, cultivation information, resource flow, timing, instruction clarity, false-response correction, or first-month evaluation.
+If a chapter gives the protagonist a local advantage, work advantage, process gain, status shift, access change, social movement, or procedural progress, it must convert into the declared primary genre promise.
 
-Reject chapters where the protagonist only gains workplace status.
+Reject chapters where the protagonist only gains local treatment, workplace status, task credit, or routine access without affecting the story engine.
 
 Ask:
 
 ```text
-What cultivation-relevant resource did this event expose?
-What did the protagonist learn, access, or change that affects the three-month deadline?
-What is the next step toward qi, not just status?
+What is the declared primary genre promise?
+What local process or status change happened?
+How does this change convert into that promise?
+What does the protagonist gain, lose, learn, risk, or become able to do next?
+What future pressure does this create?
 ```
 
-## 6. Low-Anchor Phrase Drift
+Genre-neutral examples:
+
+```text
+cultivation/progression: resource access, rule understanding, power progress, sect/system survival
+mystery: clue, contradiction, suspect relation, proof chain, false path eliminated
+thriller: threat escalation, narrowed options, survival move, enemy adaptation
+urban/workplace: status, reputation, career leverage, money, social/legal pressure
+science fiction: anomaly proof, rule discovery, technical limit, human cost
+romance: relationship movement, emotional risk, intimacy, commitment, repair
+farming/management: resource chain, production, land, market, community defense
+officialdom/political: position, procedure, alliance, policy risk, public reputation
+```
+
+## 6. Reader Entry Inertia
+
+For chapter 1-3, new volume openings, and new arc openings, the draft must not rely on accumulated wiki context.
+
+Mark REVISE if:
+
+- the opening is setting-correct but unreadable;
+- the protagonist enters only as a job function or observer;
+- too many names, rules, systems, or mysteries appear before the reader cares;
+- the chapter is strange but does not create a reason to continue;
+- the reader cannot summarize the core problem in one ordinary sentence.
+
+## 7. Low-Anchor Phrase Drift
 
 Do not let pseudo-old-fashioned or compact phrases carry the chapter's meaning.
 
@@ -128,7 +155,7 @@ Examples that should usually be revised:
 
 Use plain speech or plain narration instead.
 
-## 7. Long-Horizon Hook
+## 8. Long-Horizon Hook
 
 A sequence of chapters must create a web, not only a chain.
 
@@ -136,11 +163,11 @@ At least every 3 chapters, connect a current event to an earlier detail in a way
 
 Examples:
 
-- an object first seen as work material becomes cultivation-relevant
-- a repeated assignment reveals resource flow
-- a register mark affects a first-month check
-- a character's earlier hesitation changes later opportunity
-- a timing detail from a lesson changes how a false sensation is understood
+- an object first seen as local material becomes relevant to the primary genre promise
+- a repeated assignment reveals resource or information flow
+- a record mark affects a later evaluation, risk, or public status
+- a character's earlier hesitation changes a later opportunity
+- a timing detail changes how a false sensation, false clue, or false conclusion is understood
 
 ## Decision Rule
 
@@ -150,6 +177,7 @@ Mark REVISE if:
 - the chapter is mainly a morning-noon-evening log
 - physical details are repeated without state change
 - side characters state emotions too directly too often
+- local progress does not affect the declared primary genre promise
+- opening chapters require wiki knowledge to be readable
 - low-anchor phrases carry important meaning
-- work-related progress does not affect cultivation pressure
 - the chapter only extends a chain and does not strengthen the broader web
