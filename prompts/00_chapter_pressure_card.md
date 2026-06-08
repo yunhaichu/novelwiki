@@ -24,6 +24,28 @@ Write:
 The protagonist wants X, but pressure Y makes every attempt risky. By the end, their state must move toward Z.
 ```
 
+## Control-Based Chapter Principle
+
+A chapter should usually change what the protagonist can understand, influence, protect, threaten, hide, or choose.
+
+Do not make the chapter's progress depend only on:
+
+- the protagonist becoming stronger;
+- the protagonist being abused again;
+- the protagonist receiving a convenient gift;
+- an enemy making a foolish mistake for plot convenience.
+
+For a control-based protagonist, each chapter should ask one of these:
+
+```text
+What can the protagonist notice that others miss?
+What can they influence without openly controlling it?
+What rule, fear, incentive, relationship, or object can they use?
+What do they fail to control?
+What cost do they accept to preserve a more important condition?
+When would direct action be justified?
+```
+
 ## Inputs
 
 Read:
@@ -45,13 +67,18 @@ Current state before chapter:
 Chapter pressure question:
 Protagonist immediate desire:
 Main constraint:
+What the protagonist can control at start:
+What the protagonist cannot control yet:
+What the protagonist may influence indirectly:
 What must not be easy:
 State direction by chapter end:
+Control change by chapter end:
 Possible pressure sources:
 Characters likely to act:
 Objects or rules in play:
 Information boundaries:
 Forbidden answers:
+Force / restraint / deception / retreat / direct action question:
 What should remain open:
 ```
 
@@ -77,9 +104,37 @@ Example:
 The protagonist should be in a narrower and more dangerous position, but should learn something true about the local system.
 ```
 
+### Control change by chapter end
+
+Define what changes in the protagonist's control, not the exact event.
+
+Examples:
+
+```text
+They gain one true piece of information.
+They become noticed by one person.
+They lose an easy retreat path.
+They learn one rule that can later be used.
+They influence someone indirectly but create suspicion.
+```
+
 ### Possible pressure sources
 
 List possible sources, not mandatory events.
+
+### Force / restraint / deception / retreat / direct action question
+
+State what mode of action the chapter pressure may test.
+
+Do not decide the answer.
+
+Examples:
+
+```text
+Is this a chapter where restraint is wiser than force?
+Is this a chapter where deception creates short-term safety but long-term suspicion?
+Is this a chapter where direct action is necessary because waiting would lose the key condition?
+```
 
 ### Forbidden answers
 
@@ -91,6 +146,8 @@ Examples:
 - no instant power-up
 - no convenient stranger rescue
 - no perfect lie that works cleanly
+- no repeated passive suffering without information or leverage
+- no pure force solution unless the pressure question justifies it
 
 ## Rules
 
@@ -100,6 +157,8 @@ Examples:
 - Do not decide the chapter hook.
 - The answer must emerge from multi-agent simulation.
 - If the pressure question has an obvious easy answer, revise the pressure card.
+- Avoid both pure power escalation and passive suffering as default chapter engines.
+- The chapter should change control, information, leverage, relationship, risk, or available choices.
 
 ## Output
 
