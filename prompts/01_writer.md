@@ -7,6 +7,9 @@ Use this prompt to draft the next chapter of any novel in this repository.
 Read the current novel wiki before writing:
 
 - project direction
+- current project outline
+- current volume outline
+- current beat plan
 - current arc outline or chapter roadmap
 - approved chapter brief for this chapter
 - opening design or golden-three design when writing chapters 1-3 or a new major opening
@@ -16,11 +19,12 @@ Read the current novel wiki before writing:
 - protagonist file
 - planned character files
 - relevant world, location, item, or relationship files
+- story bible / world state if present
 - previous chapter state
 - continuity files, including body state if present
 - relevant open questions
 
-Do not write a new chapter if the current novel has no usable arc outline or near-term chapter roadmap. Create or update the outline first.
+Do not write a new chapter if the current novel has no usable project outline, volume outline, and near-term beat plan. Create or update those first.
 
 Do not write chapters 1-3 of a new story or major opening if there is no usable opening design or golden-three design. Create or update the opening design first.
 
@@ -37,10 +41,11 @@ Expected characters:
 Expected locations:
 Expected objects:
 Relevant open questions:
-Arc beat being served:
+Project / volume / beat being served:
 Opening/golden-three beat if applicable:
 Approved chapter brief:
 Glossary terms likely to appear:
+Story bible / world-state files read:
 Continuity/body-state files read:
 Files read:
 ```
@@ -123,19 +128,31 @@ The chapter should answer a reader motivation, not only repay pressure.
 
 The visible gain can be small, but it must change position, access, information, treatment, relationship, leverage, or next-step possibility.
 
-## Cultivation Conversion Ledger
+## Main-System Conversion Ledger
 
 Before drafting, decide:
 
 ```text
-Work/status event if any:
-Cultivation-relevant conversion:
-Three-month deadline relevance:
-What changes in protagonist practice:
+Genre / story engine:
+Work/status/event if any:
+Main-system relevance:
+Deadline or long-term pressure relevance:
+What changes in protagonist method, resource, position, knowledge, or relationship:
 What remains unsolved:
 ```
 
-Do not let work-related status replace cultivation relevance.
+Do not let local status or daily process replace the novel's main promise.
+
+Examples:
+
+```text
+cultivation: resource access, rule understanding, qi/power progress, sect survival
+urban: money, reputation, career leverage, relationship consequence, legal/social pressure
+science fiction: anomaly proof, technical limit, rule discovery, human cost
+officialdom/politics: position, procedure, alliance, policy risk, reputation
+farming/management: resource chain, production, land, market, community defense
+mystery: clue, contradiction, suspect relation, proof chain
+```
 
 ## Emotional Ledger
 
