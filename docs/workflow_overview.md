@@ -8,6 +8,7 @@ The workflow is staged. Each stage produces an inspectable artifact before prose
 
 ```text
 Project Scope
+→ Type Contract
 → Outline Generation
 → Outline Review
 → Volume Planner
@@ -16,10 +17,11 @@ Project Scope
 → Beat Review
 → Story Bible Builder
 → Story Bible Review
-→ Chapter Brief
+→ Reader Entry Gate / Opening Chapter Brief for openings
+→ Chapter Brief for ordinary chapters
 → Brief Review
 → Chapter Draft
-→ Chapter Review
+→ Chapter Review with Reader Hard Gates
 → Revision
 → Chapter State / Story Bible Update
 → Evaluation / Failure Library Update
@@ -46,6 +48,21 @@ Novel-specific files live in:
 ```text
 novels/<novel_id>/wiki/
 ```
+
+## Stage 0.5: Type Contract
+
+Planned files:
+
+```text
+prompts/00_type_contract.md
+governance/type_contract_review.md
+```
+
+Purpose:
+
+Define the reader-facing type promise before outline, beat, and chapter drafting.
+
+The type contract must state the primary genre, secondary genre if any, primary reader promise, expected opening payoff, forbidden false promises, and type drift risks.
 
 ## Stage 1: Project Outline
 
@@ -88,7 +105,7 @@ Purpose:
 
 Generate 10-chapter or approved-range beat tables.
 
-Each beat must identify state change, relationship change, reader reward, main-system progress, cost, and hook.
+Each beat must identify state change, relationship change, reader reward, main-system progress, cost, hook, consequence chain, and conflict escalation.
 
 ## Stage 4: Story Bible
 
@@ -114,7 +131,26 @@ objects / clues / resources
 open questions
 ```
 
-## Stage 5: Chapter Brief
+The story bible supports long-form consistency. It should not cause opening chapters to expose every known fact.
+
+## Stage 5a: Reader Entry Gate / Opening Brief
+
+Planned files:
+
+```text
+prompts/00_reader_entry_gate.md
+governance/reader_entry_review.md
+prompts/02_opening_chapter_brief.md
+governance/opening_chapter_brief_review.md
+```
+
+Purpose:
+
+Use this for chapter 1-3, new volume openings, new major arc openings, or first appearances of major new systems.
+
+The gate must verify that a first-time reader can identify the protagonist, immediate trouble, protagonist desire, stake, and reason to continue.
+
+## Stage 5b: Normal Chapter Brief
 
 Files:
 
@@ -125,11 +161,11 @@ governance/chapter_brief_review.md
 
 Purpose:
 
-Create a pre-draft gate for each chapter.
+Create a pre-draft gate for ordinary chapters.
 
 The brief must pass before prose drafting begins.
 
-It must align with project outline, volume plan, chapter beat, story bible, reward engine, and contradiction risk.
+It must align with project outline, volume plan, chapter beat, story bible, reward engine, consequence chain, conflict escalation, and contradiction risk.
 
 ## Stage 6: Chapter Draft
 
@@ -141,9 +177,11 @@ prompts/01_writer.md
 
 Purpose:
 
-Write prose only after outline, volume plan, beat table, story bible, and chapter brief exist.
+Write prose only after outline, volume plan, beat table, story bible, and the appropriate chapter brief exist.
 
 The writer must not invent new canon facts without logging the need for updates.
+
+For openings, readable entry takes priority over setting completeness.
 
 ## Stage 7: Chapter Review
 
@@ -155,7 +193,9 @@ prompts/04_review_hook.md
 
 Purpose:
 
-Check draft against approved brief, beat, volume, project outline, story bible, reward engine, contradiction checks, style banlist, and failure library.
+Check draft against reader entry, primary genre promise, approved brief, beat, volume, project outline, story bible, reward engine, contradiction checks, style banlist, and failure library.
+
+Reader-entry failure is a hard failure even if brief alignment passes.
 
 Decision:
 
@@ -174,9 +214,21 @@ prompts/03_revision.md
 
 Purpose:
 
-Repair failed drafts through minimal necessary change.
+Repair failed drafts through the appropriate revision mode.
 
-Do not regenerate everything unless the review says the structure itself failed.
+Ordinary failure:
+
+```text
+minimal sufficient repair
+```
+
+Opening failure:
+
+```text
+structural rewrite allowed
+```
+
+Do not force minimal line repair when the reader entry or opening structure itself failed.
 
 ## Stage 9: Evaluation
 
@@ -214,6 +266,11 @@ direct emotion dialogue
 repeated work-payoff loop
 genre promise drift
 character function loop
+reader entry failure
+type promise unclear
+consequence chain failure
+conflict escalation failure
+AI-taste summary ending
 ```
 
 If a new draft repeats a known failure, mark REVISE unless the approved brief explicitly allows it for a controlled reason.
@@ -225,10 +282,12 @@ The system should not rely on one magical prompt.
 It should rely on inspectable artifacts:
 
 ```text
+type contract
 outline
 volume plan
 beat table
 story bible
+reader entry gate
 chapter brief
 chapter draft
 review log
@@ -241,4 +300,10 @@ Each artifact reduces one class of failure.
 
 ## Current Priority
 
-The next useful test is to create a new novel instance and run the complete pipeline from project outline to chapter 1 draft.
+Follow the canonical development plan:
+
+```text
+docs/development_plan.md
+```
+
+The next useful work is to implement the reader-entry workflow upgrade in the order specified there.
