@@ -1,6 +1,6 @@
 # Outline Review Gate
 
-Use this after generating or revising a project outline and before creating chapter beats.
+Use this after generating or revising a project outline and before creating volume plans or chapter beats.
 
 ## Decision
 
@@ -74,13 +74,25 @@ The outline must have:
 
 Mark REVISE if all suspense is delayed to the ending.
 
-### 7. Genre/System Relevance
+### 7. Main Genre Promise
 
-The story engine must connect to the genre's main promise.
+The story engine must connect to the declared main genre promise.
 
-For cultivation fiction, each volume must include progress toward cultivation, resource access, rule understanding, or survival inside the cultivation system.
+The outline must define what counts as progress for this specific project.
 
-Mark REVISE if the outline creates only workplace or daily-life progress while the declared main genre is cultivation.
+Examples:
+
+```text
+cultivation: power, resources, rule understanding, survival in sect/system
+urban: money, status, relationship, career, reputation, legal/social pressure
+science fiction: anomaly proof, rule discovery, technical constraint, human cost
+mystery: clue, contradiction, suspect relation, proof chain
+romance: relationship movement, emotional risk, intimacy, commitment, repair
+farming/management: resource chain, production, land, community, defense, market access
+political/officialdom: position, alliance, procedure, policy risk, reputation
+```
+
+Mark REVISE if the outline pays only a side promise while ignoring the declared main promise.
 
 ### 8. Drift Risk
 
@@ -94,6 +106,7 @@ Common drifts:
 - protagonist solving too cleanly
 - side characters becoming fixed functions
 - low-anchor terms becoming fake worldbuilding
+- side genre overtaking the main genre promise without compensation
 
 ## Output Format
 
@@ -106,7 +119,7 @@ Scores:
 - Hook strength:
 - Goal clarity:
 - Relationship tension:
-- System relevance:
+- Main genre promise relevance:
 - Expansion capacity:
 - Consistency risk:
 
