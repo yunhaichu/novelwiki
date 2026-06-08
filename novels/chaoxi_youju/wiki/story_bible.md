@@ -6,7 +6,7 @@ chaoxi_youju
 
 ## Canon Version
 
-v0.1 planning canon before chapter drafting.
+v0.2 after chapter 001.
 
 ## Main Genre Promise
 
@@ -18,7 +18,7 @@ Lin Zhao receives a future-dated letter that predicts a disaster. To act on it, 
 
 ## Current Volume Goal
 
-Volume 1: prove the first tide letter, alter the South Levee bus incident, show a specific memory cost, and connect Lin Qiming's old case to missing water-level data.
+Volume 1: prove the first future-dated letter, alter the South Levee bus incident, show a specific memory cost, and connect Lin Qiming's old case to missing water-level data.
 
 ## Confirmed Facts
 
@@ -26,51 +26,65 @@ Volume 1: prove the first tide letter, alter the South Levee bus incident, show 
 
 Statement: The old postal center is closing and its data will be transferred to a commercial logistics platform.
 
-Source: Project outline / Volume 1 plan.
+Source: Chapter 001.
 
-First confirmed in: pre-draft outline.
+First confirmed in: Chapter 001.
 
-Status: planning canon.
+Status: confirmed canon.
 
 ### F002
 
 Statement: Lin Zhao works in the old postal sorting system and is present during the closure shift.
 
-Source: Project outline.
+Source: Chapter 001.
 
-First confirmed in: pre-draft outline.
+First confirmed in: Chapter 001.
 
-Status: planning canon.
+Status: confirmed canon.
 
 ### F003
 
-Statement: A future-dated dead letter addressed to Lin Zhao predicts a South Levee bus incident at 17:40 the next day.
+Statement: A future-dated dead letter addressed to Lin Zhao predicts a South Levee bus incident at 17:40 on 2028-07-13.
 
-Source: Project outline / Beat 001.
+Source: Chapter 001.
 
-First confirmed in: chapter 001 target.
+First confirmed in: Chapter 001.
 
-Status: planned canon.
+Status: confirmed canon.
 
 ### F004
 
-Statement: The old sorting machine can read a second stamp layer that the new platform scanner cannot.
+Statement: The old sorting machine can produce or read additional postmark information connected to the first future-dated letter.
 
-Source: Project outline / Beat 002.
+Source: Chapter 001.
 
-First confirmed in: chapter 002 target.
+First confirmed in: Chapter 001.
 
-Status: planned canon.
+Status: partially confirmed canon.
+
+Note: The full rule that platform scanners cannot read this layer remains planned for Chapter 002 and is not yet confirmed in prose.
 
 ### F005
 
-Statement: Lin Qiming, Lin Zhao's father, was accused in an old case involving falsified postal route data.
+Statement: Lin Qiming, Lin Zhao's father, has an old case that still affects how Qin Man and Lin Zhao behave.
 
-Source: Project outline.
+Source: Chapter 001.
 
-First confirmed in: pre-draft outline.
+First confirmed in: Chapter 001.
 
-Status: planning canon.
+Status: partially confirmed canon.
+
+Note: The specific accusation involving falsified postal route data remains planning canon, not yet confirmed in prose.
+
+### F006
+
+Statement: Qin Man wants to avoid audit trouble and protect his platform job.
+
+Source: Chapter 001.
+
+First confirmed in: Chapter 001.
+
+Status: confirmed canon.
 
 ## World / System Rules
 
@@ -78,23 +92,23 @@ Status: planning canon.
 
 Rule: Some letters appear in the old postal system with future dates and event warnings.
 
-Limit: Volume 1 confirms only the first letter. Full origin is unknown.
+Limit: Chapter 001 confirms only one letter addressed to Lin Zhao. Full origin is unknown.
 
-Cost: Acting on/changing the warning may cause specific memory loss, but this is not shown until later.
+Cost: Unknown in prose. Planned memory cost must not be mentioned until shown.
 
-First shown in: Chapter 001 target.
+First shown in: Chapter 001.
 
 Exceptions allowed: None before rule expansion.
 
 ### R002: Old Machine Reading Rule
 
-Rule: The old sorting machine can read a second stamp layer that platform scanners cannot.
+Rule: The old sorting machine can react to the first future-dated letter and produce a newly stamped slip.
 
-Limit: It reads stamp information, not full future truth.
+Limit: It has not yet been shown to read a complete hidden layer or to be fully understood.
 
-Cost: Using it creates audit risk and later platform attention.
+Cost: Using or handling the machine creates audit and platform attention risk.
 
-First shown in: Chapter 002 target.
+First shown in: Chapter 001.
 
 Exceptions allowed: none without review.
 
@@ -102,11 +116,11 @@ Exceptions allowed: none without review.
 
 Rule: Changing or using a tide-letter event can remove a specific related memory.
 
-Limit: Cost must be concrete, not vague mood.
+Limit: This is planned but not yet shown in prose.
 
 Cost: Loss of recall about a person, date, route, or event.
 
-First shown in: Chapter 009 target.
+First shown in: planned Chapter 009.
 
 Exceptions allowed: none in Volume 1.
 
@@ -126,9 +140,9 @@ Inner need: stop defining himself through institutional disgrace.
 
 Flaw / decision bias: trusts old evidence more than living people; hesitates to ask for help.
 
-Current state: closing-shift worker before chapter 001.
+Current state: possesses the first future-dated letter and the second slip after Chapter 001.
 
-Knowledge state: knows father case damaged family reputation; does not know tide letters are real.
+Knowledge state: knows the letter predicts South Levee bus incident at 2028-07-13 17:40; does not know whether it is real or who sent it.
 
 ### C002: Song Zhiyao
 
@@ -144,7 +158,7 @@ Inner need: learn that data systems can be incomplete without becoming meaningle
 
 Flaw / decision bias: over-trusts clean dashboards and underestimates human archival traces.
 
-Current state: not yet introduced in chapter 001.
+Current state: not yet introduced in prose.
 
 Knowledge state: does not know Lin Zhao or the first letter yet.
 
@@ -162,9 +176,9 @@ Inner need: decide whether survival means compliance or loyalty.
 
 Flaw / decision bias: avoids risk until the risk reaches his own name.
 
-Current state: present around platform transfer.
+Current state: present during Chapter 001 closure shift; sees Lin Zhao hide something.
 
-Knowledge state: may witness Lin Zhao hiding the first letter but does not know meaning.
+Knowledge state: knows Lin Zhao opened a risky tray and concealed a letter; does not know the letter's full contents.
 
 ### C004: Xu He
 
@@ -180,9 +194,9 @@ Inner need: treats public memory as data asset; not framed as simple villain.
 
 Flaw / decision bias: converts every public risk into platform leverage.
 
-Current state: appears through platform actions before direct confrontation.
+Current state: appears through platform transfer pressure only; not yet directly introduced in prose.
 
-Knowledge state: does not know Lin Zhao has the letter at start.
+Knowledge state: does not know Lin Zhao has the letter at Chapter 001 end.
 
 ### C005: Lin Qiming
 
@@ -198,7 +212,7 @@ Inner need: unknown.
 
 Flaw / decision bias: unknown.
 
-Current state: deceased; active through records and memory.
+Current state: deceased; active through references and future records.
 
 Knowledge state: unknown.
 
@@ -220,7 +234,7 @@ Surface relation: coworkers.
 
 Hidden tension: Lin Zhao wants to preserve old truth; Qin Man wants to survive the transfer.
 
-Current state: uneasy workplace proximity.
+Current state: Qin Man notices Lin Zhao hiding something and warns him not to drag him into audit trouble.
 
 Expected change: coworker -> uncertain variable -> possible reluctant helper.
 
@@ -240,7 +254,7 @@ Surface relation: son and disgraced dead father.
 
 Hidden tension: Lin Zhao resents the inherited disgrace but needs the father's records to understand the present.
 
-Current state: unresolved resentment.
+Current state: father case is emotionally active but factually unclear in prose.
 
 Expected change: resentment -> uncertainty -> partial understanding.
 
@@ -248,69 +262,69 @@ Expected change: resentment -> uncertainty -> partial understanding.
 
 ### T001
 
-Event: Old postal center closure shift.
+Event: Final night shift at the old postal center.
 
-Chapter / scene: Chapter 001 target.
+Chapter / scene: Chapter 001.
 
-Time marker: night before predicted South Levee incident.
+Time marker: night before 2028-07-13.
 
-Location: old postal center sorting floor.
+Location: old postal center sorting hall.
 
-Cause: platform transfer.
+Cause: platform transfer scheduled for the next morning.
 
-Result: Lin Zhao receives first future-dated letter.
+Result: Lin Zhao receives the future-dated letter and second slip.
 
-Known by: Lin Zhao; possibly Qin Man partially.
+Known by: Lin Zhao; Qin Man partly notices abnormal behavior.
 
 ### T002
 
-Event: Predicted South Levee bus incident.
+Event: predicted South Levee bus incident.
 
-Chapter / scene: Chapters 007-008 target.
+Chapter / scene: predicted in Chapter 001.
 
-Time marker: next day 17:40.
+Time marker: 2028-07-13 17:40.
 
-Location: South Levee bus area.
+Location: South Levee / South Levee Station area.
 
-Cause: unknown; related to old route and water-level data.
+Cause: unknown.
 
-Result: altered public incident.
+Result: not yet occurred.
 
-Known by: Lin Zhao, Song Zhiyao, public authorities after event.
+Known by: Lin Zhao and reader.
 
 ## Foreshadow Register
 
 ### FO001
 
-Planted in: Chapter 001 target.
+Planted in: Chapter 001.
 
-Surface meaning: letter is addressed to Lin Zhao with tomorrow's postmark.
+Surface meaning: a letter addressed to Lin Zhao has tomorrow's postmark and disaster content.
 
-Real meaning: the old postal system can receive or surface event-linked future warnings.
+Real meaning: unknown to reader and protagonist.
 
 Target payoff: Chapters 002, 008, 009.
 
-Status: planned.
+Status: planted.
 
 ### FO002
 
-Planted in: Chapter 002 target.
+Planted in: Chapter 001.
 
-Surface meaning: old sorter reads an extra stamp layer.
+Surface meaning: old sorting machine produces a new slip linked to the letter.
 
-Real meaning: old postal infrastructure preserves tide-time marks.
+Real meaning: old postal equipment reads or reacts to information the platform may not understand.
 
-Target payoff: Chapters 006, 010.
+Target payoff: Chapters 002, 006, 010.
 
-Status: planned.
+Status: planted.
 
 ### FO003
 
-Planted in: Chapter 003 target.
+Planted in: planned Chapter 003.
 
 Surface meaning: Lin Qiming's employee ID appears in a new log.
 
-Real meaning: father case is tied to current tide-letter sequence.
+Real meaning: father case is tied to current future-dated letter sequence.
 
 Target payoff: Chapters 009-010, later volumes.
 
@@ -318,41 +332,43 @@ Status: planned.
 
 ## Objects / Clues / Resources
 
-### O001: First Tide Letter
+### O001: First Future-Dated Letter
 
 Name: first future-dated dead letter.
 
-Current holder: Lin Zhao after chapter 001 target.
+Current holder: Lin Zhao.
 
-Status: planned central clue.
+Status: opened and hidden in Lin Zhao's work uniform inner pocket.
+
+Known content: predicts South Levee bus, 2028-07-13, 17:40, thirty-seven people falling into water.
 
 Rule relevance: tests future-dated warning, old postmark, and later memory cost.
 
-First seen in: Chapter 001 target.
+First seen in: Chapter 001.
 
 ### O002: Old Sorting Machine
 
 Name: old sorting machine.
 
-Current holder/location: old postal center.
+Current holder/location: old postal center sorting hall.
 
-Status: active before platform transfer.
+Status: active enough to produce a second slip after Lin Zhao returns tray 7.
 
-Rule relevance: reads second stamp layer.
+Rule relevance: reacts to future-dated letter; planned to read a second postmark layer.
 
-First seen in: Chapter 001/002 target.
+First seen in: Chapter 001.
 
 ### O003: South Levee Route Card
 
 Name: old route card marked South Levee.
 
-Current holder: Lin Zhao after chapter 003 target.
+Current holder: planned Lin Zhao after chapter 003 target.
 
 Status: planned clue.
 
 Rule relevance: connects old postal route to modern bus incident.
 
-First seen in: Chapter 003 target.
+First seen in: planned Chapter 003.
 
 ### O004: Missing Water-Level Data Segment
 
@@ -364,13 +380,27 @@ Status: planned clue.
 
 Rule relevance: connects present incident to father case.
 
-First seen in: Chapter 009 target.
+First seen in: planned Chapter 009.
+
+### O005: Second Slip
+
+Name: second slip produced by old sorting machine.
+
+Current holder: Lin Zhao.
+
+Status: newly produced in Chapter 001.
+
+Known content: postmark dated 2028-07-13; line says South Levee Station, before 17:40.
+
+Rule relevance: gives a second, more specific location/time clue without explaining the full mechanism.
+
+First seen in: Chapter 001.
 
 ## Open Questions
 
 ### Q001
 
-Question: Who or what sends the tide letters?
+Question: Who or what sends the future-dated letters?
 
 Scope: longterm.
 
@@ -390,7 +420,7 @@ Risk if ignored: father case becomes empty backstory.
 
 ### Q003
 
-Question: Why does changing a tide-letter event cost memory?
+Question: Why does changing a future-dated letter event cost memory?
 
 Scope: longterm.
 
@@ -407,3 +437,23 @@ Scope: midterm.
 Target answer window: late Volume 1 / Volume 2.
 
 Risk if ignored: antagonist becomes omniscient or flat.
+
+### Q005
+
+Question: How did tray 7 move while its seal remained intact?
+
+Scope: immediate.
+
+Target answer window: Chapter 002-003 partial investigation.
+
+Risk if ignored: first anomaly feels like mood rather than evidence.
+
+### Q006
+
+Question: What exactly did Qin Man see, and will he report or conceal it?
+
+Scope: immediate.
+
+Target answer window: Chapter 002-006.
+
+Risk if ignored: Qin Man becomes a static coworker instead of a pressure source.
