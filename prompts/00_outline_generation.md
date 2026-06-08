@@ -2,7 +2,7 @@
 
 Use this prompt before chapter briefs and prose drafting.
 
-The goal is not to write prose. The goal is to create a structured outline that can control later chapter briefs.
+The goal is not to write prose. The goal is to create a structured outline that can control later chapter briefs for any novel project.
 
 ## Required Inputs
 
@@ -41,6 +41,8 @@ Core relationship matrix:
 Volume 1 goal:
 Volume 1 end state:
 Volume 1 required beats:
+Main genre promise:
+Main-system progress type:
 Consistency risks:
 Forbidden drift:
 ```
@@ -55,6 +57,20 @@ Forbidden drift:
 - Every major setting rule must change a character choice.
 - Every core relationship must include surface relation and hidden tension.
 - Long-term mysteries must be distributed into immediate, midterm, and longterm layers.
+- Define what counts as progress for the selected genre.
+
+## Genre Progress Examples
+
+Use the selected project's genre, not these examples blindly.
+
+```text
+cultivation: power, resources, rule understanding, survival in sect/system
+urban: money, status, relationship, career, reputation, legal/social pressure
+science fiction: anomaly proof, rule discovery, technical constraint, human cost
+officialdom/politics: position, alliance, policy obstacle, reputation, procedural risk
+farming/management: land/resource, production chain, community, defense, market access
+mystery: clue, suspect relation, contradiction, hidden motive, proof chain
+```
 
 ## Evaluation Fields
 
@@ -64,7 +80,7 @@ Also include:
 Hook strength:
 Goal clarity:
 Relationship tension:
-Cultivation / career / main-system relevance:
+Main genre promise relevance:
 Expansion capacity:
 Biggest risk:
 ```
