@@ -12,6 +12,24 @@ It should not prescribe exact scenes or solutions.
 
 The volume is a medium-strength boundary: stronger than a scene prompt, weaker than a plot outline.
 
+## Control-Based Volume Principle
+
+If the novel spine uses a control-based protagonist engine, the volume should not measure progress only by strength, rank, or suffering endured.
+
+Track how the protagonist's control changes.
+
+Examples of control progress:
+
+- understands one local rule;
+- gains one small piece of leverage;
+- influences one person;
+- makes an opponent misread them;
+- turns a hostile action into useful information;
+- learns when not to act;
+- acts directly when waiting would lose the key condition.
+
+Pressure should make the protagonist more alert, better positioned, or more dangerous in a specific way. It should not become repeated passive abuse.
+
 ## Inputs
 
 Read:
@@ -34,6 +52,15 @@ End state:
 Main pressure of this volume:
 Primary state change:
 Secondary state changes:
+Control state at start:
+Control state at end:
+New leverage that may emerge:
+New rule or pattern the protagonist may learn:
+Relationship influence likely to change:
+Opponent misread or system misread likely to emerge:
+Force moment if any:
+Main risk of power inflation:
+Main risk of passive suffering:
 Key forces in conflict:
 Resources available at start:
 Resources that may emerge:
@@ -71,6 +98,44 @@ Example:
 disposable -> minimally useful
 ```
 
+### Control state at start / end
+
+Name what the protagonist can and cannot influence.
+
+Example:
+
+```text
+Start: can only react and hide.
+End: can influence one low-ranking ally and one local rule.
+```
+
+### New leverage that may emerge
+
+Leverage should be specific but not predetermined.
+
+Examples:
+
+- someone owes the protagonist;
+- a route pattern;
+- a repeated office rule;
+- a token;
+- a witness;
+- a small reputation;
+- a known fear;
+- a documented inconsistency.
+
+### Force moment if any
+
+A volume may include direct action.
+
+Do not force it, but if the volume needs a direct action moment, define what kind of situation would justify it.
+
+Example:
+
+```text
+If hesitation would cause immediate loss of the key condition, the protagonist should act directly.
+```
+
 ### Key forces in conflict
 
 List forces, not scripted events.
@@ -102,6 +167,9 @@ Do not pre-answer all of them.
 - Do not assign fixed twists.
 - Do not define exact scene endings.
 - Keep the volume pointed toward the novel spine.
+- Track control growth as state change, not as guaranteed victories.
+- Avoid using repeated suffering as the main measure of progress.
+- Avoid using pure strength growth as the only measure of progress.
 - Leave room for multi-agent scene simulation.
 
 ## Output
