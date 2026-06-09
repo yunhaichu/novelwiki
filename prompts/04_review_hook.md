@@ -7,6 +7,8 @@ Use this prompt after a chapter draft is written and before chapter state is cre
 Read:
 
 - the chapter draft
+- the approved reader entry gate when reviewing an opening chapter
+- the approved opening chapter brief or normal chapter brief if present
 - the current novel project file
 - the current novel base settings file if present
 - the current novel style file
@@ -24,9 +26,29 @@ Return one of:
 - ALLOW
 - REVISE
 
+Do not use ambiguous pass language such as `mostly yes`, `basically okay`, or `acceptable but unclear` for hard gates.
+
+For hard gates, the answer is either pass or fail. If a gate is partial, mark `REVISE`.
+
 ## Checks
 
-Check main drive, wiki consistency, base-setting consistency, knowledge boundaries, character behavior, authority and process boundaries, resource and object support, style, long-form direction, and anti-AI taste.
+Check main drive, reader entry, wiki consistency, base-setting consistency, knowledge boundaries, character behavior, authority and process boundaries, resource and object support, style, long-form direction, reader itch, and anti-AI taste.
+
+## Hard Reader-Entry Checks
+
+Apply to chapter 1, chapters 1-3, volume openings, and major arc openings.
+
+Mark `REVISE` if any answer is not clearly yes:
+
+1. A first-time target reader can identify the protagonist in the first 500 words.
+2. The protagonist has a visible immediate desire.
+3. The immediate trouble is present on the page.
+4. The cost of no action is concrete.
+5. The protagonist makes or approaches one active choice.
+6. The choice creates or threatens a visible consequence.
+7. The reader itch is concrete and tied to protagonist pressure.
+8. The one-sentence recap can be stated in ordinary language.
+9. No blocking setting gap remains unresolved.
 
 ## Hard Base-Setting Checks
 
@@ -47,6 +69,12 @@ Check main drive, wiki consistency, base-setting consistency, knowledge boundari
 
 6. Knowledge boundary.
    If reader knowledge, protagonist knowledge, other-character knowledge, and institution-verifiable facts are mixed together, mark REVISE.
+
+## Process Exposition Check
+
+Mark `REVISE` if process rules are explained in consecutive blocks without being forced by action, refusal, disabled option, message, warning prompt, record contradiction, or consequence.
+
+Process details should be carried by visible friction.
 
 ## Hard Anti-AI Checks
 
@@ -78,6 +106,17 @@ Decision: ALLOW / REVISE
 
 Main reason:
 
+Reader-entry hard gates:
+- Protagonist identifiable:
+- Visible immediate desire:
+- Immediate trouble:
+- Cost of no action:
+- Active choice:
+- Visible consequence:
+- Reader itch:
+- One-sentence recap:
+- Blocking gaps:
+
 Base-setting check:
 - Reference-setting misuse:
 - Authority issue:
@@ -86,12 +125,13 @@ Base-setting check:
 - Power / anomaly issue if any:
 - Knowledge boundary issue:
 
-Story check:
+Story movement check:
 - Main drive:
 - Long-form movement:
 - Concrete memory point:
 
 Style / anti-AI check:
+- Process exposition:
 - Adjacent template reuse:
 - Ending over-summary:
 - Other issue:
