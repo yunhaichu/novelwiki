@@ -15,11 +15,12 @@ convergence object / person / route / room / risk
 + multiple limited viewpoints
 + each actor's local goal
 + each actor's misread
++ environmental modulation of each actor's default behavior
 + physical action collision
 + visible consequence
 ```
 
-Each character acts from what they see, hear, think, want, fear, and misunderstand.
+Each character acts from what they see, hear, think, want, fear, misunderstand, and can physically do under current environmental variables.
 
 The scene becomes story when those actions meet at the same person, object, route, decision, or risk point.
 
@@ -30,6 +31,7 @@ Read:
 - emergent chapter design;
 - dramatic arena;
 - actor cognition cards;
+- character behavior models if available;
 - character expression cards;
 - current character wiki files;
 - current chapter pressure;
@@ -61,10 +63,39 @@ Why this point matters to at least two actors:
 Why this point can change the scene if moved, hidden, damaged, taken, protected, or spoken about:
 -
 
+## Environmental Variables
+
+Public or private:
+-
+
+Audience / witnesses:
+-
+
+Power difference between actors:
+-
+
+Risk level: embarrassment / money / job / jail / death / loved one / core secret / other
+-
+
+Escape routes / alternatives:
+-
+
+Known or unknown threat:
+-
+
+Can violence / argument / money / status solve the problem here?
+-
+
+What object or person is protected / threatened:
+-
+
 ## Actor Local Worlds
 
 ### Actor 1
 Character / organization:
+Default behavior mode from wiki:
+What environmental variable changes this default:
+Modulated behavior in this scene:
 What they directly see:
 What they directly hear:
 What they know before entering the scene:
@@ -79,6 +110,9 @@ What they will not say openly:
 
 ### Actor 2
 Character / organization:
+Default behavior mode from wiki:
+What environmental variable changes this default:
+Modulated behavior in this scene:
 What they directly see:
 What they directly hear:
 What they know before entering the scene:
@@ -184,6 +218,8 @@ Mark `REVISE` if:
 - actors do not have distinct local worlds;
 - actors all seem to know the same information;
 - no convergence point exists;
+- no environmental variable changes any actor's default behavior;
+- a character behaves according to a static label instead of current risk, audience, power difference, escape route, or protected object;
 - no person, object, route, access, relationship, or witness changes;
 - the scene could be summarized as `X happens` without losing character-specific behavior;
 - dialogue explains what character action should show;
@@ -198,6 +234,7 @@ If a scene feels distant or AI-flavored, do not add more narration.
 Instead:
 
 - give each actor a more specific local goal;
+- define the environmental variable that changes their default behavior;
 - choose one concrete convergence point;
 - make someone physically move, block, take, hide, refuse, or protect it;
 - make another actor react from their own misread;
