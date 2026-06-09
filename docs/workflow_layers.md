@@ -27,7 +27,7 @@ Required files:
 
 1. `prompts/00_novel_spine.md`
 2. `prompts/00_genre_mode_contract.md`
-3. `prompts/00_genre_operating_model.md` if present
+3. `prompts/00_genre_operating_model.md`
 4. `prompts/00_reality_causal_preflight.md` for first major premise / opening event family
 5. `prompts/00_base_settings_builder.md`
 6. `prompts/00_major_conflict_engine.md`
@@ -256,10 +256,11 @@ Layer 4 light -> Layer 7 -> Layer 8 light -> Layer 9
 Do not draft if any of these are unresolved:
 
 1. Genre mode is unclear.
-2. Base settings for the active novel are missing.
-3. Reality-causal preflight says the core event is unnatural.
-4. The protagonist has no active growth stage.
-5. The chapter has no usable protagonist gain.
-6. The main scene has no convergence point.
-7. The key object has no natural function.
-8. The story relies on system/report/log/status change as climax.
+2. Genre operating model is missing or too vague.
+3. Base settings for the active novel are missing.
+4. Reality-causal preflight says the core event is unnatural.
+5. The protagonist has no active growth stage.
+6. The chapter has no usable protagonist gain.
+7. The main scene has no convergence point.
+8. The key object has no natural function.
+9. The story relies on system/report/log/status change as climax.
