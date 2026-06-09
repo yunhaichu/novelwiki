@@ -1,6 +1,6 @@
 # Character Expression Card Prompt
 
-Use this prompt after initial settings, base settings, major conflict engine, dramatic arena, and actor cognition cards are available.
+Use this prompt after initial settings, base settings, major conflict engine, dramatic arena, actor cognition cards, and character behavior model are available.
 
 The purpose is to define how a character expresses themselves without inventing unsupported personality traits, speech habits, catchphrases, or emotional patterns during drafting.
 
@@ -16,6 +16,7 @@ All expression traits must come from approved sources:
 - approved character wiki files;
 - approved organization / faction wiki files;
 - approved actor cognition cards;
+- approved character behavior models;
 - approved chapter states.
 
 Do not invent speech habits, personality quirks, catchphrases, dialect, humor style, emotional habits, or relationship modes because they sound vivid.
@@ -31,13 +32,24 @@ A character expresses differently depending on:
 ```text
 base personality
 + role / profession
++ environmental variables
 + current pressure
 + relationship with listener
++ power difference
++ audience / public setting
++ risk level
 + what they know
 + what they must hide
 + what they cannot afford
-+ scene environment
++ whether their default behavior works here
 ```
+
+Speech habits are default modes, not permanent outputs.
+
+A blunt person may become careful in front of a life-and-death authority.
+A careless speaker may pause in public if the wrong sentence can harm someone.
+A bully may speak softly when their usual intimidation stops working.
+A timid person may speak sharply when a protected person is threatened.
 
 ## Output Format
 
@@ -69,6 +81,9 @@ Known constraints:
 Known knowledge limits:
 -
 
+Behavior model link / summary:
+-
+
 ## Default Expression Pattern
 
 Default sentence length:
@@ -91,6 +106,42 @@ Default pressure reaction:
 
 Default body / action habits while speaking:
 -
+
+## Environmental Speech Modulation
+
+### Low-risk familiar setting
+Speech shape:
+What relaxes:
+What remains from default:
+
+### High-power listener
+Speech shape:
+What becomes controlled:
+What default habit leaks through:
+
+### Public / watched setting
+Speech shape:
+What becomes controlled:
+What default habit leaks through:
+
+### High punishment risk
+Speech shape:
+What becomes controlled:
+What default habit leaks through:
+
+### Protecting core object / person
+Speech shape:
+What becomes sharper:
+What default habit breaks:
+
+### Facing unknown / anomaly / monster / unmanageable situation
+Speech shape:
+What becomes simpler / shorter / broken:
+What default habit fails:
+
+### When default speech strategy fails
+Second speech strategy:
+Possible breakdown / silence / confession / aggression / retreat:
 
 ## Forbidden Expression
 
@@ -179,15 +230,20 @@ When protecting someone:
 When protecting self-interest:
 -
 
+When default mode breaks:
+-
+
 ## Dialogue Examples
 
 Examples must be source-consistent and short.
 
 Good line:
 Why it fits:
+Which environment applies:
 
 Bad line:
 Why it fails:
+Which environment it ignores:
 
 ## Expression Gaps
 
@@ -204,7 +260,9 @@ Mark `REVISE` if:
 - a voice trait is not grounded in initial settings or wiki;
 - the card gives a catchphrase without source support;
 - the character sounds the same to every listener;
-- the card ignores role, profession, class, rank, or relationship;
+- the character sounds the same in low-risk, high-risk, public, private, authority, and unknown-threat situations;
+- the card ignores role, profession, class, rank, relationship, power difference, audience, or punishment risk;
 - the card lets the character say information outside their knowledge boundary;
-- the card uses abstract labels such as `cold`, `strong`, `smart`, `witty` without showing sentence shape, avoidance pattern, and action habits;
+- the card treats `blunt`, `cowardly`, `strong`, `reckless`, `cold`, `witty`, or similar labels as fixed output rather than default modes modified by environment;
+- the card uses abstract labels such as `cold`, `strong`, `smart`, `witty` without showing sentence shape, avoidance pattern, action habits, and environmental modulation;
 - examples sound like author commentary rather than character speech.
