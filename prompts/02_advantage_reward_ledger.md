@@ -19,40 +19,63 @@ The protagonist is in more danger,
 but owns more leverage than before.
 ```
 
-## Advantage Types
+## Anti Record-Driven Advantage Rule
 
-Usable protagonist advantages include:
+A protagonist advantage must be usable in a scene.
 
-```text
-information
-physical evidence
-record / document
-witness
-relationship
-access
-identity / status
-resource
-route
-permission
-enemy misjudgment
-operational space
-skill / understanding
-leverage over an organization
-```
+Records, reports, logs, archives, case numbers, workflow states, database status, and system prompts do not count by themselves.
 
-Vague emotions or general realizations do not count unless they change the protagonist's next available action.
+A record-based advantage counts only if it immediately changes one of:
 
-Weak advantage:
+- a person’s trust, suspicion, debt, fear, or willingness to help;
+- access to a place, witness, object, or route;
+- control over a physical object;
+- an opponent’s action or misjudgment;
+- a scene’s visible conditions;
+- the protagonist’s next available choice.
 
-```text
-He realizes things are more complicated.
-```
+## Advantage Priority
 
-Strong advantage:
+Use this priority order:
 
-```text
-He learns that the altered ledger uses the same ink seal as the tax office, giving him a specific direction to investigate.
-```
+### Tier 1: Relationship Advantages
+
+- someone starts trusting the protagonist;
+- someone owes the protagonist;
+- someone misjudges the protagonist;
+- someone becomes willing to open a door, delay action, hide someone, or tell a name;
+- a stronger actor must negotiate instead of ignoring the protagonist.
+
+### Tier 2: Physical Object / Witness Advantages
+
+- a damaged object stays in protagonist reach;
+- a witness remains available;
+- a person is prevented from being taken away;
+- a key object is hidden, protected, swapped, preserved, or exposed;
+- a scene trace cannot be removed immediately.
+
+### Tier 3: Access / Operational Space Advantages
+
+- the protagonist gains minutes, route, room access, meeting access, witness access, or a reason to stay;
+- the protagonist makes another actor pause, wait, refuse, or change direction;
+- the protagonist creates a temporary physical or social barrier.
+
+### Tier 4: Information / Evidence Advantages
+
+- a clue, name, contradiction, or fact gives a specific next action;
+- evidence becomes usable through a person, object, or scene condition.
+
+### Tier 5: Record Advantages
+
+- documents;
+- records;
+- reports;
+- logs;
+- case status;
+- database fields;
+- archive entries.
+
+Tier 5 advantages cannot stand alone.
 
 ## Reader Reward Types
 
@@ -92,16 +115,16 @@ Chapter number:
 
 ## Starting Protagonist Assets
 
-Information:
--
-
-Evidence:
--
-
 Relationships:
 -
 
-Access:
+Physical objects / witnesses:
+-
+
+Access / operational space:
+-
+
+Information / evidence:
 -
 
 Identity / status:
@@ -113,7 +136,7 @@ Resources:
 Enemy misjudgments:
 -
 
-Operational space:
+Record-based assets:
 -
 
 ## Chapter Cost
@@ -129,18 +152,21 @@ What safety is reduced?
 
 ## New Protagonist Advantage
 
-The chapter must add at least one.
-
-Information gained:
--
-
-Evidence gained:
--
+The chapter must add at least one Tier 1-4 advantage.
 
 Relationship gained or changed:
 -
 
-Access gained:
+Physical object / witness gained or preserved:
+-
+
+Access / time / route / operational space gained:
+-
+
+Enemy misjudgment gained:
+-
+
+Information / evidence gained:
 -
 
 Identity / status changed:
@@ -149,18 +175,15 @@ Identity / status changed:
 Resource gained:
 -
 
-Enemy misjudgment gained:
--
-
-Operational space expanded:
--
-
 Skill / understanding gained:
+-
+
+Record-based asset gained, if any:
 -
 
 ## Usability Test
 
-How can this advantage change the protagonist's next action?
+How can this advantage change the protagonist's next scene action?
 -
 
 Who else wants this advantage?
@@ -170,6 +193,9 @@ Who is harmed if the protagonist uses it?
 -
 
 What cost comes with using it?
+-
+
+If the advantage is record-based, what person/object/access consequence makes it usable?
 -
 
 ## Reader Reward
@@ -208,7 +234,8 @@ Mark `REVISE` if:
 
 - the protagonist only suffers and gains no usable asset;
 - the only gain is vague insight;
-- the gain cannot affect the next chapter;
+- the only gain is a record, status, case number, report, popup, log, or database entry;
+- the gain cannot affect the next scene;
 - the reader receives only a new mystery;
 - the chapter creates danger but no leverage;
 - the protagonist is rescued by external force without making a meaningful choice;
@@ -220,11 +247,11 @@ Use these patterns to keep emergence satisfying.
 
 ### Small Win, Larger Danger
 
-The protagonist gets evidence, access, or a witness but becomes more exposed.
+The protagonist keeps a witness, object, route, or person available but becomes more exposed.
 
 ### Surface Failure, Hidden Gain
 
-The protagonist seems to lose but preserves a copy, learns a weakness, or causes an enemy to misjudge them.
+The protagonist seems to lose but preserves a person/object clue, learns a usable weakness, or causes an enemy to misjudge them.
 
 ### Local Win, Relationship Cost
 
@@ -246,12 +273,11 @@ Do not record vague mood changes as assets.
 
 Do record:
 
-- documents;
-- clues;
-- names;
-- debts;
-- permissions;
+- people who now trust, suspect, owe, or misjudge the protagonist;
+- physical objects preserved, hidden, damaged, contested, or moved;
+- witnesses still available or lost;
 - access paths;
 - changed suspicions;
 - damaged relationships;
-- new labels other actors attach to the protagonist.
+- new labels other actors attach to the protagonist;
+- documents or records only when they have scene-usable consequences.
