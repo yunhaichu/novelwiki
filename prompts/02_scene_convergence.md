@@ -2,7 +2,7 @@
 
 Use this prompt after emergent chapter design and before scene expression state, dialogue intent, and drafting.
 
-The purpose is to ensure scene plot emerges from multiple characters genuinely acting from their own limited local worlds, rather than from narration explaining the situation.
+The purpose is to ensure scene plot emerges from multiple characters and organizations genuinely acting from their own limited local worlds, rather than from narration explaining the situation.
 
 ## Core Principle
 
@@ -16,11 +16,14 @@ convergence object / person / route / room / risk
 + each actor's local goal
 + each actor's misread
 + environmental modulation of each actor's default behavior
++ organization packaging and embodied agents when organizations act
 + physical action collision
 + visible consequence
 ```
 
 Each character acts from what they see, hear, think, want, fear, misunderstand, and can physically do under current environmental variables.
+
+Each organization acts through agents, packaging language, action ladders, public legitimacy, and responsibility boundaries.
 
 The scene becomes story when those actions meet at the same person, object, route, decision, or risk point.
 
@@ -32,8 +35,10 @@ Read:
 - dramatic arena;
 - actor cognition cards;
 - character behavior models if available;
+- organization behavior models if available;
 - character expression cards;
 - current character wiki files;
+- current organization wiki files;
 - current chapter pressure;
 - previous chapter state if relevant;
 - anti-record-driven plot rules if relevant.
@@ -89,11 +94,21 @@ Can violence / argument / money / status solve the problem here?
 What object or person is protected / threatened:
 -
 
+Which organization needs to preserve public legitimacy here:
+-
+
+Which organization cannot say its real interest aloud:
+-
+
 ## Actor Local Worlds
 
 ### Actor 1
 Character / organization:
 Default behavior mode from wiki:
+Public legitimacy / packaging if organization:
+Real interest if organization:
+Embodied agent if organization:
+Action ladder level if organization:
 What environmental variable changes this default:
 Modulated behavior in this scene:
 What they directly see:
@@ -107,10 +122,15 @@ What they do not know:
 What they can physically do:
 What they will try first:
 What they will not say openly:
+How they package their action if organization:
 
 ### Actor 2
 Character / organization:
 Default behavior mode from wiki:
+Public legitimacy / packaging if organization:
+Real interest if organization:
+Embodied agent if organization:
+Action ladder level if organization:
 What environmental variable changes this default:
 Modulated behavior in this scene:
 What they directly see:
@@ -124,6 +144,7 @@ What they do not know:
 What they can physically do:
 What they will try first:
 What they will not say openly:
+How they package their action if organization:
 
 ### Actor 3
 ...
@@ -136,6 +157,7 @@ Other actor reaction:
 What changes physically:
 What changes in relationship / trust / suspicion:
 Who is forced to choose:
+Organization packaging exposed or challenged:
 
 ### Collision 2
 Actor action:
@@ -143,6 +165,7 @@ Other actor reaction:
 What changes physically:
 What changes in relationship / trust / suspicion:
 Who is forced to choose:
+Organization packaging exposed or challenged:
 
 ## Performance Beats
 
@@ -177,6 +200,12 @@ Which beats should be carried by action, silence, object movement, blocked route
 What must not be explained by dialogue or narration?
 -
 
+Which organization packaging words are allowed here?
+-
+
+Which naked-interest words must not be said openly?
+-
+
 ## Scene Result
 
 Person changed:
@@ -194,6 +223,9 @@ Access / route changed:
 Information changed:
 -
 
+Organization legitimacy / cover changed:
+-
+
 Next forced action:
 -
 
@@ -203,6 +235,9 @@ What should not be summarized by narrator?
 -
 
 What must be shown through character performance?
+-
+
+What must be shown through organization agents instead of abstract organization action?
 -
 
 ## Pass / Fail
@@ -220,10 +255,13 @@ Mark `REVISE` if:
 - no convergence point exists;
 - no environmental variable changes any actor's default behavior;
 - a character behaves according to a static label instead of current risk, audience, power difference, escape route, or protected object;
+- an organization acts as an abstract force without an embodied agent;
+- an organization states naked interest without packaging when it should preserve public legitimacy;
+- an organization jumps action-ladder levels without trigger;
 - no person, object, route, access, relationship, or witness changes;
-- the scene could be summarized as `X happens` without losing character-specific behavior;
+- the scene could be summarized as `X happens` without losing character-specific or organization-specific behavior;
 - dialogue explains what character action should show;
-- one character acts only because the plot needs them to;
+- one character or organization acts only because the plot needs them to;
 - the protagonist gains no scene-usable leverage;
 - the ending is only a realization, mood, or danger without a changed scene condition.
 
@@ -236,6 +274,7 @@ Instead:
 - give each actor a more specific local goal;
 - define the environmental variable that changes their default behavior;
 - choose one concrete convergence point;
+- make organizations act through specific agents and packaging language;
 - make someone physically move, block, take, hide, refuse, or protect it;
 - make another actor react from their own misread;
 - let the scene consequence emerge from that collision.
