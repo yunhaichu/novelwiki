@@ -12,7 +12,7 @@ The repository stores three kinds of material:
 2. Reusable reference settings for genre, authority, process, resource, object, space, social life, and power-system boundaries.
 3. Per-novel canonical wiki, drafts, chapter states, and update records.
 
-ChatGPT is responsible for planning, base-setting construction, writing, revision, review assistance, and generating wiki update drafts. The wiki is responsible for long-term memory. The user remains the final approver.
+ChatGPT is responsible for planning, base-setting construction, writing, revision, review assistance, wiki bootstrap, and wiki sync after approved chapters. The wiki is responsible for long-term memory. The user remains the final approver.
 
 ## Current Workflow Entry
 
@@ -36,7 +36,7 @@ Do not run every prompt for every chapter.
 The current workflow is organized by layer:
 
 ```text
-Layer 1: New Novel Setup
+Layer 1: New Novel Setup + Wiki Bootstrap
 Layer 2: Actor Model Setup
 Layer 3: Volume / Arc Planning
 Layer 4: Chapter Preflight
@@ -44,7 +44,7 @@ Layer 5: Reader Entry / Opening Control
 Layer 6: Scene Design
 Layer 7: Drafting
 Layer 8: Review / Revision
-Layer 9: Canon Update
+Layer 9: Wiki Sync / Canon Update
 ```
 
 For a new novel:
@@ -58,23 +58,77 @@ project scope / type promise
 -> dramatic arena
 -> protagonist growth track
 -> organization and character behavior models
+-> wiki bootstrap
 -> volume / chapter planning
 -> scene convergence
 -> draft
 -> review
--> canon update
+-> wiki sync / canon update
 ```
 
 For a normal later chapter:
 
 ```text
-volume / arc state check
+read current novel wiki
+-> volume / arc state check
 -> reality-causal preflight
 -> emergent chapter design
 -> scene convergence
 -> draft
 -> review
--> canon update
+-> wiki sync / canon update
+```
+
+## Wiki Bootstrap Rule
+
+A new novel must create or update its initial wiki before any chapter draft.
+
+Required prompt:
+
+```text
+prompts/00_wiki_bootstrap.md
+```
+
+Required initial wiki files:
+
+```text
+novels/<novel_id>/wiki/project.md
+novels/<novel_id>/wiki/base_settings.md
+novels/<novel_id>/wiki/style.md
+novels/<novel_id>/wiki/name_registry.md
+novels/<novel_id>/wiki/protagonist_growth.md
+```
+
+Add character, organization, and world files as needed before those actors appear in chapter planning.
+
+Hard rule:
+
+```text
+No wiki bootstrap, no draft.
+```
+
+## Wiki Sync Rule
+
+Every approved chapter must be synchronized into the novel wiki before the next chapter is planned.
+
+Required prompt:
+
+```text
+prompts/05_wiki_sync_after_chapter.md
+```
+
+Always create or update:
+
+```text
+novels/<novel_id>/wiki/chapter_states/chapter_<number>.md
+```
+
+Update character, organization, world, growth, timeline, relationship, foreshadowing, style, and name files only when approved prose confirms new facts.
+
+Hard rule:
+
+```text
+Approved chapter -> wiki sync -> next chapter.
 ```
 
 ## Non-Negotiable Gates
@@ -82,13 +136,22 @@ volume / arc state check
 Do not draft if any of these are unresolved:
 
 1. Genre mode is unclear.
-2. Base settings for the active novel are missing.
-3. Reality-causal preflight says the core event is unnatural.
-4. The protagonist has no active growth stage.
-5. The chapter has no usable protagonist gain.
-6. The main scene has no convergence point.
-7. The key object has no natural function.
-8. The story relies on system/report/log/status change as climax.
+2. Genre operating model is missing or too vague.
+3. Initial wiki bootstrap is missing.
+4. Base settings for the active novel are missing.
+5. Reality-causal preflight says the core event is unnatural.
+6. The protagonist has no active growth stage.
+7. The chapter has no usable protagonist gain.
+8. The main scene has no convergence point.
+9. The key object has no natural function.
+10. The story relies on system/report/log/status change as climax.
+
+Do not plan the next chapter if any of these are unresolved:
+
+1. Approved chapter has no chapter state file.
+2. New confirmed character / organization / world facts were not synchronized.
+3. Next chapter constraints are missing.
+4. The next chapter would need to rely on chat memory rather than wiki state.
 
 ## Repository Layout
 
@@ -113,11 +176,11 @@ docs/
   backups/
 
 prompts/
-  00_*.md   setup / operating model / planning prompts
+  00_*.md   setup / operating model / wiki bootstrap / planning prompts
   01_*.md   drafting prompts
   02_*.md   chapter / scene prompts
   04_*.md   review hooks
-  05_*.md   canon update prompts if present
+  05_*.md   wiki sync / canon update prompts
 
 governance/
   wiki retrieval and write rules
@@ -137,6 +200,7 @@ novels/
       protagonist_growth.md
       characters/
       world/
+      organizations/
       chapter_states/
     drafts/
 ```
