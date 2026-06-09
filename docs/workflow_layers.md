@@ -21,7 +21,7 @@ Files:
 
 Run once per novel, before any chapter planning.
 
-Purpose: define the novel's genre, operating world, base boundaries, macro pressure, major actors, and protagonist growth path.
+Purpose: define the novel's genre, operating world, base boundaries, macro pressure, major actors, protagonist growth path, and initial wiki.
 
 Required files:
 
@@ -33,6 +33,7 @@ Required files:
 6. `prompts/00_major_conflict_engine.md`
 7. `prompts/00_dramatic_arena.md`
 8. `prompts/00_protagonist_growth_track.md`
+9. `prompts/00_wiki_bootstrap.md`
 
 Supporting reference files:
 
@@ -41,7 +42,7 @@ Supporting reference files:
 - selected files under `reference_settings/genre_common/`
 - selected files under `reference_settings/power_system_common/` only if the novel explicitly contains powers, anomalies, or goldfingers.
 
-Outputs should be written under the current novel's own wiki, usually:
+Required wiki outputs:
 
 - `novels/<novel_id>/wiki/project.md`
 - `novels/<novel_id>/wiki/base_settings.md`
@@ -49,6 +50,12 @@ Outputs should be written under the current novel's own wiki, usually:
 - `novels/<novel_id>/wiki/name_registry.md`
 - `novels/<novel_id>/wiki/protagonist_growth.md`
 - organization and character files as needed.
+
+Hard rule:
+
+```text
+No wiki bootstrap, no chapter draft.
+```
 
 ## Layer 2: Actor Model Setup
 
@@ -213,42 +220,48 @@ Do not run every review on every minor scene. Use the review matrix below.
 - `governance/wiki_retrieval_rules.md`
 - `governance/wiki_write_rules.md`
 
-## Layer 9: Canon Update
+## Layer 9: Wiki Sync / Canon Update
 
-Run only after the chapter is approved.
+Run immediately after the chapter is approved and before planning the next chapter.
 
-Files:
+Purpose: synchronize approved prose into the per-novel wiki so the next chapter reads canon rather than relying on chat memory.
 
-- `prompts/05_chapter_state_update.md` if present
-- `governance/chapter_state_update_review.md` if present
-- `governance/wiki_write_rules.md`
+Required files:
 
-If the update prompt/review files are missing, update manually using these rules:
+1. `prompts/05_wiki_sync_after_chapter.md`
+2. `governance/wiki_write_rules.md`
+3. `governance/chapter_state_update_review.md` if present
 
-- write only confirmed facts;
-- distinguish default behavior, environment-modulated behavior, threshold override, one-time exception, and breakdown;
-- distinguish organization policy, local agent choice, escalation, gray action, and one-time emergency response;
-- record protagonist growth only if it is concrete and usable later;
-- do not write speculation or inferred secrets as canon.
+Always create or update:
+
+- `novels/<novel_id>/wiki/chapter_states/chapter_<number>.md`
+
+Update relevant character, organization, world, growth, timeline, relationship, foreshadowing, style, and name files only when approved prose confirms new facts.
+
+Hard rule:
+
+```text
+Approved chapter -> wiki sync -> next chapter.
+```
 
 ## Required Execution Order
 
 For a new novel:
 
 ```text
-Layer 1 -> Layer 2 -> Layer 3 -> Layer 4 -> Layer 5 -> Layer 6 -> Layer 7 -> Layer 8 -> Layer 9
+Layer 1 including wiki bootstrap -> Layer 2 -> Layer 3 -> Layer 4 -> Layer 5 -> Layer 6 -> Layer 7 -> Layer 8 -> Layer 9 wiki sync
 ```
 
 For a normal later chapter:
 
 ```text
-Layer 3 check -> Layer 4 -> Layer 6 -> Layer 7 -> Layer 8 -> Layer 9
+Read wiki -> Layer 3 check -> Layer 4 -> Layer 6 -> Layer 7 -> Layer 8 -> Layer 9 wiki sync
 ```
 
 For a simple low-stakes transition chapter:
 
 ```text
-Layer 4 light -> Layer 7 -> Layer 8 light -> Layer 9
+Read wiki -> Layer 4 light -> Layer 7 -> Layer 8 light -> Layer 9 wiki sync
 ```
 
 ## Non-Negotiable Gates
@@ -257,10 +270,18 @@ Do not draft if any of these are unresolved:
 
 1. Genre mode is unclear.
 2. Genre operating model is missing or too vague.
-3. Base settings for the active novel are missing.
-4. Reality-causal preflight says the core event is unnatural.
-5. The protagonist has no active growth stage.
-6. The chapter has no usable protagonist gain.
-7. The main scene has no convergence point.
-8. The key object has no natural function.
-9. The story relies on system/report/log/status change as climax.
+3. Initial wiki bootstrap is missing.
+4. Base settings for the active novel are missing.
+5. Reality-causal preflight says the core event is unnatural.
+6. The protagonist has no active growth stage.
+7. The chapter has no usable protagonist gain.
+8. The main scene has no convergence point.
+9. The key object has no natural function.
+10. The story relies on system/report/log/status change as climax.
+
+Do not plan the next chapter if any of these are unresolved:
+
+1. Approved chapter has no chapter state file.
+2. New confirmed character / organization / world facts were not synchronized.
+3. Next chapter constraints are missing.
+4. The next chapter would need to rely on chat memory rather than wiki state.
