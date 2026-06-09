@@ -20,6 +20,16 @@ Do not let the governance system force every story into organization-process con
 
 Use `prompts/00_genre_mode_contract.md` before major conflict engine, protagonist growth track, and chapter design.
 
+## Reality-Causal Principle
+
+A plot event must be possible before it can be dramatic.
+
+Every genre has a reality layer: workplace finance, cultivation ecology, sect discipline, court procedure, military logistics, village social order, school rules, criminal procedure, magical law, or something else.
+
+Use `prompts/00_reality_causal_preflight.md` before chapter design to prove that the proposed event, object, time pressure, cost, and institutional action can naturally exist in the genre world.
+
+Do not wait until draft review to discover that a doctor would not appear, a technician would not repair that part, a sect would not run that process, or a protagonist could not physically survive the proposed training.
+
 ## Large Trend / Protagonist Growth Formula
 
 ```text
@@ -76,7 +86,7 @@ Do not make state-level actors directly solve every chapter.
 
 Organization-level forces include sects, companies, bureaus, clans, guilds, merchant houses, military commands, schools, gangs, temples, labs, or local offices.
 
-Use them to transfer state-level pressure into concrete friction, filtered by genre mode. In a workplace story this may be approval, responsibility, access, and evidence. In traditional xianxia this may be technique access, public standing, trial, resource scarcity, lineage, punishment, or dangerous opportunity.
+Use them to transfer state-level pressure into concrete friction, filtered by genre mode and reality-causal preflight. In a workplace story this may be approval, responsibility, access, and evidence. In traditional xianxia this may be technique access, public standing, trial, resource scarcity, lineage, punishment, or dangerous opportunity.
 
 Records, permits, orders, reports, and systems can support this friction, but should not be the main plot carrier unless genre mode explicitly supports that emphasis.
 
@@ -99,34 +109,37 @@ Use these controls:
 1. **Genre Mode Contract**
    Define what this genre should feel like before applying universal plot rules. This decides pressure carriers, growth assets, scene rhythm, and what must not dominate.
 
-2. **Attractors**
-   Define the state the story is moving toward, such as: a neutral bureau collapses, a protagonist becomes a key evidence holder, a hidden old case links to the current crisis, or a faction is forced to publicly choose a side. These attractors must fit the genre mode.
+2. **Reality-Causal Preflight**
+   Prove the local logic of the event before drafting: normal process, actor authority, object function, cost/survival, time pressure, and result attractor.
 
-3. **State Variables**
+3. **Attractors**
+   Define the state the story is moving toward, such as: a neutral bureau collapses, a protagonist becomes a key evidence holder, a hidden old case links to the current crisis, or a faction is forced to publicly choose a side. These attractors must fit the genre mode and preflight.
+
+4. **State Variables**
    Track changes after each chapter, such as protagonist leverage, organization suspicion, faction conflict heat, public trust, evidence strength, relationship trust, access level, and reader-known truth. Choose variables that match the genre.
 
-4. **Pressure Injection Order**
+5. **Pressure Injection Order**
    Decide what kind of pressure enters the arena at each stage: person pressure, object pressure, relationship pressure, resource pressure, field verification, public-face pressure, time pressure, false-cooperation pressure, and only then record pressure when necessary. In traditional xianxia, prioritize cultivation trial, resource scarcity, public standing, technique access, danger, and dao-heart pressure over office-like procedures.
 
-5. **Reaction Rules**
+6. **Reaction Rules**
    Define how each organization or character tends to react under pressure.
 
-6. **Phase Gates**
+7. **Phase Gates**
    Do not let macro conflict escalate too early. Early chapters should use character and organization pressure. State-level action should appear as embodied pressure. The form of embodied pressure should fit the genre.
 
-7. **Protagonist Growth Track**
+8. **Protagonist Growth Track**
    Define the protagonist's controlled growth stages using genre-appropriate growth assets. Each chapter should test the current weakness, impose a cost, grant a usable lever, and prepare the next stage without skipping levels.
 
-8. **Protagonist Advantage Ledger**
+9. **Protagonist Advantage Ledger**
    The protagonist can pay costs, but each chapter should give at least one new usable advantage. The advantage must fit the genre: in xianxia this may be bodily cultivation change, technique clue, minor spiritual object, trial access, senior's attention, combat lesson, public standing, debt, or survival experience.
 
-9. **Reader Reward Ledger**
+10. **Reader Reward Ledger**
    Each chapter should answer or partially answer something, not only add new mysteries.
 
-10. **Anti Record-Driven Plot Gate**
+11. **Anti Record-Driven Plot Gate**
    Ensure the main chapter turn is not a submission, popup, log, report, case number, automatic escalation, or database change unless it immediately causes embodied scene action and genre mode permits that kind of carrier.
 
-11. **Scene Convergence Gate**
+12. **Scene Convergence Gate**
    Ensure every important scene has a convergence point: a person, object, route, room, witness, decision, risk, trial, resource, technique, challenge, or public standing that multiple actors want to move, protect, take, hide, block, expose, or control.
 
 ## Recommended Workflow
@@ -134,6 +147,7 @@ Use these controls:
 ```text
 project scope / type promise
 -> genre mode contract
+-> reality-causal preflight
 -> base settings
 -> major conflict engine
 -> dramatic arena
@@ -151,6 +165,8 @@ project scope / type promise
 -> scene simulation
 -> draft
 -> commercial / anti-record edit pass
+-> reality logic review
+-> object function review
 -> emergent plot review
 -> protagonist growth review
 -> character voice review
@@ -164,13 +180,14 @@ Every chapter should answer these questions:
 
 ```text
 1. Which genre mode is active?
-2. Which major trend is pressing from above?
-3. Which organization or force converts that pressure into genre-appropriate scene action?
-4. Which character is forced into a costly choice?
-5. Which protagonist growth stage is being tested?
-6. What does the protagonist gain, despite the cost?
-7. What does the reader receive as genre-appropriate reward?
-8. Which organization or character must react next?
+2. What reality-causal preflight supports this chapter event?
+3. Which major trend is pressing from above?
+4. Which organization or force converts that pressure into genre-appropriate scene action?
+5. Which character is forced into a costly choice?
+6. Which protagonist growth stage is being tested?
+7. What does the protagonist gain, despite the cost?
+8. What does the reader receive as genre-appropriate reward?
+9. Which organization or character must react next?
 ```
 
 If a chapter produces only danger but no protagonist advantage, revise it.
@@ -186,6 +203,8 @@ If a chapter's scenes require narrator explanation to be understood, revise the 
 If a chapter moves plot but does not move the protagonist along the approved growth track, revise it.
 
 If a chapter's pressure carrier, reward, or growth asset drifts away from genre mode, revise it.
+
+If a chapter event only exists because the author needs it, not because the genre world would naturally allow it, revise it.
 
 ## Scene-Level Rule
 
@@ -225,7 +244,8 @@ Each growth step should be:
 - costly enough to matter;
 - reusable enough to affect later chapters;
 - limited enough to leave the larger trend intact;
-- aligned with genre mode.
+- aligned with genre mode;
+- possible under reality-causal preflight.
 
 ## Frequency Control
 
@@ -290,4 +310,5 @@ Mark the design as weak if:
 - the main plot turn is a system prompt, report, log, case number, database state, or automatic workflow change;
 - scenes are organized by narrator summary rather than local actor actions around a convergence point;
 - protagonist growth is random, unearned, or jumps stages;
-- genre mode is ignored, causing every story to become organization governance, office process, investigation, or evidence-chain fiction.
+- genre mode is ignored, causing every story to become organization governance, office process, investigation, or evidence-chain fiction;
+- reality-causal preflight is skipped, causing implausible institutions, timelines, body costs, object functions, or event triggers.
