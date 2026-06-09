@@ -12,6 +12,7 @@ A scene should be organized by:
 
 ```text
 convergence object / person / route / room / risk
++ scene function in the world
 + multiple limited viewpoints
 + each actor's local goal
 + each actor's misread
@@ -26,6 +27,8 @@ Each character acts from what they see, hear, think, want, fear, misunderstand, 
 Each organization acts through agents, packaging language, action ladders, public legitimacy, and responsibility boundaries.
 
 The scene becomes story when those actions meet at the same person, object, route, decision, or risk point.
+
+If the scene is built around labor, ritual, process, task, exam, mission, repair, medical handling, sect work, business workflow, legal procedure, or institutional routine, the scene must also have a world function. It must produce, recover, sort, protect, transfer, test, consume, hide, or risk something that matters in the world.
 
 ## Required Inputs
 
@@ -53,6 +56,35 @@ Chapter number:
 Scene ID:
 Scene location:
 Source files read:
+
+## Scene Function In World
+
+Does this scene involve labor / ritual / process / task / exam / mission / repair / treatment / sect work / business workflow / institutional routine?
+- yes / no
+
+If yes, what is its practical function in the world?
+-
+
+What does it produce, recover, protect, transfer, test, consume, hide, or risk?
+-
+
+Who needs the result?
+-
+
+Who benefits if it is done correctly?
+-
+
+Who pays if it is done wrong?
+-
+
+Why is this task assigned to characters at this status level?
+-
+
+What visible detail or line of dialogue is enough to reveal this function in prose?
+-
+
+What full explanation should stay in wiki / planning and not enter prose?
+-
 
 ## Convergence Point
 
@@ -226,6 +258,9 @@ Information changed:
 Organization legitimacy / cover changed:
 -
 
+Scene function result changed:
+-
+
 Next forced action:
 -
 
@@ -238,6 +273,9 @@ What must be shown through character performance?
 -
 
 What must be shown through organization agents instead of abstract organization action?
+-
+
+What world-function explanation should be left out or reduced to one concrete line?
 -
 
 ## Pass / Fail
@@ -253,6 +291,9 @@ Mark `REVISE` if:
 - actors do not have distinct local worlds;
 - actors all seem to know the same information;
 - no convergence point exists;
+- the scene's labor / ritual / process / task / institutional routine has no world function;
+- the scene exists only to let the protagonist touch a plot object or trigger an ability;
+- the task has no output, beneficiary, cost of error, or reason it belongs to this status level;
 - no environmental variable changes any actor's default behavior;
 - a character behaves according to a static label instead of current risk, audience, power difference, escape route, or protected object;
 - an organization acts as an abstract force without an embodied agent;
@@ -274,6 +315,8 @@ Instead:
 - give each actor a more specific local goal;
 - define the environmental variable that changes their default behavior;
 - choose one concrete convergence point;
+- define the scene's world function and the cost of doing it wrong;
+- reveal world function through one concrete line, object movement, or consequence, not a lecture;
 - make organizations act through specific agents and packaging language;
 - make someone physically move, block, take, hide, refuse, or protect it;
 - make another actor react from their own misread;
