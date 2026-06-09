@@ -18,6 +18,7 @@ Read the current novel wiki before writing:
 - relevant open questions
 - `governance/wiki_retrieval_rules.md`
 - `governance/anti_record_driven_plot.md` when the chapter involves systems, reports, logs, files, workflows, institutions, or records
+- `prompts/02_scene_convergence.md` output if available
 
 ## Retrieval Plan
 
@@ -50,6 +51,51 @@ The protagonist should not solve every problem cleanly over time. Hesitation, mi
 Recurring side characters should have their own pressure, desire, fear, possible loss, role limit, or institutional pressure. They should not exist only to make the protagonist look calm, clever, or funny.
 
 Temporary characters may be functional, but their lines should not feel like forced prompts for the protagonist.
+
+## Character Performance Rule
+
+Do not let narration perform the story for the characters.
+
+Characters must act from their own:
+
+```text
+what they see
+what they hear
+what they think is happening
+what they want
+what they fear
+what they misread
+what they can physically do
+what they will not say openly
+```
+
+Before writing an important scene, identify the convergence point: the person, object, route, room, witness, decision, or risk that multiple characters want to move, protect, take, hide, block, expose, or control.
+
+Then write the scene through characters acting around that convergence point.
+
+Avoid narrator summaries such as:
+
+```text
+everyone realized the situation had changed
+the case was no longer simple
+all sides began to compete for the child
+the real conflict had just begun
+he understood that he had crossed a line
+```
+
+Replace them with character performance:
+
+- someone blocks a doorway;
+- someone hides an object;
+- someone changes testimony;
+- someone refuses to hand over a person;
+- someone looks at a different target;
+- someone moves closer or steps back;
+- someone stops answering;
+- someone redirects a question;
+- someone physically preserves or damages a scene object.
+
+If deleting narrator explanation makes the scene unclear, the scene convergence is weak and should be redesigned.
 
 ## Base Settings Rules
 
