@@ -15,21 +15,31 @@ The goal is to avoid:
 - overwriting true canon with mistaken updates
 - confusing one novel's wiki with another novel's wiki
 - letting a character know information they should not know
+- using reference settings as if they were novel canon
 
 ## Required Reading Before Writing a Chapter
 
 Before writing a new chapter, read at least:
 
 1. The novel's `wiki/project.md`.
-2. The novel's `wiki/style.md`.
-3. The novel's `wiki/name_registry.md`.
-4. The previous chapter state.
-5. The protagonist character file.
-6. Character files for every planned speaking or plot-impacting character.
-7. Relevant world, location, or item files for the scene.
-8. Relevant open questions or foreshadowing files when the chapter touches unresolved material.
+2. The novel's `wiki/base_settings.md` if it exists.
+3. The novel's `wiki/style.md`.
+4. The novel's `wiki/name_registry.md`.
+5. The previous chapter state.
+6. The protagonist character file.
+7. Character files for every planned speaking or plot-impacting character.
+8. Relevant world, location, organization, process, item, object, or relationship files for the scene.
+9. Relevant open questions or foreshadowing files when the chapter touches unresolved material.
 
-If a character, location, item, sect rule, object, or unresolved mystery is not retrieved, do not write detailed claims about it.
+If a character, location, item, organization, process, rule, object, mechanism, or unresolved mystery is not retrieved, do not write detailed claims about it.
+
+## Reference Settings Boundary
+
+Files under `reference_settings/` are reusable references, not canon.
+
+A reference-setting idea may be used in a chapter only if it has already been accepted into the current novel's wiki, usually through `wiki/base_settings.md` or another approved canon file.
+
+Do not retrieve reference settings from another novel or use test-novel settings to define a current novel.
 
 ## Retrieval Planning
 
@@ -44,7 +54,13 @@ Expected characters:
 Expected locations:
 - 
 
+Expected organizations or processes:
+- 
+
 Expected items or abnormal objects:
+- 
+
+Relevant base setting rules:
 - 
 
 Relevant unresolved questions:
@@ -80,6 +96,10 @@ A character's or narrator-limited interpretation of observed signs.
 
 An unresolved question or not-yet-explained element.
 
+### Reference Candidate
+
+A reusable idea from `reference_settings/` that may help build a novel-specific setting, but is not canon until accepted into the current novel's wiki.
+
 ## Writing Rule
 
 When writing a chapter:
@@ -89,6 +109,7 @@ When writing a chapter:
 - Observations may be repeated but not over-explained.
 - Inferences must remain tied to the character who made them.
 - Unknowns must not be filled in early.
+- Reference candidates must not be used as canon unless accepted into the current novel wiki.
 
 ## Wiki Update Rule
 
@@ -99,6 +120,7 @@ When updating the wiki after a chapter:
 - Do not convert a one-time action into a permanent trait.
 - Do not erase previous state unless the new chapter clearly changes it.
 - If the new chapter changes a character, record the transition, not just the result.
+- Do not import unrelated reference-setting material during wiki updates.
 
 ## Conflict Handling
 
@@ -114,6 +136,7 @@ If new text conflicts with existing wiki:
    - character development
    - unreliable claim
    - intentional contradiction
+   - reference-setting misuse
 6. Only then update canon.
 
 ## Source Requirement
@@ -125,7 +148,7 @@ Recommended format:
 ```text
 Fact:
 Source: chapter_002
-Status: confirmed / claim / observation / inference / unknown
+Status: confirmed / claim / observation / inference / unknown / reference_candidate
 ```
 
 ## Character Knowledge Boundary
@@ -134,7 +157,7 @@ Before allowing a character to say or act on information, check:
 
 - Has this character personally seen it?
 - Has someone told this character?
-- Is it available through their role or records?
+- Is it available through their role, authority, records, tools, or institution?
 - Is the character guessing?
 - If guessing, does the text mark it as a guess?
 
@@ -150,6 +173,6 @@ If the wiki and memory disagree, trust the wiki unless the user explicitly says 
 
 ## Independent Novel Rule
 
-Only retrieve files from the current novel's folder unless the change is global governance.
+Only retrieve files from the current novel's folder unless the change is global governance or reference-setting development.
 
-Do not mix facts, character states, naming rules, or timelines across novels.
+Do not mix facts, character states, naming rules, base settings, or timelines across novels.
