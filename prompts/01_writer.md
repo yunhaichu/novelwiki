@@ -52,6 +52,46 @@ Recurring side characters should have their own pressure, desire, fear, possible
 
 Temporary characters may be functional, but their lines should not feel like forced prompts for the protagonist.
 
+## Narrative Economy Rule
+
+The draft should not prove the workflow. The workflow, wiki, and preflight prove the logic. The prose only needs to carry action, consequence, pressure, and necessary information.
+
+Do not explain a rule, motive, resource, or mechanism in prose merely because it exists in planning.
+
+A sentence should usually do at least one of the following:
+
+- move action;
+- change pressure;
+- change relationship;
+- expose a choice;
+- create a concrete image;
+- change information state;
+- produce a visible consequence;
+- preserve or sharpen a reader hook.
+
+Cut or compress sentences that only:
+
+- summarize what the reader already understands;
+- explain the protagonist's psychology after the choice already shows it;
+- repeat the same cost, limitation, or rule;
+- announce why a moment matters;
+- turn subtext into text;
+- prove that the setting is logical.
+
+Prefer:
+
+```text
+choice -> action -> consequence
+```
+
+over:
+
+```text
+choice -> action -> explanation of why the choice matters
+```
+
+When a line is optional, leave it out.
+
 ## Character Performance Rule
 
 Do not let narration perform the story for the characters.
@@ -160,6 +200,22 @@ Prefer:
 Use buttons, fields, popups, forms, reports, notes, and electronic records sparingly. They are support, not the main plot carrier.
 
 Avoid consecutive paragraphs explaining how the process works unless the explanation is immediately forced by action, conflict, or consequence.
+
+## World Function In Prose Rule
+
+If a scene involves labor, ritual, process, institution, task, exam, mission, repair, medical handling, sect work, business workflow, or similar recurring activity, prose must show enough functional purpose for the scene to feel real.
+
+Do not explain the full system. Reveal only the smallest visible function needed for the reader to understand why the task exists and why errors matter.
+
+Prefer one concrete line from an actor or one visible consequence:
+
+```text
+"Black ash goes to the field. Medicine mud gets boiled again. Mix them and the bucket is dead."
+```
+
+over a paragraph explaining the whole supply chain.
+
+If the task has no world function beyond giving the protagonist something to touch, redesign the scene.
 
 ## Reader Itch Rule
 
