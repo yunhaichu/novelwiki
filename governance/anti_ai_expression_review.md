@@ -2,7 +2,7 @@
 
 Use this checklist after drafting and final polish.
 
-The purpose is to remove AI-flavored expression that survives plot, scene, and dialogue planning.
+The purpose is to remove AI-flavored expression and unnecessary explanatory prose that survives plot, scene, and dialogue planning.
 
 This review focuses on prose-level symptoms:
 
@@ -15,7 +15,9 @@ This review focuses on prose-level symptoms:
 - polished trailer lines;
 - repetitive rhythm;
 - dialogue that sounds like narration;
-- record-driven narration.
+- record-driven narration;
+- explanatory proof lines;
+- optional sentences that weaken subtext.
 
 ## Required Inputs
 
@@ -48,6 +50,22 @@ current consequence
 ```
 
 Records, screens, reports, and systems can support pressure, but they should not be the emotional or narrative center of the scene.
+
+## Narrative Economy Principle
+
+If a sentence can be removed without losing action, necessary information, pressure, relationship change, object state, or reader hook, remove it.
+
+The prose should not repeat what the reader can infer from:
+
+- a choice;
+- a refusal;
+- a visible cost;
+- a changed object;
+- a changed relationship;
+- a character's silence;
+- a scene consequence.
+
+Logic belongs in planning and wiki. The draft should show only the smallest amount of explanation needed for the reader to follow the scene.
 
 ## Hard Checks
 
@@ -172,11 +190,48 @@ Every paragraph should do at least one:
 
 Mark `REVISE` for decorative atmosphere that does not affect reading path.
 
-### 10. Source Support Check
+### 10. Optional Sentence / Leave-Blank Check
+
+Mark `REVISE` if a sentence explains, repeats, or labels something that the scene already shows.
+
+Common weak patterns:
+
+```text
+This was his only chance.
+That was enough.
+He understood what it meant.
+He was not kind, only practical.
+This proved the world was cruel.
+He had no way back.
+```
+
+Repair by deleting the sentence first. Add replacement only if deletion breaks comprehension.
+
+Ask:
+
+```text
+If this sentence is removed, does the scene still work?
+If yes, delete it.
+```
+
+### 11. Explanation Leakage Check
+
+Mark `REVISE` if preflight, wiki, or world-model reasoning leaks into prose as explanation.
+
+Examples:
+
+- explaining an institution's full cost logic after the action already demonstrates it;
+- explaining why a labor process exists when one concrete consequence or line of dialogue would suffice;
+- explaining a character's survival calculation after their action already reveals it;
+- restating a goldfinger limitation after the cost has been shown.
+
+Keep the functional minimum and cut the rest.
+
+### 12. Source Support Check
 
 If an expressive habit, metaphor style, repeated gesture, speech quirk, or emotional display is not supported by wiki or expression card, remove or mark an expression gap.
 
-### 11. Record-Centered Expression Check
+### 13. Record-Centered Expression Check
 
 Mark `REVISE` if paragraphs repeatedly center on:
 
@@ -235,17 +290,21 @@ Expression checks:
 - Same rhythm:
 - Role grounding:
 - Scene utility:
+- Optional sentence / leave-blank:
+- Explanation leakage:
 - Source support:
 - Record-centered expression:
 
 Lines to revise:
 1. Original:
    Problem:
-   Replacement direction:
+   Delete or replace:
+   Replacement direction if needed:
 
 2. Original:
    Problem:
-   Replacement direction:
+   Delete or replace:
+   Replacement direction if needed:
 
 Required fixes if REVISE:
 1.
@@ -255,7 +314,9 @@ Required fixes if REVISE:
 
 ## Repair Method
 
-Do not simply delete AI-flavored lines. Replace them with one of:
+First try deletion.
+
+If deletion makes the scene unclear, replace with one of:
 
 - visible object state;
 - specific permission boundary;
