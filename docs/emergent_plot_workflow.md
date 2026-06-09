@@ -10,6 +10,18 @@ The goal is not to ask an LLM to invent events freely. The goal is to design a c
 Plot emergence = interest conflict × resource limits × information asymmetry × bounded cognition × costly choice × consequence chain
 ```
 
+## Large Trend / Protagonist Growth Formula
+
+```text
+From large to small: large trends are hard to resist.
+From small to large: characters and scenes emerge naturally.
+Control line: the protagonist grows through pressure, cost, usable leverage, and repeated application.
+```
+
+The author should not make the world revolve around the protagonist.
+
+The author may use an invisible hand only to place the protagonist at growth-relevant pressure points.
+
 ## Scene Emergence Formula
 
 ```text
@@ -89,16 +101,19 @@ Use these controls:
 5. **Phase Gates**
    Do not let macro conflict escalate too early. Early chapters should use character and organization pressure. State-level action should appear as embodied pressure: a person arrives, a door is sealed, a shipment is taken, a witness is moved, a guard refuses entry, a superior demands silence, or a public ritual changes access. Documents and orders may exist, but they should produce visible action.
 
-6. **Protagonist Advantage Ledger**
+6. **Protagonist Growth Track**
+   Define the protagonist's controlled growth stages. Each chapter should test the current weakness, impose a cost, grant a usable lever, and prepare the next stage without skipping levels.
+
+7. **Protagonist Advantage Ledger**
    The protagonist can pay costs, but each chapter should give at least one new usable advantage. Prioritize relationship, physical object, witness, access, enemy misjudgment, and operational space over pure record status.
 
-7. **Reader Reward Ledger**
+8. **Reader Reward Ledger**
    Each chapter should answer or partially answer something, not only add new mysteries.
 
-8. **Anti Record-Driven Plot Gate**
+9. **Anti Record-Driven Plot Gate**
    Ensure the main chapter turn is not a submission, popup, log, report, case number, automatic escalation, or database change unless it immediately causes embodied scene action.
 
-9. **Scene Convergence Gate**
+10. **Scene Convergence Gate**
    Ensure every important scene has a convergence point: a person, object, route, room, witness, decision, or risk that multiple actors want to move, protect, take, hide, block, expose, or control.
 
 ## Recommended Workflow
@@ -108,8 +123,11 @@ project scope / type promise
 -> base settings
 -> major conflict engine
 -> dramatic arena
+-> organization behavior models
+-> character behavior models
 -> actor cognition cards
 -> character expression cards
+-> protagonist growth track
 -> emergence control plan
 -> reader entry gate
 -> emergent chapter design
@@ -120,6 +138,7 @@ project scope / type promise
 -> draft
 -> commercial / anti-record edit pass
 -> emergent plot review
+-> protagonist growth review
 -> character voice review
 -> anti-AI expression review
 -> chapter state update
@@ -130,12 +149,13 @@ project scope / type promise
 Every chapter should answer these questions:
 
 ```text
-1. Which major conflict is pressing from below?
+1. Which major trend is pressing from above?
 2. Which organization converts that pressure into concrete scene action?
 3. Which character is forced into a costly choice?
-4. What does the protagonist gain, despite the cost?
-5. What does the reader receive as reward?
-6. Which organization or character must react next?
+4. Which protagonist growth stage is being tested?
+5. What does the protagonist gain, despite the cost?
+6. What does the reader receive as reward?
+7. Which organization or character must react next?
 ```
 
 If a chapter produces only danger but no protagonist advantage, revise it.
@@ -147,6 +167,8 @@ If a chapter only explains faction politics but forces no character choice, revi
 If a chapter's main turn is driven by system status, report submission, archive access, log entry, or notification rather than scene action, revise it.
 
 If a chapter's scenes require narrator explanation to be understood, revise the scene convergence.
+
+If a chapter moves plot but does not move the protagonist along the approved growth track, revise it.
 
 ## Scene-Level Rule
 
@@ -164,6 +186,28 @@ Every major scene should answer:
 ```
 
 If the narrator has to summarize the conflict because characters do not perform it, revise the scene.
+
+## Protagonist Growth Rule
+
+The protagonist should not defeat the large trend too early.
+
+The protagonist should grow by:
+
+```text
+surviving pressure
+-> noticing the real mechanism
+-> avoiding becoming the scapegoat
+-> gaining a usable lever
+-> reusing that lever under harder pressure
+-> expanding access, relationships, judgment, and influence one stage at a time
+```
+
+Each growth step should be:
+
+- small enough to be believable;
+- costly enough to matter;
+- reusable enough to affect later chapters;
+- limited enough to leave the larger trend intact.
 
 ## Frequency Control
 
@@ -219,4 +263,5 @@ Mark the design as weak if:
 - a major state-level actor solves a problem that should be handled by local organizations and characters;
 - organizations are only labels and do not control resources, access, money, violence, rituals, people, objects, or legitimacy;
 - the main plot turn is a system prompt, report, log, case number, database state, or automatic workflow change;
-- scenes are organized by narrator summary rather than local actor actions around a convergence point.
+- scenes are organized by narrator summary rather than local actor actions around a convergence point;
+- protagonist growth is random, unearned, or jumps stages.
