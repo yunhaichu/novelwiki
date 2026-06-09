@@ -18,6 +18,8 @@ Only write:
 - confirmed behavior patterns supported by repeated action or approved initial settings
 - confirmed expression patterns supported by repeated speech or approved initial settings
 - confirmed threshold / override behavior only after source support or approved design
+- confirmed organization behavior patterns supported by approved settings, dramatic arena, or repeated chapter action
+- confirmed organization public legitimacy, real interests, action ladder, and agents when source-supported
 
 ## What Cannot Be Written
 
@@ -35,6 +37,10 @@ Do not write:
 - unsupported dialect or speech quirks
 - unsupported environmental modulation
 - unsupported threshold reversal
+- unsupported organization conspiracy
+- unsupported illegal organization methods
+- unsupported internal faction conflict
+- unsupported organization catchphrases or packaging language
 
 ## Update Flow
 
@@ -161,11 +167,115 @@ Record what the character's inner thought usually uses:
 
 Also record what the inner monologue should not use, such as author summary, destiny language, theme statements, or all-knowing conclusions.
 
+## Organization Pages
+
+Organization pages must include:
+
+- public identity
+- public mission / legitimacy
+- real interests
+- resources controlled
+- operating boundaries
+- embodied agents
+- relationship to other forces
+- what the organization cannot publicly admit
+
+Major and recurring organizations should also include the following behavior-generation fields.
+
+### Public Legitimacy
+
+- How the organization explains itself to ordinary people.
+- What public good it claims to protect.
+- What words it uses to make its actions sound legitimate.
+
+### Real Interests
+
+- What the organization truly needs.
+- What resource, person, location, record, legitimacy, or secret it must control.
+- What it fears losing.
+
+### Operating Boundaries
+
+- What it can openly do.
+- What it cannot openly do.
+- What it can privately do.
+- What it needs cutouts, agents, contractors, subordinates, or other organizations to do.
+
+### Packaging Language
+
+Record how the organization packages:
+
+- control
+- taking someone away
+- sealing a scene
+- taking an object / record / body / witness
+- refusing help, payment, rescue, access, or explanation
+- punishment
+- silence
+- delay
+
+### Action Ladder
+
+Record escalation stages:
+
+1. Soft pressure: persuasion, reassurance, delay, informal request.
+2. Procedural pressure: registration, assessment, signature, review, permission boundary, responsibility split.
+3. Coercive but legal pressure: sealing scene, taking a person away, limiting contact, suspending access, isolation, official warning.
+4. Gray pressure: threat, scapegoating, selective leak, resource cutoff, outsourced dirty work, pressure on family/job/status.
+5. Illegal or irreversible pressure: forced disappearance, falsified scene, destroyed evidence, physical control, killing, permanent disposal.
+
+For Level 5, record trigger conditions, likely executor, and responsibility-cutting method. Do not add Level 5 methods without source support.
+
+### Internal Factions
+
+When relevant, record:
+
+- internal factions
+- their goals
+- their resources
+- their fears
+- frontline executor constraints
+- where frontline agents may diverge from leadership interest
+
+### Environmental Modulation
+
+Organization behavior should change under:
+
+- public setting
+- private setting
+- crowd / media watching
+- superior watching
+- another strong organization present
+- target has no power
+- target has evidence
+- target cannot be handled legally
+- default strategy fails
+
+### Misjudgment Pattern
+
+Record:
+
+- what the organization most often misreads
+- what it trusts as evidence
+- what it dismisses
+- what it overestimates
+- what it underestimates
+
+### Embodied Agents
+
+Record:
+
+- common scene agents
+- agent speech style
+- agent action boundary
+- how much agents can be sacrificed
+- how agents may diverge from organization interest
+
 ## Scene Performance Rule
 
-Do not convert one scene action into permanent personality too quickly.
+Do not convert one scene action into permanent personality or organization policy too quickly.
 
-Record whether an action is:
+For characters, record whether an action is:
 
 - default behavior
 - environment-modulated behavior
@@ -173,6 +283,18 @@ Record whether an action is:
 - breakdown / collapse
 - strategic performance
 - one-time exception
+
+For organizations, record whether an action is:
+
+- default policy
+- public packaging
+- action ladder escalation
+- local agent choice
+- internal faction move
+- gray action
+- illegal exception
+- cutout action
+- one-time emergency response
 
 ## Independent Novel Rule
 
