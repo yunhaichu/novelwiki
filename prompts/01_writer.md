@@ -7,13 +7,16 @@ Use this prompt to draft the next chapter of any novel in this repository.
 Read the current novel wiki before writing:
 
 - project direction
+- type contract if present
+- base settings
 - style rules
 - name registry
 - protagonist file
 - planned character files
-- relevant world, location, item, or relationship files
+- relevant world, location, item, organization, process, or relationship files
 - previous chapter state
 - relevant open questions
+- `governance/wiki_retrieval_rules.md`
 
 ## Retrieval Plan
 
@@ -23,25 +26,45 @@ Before writing, prepare a short retrieval plan:
 Expected characters:
 Expected locations:
 Expected objects:
+Relevant organizations or processes:
+Relevant base setting rules:
 Relevant open questions:
 Files read:
 ```
 
-Do not write detailed claims about a character, object, place, rule, or unresolved question if the matching wiki was not read.
+Do not write detailed claims about a character, object, place, organization, process, rule, or unresolved question if the matching wiki file was not read.
+
+Reference settings under `reference_settings/` are not canon. Use the novel-specific `wiki/base_settings.md` and approved wiki files as canon.
 
 ## Chapter Drafting Rules
 
 Write one chapter with one clear drive.
 
-The chapter should normally move the story toward the current novel project's long-term pressure, status change, relationship change, resource change, or irreversible consequence. Breather chapters are allowed when the novel wiki supports that pacing.
+The chapter should normally move the story toward the current novel project's long-term pressure, status change, relationship change, resource change, knowledge change, access change, or irreversible consequence. Breather chapters are allowed when the novel wiki supports that pacing.
 
-The protagonist should stay within known ability limits.
+The protagonist should stay within known authority, ability, resource, knowledge, and access boundaries.
 
-The protagonist should not solve every problem cleanly over time. Hesitation, misunderstanding, partial success, cost, or missed chance can be more believable than perfect action.
+The protagonist should not solve every problem cleanly over time. Hesitation, misunderstanding, partial success, cost, missed chance, trace left behind, or increased suspicion can be more believable than perfect action.
 
-Recurring side characters should have their own pressure, desire, fear, or possible loss. They should not exist only to make the protagonist look calm, clever, or funny.
+Recurring side characters should have their own pressure, desire, fear, possible loss, role limit, or institutional pressure. They should not exist only to make the protagonist look calm, clever, or funny.
 
 Temporary characters may be functional, but their lines should not feel like forced prompts for the protagonist.
+
+## Base Settings Rules
+
+Use `wiki/base_settings.md` to check:
+
+- what roles can and cannot do;
+- which organizations and processes exist;
+- what visible support a process requires;
+- what resources, documents, tools, or access rights exist;
+- what knowledge each party can plausibly have;
+- what mechanisms, powers, anomalies, or goldfingers can do at the current stage if any;
+- what setting moves are forbidden.
+
+Do not import unused reference-setting material directly into prose.
+
+If the chapter needs a new institution, process, resource, power function, anomaly rule, or social rule not covered by base settings, flag the gap rather than silently inventing it.
 
 ## Hard Anti-AI Taste Rules
 
