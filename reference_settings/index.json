@@ -1,0 +1,106 @@
+{
+  "reference_settings_index_id": "reference_settings_v1",
+  "purpose": "Reusable reference-setting library index for building novel-specific base settings. These libraries are references, not canon.",
+  "libraries": [
+    {
+      "id": "modern_common",
+      "path": "reference_settings/genre_common/modern_common.md",
+      "display_name": "Modern / urban / workplace common reference",
+      "category": "genre_common",
+      "keywords": [
+        "modern",
+        "urban",
+        "workplace",
+        "business",
+        "school",
+        "family",
+        "platform",
+        "realistic rebirth"
+      ],
+      "use_when": "The project uses a modern or near-modern realistic social foundation."
+    },
+    {
+      "id": "apocalypse_common",
+      "path": "reference_settings/genre_common/apocalypse_common.md",
+      "display_name": "Apocalypse / zombie / disaster common reference",
+      "category": "genre_common",
+      "keywords": [
+        "apocalypse",
+        "zombie",
+        "disaster",
+        "wasteland",
+        "infection",
+        "collapse",
+        "survival camp"
+      ],
+      "use_when": "The project uses survival under collapsed or partially collapsed order."
+    },
+    {
+      "id": "xianxia_common",
+      "path": "reference_settings/genre_common/xianxia_common.md",
+      "display_name": "Xianxia / cultivation / xuanhuan common reference",
+      "category": "genre_common",
+      "keywords": [
+        "xianxia",
+        "cultivation",
+        "xuanhuan",
+        "sect",
+        "spiritual resource",
+        "realm",
+        "dao"
+      ],
+      "use_when": "The project uses cultivation, sect, spiritual resource, or xuanhuan hierarchy logic."
+    },
+    {
+      "id": "sci_fi_cyber_common",
+      "path": "reference_settings/genre_common/sci_fi_cyber_common.md",
+      "display_name": "Science fiction / cyber / future common reference",
+      "category": "genre_common",
+      "keywords": [
+        "science fiction",
+        "cyberpunk",
+        "future",
+        "AI",
+        "algorithm",
+        "data",
+        "platform",
+        "space",
+        "technology"
+      ],
+      "use_when": "The project uses technology, AI, data, future society, cyber control, or engineered systems as a story foundation."
+    },
+    {
+      "id": "generic_common",
+      "path": "reference_settings/genre_common/generic_common.md",
+      "display_name": "Generic original fiction reference",
+      "category": "generic",
+      "keywords": [
+        "original fantasy",
+        "unspecified genre",
+        "hybrid genre",
+        "general fiction"
+      ],
+      "use_when": "The project does not clearly fit a specialized reference library or needs a neutral foundation."
+    },
+    {
+      "id": "power_system_common",
+      "path": "reference_settings/power_system_common/base_laws.md",
+      "display_name": "Power / anomaly / goldfinger base laws",
+      "category": "power_system_common",
+      "keywords": [
+        "power system",
+        "goldfinger",
+        "system panel",
+        "ability",
+        "supernatural",
+        "magic",
+        "cultivation",
+        "rebirth memory",
+        "prophecy",
+        "anomaly",
+        "technology ability"
+      ],
+      "use_when": "Overlay only when the project explicitly includes a special power, anomaly, goldfinger, supernatural force, system, or technology ability."
+    }
+  ]
+}
