@@ -21,7 +21,7 @@ Files:
 
 Run once per novel, before any chapter planning.
 
-Purpose: define the novel's genre, operating world, base boundaries, macro pressure, major actors, protagonist growth path, and initial wiki.
+Purpose: define the novel's genre, operating world, base boundaries, macro pressure, major actors, protagonist growth path, Name Gate, and initial wiki.
 
 Required files:
 
@@ -42,6 +42,21 @@ Supporting reference files:
 - selected files under `reference_settings/genre_common/`
 - selected files under `reference_settings/power_system_common/` only if the novel explicitly contains powers, anomalies, or goldfingers.
 
+Required order inside Layer 1:
+
+```text
+premise / type promise
+-> genre mode
+-> genre operating model
+-> base setting boundaries
+-> Name Gate
+-> project.md
+-> name_registry.md
+-> other wiki bootstrap files
+```
+
+Name Gate must run before `project.md`, character files, organization files, city names, or key term names are written.
+
 Required wiki outputs:
 
 - `novels/<novel_id>/wiki/project.md`
@@ -51,9 +66,10 @@ Required wiki outputs:
 - `novels/<novel_id>/wiki/protagonist_growth.md`
 - organization and character files as needed.
 
-Hard rule:
+Hard rules:
 
 ```text
+No Name Gate, no project file.
 No wiki bootstrap, no chapter draft.
 ```
 
@@ -249,7 +265,7 @@ Approved chapter -> wiki sync -> next chapter.
 For a new novel:
 
 ```text
-Layer 1 including wiki bootstrap -> Layer 2 -> Layer 3 -> Layer 4 -> Layer 5 -> Layer 6 -> Layer 7 -> Layer 8 -> Layer 9 wiki sync
+Layer 1 including Name Gate and wiki bootstrap -> Layer 2 -> Layer 3 -> Layer 4 -> Layer 5 -> Layer 6 -> Layer 7 -> Layer 8 -> Layer 9 wiki sync
 ```
 
 For a normal later chapter:
@@ -270,14 +286,15 @@ Do not draft if any of these are unresolved:
 
 1. Genre mode is unclear.
 2. Genre operating model is missing or too vague.
-3. Initial wiki bootstrap is missing.
-4. Base settings for the active novel are missing.
-5. Reality-causal preflight says the core event is unnatural.
-6. The protagonist has no active growth stage.
-7. The chapter has no usable protagonist gain.
-8. The main scene has no convergence point.
-9. The key object has no natural function.
-10. The story relies on system/report/log/status change as climax.
+3. Name Gate is missing or failed.
+4. Initial wiki bootstrap is missing.
+5. Base settings for the active novel are missing.
+6. Reality-causal preflight says the core event is unnatural.
+7. The protagonist has no active growth stage.
+8. The chapter has no usable protagonist gain.
+9. The main scene has no convergence point.
+10. The key object has no natural function.
+11. The story relies on system/report/log/status change as climax.
 
 Do not plan the next chapter if any of these are unresolved:
 
