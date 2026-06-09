@@ -8,9 +8,12 @@ The purpose is to create the initial per-novel wiki in the same workflow run as 
 
 ```text
 No wiki, no draft.
+No name gate, no project file.
 ```
 
 A new novel must not move into chapter design until its core setup has been written into `novels/<novel_id>/wiki/`.
+
+A new novel must not write `project.md` with protagonist, organization, city, or key term names until the names pass the Name Gate.
 
 ## Required Inputs
 
@@ -26,7 +29,104 @@ Read:
 - protagonist growth track;
 - organization behavior models for major organizations;
 - character behavior models and expression cards for major recurring characters;
-- style / name constraints if present.
+- style / name constraints if present;
+- existing `novels/*/wiki/name_registry.md` files when available;
+- existing project names and recurring names in this repository when available.
+
+## Name Gate
+
+Run this before writing `project.md`, character files, organization files, or chapter drafts.
+
+Names are not decorative labels. They are part of the world model. A name should grow from:
+
+- time period;
+- region / migration background;
+- class and family education;
+- occupation;
+- registration system;
+- corporate, sect, state, clan, or platform naming rules;
+- nickname practices;
+- whether the character uses legal name, work name, handle, number, alias, or street name.
+
+### Required Name Gate Output
+
+```text
+## Name Gate
+
+Naming context:
+- genre:
+- region / city / social layer:
+- naming institution or family practice:
+- legal-name vs nickname vs handle rules:
+
+Protagonist name candidates:
+1.
+2.
+3.
+...
+
+Rejected names:
+- name:
+  reason:
+
+Selected protagonist name:
+Why this name fits world / family / class / job:
+AI-default risk: low / medium / high
+Previously used in this repository or current conversation: yes / no
+
+Organization / city / key term candidates:
+-
+
+Approved names to write into name_registry.md:
+-
+
+Avoided names to record:
+-
+```
+
+### Common AI-Default Name Warning List
+
+Treat these names and similar polished literary names as high risk unless the user explicitly chooses them or the setting provides a strong reason:
+
+```text
+沈砚
+陆沉
+顾言
+林澈
+江辰
+谢沉
+秦川
+裴行
+许知
+宋临
+周砚
+陈述
+苏晚
+云棠
+白芷
+阮清
+夏禾
+许栀
+```
+
+Also treat these patterns as high risk:
+
+- overly polished two-character literary names with rare aesthetic characters;
+- names that sound genre-neutral and model-favored rather than class / region / family grounded;
+- protagonist names reused from earlier test novels;
+- names that could fit any modern / xianxia / cyberpunk story without change.
+
+### Name Gate Hard Rules
+
+Mark `REVISE` if:
+
+- protagonist name appears in `project.md` before the Name Gate;
+- no rejected-name list exists;
+- the selected name has no social / family / institutional explanation;
+- the selected name is from the warning list without explicit user approval;
+- the name is too polished and not grounded in the world;
+- the same name or close variant already appears in another active test novel;
+- organization / city names are generic genre labels rather than functional entities.
 
 ## Required Output Files
 
@@ -86,6 +186,8 @@ Must include:
 - what this story is not;
 - current development goal.
 
+Do not write protagonist, organization, city, or key term names here until the Name Gate has passed.
+
 ### `base_settings.md`
 
 Must include:
@@ -134,11 +236,13 @@ Must include:
 
 Must include:
 
+- Name Gate result;
 - approved protagonist name;
 - approved organizations;
 - approved places;
 - approved recurring character names;
 - approved terms;
+- rejected / avoided names and reasons;
 - naming rules;
 - pending / not-yet-canon names.
 
@@ -164,6 +268,19 @@ Novel ID:
 Source setup files read:
 Bootstrap decision: ALLOW / REVISE
 
+## Name Gate
+
+Naming context:
+Protagonist name candidates:
+Rejected names:
+Selected protagonist name:
+Why selected name fits:
+AI-default risk:
+Previously used in repository or current conversation:
+Approved names:
+Avoided names:
+Name gate decision: ALLOW / REVISE
+
 ## Files To Create / Update
 
 - path:
@@ -185,6 +302,7 @@ Bootstrap decision: ALLOW / REVISE
 
 ## Completion Checklist
 
+- name gate completed before project.md: yes / no
 - project.md created / updated: yes / no
 - base_settings.md created / updated: yes / no
 - style.md created / updated: yes / no
@@ -201,6 +319,8 @@ Bootstrap decision: ALLOW / REVISE
 Mark `REVISE` if:
 
 - the setup has no novel ID;
+- protagonist or major organization names appear before Name Gate;
+- Name Gate is missing or fails;
 - base settings are too vague to constrain chapter design;
 - genre operating model is absent;
 - protagonist growth stages are absent;
