@@ -10,6 +10,16 @@ The goal is not to ask an LLM to invent events freely. The goal is to design a c
 Plot emergence = interest conflict × resource limits × information asymmetry × bounded cognition × costly choice × consequence chain
 ```
 
+## Genre Mode Principle
+
+Universal plot rules must be applied through the current genre mode.
+
+A genre mode defines reader promise, pressure carriers, growth assets, scene rhythm, terminology budget, and anti-drift rules.
+
+Do not let the governance system force every story into organization-process conflict.
+
+Use `prompts/00_genre_mode_contract.md` before major conflict engine, protagonist growth track, and chapter design.
+
 ## Large Trend / Protagonist Growth Formula
 
 ```text
@@ -66,9 +76,9 @@ Do not make state-level actors directly solve every chapter.
 
 Organization-level forces include sects, companies, bureaus, clans, guilds, merchant houses, military commands, schools, gangs, temples, labs, or local offices.
 
-Use them to transfer state-level pressure into concrete friction: people blocking access, witnesses being moved, objects being seized, doors being locked, someone refusing to sign, someone trying to remove evidence, someone changing testimony, or a stronger actor arriving in person.
+Use them to transfer state-level pressure into concrete friction, filtered by genre mode. In a workplace story this may be approval, responsibility, access, and evidence. In traditional xianxia this may be technique access, public standing, trial, resource scarcity, lineage, punishment, or dangerous opportunity.
 
-Records, permits, orders, reports, and systems can support this friction, but should not be the main plot carrier.
+Records, permits, orders, reports, and systems can support this friction, but should not be the main plot carrier unless genre mode explicitly supports that emphasis.
 
 ### Character-Level Emergence
 
@@ -86,40 +96,44 @@ Emergence must be controlled by direction, not by pre-deciding every event.
 
 Use these controls:
 
-1. **Attractors**
-   Define the state the story is moving toward, such as: a neutral bureau collapses, a protagonist becomes a key evidence holder, a hidden old case links to the current crisis, or a faction is forced to publicly choose a side.
+1. **Genre Mode Contract**
+   Define what this genre should feel like before applying universal plot rules. This decides pressure carriers, growth assets, scene rhythm, and what must not dominate.
 
-2. **State Variables**
-   Track changes after each chapter, such as protagonist leverage, organization suspicion, faction conflict heat, public trust, evidence strength, relationship trust, access level, and reader-known truth.
+2. **Attractors**
+   Define the state the story is moving toward, such as: a neutral bureau collapses, a protagonist becomes a key evidence holder, a hidden old case links to the current crisis, or a faction is forced to publicly choose a side. These attractors must fit the genre mode.
 
-3. **Pressure Injection Order**
-   Decide what kind of pressure enters the arena at each stage: person pressure, object pressure, relationship pressure, resource pressure, field verification, public-face pressure, time pressure, false-cooperation pressure, and only then record pressure when necessary.
+3. **State Variables**
+   Track changes after each chapter, such as protagonist leverage, organization suspicion, faction conflict heat, public trust, evidence strength, relationship trust, access level, and reader-known truth. Choose variables that match the genre.
 
-4. **Reaction Rules**
+4. **Pressure Injection Order**
+   Decide what kind of pressure enters the arena at each stage: person pressure, object pressure, relationship pressure, resource pressure, field verification, public-face pressure, time pressure, false-cooperation pressure, and only then record pressure when necessary. In traditional xianxia, prioritize cultivation trial, resource scarcity, public standing, technique access, danger, and dao-heart pressure over office-like procedures.
+
+5. **Reaction Rules**
    Define how each organization or character tends to react under pressure.
 
-5. **Phase Gates**
-   Do not let macro conflict escalate too early. Early chapters should use character and organization pressure. State-level action should appear as embodied pressure: a person arrives, a door is sealed, a shipment is taken, a witness is moved, a guard refuses entry, a superior demands silence, or a public ritual changes access. Documents and orders may exist, but they should produce visible action.
+6. **Phase Gates**
+   Do not let macro conflict escalate too early. Early chapters should use character and organization pressure. State-level action should appear as embodied pressure. The form of embodied pressure should fit the genre.
 
-6. **Protagonist Growth Track**
-   Define the protagonist's controlled growth stages. Each chapter should test the current weakness, impose a cost, grant a usable lever, and prepare the next stage without skipping levels.
+7. **Protagonist Growth Track**
+   Define the protagonist's controlled growth stages using genre-appropriate growth assets. Each chapter should test the current weakness, impose a cost, grant a usable lever, and prepare the next stage without skipping levels.
 
-7. **Protagonist Advantage Ledger**
-   The protagonist can pay costs, but each chapter should give at least one new usable advantage. Prioritize relationship, physical object, witness, access, enemy misjudgment, and operational space over pure record status.
+8. **Protagonist Advantage Ledger**
+   The protagonist can pay costs, but each chapter should give at least one new usable advantage. The advantage must fit the genre: in xianxia this may be bodily cultivation change, technique clue, minor spiritual object, trial access, senior's attention, combat lesson, public standing, debt, or survival experience.
 
-8. **Reader Reward Ledger**
+9. **Reader Reward Ledger**
    Each chapter should answer or partially answer something, not only add new mysteries.
 
-9. **Anti Record-Driven Plot Gate**
-   Ensure the main chapter turn is not a submission, popup, log, report, case number, automatic escalation, or database change unless it immediately causes embodied scene action.
+10. **Anti Record-Driven Plot Gate**
+   Ensure the main chapter turn is not a submission, popup, log, report, case number, automatic escalation, or database change unless it immediately causes embodied scene action and genre mode permits that kind of carrier.
 
-10. **Scene Convergence Gate**
-   Ensure every important scene has a convergence point: a person, object, route, room, witness, decision, or risk that multiple actors want to move, protect, take, hide, block, expose, or control.
+11. **Scene Convergence Gate**
+   Ensure every important scene has a convergence point: a person, object, route, room, witness, decision, risk, trial, resource, technique, challenge, or public standing that multiple actors want to move, protect, take, hide, block, expose, or control.
 
 ## Recommended Workflow
 
 ```text
 project scope / type promise
+-> genre mode contract
 -> base settings
 -> major conflict engine
 -> dramatic arena
@@ -149,13 +163,14 @@ project scope / type promise
 Every chapter should answer these questions:
 
 ```text
-1. Which major trend is pressing from above?
-2. Which organization converts that pressure into concrete scene action?
-3. Which character is forced into a costly choice?
-4. Which protagonist growth stage is being tested?
-5. What does the protagonist gain, despite the cost?
-6. What does the reader receive as reward?
-7. Which organization or character must react next?
+1. Which genre mode is active?
+2. Which major trend is pressing from above?
+3. Which organization or force converts that pressure into genre-appropriate scene action?
+4. Which character is forced into a costly choice?
+5. Which protagonist growth stage is being tested?
+6. What does the protagonist gain, despite the cost?
+7. What does the reader receive as genre-appropriate reward?
+8. Which organization or character must react next?
 ```
 
 If a chapter produces only danger but no protagonist advantage, revise it.
@@ -170,6 +185,8 @@ If a chapter's scenes require narrator explanation to be understood, revise the 
 
 If a chapter moves plot but does not move the protagonist along the approved growth track, revise it.
 
+If a chapter's pressure carrier, reward, or growth asset drifts away from genre mode, revise it.
+
 ## Scene-Level Rule
 
 Every major scene should answer:
@@ -182,7 +199,7 @@ Every major scene should answer:
 5. What does each actor misread?
 6. What can each actor physically do?
 7. Which actions collide?
-8. What person, object, relationship, access, or information changes?
+8. What person, object, relationship, access, status, resource, or information changes?
 ```
 
 If the narrator has to summarize the conflict because characters do not perform it, revise the scene.
@@ -196,10 +213,10 @@ The protagonist should grow by:
 ```text
 surviving pressure
 -> noticing the real mechanism
--> avoiding becoming the scapegoat
--> gaining a usable lever
+-> avoiding becoming the scapegoat or sacrifice
+-> gaining a genre-appropriate usable lever
 -> reusing that lever under harder pressure
--> expanding access, relationships, judgment, and influence one stage at a time
+-> expanding perception, access, relationships, judgment, capability, and influence one stage at a time
 ```
 
 Each growth step should be:
@@ -207,7 +224,8 @@ Each growth step should be:
 - small enough to be believable;
 - costly enough to matter;
 - reusable enough to affect later chapters;
-- limited enough to leave the larger trend intact.
+- limited enough to leave the larger trend intact;
+- aligned with genre mode.
 
 ## Frequency Control
 
@@ -232,15 +250,9 @@ The protagonist is in more danger,
 but now has a more useful piece of leverage.
 ```
 
-Prioritize useful leverage in this order:
+Prioritize useful leverage according to genre mode.
 
-1. A person changes trust, debt, suspicion, or willingness to help.
-2. A physical object remains available, hidden, protected, or contested.
-3. The protagonist gains access to a place, witness, route, or conversation.
-4. An opponent misjudges the protagonist.
-5. A record or document creates embodied consequence.
-
-Examples of useful leverage:
+Generic examples:
 
 - a witness name;
 - a physical object that someone wants;
@@ -250,6 +262,19 @@ Examples of useful leverage:
 - an enemy's mistaken belief;
 - access to a new scene;
 - a forced relationship with a stronger actor.
+
+Traditional xianxia examples:
+
+- a minor technique clue;
+- a bodily sense of qi flow changing;
+- a low-grade spiritual object with cost;
+- a senior's attention;
+- a public standing shift;
+- access to a trial, cave, scripture shelf, or mission;
+- a combat lesson;
+- a debt owed by a stronger disciple;
+- a damaged but usable talisman;
+- a dao-heart choice that changes future action.
 
 ## Failure Modes
 
@@ -264,4 +289,5 @@ Mark the design as weak if:
 - organizations are only labels and do not control resources, access, money, violence, rituals, people, objects, or legitimacy;
 - the main plot turn is a system prompt, report, log, case number, database state, or automatic workflow change;
 - scenes are organized by narrator summary rather than local actor actions around a convergence point;
-- protagonist growth is random, unearned, or jumps stages.
+- protagonist growth is random, unearned, or jumps stages;
+- genre mode is ignored, causing every story to become organization governance, office process, investigation, or evidence-chain fiction.
