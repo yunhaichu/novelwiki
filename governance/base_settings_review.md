@@ -2,7 +2,7 @@
 
 Use this checklist after `prompts/00_base_settings_builder.md` creates a novel-specific base settings draft and before any reader entry gate or chapter brief is created.
 
-The base settings file is allowed to be short. It is not allowed to be unsupported, overbroad, or secretly novel-specific to a test project.
+The base settings file is allowed to be short. It is not allowed to be unsupported, overbroad, secretly novel-specific to a test project, or ambiguous about unresolved gaps.
 
 ## Decision
 
@@ -50,13 +50,33 @@ For each role, organization, process, resource, location, social rule, or mechan
 
 Mark `REVISE` if important settings lack support and are not listed as pending gaps.
 
-### 4. Test Novel Pollution Check
+### 4. Pending Gap Classification Check
+
+Every pending gap must be classified as one of:
+
+```text
+blocking
+non_blocking
+```
+
+Use `blocking` when the gap affects opening reader entry, protagonist motivation, immediate stake, core mechanism boundary, authority boundary, required process support, or the first chapter's main action.
+
+Use `non_blocking` when the gap can safely remain unknown until a later chapter without weakening reader entry, action logic, or setting consistency.
+
+Mark `REVISE` if:
+
+- a pending gap has no classification;
+- a blocking gap remains unresolved before reader-entry or chapter brief;
+- a non-blocking gap is actually required for the first chapter's protagonist desire, action, cost, or visible consequence;
+- the draft hides an unresolved setting problem by vague wording.
+
+### 5. Test Novel Pollution Check
 
 Mark `REVISE` if the draft imports names, organizations, rules, events, or local constraints from an existing test novel unless the user explicitly asked to use that test novel.
 
 Existing `novels/` directories may be used as regression tests, not as global setting sources.
 
-### 5. Genre Support Check
+### 6. Genre Support Check
 
 The base settings must support the declared primary genre promise.
 
@@ -66,7 +86,7 @@ Mark `REVISE` if:
 - a secondary genre overtakes the primary genre without approval.
 - the setting is decorative and does not affect action, risk, resource, relationship, status, or knowledge.
 
-### 6. Authority And Process Check
+### 7. Authority And Process Check
 
 Mark `REVISE` if:
 
@@ -74,7 +94,7 @@ Mark `REVISE` if:
 - organizations produce results without process support.
 - procedures have no visible record, participant, rule, or consequence when these matter to the story.
 
-### 7. Resource And Object Check
+### 8. Resource And Object Check
 
 Mark `REVISE` if:
 
@@ -82,7 +102,7 @@ Mark `REVISE` if:
 - important objects do not change action, information, relationship, status, access, or consequence.
 - scarce resources become unlimited without support.
 
-### 8. Power / Anomaly / Goldfinger Check
+### 9. Power / Anomaly / Goldfinger Check
 
 Apply only if the project explicitly has such a mechanism.
 
@@ -96,7 +116,7 @@ Mark `REVISE` if:
 - the mechanism has no visible result, limit, failure mode, or pressure.
 - the draft adds unapproved side effects, counters, costs, or extra functions.
 
-### 9. Knowledge Boundary Check
+### 10. Knowledge Boundary Check
 
 Mark `REVISE` if:
 
@@ -104,7 +124,7 @@ Mark `REVISE` if:
 - unknowns are stated as confirmed facts.
 - secrets are explained before the project needs them.
 
-### 10. Language And Absolute Claim Check
+### 11. Language And Absolute Claim Check
 
 Mark `REVISE` if the draft relies on overbroad wording such as:
 
@@ -140,28 +160,33 @@ Decision: ALLOW / REVISE
 Main reason:
 
 Scope check:
-- 
+-
 
 Reference / canon boundary:
-- 
+-
 
 Support issues:
-- 
+-
+
+Pending gap classification:
+- Blocking gaps:
+- Non-blocking gaps:
+- Misclassified gaps:
 
 Genre support:
-- 
+-
 
 Authority / process issues:
-- 
+-
 
 Resource / object issues:
-- 
+-
 
 Power / anomaly issues if any:
-- 
+-
 
 Knowledge boundary issues:
-- 
+-
 
 Required fixes if REVISE:
 1.
