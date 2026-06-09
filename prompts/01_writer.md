@@ -66,6 +66,40 @@ Do not import unused reference-setting material directly into prose.
 
 If the chapter needs a new institution, process, resource, power function, anomaly rule, or social rule not covered by base settings, flag the gap rather than silently inventing it.
 
+## Process Expression Rule
+
+Processes should appear through scene pressure, not explanatory blocks.
+
+Prefer:
+
+- a button that is disabled;
+- a required field that blocks submission;
+- a message from a superior;
+- a record that contradicts another record;
+- a warning prompt;
+- a failed call;
+- a visible note left in the system;
+- a person refusing responsibility;
+- a later consequence from an earlier process choice.
+
+Avoid consecutive paragraphs explaining how the process works unless the explanation is immediately forced by action, conflict, or consequence.
+
+## Reader Itch Rule
+
+For opening chapters and major arc starts, make the reader's next question concrete and protagonist-bound.
+
+Bad:
+
+```text
+What is the truth of this world?
+```
+
+Better:
+
+```text
+Can the protagonist stop the specific loss without creating a record that exposes him?
+```
+
 ## Hard Anti-AI Taste Rules
 
 When two similar events appear close together, do not use the same narrative sequence twice. The second pass must change focus, such as bodily sensation, visible detail, social reaction, mistake, hesitation, consequence, or missing information.
