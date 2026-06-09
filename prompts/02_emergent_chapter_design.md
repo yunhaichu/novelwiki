@@ -14,6 +14,7 @@ A chapter should be the result of:
 major pressure
 -> organization reaction embodied in scene action
 -> character misjudgment or costly choice
+-> protagonist growth pressure
 -> protagonist gain
 -> reader reward
 -> consequence chain
@@ -39,6 +40,7 @@ Read:
 
 - major conflict engine;
 - dramatic arena;
+- protagonist growth track;
 - actor cognition cards for important characters / organizations;
 - current protagonist advantage ledger if present;
 - current reader reward / unresolved questions if present;
@@ -55,6 +57,7 @@ Novel ID:
 Chapter number:
 Previous chapter consequence:
 Current volume attractor this chapter should move toward:
+Active protagonist growth stage:
 
 ## 1. Pressure Event
 
@@ -70,7 +73,24 @@ Why now?
 What must not escalate yet?
 -
 
-## 2. Level Activation
+## 2. Large Trend / Growth Fit
+
+What larger trend is hard to resist here?
+-
+
+How does this trend reach the protagonist's level?
+-
+
+Which current protagonist weakness does it test?
+-
+
+What growth lesson is available but not guaranteed?
+-
+
+What stage must the protagonist not skip?
+-
+
+## 3. Level Activation
 
 Major-force pressure, if any:
 -
@@ -84,7 +104,7 @@ Character-level actors activated:
 Why these levels are enough for this chapter:
 -
 
-## 3. Scene-First Plot Carrier
+## 4. Scene-First Plot Carrier
 
 The main chapter turn must be carried by scene action, not a record/status/system.
 
@@ -113,7 +133,7 @@ Why the record/system is not the main carrier:
 What physical object, person, or relationship changes immediately:
 -
 
-## 4. Organization Reaction
+## 5. Organization Reaction
 
 Organization:
 What it wants:
@@ -129,7 +149,7 @@ What concrete person / object / access / rule it uses:
 Likely embodied action:
 What it hides:
 
-## 5. Character Cognition
+## 6. Character Cognition
 
 Character:
 Directly knows:
@@ -149,7 +169,7 @@ Most trusted evidence:
 Fear:
 Cannot afford:
 
-## 6. Protagonist Immediate Problem
+## 7. Protagonist Immediate Problem
 
 What does the protagonist want right now?
 -
@@ -163,7 +183,7 @@ What information does the protagonist lack?
 What information does the protagonist misread?
 -
 
-## 7. Bad Options
+## 8. Bad Options
 
 At least three options are required.
 
@@ -194,7 +214,7 @@ Who is harmed:
 Why tempting:
 Why dangerous:
 
-## 8. Chosen Action
+## 9. Chosen Action
 
 Chosen option:
 -
@@ -208,7 +228,27 @@ Why this is not author convenience:
 What desire, fear, loyalty, secret, or misjudgment shapes it:
 -
 
-## 9. Protagonist Advantage Ledger
+## 10. Protagonist Growth Result
+
+Cost paid:
+-
+
+Usable leverage gained:
+-
+
+Growth lesson, if any:
+-
+
+How this changes the protagonist's next possible action:
+-
+
+What remains unsolved:
+-
+
+Why this does not skip a growth stage:
+-
+
+## 11. Protagonist Advantage Ledger
 
 Protagonist pays this cost:
 -
@@ -228,7 +268,7 @@ Protagonist gains at least one usable advantage. Prioritize person/object/access
 
 If the only gain is a status change, report submission, log entry, case number, archive, or vague insight, revise the chapter.
 
-## 10. Reader Reward Ledger
+## 12. Reader Reward Ledger
 
 Reader expectation entering this chapter:
 -
@@ -247,7 +287,7 @@ Concrete memory point:
 
 If the chapter only adds mystery and answers nothing, revise it.
 
-## 11. Scene Engine
+## 13. Scene Engine
 
 Scene location:
 -
@@ -267,7 +307,7 @@ What each side pretends:
 What each side really wants:
 -
 
-## 12. Immediate Result
+## 14. Immediate Result
 
 Visible result:
 -
@@ -287,7 +327,7 @@ Object / person / route / access changed:
 Supporting record changed, if any:
 -
 
-## 13. Consequence Chain
+## 15. Consequence Chain
 
 Which organization must react next?
 -
@@ -301,7 +341,7 @@ Which major conflict front becomes sharper?
 What is the next chapter's forced pressure?
 -
 
-## 14. Decision
+## 16. Decision
 
 ALLOW / REVISE
 ```
@@ -315,10 +355,14 @@ Pass only if all are true:
 - Organization pressure is embodied by people, objects, access, or scene action.
 - Character-level choices dominate the chapter.
 - Important actors act from limited knowledge.
+- A protagonist growth stage is active.
+- The pressure tests the protagonist's current weakness.
 - The protagonist faces bad options.
 - The chosen action has a cost.
 - The protagonist gains a usable advantage.
 - The advantage can be used in the next scene.
+- The growth does not skip stages.
+- The large trend remains larger than the protagonist.
 - The reader receives a reward, not only a new mystery.
 - The result changes the arena.
 - The next chapter is forced by consequence.
@@ -331,6 +375,8 @@ Mark `REVISE` if:
 - the protagonist only suffers and gains nothing;
 - the protagonist receives vague insight instead of usable leverage;
 - the only protagonist gain is a record or system status;
+- protagonist growth is random, unearned, or jumps stages;
+- the protagonist directly defeats a structural trend too early;
 - all actors know too much;
 - a major faction directly solves a local chapter problem too early;
 - the chapter contains exciting events but no state variable changes;
