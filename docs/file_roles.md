@@ -145,6 +145,24 @@ Required: yes
 
 Role: turns macro conflict into a concrete arena of organizations, locations, resources, public legitimacy, hidden interests, embodied agents, and character actors.
 
+### `prompts/00_protagonist_growth_track.md`
+
+Scope: per-novel
+Required: yes
+
+Role: defines controlled protagonist growth stages, current weakness, growth asset ladder, forbidden jumps, and what the author's invisible hand may or may not do.
+
+### `prompts/00_wiki_bootstrap.md`
+
+Scope: per-novel
+Required: yes
+
+Role: creates or updates the initial per-novel wiki immediately after setup approval and before chapter drafting.
+
+Required outputs include `project.md`, `base_settings.md`, `style.md`, `name_registry.md`, `protagonist_growth.md`, and initial character / world / organization files as needed.
+
+Hard rule: no wiki bootstrap, no draft.
+
 ### `prompts/00_organization_behavior_model.md`
 
 Scope: per-novel, per major organization
@@ -165,13 +183,6 @@ Scope: per-novel, per major character
 Required: conditional; yes for recurring speaking characters
 
 Role: defines source-grounded speech patterns and how those speech patterns change with risk, audience, authority, secrecy, and relationship.
-
-### `prompts/00_protagonist_growth_track.md`
-
-Scope: per-novel
-Required: yes
-
-Role: defines controlled protagonist growth stages, current weakness, growth asset ladder, forbidden jumps, and what the author's invisible hand may or may not do.
 
 ## Volume / Arc Prompts
 
@@ -258,7 +269,7 @@ Required: yes
 
 Role: writes chapter draft from current novel wiki, chapter design, scene convergence, and relevant governance rules.
 
-Do not use it before setup, preflight, and chapter design are clear.
+Do not use it before setup, wiki bootstrap, preflight, and chapter design are clear.
 
 ## Review Governance
 
@@ -354,6 +365,15 @@ Scope: per-canon update
 Required: yes
 
 Role: defines what can and cannot be written into a novel wiki, including character behavior, organization behavior, protagonist growth, and scene performance distinctions.
+
+### `prompts/05_wiki_sync_after_chapter.md`
+
+Scope: per-chapter / per-canon update
+Required: yes after every approved chapter
+
+Role: creates or updates `chapter_states/chapter_<number>.md` and synchronizes confirmed character, organization, world, growth, timeline, relationship, foreshadowing, style, and name changes before the next chapter is planned.
+
+Hard rule: approved chapter -> wiki sync -> next chapter.
 
 ### `governance/chapter_state_update_review.md`
 
