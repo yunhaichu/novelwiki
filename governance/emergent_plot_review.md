@@ -2,7 +2,7 @@
 
 Use this checklist after `prompts/02_emergent_chapter_design.md` and after a chapter draft.
 
-The purpose is to verify that the chapter is not just busy, not just mysterious, and not just abusive to the protagonist.
+The purpose is to verify that the chapter is not just busy, not just mysterious, not just abusive to the protagonist, and not driven by interfaces or records.
 
 ## Decision
 
@@ -23,7 +23,8 @@ Read:
 - emergent chapter design;
 - chapter draft if present;
 - previous chapter state;
-- current protagonist advantage ledger if present.
+- current protagonist advantage ledger if present;
+- `governance/anti_record_driven_plot.md` when relevant.
 
 ## Hard Checks
 
@@ -31,7 +32,7 @@ Read:
 
 Mark `REVISE` if the chapter event cannot be connected to any major conflict front.
 
-A valid connection may be through resource, rule, record, access, legitimacy, public face, hostage, money, violence, ritual, deadline, or information.
+A valid connection may be through resource, rule, access, legitimacy, public face, hostage, money, violence, ritual, deadline, information, witness, physical object, or relationship.
 
 ### 2. Level Frequency Check
 
@@ -47,9 +48,9 @@ major-force pressure: implicit or indirect
 
 ### 3. Organization Function Check
 
-Mark `REVISE` if an organization appears but does not use a concrete resource, rule, record, access point, money, violence, legitimacy, or information channel.
+Mark `REVISE` if an organization appears but does not use a concrete person, physical object, rule, access point, money, violence, legitimacy, route, witness, or information channel.
 
-Organization-level action must create real friction or consequence.
+Organization-level action must create real scene friction or consequence.
 
 ### 4. Actor Cognition Check
 
@@ -69,18 +70,20 @@ Mark `REVISE` if the protagonist only gains danger, injury, blame, pursuit, or c
 
 The protagonist must gain at least one usable advantage:
 
-- information;
-- evidence;
 - relationship;
+- witness;
+- physical object;
 - access;
+- time;
+- route;
 - identity / status;
 - enemy misjudgment;
 - operational space;
 - skill / understanding;
 - resource;
-- witness;
-- route;
 - leverage.
+
+Information and evidence count only when they change the protagonist's next possible action.
 
 Vague realizations such as `this is bigger than expected` do not count unless they change what the protagonist can do next.
 
@@ -104,7 +107,7 @@ Each chapter should provide at least one reader reward:
 
 Mark `REVISE` if the next chapter is not forced by the consequence of this chapter.
 
-The ending should make at least one actor or organization unable to ignore the protagonist, the evidence, the choice, or the changed situation.
+The ending should make at least one actor or organization unable to ignore the protagonist, the person, the object, the choice, or the changed situation.
 
 ### 9. Anti-Randomness Check
 
@@ -118,17 +121,34 @@ Mark `REVISE` if the chapter repeats the same engine as recent chapters without 
 
 Change pressure form across chapters:
 
-- record pressure;
+- person being moved;
+- object being preserved / removed;
 - field verification;
 - interrogation;
 - public ritual;
 - resource seizure;
-- warehouse / route pressure;
 - witness pressure;
 - internal betrayal;
 - false cooperation;
 - deadline pressure;
-- relationship bargain.
+- relationship bargain;
+- record pressure only when embodied in action.
+
+### 11. Record-Driven Plot Check
+
+Mark `REVISE` if the main plot turn, climax, chapter hook, or protagonist advantage depends primarily on:
+
+- system prompt;
+- report submission;
+- database entry;
+- log;
+- file number;
+- automatic workflow status;
+- archive access;
+- notification message;
+- electronic evidence that no person acts on.
+
+Records are allowed only if they immediately cause a person or object action: someone blocks, takes, hides, refuses, moves, protects, destroys, changes testimony, arrives, seals a room, or changes relationship.
 
 ## Output Format
 
@@ -167,6 +187,9 @@ Anti-randomness:
 Repetition:
 -
 
+Record-driven plot:
+-
+
 Required fixes if REVISE:
 1.
 2.
@@ -185,3 +208,5 @@ A strong chapter usually ends with:
 The protagonist is more exposed,
 but now owns a more useful piece of leverage.
 ```
+
+That leverage should normally be embodied in a person, object, relationship, access path, or physical scene condition, not only a record.
