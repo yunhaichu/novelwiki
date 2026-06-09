@@ -14,7 +14,8 @@ This review focuses on prose-level symptoms:
 - author commentary;
 - polished trailer lines;
 - repetitive rhythm;
-- dialogue that sounds like narration.
+- dialogue that sounds like narration;
+- record-driven narration.
 
 ## Required Inputs
 
@@ -26,7 +27,8 @@ Read:
 - dialogue intent;
 - current novel style file;
 - anti-AI taste rules if present;
-- relevant character wiki files.
+- relevant character wiki files;
+- `governance/anti_record_driven_plot.md` when relevant.
 
 ## Hard Principle
 
@@ -35,14 +37,17 @@ Do not improve prose by making it more literary.
 Improve prose by making it more grounded in:
 
 ```text
+current person
 current object
 current action
 current speaker
 current listener
 current pressure
-current record / route / permission / resource
+current route / permission / resource
 current consequence
 ```
+
+Records, screens, reports, and systems can support pressure, but they should not be the emotional or narrative center of the scene.
 
 ## Hard Checks
 
@@ -63,13 +68,12 @@ The storm had awakened.
 Replace with:
 
 - object state;
-- record change;
-- permission change;
-- someone entering / leaving;
-- a number changing;
+- person entering / leaving;
 - a route blocked;
-- a message received;
-- a name appearing on a screen.
+- a witness changing answer;
+- someone refusing to hand something over;
+- someone taking or protecting a physical object;
+- a relationship changing in public.
 
 ### 2. Unsupported Metaphor Check
 
@@ -161,7 +165,7 @@ Every paragraph should do at least one:
 - reveal necessary information;
 - change pressure;
 - change relationship;
-- alter object / record / position;
+- alter object / person / position;
 - expose a knowledge boundary;
 - create a choice;
 - pay off a prior setup.
@@ -171,6 +175,48 @@ Mark `REVISE` for decorative atmosphere that does not affect reading path.
 ### 10. Source Support Check
 
 If an expressive habit, metaphor style, repeated gesture, speech quirk, or emotional display is not supported by wiki or expression card, remove or mark an expression gap.
+
+### 11. Record-Centered Expression Check
+
+Mark `REVISE` if paragraphs repeatedly center on:
+
+- screen prompts;
+- report forms;
+- case numbers;
+- database status;
+- logs;
+- archives;
+- system messages;
+- automatic workflow changes;
+- electronic records;
+
+while people and objects remain secondary.
+
+Convert record-centered paragraphs into person/object-centered paragraphs.
+
+Weak:
+
+```text
+The system marked the case as abnormal.
+```
+
+Stronger:
+
+```text
+The doctor stopped at the stairwell after one call, turned back to the child, and told the nurse not to move her.
+```
+
+Weak:
+
+```text
+The report triggered an investigation.
+```
+
+Stronger:
+
+```text
+A man in plain clothes came up the stairs, showed his badge only to the doctor, and asked who had touched the handrail.
+```
 
 ## Output Format
 
@@ -190,6 +236,7 @@ Expression checks:
 - Role grounding:
 - Scene utility:
 - Source support:
+- Record-centered expression:
 
 Lines to revise:
 1. Original:
@@ -212,16 +259,17 @@ Do not simply delete AI-flavored lines. Replace them with one of:
 
 - visible object state;
 - specific permission boundary;
-- record / document / number change;
 - scene movement;
 - concrete refusal;
 - interrupted sentence;
 - role-grounded status report;
-- action that changes the scene;
+- person-to-person action;
+- physical object being moved, hidden, protected, taken, damaged, or exposed;
+- relationship change;
 - a smaller, less polished line.
 
 ## Review Standard
 
 A line can be plain and still strong.
 
-The target is not literary polish. The target is believable pressure carried by people, objects, records, actions, and consequences.
+The target is not literary polish. The target is believable pressure carried by people, objects, actions, relationships, and consequences.
