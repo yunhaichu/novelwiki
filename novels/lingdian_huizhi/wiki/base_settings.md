@@ -104,6 +104,11 @@ Setting must not replace: protagonist choice, reader-entry clarity, scene action
   Writing use: Use overtime, quality scores, complaint rate, reassignment, frozen escalation, audit note, missed callback, or blame chain.
   Limit: Do not replace workplace pressure with vague terms such as fate, old order, hidden current, or system backside.
 
+- Rule: Chen Lu's immediate personal stake is monthly quality score pressure.
+  Applies to: chapter 001 opening.
+  Writing use: He already has one unresolved quality warning this month. Another abnormal handling record may cost his night-shift allowance and make rent difficult.
+  Limit: This should appear as one practical pressure detail, not as a long backstory.
+
 ## Power / Anomaly / Goldfinger Rules
 
 - Mechanism: future-dated service tickets.
@@ -140,13 +145,16 @@ Setting must not replace: protagonist choice, reader-entry clarity, scene action
 ## Pending Setting Gaps
 
 - Gap: exact first future-dated ticket content.
-  Why unresolved: should be chosen by reader-entry and opening brief, not base settings.
-  When to resolve: chapter 001 reader entry gate.
+  Classification: resolved for chapter 001 by `planning/reader_entry_chapter_001.md` and `planning/opening_brief_chapter_001.md`.
+  Why resolved: the first ticket now concerns parcel locker injury risk before midnight.
+  Later status: may be canonized only after chapter 001 is approved.
 
 - Gap: whether the platform record can change after midnight.
-  Why unresolved: this is a later mechanism question.
-  When to resolve: after one approved incident proves or disproves record stability.
+  Classification: non_blocking.
+  Why unresolved: this is a later mechanism question and is not required to understand chapter 001.
+  Later resolution window: after one approved incident proves or disproves record stability.
 
-- Gap: Chen Lu's personal pressure outside work.
-  Why unresolved: project file defines work pressure but not personal stakes.
-  When to resolve: opening brief or protagonist character file before chapter 001 draft.
+- Gap: exact long-term cost of acting on future-dated tickets.
+  Classification: non_blocking.
+  Why unresolved: the opening only needs audit and process risk; supernatural or long-term cost would overload the entry.
+  Later resolution window: later volume 1 after repeated use.
