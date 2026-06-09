@@ -17,6 +17,7 @@ Read the current novel wiki before writing:
 - previous chapter state
 - relevant open questions
 - `governance/wiki_retrieval_rules.md`
+- `governance/anti_record_driven_plot.md` when the chapter involves systems, reports, logs, files, workflows, institutions, or records
 
 ## Retrieval Plan
 
@@ -66,21 +67,51 @@ Do not import unused reference-setting material directly into prose.
 
 If the chapter needs a new institution, process, resource, power function, anomaly rule, or social rule not covered by base settings, flag the gap rather than silently inventing it.
 
+## Scene-First Plot Rule
+
+Do not let interfaces write the story.
+
+Systems, logs, reports, archives, files, case numbers, databases, screens, workflow states, and notifications may appear, but they must not replace people, objects, relationships, and scene action.
+
+Every time a system or record appears, ask:
+
+```text
+Who changes action because of it?
+Who blocks, takes, hides, refuses, moves, protects, or destroys something because of it?
+What physical object, person, route, or relationship changes immediately?
+Can the same plot effect be carried by a person or object instead?
+```
+
+If the answer is unclear, remove the system/record beat or demote it to background.
+
+The chapter climax should not be clicking, submitting, uploading, approving, filing, logging, receiving a popup, or watching status change.
+
+Prefer climax carried by:
+
+- one person blocking another;
+- someone trying to take a child, witness, object, or key person away;
+- someone hiding, protecting, swapping, refusing, or exposing a physical object;
+- someone changing testimony in front of another person;
+- someone arriving in person and changing access;
+- a relationship visibly shifting;
+- a protagonist using a scene object or relationship as leverage.
+
 ## Process Expression Rule
 
 Processes should appear through scene pressure, not explanatory blocks.
 
 Prefer:
 
-- a button that is disabled;
-- a required field that blocks submission;
-- a message from a superior;
-- a record that contradicts another record;
-- a warning prompt;
-- a failed call;
-- a visible note left in the system;
 - a person refusing responsibility;
+- a stronger actor arriving in person;
+- a door or route being blocked;
+- a worker trying to remove an object;
+- a witness being moved;
+- a superior demanding a choice;
+- a physical item that must be preserved;
 - a later consequence from an earlier process choice.
+
+Use buttons, fields, popups, forms, reports, notes, and electronic records sparingly. They are support, not the main plot carrier.
 
 Avoid consecutive paragraphs explaining how the process works unless the explanation is immediately forced by action, conflict, or consequence.
 
@@ -97,7 +128,7 @@ What is the truth of this world?
 Better:
 
 ```text
-Can the protagonist stop the specific loss without creating a record that exposes him?
+Can the protagonist keep the key person or object in the room long enough to stop a stronger organization from taking it?
 ```
 
 ## Hard Anti-AI Taste Rules
