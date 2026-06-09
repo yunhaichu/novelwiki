@@ -14,22 +14,81 @@ The repository stores three kinds of material:
 
 ChatGPT is responsible for planning, base-setting construction, writing, revision, review assistance, and generating wiki update drafts. The wiki is responsible for long-term memory. The user remains the final approver.
 
-## System Flow
+## Current Workflow Entry
+
+Use these two files as the current workflow entry:
 
 ```text
-project scope
--> type contract / novel spine
--> reference settings selection
--> novel-specific base settings
--> reader entry gate
--> opening chapter brief or normal chapter brief
--> chapter draft
--> chapter review
--> revision if needed
+docs/workflow_layers.md
+docs/file_roles.md
+```
+
+`docs/workflow_layers.md` tells you when to run each layer.
+
+`docs/file_roles.md` tells you what each file is responsible for.
+
+`docs/emergent_plot_workflow.md` is the conceptual overview, not the only execution checklist.
+
+## Layered System Flow
+
+Do not run every prompt for every chapter.
+
+The current workflow is organized by layer:
+
+```text
+Layer 1: New Novel Setup
+Layer 2: Actor Model Setup
+Layer 3: Volume / Arc Planning
+Layer 4: Chapter Preflight
+Layer 5: Reader Entry / Opening Control
+Layer 6: Scene Design
+Layer 7: Drafting
+Layer 8: Review / Revision
+Layer 9: Canon Update
+```
+
+For a new novel:
+
+```text
+project scope / type promise
+-> genre mode contract
+-> genre operating model / reality-causal preflight
+-> base settings
+-> major conflict engine
+-> dramatic arena
+-> protagonist growth track
+-> organization and character behavior models
+-> volume / chapter planning
+-> scene convergence
+-> draft
+-> review
 -> canon update
 ```
 
-The base settings step must happen before reader-entry and chapter drafting.
+For a normal later chapter:
+
+```text
+volume / arc state check
+-> reality-causal preflight
+-> emergent chapter design
+-> scene convergence
+-> draft
+-> review
+-> canon update
+```
+
+## Non-Negotiable Gates
+
+Do not draft if any of these are unresolved:
+
+1. Genre mode is unclear.
+2. Base settings for the active novel are missing.
+3. Reality-causal preflight says the core event is unnatural.
+4. The protagonist has no active growth stage.
+5. The chapter has no usable protagonist gain.
+6. The main scene has no convergence point.
+7. The key object has no natural function.
+8. The story relies on system/report/log/status change as climax.
 
 ## Repository Layout
 
@@ -47,24 +106,23 @@ reference_settings/
   power_system_common/
     base_laws.md
 
+docs/
+  workflow_layers.md
+  file_roles.md
+  emergent_plot_workflow.md
+  backups/
+
 prompts/
-  00_novel_spine.md
-  00_volume_state_plan.md
-  00_chapter_pressure_card.md
-  00_multi_agent_scene_simulation.md
-  00_base_settings_builder.md
-  01_scene_log_to_draft.md
-  01_writer.md
-  04_review_hook.md
+  00_*.md   setup / operating model / planning prompts
+  01_*.md   drafting prompts
+  02_*.md   chapter / scene prompts
+  04_*.md   review hooks
+  05_*.md   canon update prompts if present
 
 governance/
-  wiki_retrieval_rules.md
-  wiki_write_rules.md
-  base_settings_review.md
-  review_checklist.md
-  anti_ai_taste_check.md
-  ai_taste_language_grounding.md
-  batch_commit_workflow.md
+  wiki retrieval and write rules
+  base setting reviews
+  reality / object / plot / growth / voice / AI-expression reviews
 
 novels/
   <novel_id>/
@@ -76,6 +134,7 @@ novels/
       timeline.md
       relationships.md
       foreshadowing.md
+      protagonist_growth.md
       characters/
       world/
       chapter_states/
@@ -104,18 +163,21 @@ novels/<novel_id>/
 
 Each novel has its own:
 
-- project direction
-- base settings
-- type contract if implemented
-- style rules
-- name registry
-- character files
-- world rules
-- timeline
-- relationship state
-- foreshadowing state
-- chapter states
-- drafts
+- project direction;
+- genre mode contract;
+- genre operating model or equivalent reality model;
+- base settings;
+- protagonist growth track;
+- style rules;
+- name registry;
+- character files;
+- organization files;
+- world rules;
+- timeline;
+- relationship state;
+- foreshadowing state;
+- chapter states;
+- drafts.
 
 ## Base Settings Rule
 
@@ -129,16 +191,16 @@ This file defines only the opening and first-volume setting boundaries needed fo
 
 It should cover:
 
-- genre foundation
-- identity and authority rules
-- organization and process rules
-- resource and object rules
-- space and location rules
-- social life and language rules
-- power / anomaly / goldfinger rules if applicable
-- knowledge boundaries
-- forbidden setting moves
-- pending setting gaps
+- genre foundation;
+- identity and authority rules;
+- organization and process rules;
+- resource and object rules;
+- space and location rules;
+- social life and language rules;
+- power / anomaly / goldfinger rules if applicable;
+- knowledge boundaries;
+- forbidden setting moves;
+- pending setting gaps.
 
 ## Name Rule
 
@@ -151,3 +213,13 @@ Each novel should maintain its own `wiki/name_registry.md` to avoid repeated mod
 Only confirmed content from final approved chapters should be written into the wiki.
 
 Do not write speculation, inferred secrets, temporary actions, reference candidates, or unconfirmed explanations as canon.
+
+## Restructure Safety
+
+Before deleting, merging, or renaming workflow files, check:
+
+```text
+docs/backups/workflow_snapshot_2026-06-09.md
+```
+
+This file records the restore anchor for the pre-cleanup workflow state.
