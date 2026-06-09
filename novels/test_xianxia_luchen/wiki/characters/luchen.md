@@ -2,7 +2,7 @@
 
 Novel ID: `test_xianxia_luchen`
 
-Canon status: approved test setup.
+Canon status: updated through Chapter 003.
 
 ## Identity
 
@@ -72,16 +72,22 @@ He still will not make loud declarations or challenge hierarchy without leverage
 
 ## Specialness Boundary
 
-At chapter-one state, 陆沉 can only preserve a faint gray response.
+Current confirmed ability through Chapter 003:
 
-He cannot yet:
+- can preserve a faint gray response;
+- can faintly sense that some furnace waste is not fully dead;
+- can sometimes use gray response as a costly judgment aid when ordinary senses are insufficient.
 
-- absorb qi;
-- trigger visible power;
-- identify treasures;
-- heal;
-- fight;
-- prove his value publicly.
+Current limits:
+
+- cannot absorb qi;
+- cannot trigger visible power;
+- cannot identify treasures;
+- cannot heal;
+- cannot fight with qi;
+- cannot leave measurable qi trace;
+- cannot prove his value publicly;
+- cannot use gray response continuously without fatigue / chest tightness.
 
 ## Voice
 
@@ -105,9 +111,30 @@ Confirmed:
 - assigned toward 药渣房 because he knows some herbs;
 - preserved the gray response overnight without increasing it.
 
+## Chapter 2 State
+
+Confirmed:
+
+- enters 药渣房;
+- senses faint reaction from a few pieces of not-fully-dead waste;
+- learns sensing causes chest tightness / fatigue;
+- does not hide residue;
+- gains half a coarse grain cake from 方远 through practical exchange.
+
+## Chapter 3 State
+
+Confirmed:
+
+- warns 方远 once as agreed;
+- helps prevent 宋满's sorting mistake from becoming full-bucket rework;
+- learns gray response must be conserved, not used as ordinary eyesight;
+- gains a small debt from 宋满 through bitter tongue root;
+- remains in 药渣房 logic, with no stable cultivation yet.
+
 Not confirmed:
 
 - full nature of gray response;
-- whether he can use furnace residue;
-- whether he can leave a trace on testing paper;
-- any stable cultivation level.
+- safe use of furnace residue;
+- any qi entering the body;
+- any stable cultivation level;
+- public recognition of talent.
