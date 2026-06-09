@@ -18,6 +18,7 @@ Only write:
 - confirmed behavior patterns supported by repeated action or approved initial settings
 - confirmed expression patterns supported by repeated speech or approved initial settings
 - confirmed threshold / override behavior only after source support or approved design
+- confirmed protagonist growth stage, cost, and usable leverage after approved chapter state
 - confirmed organization behavior patterns supported by approved settings, dramatic arena, or repeated chapter action
 - confirmed organization public legitimacy, real interests, action ladder, and agents when source-supported
 
@@ -37,6 +38,7 @@ Do not write:
 - unsupported dialect or speech quirks
 - unsupported environmental modulation
 - unsupported threshold reversal
+- unsupported protagonist growth not paid for by chapter cost or approved design
 - unsupported organization conspiracy
 - unsupported illegal organization methods
 - unsupported internal faction conflict
@@ -167,6 +169,35 @@ Record what the character's inner thought usually uses:
 
 Also record what the inner monologue should not use, such as author summary, destiny language, theme statements, or all-knowing conclusions.
 
+## Protagonist Growth Pages / Sections
+
+A protagonist wiki or dedicated growth file should include:
+
+- initial position
+- starting weakness
+- starting useful skill
+- starting misconception
+- starting fear
+- what the protagonist cannot do at the start
+- larger trend pressure they cannot directly stop
+- staged growth path
+- growth asset ladder
+- forbidden jumps
+- costs required for each stage
+- what remains unsolved after each stage
+
+After each approved chapter, record protagonist growth only as concrete state:
+
+- active growth stage
+- pressure tested
+- cost paid
+- usable leverage gained
+- relationship/access/object/skill/judgment change
+- what this enables next
+- what the protagonist still cannot do
+
+Do not record vague growth such as `became stronger`, `understood the world`, or `changed mindset` unless it is tied to a usable later action.
+
 ## Organization Pages
 
 Organization pages must include:
@@ -273,7 +304,7 @@ Record:
 
 ## Scene Performance Rule
 
-Do not convert one scene action into permanent personality or organization policy too quickly.
+Do not convert one scene action into permanent personality, protagonist growth, or organization policy too quickly.
 
 For characters, record whether an action is:
 
@@ -283,6 +314,16 @@ For characters, record whether an action is:
 - breakdown / collapse
 - strategic performance
 - one-time exception
+
+For protagonist growth, record whether a change is:
+
+- stage pressure
+- usable leverage
+- skill / judgment upgrade
+- relationship / access gain
+- temporary advantage
+- unearned coincidence
+- forbidden jump
 
 For organizations, record whether an action is:
 
