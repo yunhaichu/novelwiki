@@ -2,7 +2,7 @@
 
 Use this checklist after `prompts/02_emergent_chapter_design.md`, `prompts/02_scene_convergence.md`, and after a chapter draft.
 
-The purpose is to verify that the chapter is not just busy, not just mysterious, not just abusive to the protagonist, not driven by interfaces or records, and not organized by narrator explanation.
+The purpose is to verify that the chapter is not just busy, not just mysterious, not just abusive to the protagonist, not driven by interfaces or records, not organized by narrator explanation, and not using organizations as abstract black boxes.
 
 ## Decision
 
@@ -19,6 +19,7 @@ Read:
 
 - major conflict engine;
 - dramatic arena;
+- organization behavior models used by the chapter;
 - actor cognition cards used by the chapter;
 - scene convergence plan if present;
 - emergent chapter design;
@@ -53,13 +54,40 @@ Mark `REVISE` if an organization appears but does not use a concrete person, phy
 
 Organization-level action must create real scene friction or consequence.
 
-### 4. Actor Cognition Check
+### 4. Organization Behavior Check
+
+Mark `REVISE` if an organization acts as a cold abstract interest machine.
+
+Check:
+
+- public legitimacy mask;
+- real interest;
+- packaging language;
+- operating boundary;
+- action ladder level;
+- embodied agent;
+- internal faction or frontline constraint when relevant;
+- environmental modulation;
+- responsibility-cutting method if escalation occurs;
+- what the organization cannot publicly admit.
+
+Mark `REVISE` if:
+
+- the organization states naked interest when it should use public packaging;
+- the organization jumps directly to illegal or irreversible action without trigger, agent, or cutout;
+- every member acts as one mind;
+- the organization has no concrete agent on scene;
+- the organization can do anything without legal, reputational, resource, or political boundary;
+- the organization cannot misjudge anything;
+- the organization's action does not change under public/private, media, superior, strong target, weak target, or evidence exposure conditions.
+
+### 5. Actor Cognition Check
 
 Mark `REVISE` if actors know too much, infer too accurately without evidence, or choose the globally optimal path from insufficient information.
 
 A character's action should be locally rational from their position, even if globally dangerous.
 
-### 5. Scene Convergence Check
+### 6. Scene Convergence Check
 
 Mark `REVISE` if an important scene has no convergence point.
 
@@ -80,7 +108,7 @@ A convergence point may be:
 
 At least two actors should want to move, protect, take, hide, block, expose, control, or reinterpret the convergence point.
 
-### 6. Character Performance Check
+### 7. Character Performance Check
 
 Mark `REVISE` if the narrator explains what character action should perform.
 
@@ -104,13 +132,13 @@ Replace with character performance:
 - someone redirects a question;
 - someone changes who they look at.
 
-### 7. Bad Options Check
+### 8. Bad Options Check
 
 Mark `REVISE` if the protagonist has only one obvious correct move, or if all choices are cost-free.
 
 The chapter should force a choice among imperfect options.
 
-### 8. Protagonist Advantage Check
+### 9. Protagonist Advantage Check
 
 Mark `REVISE` if the protagonist only gains danger, injury, blame, pursuit, or confusion.
 
@@ -133,7 +161,7 @@ Information and evidence count only when they change the protagonist's next poss
 
 Vague realizations such as `this is bigger than expected` do not count unless they change what the protagonist can do next.
 
-### 9. Reader Reward Check
+### 10. Reader Reward Check
 
 Mark `REVISE` if the chapter only adds new mysteries and answers nothing.
 
@@ -149,19 +177,19 @@ Each chapter should provide at least one reader reward:
 - a memorable object / line / scene image;
 - proof that the protagonist became more important.
 
-### 10. Consequence Chain Check
+### 11. Consequence Chain Check
 
 Mark `REVISE` if the next chapter is not forced by the consequence of this chapter.
 
 The ending should make at least one actor or organization unable to ignore the protagonist, the person, the object, the choice, or the changed situation.
 
-### 11. Anti-Randomness Check
+### 12. Anti-Randomness Check
 
 Mark `REVISE` if the chapter introduces a new faction, tool, clue, power, organization, or disaster that was not prepared by the arena, major conflict engine, or previous state.
 
 New elements may appear only if they are clearly an extension of existing conflict fronts.
 
-### 12. Repetition Check
+### 13. Repetition Check
 
 Mark `REVISE` if the chapter repeats the same engine as recent chapters without changing pressure form.
 
@@ -180,7 +208,7 @@ Change pressure form across chapters:
 - relationship bargain;
 - record pressure only when embodied in action.
 
-### 13. Record-Driven Plot Check
+### 14. Record-Driven Plot Check
 
 Mark `REVISE` if the main plot turn, climax, chapter hook, or protagonist advantage depends primarily on:
 
@@ -210,6 +238,9 @@ Level frequency:
 -
 
 Organization function:
+-
+
+Organization behavior:
 -
 
 Actor cognition:
@@ -264,3 +295,5 @@ but now owns a more useful piece of leverage.
 That leverage should normally be embodied in a person, object, relationship, access path, or physical scene condition, not only a record.
 
 A strong scene usually works even after narrator explanation is removed, because characters reveal the pressure through what they do, refuse, move, hide, protect, or say incompletely.
+
+A strong organization usually appears through a specific agent using legitimate-sounding language to pursue a real interest under boundary and risk.
