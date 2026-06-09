@@ -10,6 +10,16 @@ The goal is not to ask an LLM to invent events freely. The goal is to design a c
 Plot emergence = interest conflict × resource limits × information asymmetry × bounded cognition × costly choice × consequence chain
 ```
 
+## Scene Emergence Formula
+
+```text
+Scene emergence = convergence point × multiple local viewpoints × local goals × misreadings × action collision × visible consequence
+```
+
+A scene should not be organized by narrator explanation.
+
+A scene should be organized by characters acting from what they see, hear, think, want, fear, and misunderstand.
+
 ## Carrier Principle
 
 Controlled emergence must still be carried by readable scene action.
@@ -56,6 +66,8 @@ Each important character must have personal desire, fear, limited knowledge, mis
 
 Characters should not act as all-knowing representatives of a faction.
 
+Characters should not act as delivery devices for narrator summary. They must perform through scene behavior.
+
 ## Controlled Emergence
 
 Emergence must be controlled by direction, not by pre-deciding every event.
@@ -86,6 +98,9 @@ Use these controls:
 8. **Anti Record-Driven Plot Gate**
    Ensure the main chapter turn is not a submission, popup, log, report, case number, automatic escalation, or database change unless it immediately causes embodied scene action.
 
+9. **Scene Convergence Gate**
+   Ensure every important scene has a convergence point: a person, object, route, room, witness, decision, or risk that multiple actors want to move, protect, take, hide, block, expose, or control.
+
 ## Recommended Workflow
 
 ```text
@@ -98,6 +113,7 @@ project scope / type promise
 -> emergence control plan
 -> reader entry gate
 -> emergent chapter design
+-> scene convergence
 -> scene expression state
 -> dialogue intent
 -> scene simulation
@@ -129,6 +145,25 @@ If a chapter produces only a personal incident with no organization or macro con
 If a chapter only explains faction politics but forces no character choice, revise it.
 
 If a chapter's main turn is driven by system status, report submission, archive access, log entry, or notification rather than scene action, revise it.
+
+If a chapter's scenes require narrator explanation to be understood, revise the scene convergence.
+
+## Scene-Level Rule
+
+Every major scene should answer:
+
+```text
+1. What is the convergence point?
+2. What does each actor see?
+3. What does each actor think is happening?
+4. What does each actor want right now?
+5. What does each actor misread?
+6. What can each actor physically do?
+7. Which actions collide?
+8. What person, object, relationship, access, or information changes?
+```
+
+If the narrator has to summarize the conflict because characters do not perform it, revise the scene.
 
 ## Frequency Control
 
@@ -183,4 +218,5 @@ Mark the design as weak if:
 - the chapter adds mystery but answers nothing;
 - a major state-level actor solves a problem that should be handled by local organizations and characters;
 - organizations are only labels and do not control resources, access, money, violence, rituals, people, objects, or legitimacy;
-- the main plot turn is a system prompt, report, log, case number, database state, or automatic workflow change.
+- the main plot turn is a system prompt, report, log, case number, database state, or automatic workflow change;
+- scenes are organized by narrator summary rather than local actor actions around a convergence point.
