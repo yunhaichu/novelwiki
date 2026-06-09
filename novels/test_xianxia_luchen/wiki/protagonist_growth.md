@@ -4,7 +4,7 @@ Novel ID: `test_xianxia_luchen`
 
 Protagonist: 陆沉
 
-Canon status: approved test setup.
+Canon status: updated through Chapter 003.
 
 ## Initial Position
 
@@ -76,6 +76,32 @@ Core growth verb:
 survive -> sense -> preserve -> test -> use -> conceal -> repeat
 ```
 
+## Current Progress After Chapter 003
+
+Current stage:
+
+```text
+late Stage 1 -> early Stage 2
+```
+
+Confirmed progress:
+
+- gray response is preserved;
+- 药渣房 access is secured for now;
+- 陆沉 can faintly distinguish a few not-fully-dead residues from dead waste;
+- gray response is costly and cannot be used continuously;
+- he has learned to conserve it for key decisions;
+- he has two small peer-level ties: 方远's practical dependence and 宋满's small debt.
+
+Still not achieved:
+
+- no qi entering body;
+- no measurable trace;
+- no stable cultivation;
+- no safe residue-use method;
+- no official recognition;
+- no elder attention.
+
 ## Growth Stages
 
 ### Stage 1: Keep the Spark
@@ -121,6 +147,10 @@ Typical scene pressure:
 
 - dirty work, time pressure, weak residue, body exhaustion, risk of being dismissed.
 
+Status after Chapter 003:
+
+- mostly completed; spark preserved and first crack identified.
+
 ### Stage 2: Distinguish Dead From Not Dead
 
 Current capability:
@@ -156,6 +186,10 @@ Forbidden jump:
 
 - refining pills or creating artifacts.
 
+Status after Chapter 003:
+
+- started but not complete. 陆沉 can sense differences, but has no safe repeatable selection method yet.
+
 ### Stage 3: First Trace
 
 Current capability:
@@ -164,7 +198,7 @@ Current capability:
 
 Primary pressure:
 
--百日 trial deadline and measurable testing paper requirement.
+- 百日 trial deadline and measurable testing paper requirement.
 
 Lesson to learn:
 
@@ -188,6 +222,10 @@ Still cannot do:
 Forbidden jump:
 
 - defeating formal outer disciples.
+
+Status after Chapter 003:
+
+- not started.
 
 ### Stage 4: Concealed Method
 
@@ -224,6 +262,10 @@ Forbidden jump:
 
 - major elder recognition.
 
+Status after Chapter 003:
+
+- not started.
+
 ## Growth Asset Ladder
 
 ```text
@@ -235,6 +277,14 @@ gray response preserved
 -> concealment method
 -> minimal status change
 -> one usable relationship / debt
+```
+
+Current asset position after Chapter 003:
+
+```text
+gray response preserved
+-> access to discarded residue
+-> ability to distinguish faint residue [early / unstable]
 ```
 
 ## Invisible Hand Rule
@@ -272,3 +322,30 @@ Chapter 1 must not establish:
 - measurable progress;
 - elder attention;
 - major conflict escalation.
+
+## Chapter 2 Contract Fulfilled
+
+Chapter 2 establishes:
+
+- 药渣房 is dirty, dangerous, and resource-adjacent;
+- some waste is not fully dead;
+- gray response reacts only weakly and at cost;
+- 陆沉 does not yet hide or use residue.
+
+## Chapter 3 Contract Fulfilled
+
+Chapter 3 establishes:
+
+- gray response can help with judgment but is costly;
+- it must be conserved;
+- peer-level relationships are transactional;
+- 陆沉's first useful social assets are practical dependence and small debt, not friendship.
+
+## Chapter 4 Growth Constraint
+
+Chapter 4 should move deeper into Stage 2:
+
+- identify a safer repeated residue category;
+- increase scrutiny or task precision;
+- keep cost bodily and practical;
+- do not allow qi entering the body yet.
