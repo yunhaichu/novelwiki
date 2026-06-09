@@ -25,6 +25,7 @@ Read:
 - relevant organization / world files;
 - `style.md`;
 - `name_registry.md`;
+- `prompts/02_advantage_reward_ledger.md` output if available;
 - `governance/wiki_write_rules.md`.
 
 ## Output Targets
@@ -63,6 +64,9 @@ Each `chapter_<number>.md` must include:
 - character state;
 - key object / resource state;
 - reader reward delivered;
+- reader debt;
+- pressure clock;
+- repetition risk;
 - unresolved questions;
 - next chapter constraints;
 - useful next-chapter attractor.
@@ -88,7 +92,54 @@ Distinguish:
 - organizational rule vs local agent action;
 - public status vs private knowledge;
 - known fact vs unresolved question;
-- foreshadowing object vs ordinary detail.
+- foreshadowing object vs ordinary detail;
+- reader debt vs confirmed canon;
+- pressure clock vs completed event;
+- repetition risk vs style preference.
+
+## Reader Debt / Pressure / Repetition Rules
+
+Reader debt, pressure clock, and repetition risk are planning state, not hidden canon.
+
+They may be written into chapter state because they guide the next chapter, but they must not be treated as in-world facts known by characters.
+
+### Reader Debt
+
+Record only story-facing debts that affect future pacing:
+
+- unanswered protagonist-bound questions;
+- promises created by prior chapters;
+- emotional or relationship expectations;
+- ability / resource / status questions that need payoff.
+
+Do not record vague mysteries such as `the truth of the world` unless they create a concrete next action.
+
+### Pressure Clock
+
+Record only pressures that will force action if ignored:
+
+- deadlines;
+- resource depletion;
+- bodily deterioration;
+- institutional review;
+- scheduled test / hearing / mission / inspection;
+- relationship limit;
+- exposure risk;
+- pursuit or escalation.
+
+### Repetition Risk
+
+Record repeated scene patterns that must be upgraded or avoided next:
+
+- same location;
+- same task;
+- same conflict shape;
+- same ability trigger;
+- same conversation rhythm;
+- same consequence pattern;
+- same chapter ending shape.
+
+The next chapter constraint should say what must change if repetition risk remains.
 
 ## Output Format
 
@@ -142,15 +193,26 @@ Foreshadowing update:
 Name registry update:
 Style update:
 
-## 6. Next Chapter Constraints
+## 6. Reader Debt / Pressure / Repetition Updates
+
+Reader debt paid or partially paid:
+Reader debt created or carried:
+Debt that cannot be delayed much longer:
+Pressure clock advanced:
+Pressure that worsened:
+Repetition risk from this chapter:
+Required structural change next chapter:
+
+## 7. Next Chapter Constraints
 
 Must continue from:
 Must not contradict:
 Must not escalate yet:
 Required unresolved pressure:
+Required structural upgrade:
 Suggested next attractor:
 
-## 7. Missing / Unsafe Updates
+## 8. Missing / Unsafe Updates
 
 - candidate update:
   reason not written:
@@ -163,8 +225,10 @@ Mark `REVISE` if:
 - chapter state is missing;
 - updates include speculation or inferred secrets;
 - protagonist growth is recorded without concrete cost or usable leverage;
+- reader debt / pressure clock / repetition risk are missing from an important chapter state;
 - a one-time action is written as a permanent trait;
 - an organization agent's local action is written as full organization policy without proof;
 - a reference-setting idea is written as canon without appearing in the approved chapter;
 - next chapter constraints are missing;
+- the next chapter has no required structural upgrade after repeated scene pattern;
 - the next chapter would need to rely on chat memory rather than wiki state.
