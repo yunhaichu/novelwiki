@@ -11,7 +11,8 @@ A chapter should not be a random event.
 A chapter should be the result of:
 
 ```text
-major pressure
+genre reality
+-> major pressure
 -> organization reaction embodied in scene action
 -> character misjudgment or costly choice
 -> protagonist growth pressure
@@ -38,6 +39,8 @@ Major forces should usually appear through embodied consequences: a person arriv
 
 Read:
 
+- genre mode contract;
+- reality-causal preflight;
 - major conflict engine;
 - dramatic arena;
 - protagonist growth track;
@@ -58,8 +61,33 @@ Chapter number:
 Previous chapter consequence:
 Current volume attractor this chapter should move toward:
 Active protagonist growth stage:
+Genre mode:
+Reality-causal preflight decision:
 
-## 1. Pressure Event
+## 1. Reality-Causal Fit
+
+What normal process makes this event possible?
+-
+
+Would this event still happen if the protagonist were absent?
+-
+
+Who naturally appears?
+-
+
+Who has authority?
+-
+
+What key object / resource / trace is naturally important?
+-
+
+What body, resource, time, food, qi, money, access, or institution cost must be respected?
+-
+
+What would be unnatural or forced here?
+-
+
+## 2. Pressure Event
 
 What pressure enters the arena?
 -
@@ -73,7 +101,7 @@ Why now?
 What must not escalate yet?
 -
 
-## 2. Large Trend / Growth Fit
+## 3. Large Trend / Growth Fit
 
 What larger trend is hard to resist here?
 -
@@ -90,7 +118,7 @@ What growth lesson is available but not guaranteed?
 What stage must the protagonist not skip?
 -
 
-## 3. Level Activation
+## 4. Level Activation
 
 Major-force pressure, if any:
 -
@@ -104,7 +132,7 @@ Character-level actors activated:
 Why these levels are enough for this chapter:
 -
 
-## 4. Scene-First Plot Carrier
+## 5. Scene-First Plot Carrier
 
 The main chapter turn must be carried by scene action, not a record/status/system.
 
@@ -120,6 +148,7 @@ Select at least one primary carrier:
 - object state changes in a way people must respond to
 - relationship / trust / suspicion shifts publicly
 - route / room / door / access changes physically
+- genre-specific trial, contest, technique access, resource access, combat lesson, or bodily cultivation change
 
 Primary carrier:
 -
@@ -130,10 +159,10 @@ Supporting records or systems, if any:
 Why the record/system is not the main carrier:
 -
 
-What physical object, person, or relationship changes immediately:
+What physical object, person, relationship, access, or cultivation state changes immediately:
 -
 
-## 5. Organization Reaction
+## 6. Organization Reaction
 
 Organization:
 What it wants:
@@ -149,7 +178,7 @@ What concrete person / object / access / rule it uses:
 Likely embodied action:
 What it hides:
 
-## 6. Character Cognition
+## 7. Character Cognition
 
 Character:
 Directly knows:
@@ -169,7 +198,7 @@ Most trusted evidence:
 Fear:
 Cannot afford:
 
-## 7. Protagonist Immediate Problem
+## 8. Protagonist Immediate Problem
 
 What does the protagonist want right now?
 -
@@ -183,7 +212,7 @@ What information does the protagonist lack?
 What information does the protagonist misread?
 -
 
-## 8. Bad Options
+## 9. Bad Options
 
 At least three options are required.
 
@@ -214,7 +243,7 @@ Who is harmed:
 Why tempting:
 Why dangerous:
 
-## 9. Chosen Action
+## 10. Chosen Action
 
 Chosen option:
 -
@@ -228,7 +257,7 @@ Why this is not author convenience:
 What desire, fear, loyalty, secret, or misjudgment shapes it:
 -
 
-## 10. Protagonist Growth Result
+## 11. Protagonist Growth Result
 
 Cost paid:
 -
@@ -248,12 +277,12 @@ What remains unsolved:
 Why this does not skip a growth stage:
 -
 
-## 11. Protagonist Advantage Ledger
+## 12. Protagonist Advantage Ledger
 
 Protagonist pays this cost:
 -
 
-Protagonist gains at least one usable advantage. Prioritize person/object/access advantages over pure record advantages.
+Protagonist gains at least one usable advantage. Prioritize genre-appropriate person/object/access/capability advantages over pure record advantages.
 
 - Relationship:
 - Physical object:
@@ -265,10 +294,11 @@ Protagonist gains at least one usable advantage. Prioritize person/object/access
 - Evidence:
 - Identity / status:
 - Skill / understanding:
+- Cultivation / bodily / spiritual / genre-specific change:
 
 If the only gain is a status change, report submission, log entry, case number, archive, or vague insight, revise the chapter.
 
-## 12. Reader Reward Ledger
+## 13. Reader Reward Ledger
 
 Reader expectation entering this chapter:
 -
@@ -287,7 +317,7 @@ Concrete memory point:
 
 If the chapter only adds mystery and answers nothing, revise it.
 
-## 13. Scene Engine
+## 14. Scene Engine
 
 Scene location:
 -
@@ -295,7 +325,7 @@ Scene location:
 Present forces:
 -
 
-Visible object / body / person / route / door / room:
+Visible object / body / person / route / door / room / genre-specific carrier:
 -
 
 What cannot be said openly:
@@ -307,7 +337,7 @@ What each side pretends:
 What each side really wants:
 -
 
-## 14. Immediate Result
+## 15. Immediate Result
 
 Visible result:
 -
@@ -321,13 +351,13 @@ Secret exposed or hidden:
 Relationship changed:
 -
 
-Object / person / route / access changed:
+Object / person / route / access / cultivation state changed:
 -
 
 Supporting record changed, if any:
 -
 
-## 15. Consequence Chain
+## 16. Consequence Chain
 
 Which organization must react next?
 -
@@ -341,7 +371,7 @@ Which major conflict front becomes sharper?
 What is the next chapter's forced pressure?
 -
 
-## 16. Decision
+## 17. Decision
 
 ALLOW / REVISE
 ```
@@ -350,6 +380,8 @@ ALLOW / REVISE
 
 Pass only if all are true:
 
+- The chapter fits genre mode.
+- Reality-causal preflight supports the event.
 - The chapter touches a major conflict front.
 - At least one organization is forced to act.
 - Organization pressure is embodied by people, objects, access, or scene action.
@@ -377,6 +409,9 @@ Mark `REVISE` if:
 - the only protagonist gain is a record or system status;
 - protagonist growth is random, unearned, or jumps stages;
 - the protagonist directly defeats a structural trend too early;
+- the event is unsupported by reality-causal preflight;
+- a key object is important only because the author wants it to be;
+- the protagonist survives impossible cost without mechanism;
 - all actors know too much;
 - a major faction directly solves a local chapter problem too early;
 - the chapter contains exciting events but no state variable changes;
