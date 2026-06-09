@@ -2,7 +2,7 @@
 
 Use this template during chapter planning, after chapter drafting, and before chapter state update.
 
-The purpose is to ensure controlled emergence remains readable, satisfying, and protagonist-centered.
+The purpose is to ensure controlled emergence remains readable, satisfying, protagonist-centered, and paced for long-form continuation.
 
 Emergence alone does not guarantee a good story. If the plot system only reacts naturally, the protagonist may be crushed by larger forces and the reader may receive only pressure. This ledger prevents that.
 
@@ -18,6 +18,8 @@ Best chapter state:
 The protagonist is in more danger,
 but owns more leverage than before.
 ```
+
+The chapter should also manage reader debt: answer one smaller question, sharpen one larger pressure, and avoid repeating the same scene structure without upgrade.
 
 ## Anti Record-Driven Advantage Rule
 
@@ -104,6 +106,40 @@ Good rhythm:
 answer one smaller question
 create one larger question
 ```
+
+## Long-Form Pacing Checks
+
+### Reader Debt
+
+Reader debt is the set of questions, promises, pressures, and emotional needs the story has created but not yet paid.
+
+Each chapter should identify:
+
+- which prior reader debt it pays, partially pays, or postpones;
+- which new reader debt it creates;
+- which debt cannot be delayed much longer without flattening the story.
+
+### Pressure Clock
+
+Pressure clock is any deadline, resource drain, bodily deterioration, institutional review, relationship limit, pursuit, public exposure, or scheduled event that should keep the story moving.
+
+A chapter should ideally advance at least one pressure clock.
+
+### Repetition Risk
+
+If this chapter uses the same location, task, conflict shape, ability trigger, conversation rhythm, or consequence pattern as a recent chapter, it must add a structural upgrade.
+
+Examples of structural upgrade:
+
+- new task type;
+- higher cost of error;
+- different actor watching;
+- changed role for the protagonist;
+- new resource output;
+- relationship consequence;
+- deadline pressure;
+- restricted ability use;
+- scene function changes.
 
 ## Ledger Format
 
@@ -215,6 +251,42 @@ Memorable scene image / object:
 What reader now understands better:
 -
 
+## Reader Debt
+
+Prior reader debt paid or partially paid:
+-
+
+Prior reader debt postponed:
+-
+
+New reader debt created:
+-
+
+Which debt cannot be delayed much longer?
+-
+
+## Pressure Clock
+
+What deadline / resource drain / bodily cost / institutional review / relationship limit / exposure risk moved closer?
+-
+
+What pressure is now worse than before?
+-
+
+What must the next chapter not ignore?
+-
+
+## Repetition Risk
+
+What location, task, conflict shape, ability use, conversation rhythm, or consequence pattern repeats from recent chapters?
+-
+
+What structural upgrade makes this chapter different?
+-
+
+What must the next chapter change if repetition risk remains?
+-
+
 ## New Reader Itch
 
 What should the reader want to know next?
@@ -238,6 +310,9 @@ Mark `REVISE` if:
 - the gain cannot affect the next scene;
 - the reader receives only a new mystery;
 - the chapter creates danger but no leverage;
+- prior reader debt is ignored for too long;
+- no pressure clock advances in a plot segment that should be moving;
+- a repeated scene structure has no upgrade;
 - the protagonist is rescued by external force without making a meaningful choice;
 - the chapter's reward is only worldbuilding information, not story movement.
 
@@ -267,7 +342,7 @@ The protagonist's mistaken assumption fails, but the failure teaches a rule that
 
 ## Use With State Update
 
-After a chapter is approved, carry forward only usable assets into chapter state.
+After a chapter is approved, carry forward only usable assets, reader debt, pressure clocks, and repetition risk into chapter state.
 
 Do not record vague mood changes as assets.
 
@@ -280,4 +355,7 @@ Do record:
 - changed suspicions;
 - damaged relationships;
 - new labels other actors attach to the protagonist;
+- pending reader debts;
+- pressure clocks that moved closer;
+- repetition risks that the next chapter must avoid;
 - documents or records only when they have scene-usable consequences.
