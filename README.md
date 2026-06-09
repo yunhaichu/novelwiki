@@ -12,7 +12,7 @@ The repository stores three kinds of material:
 2. Reusable reference settings for genre, authority, process, resource, object, space, social life, and power-system boundaries.
 3. Per-novel canonical wiki, drafts, chapter states, and update records.
 
-ChatGPT is responsible for planning, base-setting construction, writing, revision, review assistance, wiki bootstrap, and wiki sync after approved chapters. The wiki is responsible for long-term memory. The user remains the final approver.
+ChatGPT is responsible for planning, base-setting construction, name-gate checking, writing, revision, review assistance, wiki bootstrap, and wiki sync after approved chapters. The wiki is responsible for long-term memory. The user remains the final approver.
 
 ## Current Workflow Entry
 
@@ -36,7 +36,7 @@ Do not run every prompt for every chapter.
 The current workflow is organized by layer:
 
 ```text
-Layer 1: New Novel Setup + Wiki Bootstrap
+Layer 1: New Novel Setup + Name Gate + Wiki Bootstrap
 Layer 2: Actor Model Setup
 Layer 3: Volume / Arc Planning
 Layer 4: Chapter Preflight
@@ -58,6 +58,7 @@ project scope / type promise
 -> dramatic arena
 -> protagonist growth track
 -> organization and character behavior models
+-> Name Gate
 -> wiki bootstrap
 -> volume / chapter planning
 -> scene convergence
@@ -78,6 +79,22 @@ read current novel wiki
 -> review
 -> wiki sync / canon update
 ```
+
+## Name Gate Rule
+
+A new novel must run Name Gate before writing protagonist names, organization names, city names, key terms, `project.md`, character files, organization files, or chapter drafts.
+
+Names are part of the world model. They must be grounded in period, region, class, family practice, job, registration system, nickname use, corporate / state / platform naming rules, or other in-world naming logic.
+
+High-risk model-default names and polished genre-neutral names must be rejected unless the user explicitly approves them or the setting gives a strong reason.
+
+Hard rule:
+
+```text
+No Name Gate, no project file.
+```
+
+Use `prompts/00_wiki_bootstrap.md` for the full Name Gate format and warning list.
 
 ## Wiki Bootstrap Rule
 
@@ -137,14 +154,15 @@ Do not draft if any of these are unresolved:
 
 1. Genre mode is unclear.
 2. Genre operating model is missing or too vague.
-3. Initial wiki bootstrap is missing.
-4. Base settings for the active novel are missing.
-5. Reality-causal preflight says the core event is unnatural.
-6. The protagonist has no active growth stage.
-7. The chapter has no usable protagonist gain.
-8. The main scene has no convergence point.
-9. The key object has no natural function.
-10. The story relies on system/report/log/status change as climax.
+3. Name Gate is missing or failed.
+4. Initial wiki bootstrap is missing.
+5. Base settings for the active novel are missing.
+6. Reality-causal preflight says the core event is unnatural.
+7. The protagonist has no active growth stage.
+8. The chapter has no usable protagonist gain.
+9. The main scene has no convergence point.
+10. The key object has no natural function.
+11. The story relies on system/report/log/status change as climax.
 
 Do not plan the next chapter if any of these are unresolved:
 
@@ -176,7 +194,7 @@ docs/
   backups/
 
 prompts/
-  00_*.md   setup / operating model / wiki bootstrap / planning prompts
+  00_*.md   setup / operating model / name gate / wiki bootstrap / planning prompts
   01_*.md   drafting prompts
   02_*.md   chapter / scene prompts
   04_*.md   review hooks
@@ -268,9 +286,11 @@ It should cover:
 
 ## Name Rule
 
-Character names should be simple, natural, and easy to remember.
+Character names should be grounded in world, class, family, system, job, and usage context.
 
 Each novel should maintain its own `wiki/name_registry.md` to avoid repeated model-favored names and to keep approved names stable.
+
+The name registry must record both approved names and rejected / avoided names with reasons.
 
 ## Wiki Safety
 
