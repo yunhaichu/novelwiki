@@ -2,7 +2,7 @@
 
 Novel ID: `test_xianxia_luchen`
 
-Canon status: introduced in Chapter 002.
+Canon status: updated through Chapter 003.
 
 ## Identity
 
@@ -12,7 +12,7 @@ Role: 青岚宗试役.
 
 ## Function In Story
 
-Peer-level survival pressure and possible practical exchange partner.
+Peer-level survival pressure and practical exchange partner.
 
 He is not a loyal friend yet. His relationship with 陆沉 begins through work risk and trade.
 
@@ -29,13 +29,21 @@ He notices who can reduce his immediate risk.
 - realizes 陆沉 sorts more safely;
 - trades half a coarse grain cake for one reminder from 陆沉 the next day.
 
+## Current State After Chapter 003
+
+- asks 陆沉 to inspect his injured hand;
+- receives one practical warning to avoid dark-red medicine mud;
+- avoids further injury that day;
+- witnesses 陆沉 intervene when 宋满 mis-sorts blue-black fragments;
+- sees 陆沉 as useful, but relationship remains transactional.
+
 ## Relationship With 陆沉
 
 Practical exchange, not friendship.
 
-方远 wants 陆沉's help to avoid injury.
+方远 wants 陆沉's help to avoid injury and lost food.
 
-陆沉 accepts because keeping other workers functional reduces pressure on himself and gains food.
+陆沉 accepts only bounded exchanges because keeping other workers functional reduces pressure on himself and can gain food or future safety.
 
 ## Voice
 
