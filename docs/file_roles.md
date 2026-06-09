@@ -105,11 +105,11 @@ Prevents all stories from becoming governance/process/investigation fiction.
 ### `prompts/00_genre_operating_model.md`
 
 Scope: per-novel
-Required: yes if present; otherwise fold into `00_reality_causal_preflight.md`
+Required: yes
 
-Role: should define how the genre world actually operates before chapter events are generated: resources, hierarchy, body cost, capability logic, survival logic, and opportunity structure.
+Role: defines how the genre world actually operates before chapter events are generated: resources, hierarchy, body cost, capability logic, survival logic, social behavior, opportunity structure, and forbidden shortcuts.
 
-If this file is absent, treat `00_reality_causal_preflight.md` as the operational model for now.
+This is the primary cure for trope-first plotting. Chapter events should grow from this model, not from generic webnovel opening patterns.
 
 ### `prompts/00_reality_causal_preflight.md`
 
