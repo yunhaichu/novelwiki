@@ -16,9 +16,9 @@ Use this as the file responsibility index. Use `docs/workflow_layers.md` for exe
 
 ## Core Execution Concept
 
-The current workflow is no longer event-first.
+The workflow is no longer event-first.
 
-It runs on:
+Standard long-form flow runs on:
 
 ```text
 world irreversible trend
@@ -27,11 +27,17 @@ world irreversible trend
 + trend convergence
 ```
 
-The author controls the world trend and protagonist final form.
+Macro modern-to-cosmic flow additionally runs on:
 
-Characters control local choices.
+```text
+cosmic civilization arena
++ Earth civilization value
++ unified power logic
++ modern Chinese reader bridge
++ visible webnovel pleasure ladder
+```
 
-Plot emerges when local choices are pulled back toward the irreversible trend.
+The author controls the large trend and protagonist final form. Characters control local choices. Plot emerges when local choices are pulled back toward the large trend, while each important chapter still gives visible reader pleasure.
 
 ## Docs
 
@@ -40,19 +46,7 @@ Plot emerges when local choices are pulled back toward the irreversible trend.
 Scope: global
 Required: yes
 
-Role: short operational checklist. Defines the current 9-step execution order:
-
-```text
-Irreversible Trend Anchor
--> Name & Term Gate
--> Wiki Bootstrap
--> Actor Setup
--> Chapter Trend Convergence
--> Scene Design
--> Drafting
--> Review
--> Wiki Sync
-```
+Role: short operational checklist. Defines both standard long-form order and macro modern-to-cosmic order.
 
 ### `docs/workflow_layers.md`
 
@@ -74,6 +68,89 @@ Scope: global
 Required: conditional
 
 Role: restore anchor before restructuring or cleanup.
+
+## Macro Modern-To-Cosmic Setup Prompts
+
+Use these when the intended story has modern Earth, cosmic civilizations, cultivation + technology + magic, multiverse scale, or civilization war.
+
+### `prompts/00_cosmic_civilization_arena.md`
+
+Scope: per-novel
+Required: yes for macro modern-to-cosmic stories
+
+Role: defines the largest story arena, civilization routes, major factions, resource logic, Earth position, cosmic irreversible trend, and chapter-one visibility budget.
+
+Hard rule:
+
+```text
+No cosmic civilization arena, no macro story.
+```
+
+### `prompts/00_earth_civilization_value.md`
+
+Scope: per-novel
+Required: yes for Earth-entry cosmic stories
+
+Role: defines why Earth is weak, why Earth is still valuable, why high civilizations observe or contest it, what Earth risks losing, and how the protagonist can make Earth be reevaluated.
+
+Hard rule:
+
+```text
+Earth cannot be only hometown nostalgia.
+```
+
+### `prompts/00_unified_power_logic.md`
+
+Scope: per-novel
+Required: yes when multiple power systems coexist
+
+Role: unifies cultivation, magic, technology, biological systems, psychic systems, and high-dimensional laws under a shared model of energy, storage, conversion, control interface, law access, cost, and civilization scaling.
+
+Hard rule:
+
+```text
+Power systems cannot be decorative labels.
+```
+
+### `prompts/00_modern_chinese_entry_bridge.md`
+
+Scope: per-novel
+Required: yes when protagonist comes from modern China / modern Earth
+
+Role: defines modern identity, reader-laoxiang feeling, modern knowledge structure, first contact mode, modern-thinking pleasure, and Earth emotional anchor.
+
+Hard rule:
+
+```text
+Modern identity must remain active after chapter one.
+```
+
+### `prompts/00_webnovel_pleasure_ladder.md`
+
+Scope: per-novel / per-volume / per-chapter
+Required: yes for commercial webnovel execution
+
+Role: defines the surface pleasure engine: face-slapping, hidden value, resource gain, qualification, status shift, tactical win, public correction, and visible reward.
+
+Hard rule:
+
+```text
+No visible reader pleasure, no important chapter.
+```
+
+### `prompts/01_modern_to_cosmic_opening.md`
+
+Scope: chapter one / opening arc
+Required: yes for modern-to-cosmic chapter one
+
+Role: opens with a modern ordinary scene, protagonist real-life pressure, high-civilization intrusion, small earned face-slapping, macro-world glimpse, and chapter-ending reevaluation / invitation / threat.
+
+Hard rule:
+
+```text
+Chapter one must not explain the whole universe.
+It must show one small crack and one visible protagonist win.
+```
 
 ## Reference Settings
 
@@ -112,7 +189,7 @@ Required: conditional
 
 Role: reference rules for powers, anomalies, goldfingers, supernatural mechanisms, or similar systems.
 
-## Setup Prompts
+## Standard Setup Prompts
 
 ### `prompts/00_novel_spine.md`
 
@@ -140,14 +217,14 @@ Role: defines how the genre world actually operates before chapter events are ge
 Scope: per-novel
 Required: yes
 
-Role: defines the two highest-order anchors:
+Role: defines the highest-order anchors:
 
 ```text
-world irreversible trend
+world / civilization irreversible trend
 protagonist irreversible final form
 ```
 
-This file prevents event-first plotting.
+For macro stories, this must include cosmic civilization pressure and Earth status pressure.
 
 Hard rule:
 
@@ -174,21 +251,21 @@ Role: converts user premise and selected reference settings into novel-specific 
 Scope: per-novel
 Required: yes
 
-Role: defines macro pressure and large conflict forces. It should now operate under the irreversible trend anchor.
+Role: defines macro pressure and large conflict forces. It should operate under the irreversible trend anchor and, for macro stories, under the cosmic civilization arena.
 
 ### `prompts/00_dramatic_arena.md`
 
 Scope: per-novel / per-volume
 Required: yes
 
-Role: turns macro conflict into concrete arenas of organizations, locations, resources, hidden interests, and embodied agents.
+Role: turns macro conflict into concrete arenas of organizations, locations, resources, hidden interests, embodied agents, and character actors.
 
 ### `prompts/00_protagonist_growth_track.md`
 
 Scope: per-novel
 Required: yes
 
-Role: defines controlled protagonist growth stages, current weakness, growth asset ladder, forbidden jumps, and the route toward the protagonist final form.
+Role: defines controlled protagonist growth stages, current weakness, growth asset ladder, forbidden jumps, and route toward final form. For macro stories, this should include cross-civilization growth and Earth-facing assets.
 
 ### `prompts/00_name_term_gate.md`
 
@@ -196,8 +273,6 @@ Scope: per-novel / per-character / per-term
 Required: yes before new named entities or invented terms
 
 Role: checks names and terms before they enter project files, character files, organization files, world files, drafts, or canon.
-
-It covers people, organizations, places, objects, tools, resources, jobs, ranks, procedures, status labels, ability labels, recurring slang, and chapter-critical objects.
 
 Hard rule:
 
@@ -224,6 +299,8 @@ name_registry.md
 protagonist_growth.md
 initial character / world / organization files as needed
 ```
+
+For macro stories, wiki should also persist or reference cosmic civilization arena, Earth civilization value, unified power logic, modern Chinese entry bridge, and pleasure ladder.
 
 Hard rule:
 
@@ -263,14 +340,14 @@ Role: defines source-grounded speech patterns and how those speech patterns chan
 Scope: per-volume
 Required: yes for long stories
 
-Role: defines volume state movement under the irreversible world trend and protagonist final-form trajectory.
+Role: defines volume state movement under the irreversible world / civilization trend and protagonist final-form trajectory.
 
 ### `prompts/00_chapter_pressure_card.md`
 
 Scope: per-chapter
 Required: optional / conditional
 
-Role: defines chapter pressure before detailed chapter design. Useful for complex chapters or when the story is drifting.
+Role: defines chapter pressure before detailed chapter design.
 
 ## Chapter Prompts
 
@@ -283,7 +360,7 @@ Role: designs a chapter through trend convergence, not random events.
 
 It requires:
 
-- world irreversible trend;
+- world / civilization irreversible trend;
 - protagonist irreversible final form;
 - current stage pressure;
 - local choices;
@@ -300,14 +377,14 @@ Required: yes for important chapters
 
 Role: ensures the protagonist gains usable leverage, reader reward, and at least one asset that moves toward protagonist final form.
 
-Prevents punishment-only chapters and random clue accumulation.
+For macro stories, track personal asset, cross-system asset, Earth-status asset, and civilization-level asset when relevant.
 
 ### `prompts/02_opening_chapter_brief.md`
 
 Scope: per-opening / per-arc opening
 Required: conditional if present
 
-Role: defines opening chapter execution constraints after reader-entry gate. Use for first chapter or major new arc.
+Role: older opening chapter constraint file. For modern-to-cosmic chapter one, prefer `prompts/01_modern_to_cosmic_opening.md`.
 
 ## Scene Prompts
 
@@ -359,7 +436,7 @@ Role: writes chapter draft from current novel wiki, trend-converged chapter desi
 
 It enforces xiaobai prose: clear action, dialogue, reaction, process, and consequence. It forbids summary voice and does not reward concise abstract conclusions.
 
-Do not use it before setup, wiki bootstrap, trend convergence, chapter design, and Name & Term Gate are clear.
+Do not use it before setup, wiki bootstrap, trend convergence, chapter design, reader pleasure target, and Name & Term Gate are clear.
 
 ## Review Governance
 
@@ -461,7 +538,7 @@ Role: defines what can and cannot be written into a novel wiki, including charac
 Scope: per-chapter / per-canon update
 Required: yes after every approved chapter
 
-Role: creates or updates `chapter_states/chapter_<number>.md` and synchronizes confirmed character, organization, world, growth, timeline, relationship, foreshadowing, style, name, term, world-trend progress, and protagonist-final-form progress before the next chapter is planned.
+Role: creates or updates `chapter_states/chapter_<number>.md` and synchronizes confirmed character, organization, world, growth, timeline, relationship, foreshadowing, style, name, term, world-trend progress, Earth-status progress when relevant, protagonist-final-form progress, and reader reward before the next chapter is planned.
 
 Hard rule:
 
