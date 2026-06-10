@@ -12,7 +12,7 @@ The repository stores three kinds of material:
 2. Reusable reference settings for genre, authority, process, resource, object, space, social life, and power-system boundaries.
 3. Per-novel canonical wiki, drafts, chapter states, and update records.
 
-ChatGPT is responsible for planning, base-setting construction, name-gate checking, writing, revision, review assistance, wiki bootstrap, and wiki sync after approved chapters. The wiki is responsible for long-term memory. The user remains the final approver.
+ChatGPT is responsible for planning, base-setting construction, name-and-term gate checking, writing, revision, review assistance, wiki bootstrap, and wiki sync after approved chapters. The wiki is responsible for long-term memory. The user remains the final approver.
 
 ## Current Workflow Entry
 
@@ -36,7 +36,7 @@ Do not run every prompt for every chapter.
 The current workflow is organized by layer:
 
 ```text
-Layer 1: New Novel Setup + Name Gate + Wiki Bootstrap
+Layer 1: New Novel Setup + Name & Term Gate + Wiki Bootstrap
 Layer 2: Actor Model Setup
 Layer 3: Volume / Arc Planning
 Layer 4: Chapter Preflight
@@ -58,7 +58,7 @@ project scope / type promise
 -> dramatic arena
 -> protagonist growth track
 -> organization and character behavior models
--> Name Gate
+-> Name & Term Gate
 -> wiki bootstrap
 -> volume / chapter planning
 -> scene convergence
@@ -80,21 +80,19 @@ read current novel wiki
 -> wiki sync / canon update
 ```
 
-## Name Gate Rule
+## Name & Term Gate Rule
 
-A new novel must run Name Gate before writing protagonist names, organization names, city names, key terms, `project.md`, character files, organization files, or chapter drafts.
+A new novel must run Name & Term Gate before writing protagonist names, organization names, city names, key terms, `project.md`, character files, organization files, world files, or chapter drafts.
 
-Names are part of the world model. They must be grounded in period, region, class, family practice, job, registration system, nickname use, corporate / state / platform naming rules, or other in-world naming logic.
-
-High-risk model-default names and polished genre-neutral names must be rejected unless the user explicitly approves them or the setting gives a strong reason.
+Names and recurring terms are part of the world model. They must be grounded in period, region, class, family practice, job, registration system, nickname use, official wording, visible function, or other in-world logic.
 
 Hard rule:
 
 ```text
-No Name Gate, no project file.
+No Name & Term Gate, no project file.
 ```
 
-Use `prompts/00_wiki_bootstrap.md` for the full Name Gate format and warning list.
+Use `prompts/00_name_term_gate.md` for the full Name & Term Gate format.
 
 ## Wiki Bootstrap Rule
 
@@ -140,7 +138,7 @@ Always create or update:
 novels/<novel_id>/wiki/chapter_states/chapter_<number>.md
 ```
 
-Update character, organization, world, growth, timeline, relationship, foreshadowing, style, and name files only when approved prose confirms new facts.
+Update character, organization, world, growth, timeline, relationship, foreshadowing, style, name, and term files only when approved prose confirms new facts.
 
 Hard rule:
 
@@ -154,7 +152,7 @@ Do not draft if any of these are unresolved:
 
 1. Genre mode is unclear.
 2. Genre operating model is missing or too vague.
-3. Name Gate is missing or failed.
+3. Name & Term Gate is missing or failed.
 4. Initial wiki bootstrap is missing.
 5. Base settings for the active novel are missing.
 6. Reality-causal preflight says the core event is unnatural.
@@ -190,11 +188,12 @@ reference_settings/
 docs/
   workflow_layers.md
   file_roles.md
+  current_execution_flow.md
   emergent_plot_workflow.md
   backups/
 
 prompts/
-  00_*.md   setup / operating model / name gate / wiki bootstrap / planning prompts
+  00_*.md   setup / operating model / name and term gate / wiki bootstrap / planning prompts
   01_*.md   drafting prompts
   02_*.md   chapter / scene prompts
   04_*.md   review hooks
@@ -284,13 +283,13 @@ It should cover:
 - forbidden setting moves;
 - pending setting gaps.
 
-## Name Rule
+## Name And Term Rule
 
-Character names should be grounded in world, class, family, system, job, and usage context.
+Character names, organization names, place names, object names, process names, status labels, ability labels, and recurring slang should be grounded in world, class, family, system, job, visible function, and usage context.
 
-Each novel should maintain its own `wiki/name_registry.md` to avoid repeated model-favored names and to keep approved names stable.
+Each novel should maintain its own `wiki/name_registry.md` to avoid repeated model-favored names, ungrounded coined terms, and unstable terminology.
 
-The name registry must record both approved names and rejected / avoided names with reasons.
+The name registry must record both approved and rejected names / terms with reasons.
 
 ## Wiki Safety
 
