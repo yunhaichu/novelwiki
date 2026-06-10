@@ -6,6 +6,8 @@ Use `docs/workflow_layers.md` as the authoritative full version and `docs/file_r
 
 ## Non-Negotiable Order
 
+### Standard Long-Form Flow
+
 ```text
 Irreversible Trend Anchor
 -> Name & Term Gate
@@ -18,9 +20,118 @@ Irreversible Trend Anchor
 -> Wiki Sync
 ```
 
+### Macro Modern-To-Cosmic Flow
+
+Use this for stories where a modern Chinese protagonist enters a cosmic / multiverse / high-civilization arena.
+
+```text
+Cosmic Civilization Arena
+-> Earth Civilization Value
+-> Unified Power Logic
+-> Modern Chinese Entry Bridge
+-> Irreversible Trend Anchor
+-> Webnovel Pleasure Ladder
+-> Name & Term Gate
+-> Wiki Bootstrap
+-> Actor Setup
+-> Modern-To-Cosmic Opening / Chapter Trend + Pleasure Convergence
+-> Scene Design
+-> Drafting
+-> Review
+-> Wiki Sync
+```
+
 Do not skip forward.
 
-## 1. Irreversible Trend Anchor
+## 1. Cosmic Civilization Arena
+
+Required for macro modern-to-cosmic stories:
+
+```text
+prompts/00_cosmic_civilization_arena.md
+```
+
+Defines:
+
+- universe / multiverse stage;
+- civilization routes;
+- major factions;
+- resource logic;
+- Earth position;
+- cosmic irreversible trend;
+- chapter-one visibility budget.
+
+Hard rule for macro stories:
+
+```text
+No cosmic civilization arena, no macro story setup.
+```
+
+## 2. Earth Civilization Value
+
+Required for Earth-entry cosmic stories:
+
+```text
+prompts/00_earth_civilization_value.md
+```
+
+Defines:
+
+- why Earth is weak;
+- why Earth is not meaningless;
+- why high civilizations observe, exploit, protect, or contest Earth;
+- how the protagonist can make Earth be reevaluated.
+
+Hard rule:
+
+```text
+Earth cannot be only nostalgia or hometown.
+```
+
+## 3. Unified Power Logic
+
+Required when cultivation, magic, technology, psychic power, biology, or higher-dimensional law coexist:
+
+```text
+prompts/00_unified_power_logic.md
+```
+
+Defines the shared substrate underneath different systems:
+
+```text
+energy -> storage -> conversion -> control interface -> law/rule access -> civilization scale
+```
+
+Hard rule:
+
+```text
+Power systems cannot be decorative labels.
+```
+
+## 4. Modern Chinese Entry Bridge
+
+Required when the protagonist comes from modern China / modern Earth:
+
+```text
+prompts/00_modern_chinese_entry_bridge.md
+```
+
+Defines:
+
+- modern identity;
+- reader-laoxiang feeling;
+- modern knowledge structure;
+- first contact mode;
+- modern thinking as pleasure;
+- Earth emotional anchor.
+
+Hard rule:
+
+```text
+Modern identity must remain active after chapter one.
+```
+
+## 5. Irreversible Trend Anchor
 
 Required file:
 
@@ -30,12 +141,11 @@ prompts/00_irreversible_trend_anchor.md
 
 Run once during new-novel setup, before chapter planning.
 
-This defines:
+For macro stories, this must include:
 
-- world irreversible trend;
-- protagonist irreversible final form;
-- how the two lines force each other;
-- stage map for world trend and protagonist growth.
+- cosmic civilization irreversible trend;
+- Earth irreversible civilization pressure;
+- protagonist irreversible final form.
 
 Hard rule:
 
@@ -43,9 +153,34 @@ Hard rule:
 No irreversible trend anchor, no chapter design.
 ```
 
-The author controls the world trend and protagonist final form. Characters control local choices. Plot emerges when local choices are pulled back into the irreversible trend.
+The author controls the world / civilization trend and protagonist final form. Characters control local choices. Plot emerges when local choices are pulled back into the irreversible trend.
 
-## 2. Name & Term Gate
+## 6. Webnovel Pleasure Ladder
+
+Required for commercial webnovel drafting:
+
+```text
+prompts/00_webnovel_pleasure_ladder.md
+```
+
+Defines:
+
+- repeated surface pleasure;
+- first low-position label;
+- face-slapping targets;
+- resource ladder;
+- qualification ladder;
+- chapter pleasure plan.
+
+Hard rule:
+
+```text
+No visible reader pleasure, no important chapter.
+```
+
+Depth does not replace pleasure. Every important chapter needs a visible reward such as face-slapping, hidden value, resource gain, status shift, tactical win, qualification, recognition, or public correction.
+
+## 7. Name & Term Gate
 
 Required file:
 
@@ -75,7 +210,7 @@ If a term has not passed the gate, use ordinary description.
 
 Do not compress ordinary things into new terms just because they sound genre-specific.
 
-## 3. Wiki Bootstrap
+## 8. Wiki Bootstrap
 
 Required file:
 
@@ -93,9 +228,14 @@ novels/<novel_id>/wiki/name_registry.md
 novels/<novel_id>/wiki/protagonist_growth.md
 ```
 
-The project wiki must include or reference:
+For macro modern-to-cosmic stories, the project wiki must also include or reference:
 
-- world irreversible trend;
+- cosmic civilization arena;
+- Earth civilization value;
+- unified power logic;
+- modern Chinese entry bridge;
+- webnovel pleasure ladder;
+- world / civilization irreversible trend;
 - protagonist irreversible final form;
 - current stage map;
 - approved names and terms.
@@ -108,9 +248,9 @@ Hard rule:
 No wiki bootstrap, no draft.
 ```
 
-## 4. Actor Setup
+## 9. Actor Setup
 
-Required for recurring major actors.
+Required for recurring major actors and organizations.
 
 Files:
 
@@ -124,7 +264,7 @@ Temporary characters may remain role labels.
 
 If a temporary character repeatedly changes the plot, creates debt, becomes a relationship pressure, or appears across chapters, run Name & Term Gate and create a character file.
 
-## 5. Chapter Trend Convergence
+## 10. Opening / Chapter Trend + Pleasure Convergence
 
 Required files for important chapters:
 
@@ -134,24 +274,31 @@ prompts/02_emergent_chapter_design.md
 prompts/02_advantage_reward_ledger.md
 ```
 
+For modern-to-cosmic chapter one, also use:
+
+```text
+prompts/01_modern_to_cosmic_opening.md
+```
+
 A chapter must not begin from a random event.
 
 It must begin from:
 
-- current stage of world irreversible trend;
+- current stage of world / civilization irreversible trend;
 - current stage of protagonist final form;
 - local choices available to the protagonist;
+- visible reader pleasure;
 - how different choices are pulled toward the same trend node.
 
 Hard rule:
 
 ```text
-No trend convergence, no chapter draft.
+No trend convergence, no pleasure convergence, no chapter draft.
 ```
 
 Do not create an event just to trigger a goldfinger, reveal a clue, or show a workflow.
 
-## 6. Scene Design
+## 11. Scene Design
 
 Required for major scenes:
 
@@ -168,11 +315,12 @@ The scene must have:
 - actors with different local goals;
 - scene function in the world;
 - visible action collision;
-- concrete result.
+- concrete result;
+- reader pleasure movement when this is a major scene.
 
 The scene should not begin from a preselected event. It should begin from actor goals under trend pressure.
 
-## 7. Drafting
+## 12. Drafting
 
 Required file:
 
@@ -200,7 +348,7 @@ Do not reward concise abstract conclusions.
 
 It is allowed to be a little verbose when the extra sentences show action, hesitation, repeated attempt, misunderstanding, object movement, or relationship pressure.
 
-## 8. Review
+## 13. Review
 
 Use targeted reviews, not every file every time.
 
@@ -229,7 +377,7 @@ Use when object logic matters:
 governance/object_function_review.md
 ```
 
-## 9. Wiki Sync
+## 14. Wiki Sync
 
 Required after each approved chapter:
 
@@ -247,7 +395,8 @@ novels/<novel_id>/wiki/chapter_states/chapter_<number>.md
 Chapter state must include:
 
 - confirmed events;
-- world trend progress;
+- world / civilization trend progress;
+- Earth status progress when relevant;
 - protagonist final-form progress;
 - protagonist state;
 - character / organization / object state;
@@ -267,15 +416,20 @@ Approved chapter -> wiki sync -> next chapter.
 
 Stop if any are true:
 
-1. Irreversible trend anchor is missing.
-2. New name or term appears without Name & Term Gate.
-3. Chapter begins from a random event instead of trend convergence.
-4. Local choices do not pull toward a shared trend node.
-5. Prose uses invented shorthand where ordinary description is clearer.
-6. Draft uses summary voice instead of action/dialogue.
-7. Main scene has no convergence point.
-8. Key object has no world function.
-9. Protagonist only suffers and gains no usable final-form asset.
-10. Chapter does not advance world trend or protagonist final form.
-11. Chapter ends on abstract realization instead of concrete consequence.
-12. Next chapter would rely on chat memory instead of wiki state.
+1. Macro story lacks cosmic civilization arena.
+2. Earth is only a hometown and has no civilization value.
+3. Multiple power systems lack unified power logic.
+4. Modern protagonist loses modern identity after entry.
+5. Irreversible trend anchor is missing.
+6. New name or term appears without Name & Term Gate.
+7. Chapter begins from a random event instead of trend convergence.
+8. Important chapter has no visible reader pleasure.
+9. Local choices do not pull toward a shared trend node.
+10. Prose uses invented shorthand where ordinary description is clearer.
+11. Draft uses summary voice instead of action/dialogue.
+12. Main scene has no convergence point.
+13. Key object has no world function.
+14. Protagonist only suffers and gains no usable final-form asset.
+15. Chapter does not advance world trend, Earth status, or protagonist final form.
+16. Chapter ends on abstract realization instead of concrete consequence.
+17. Next chapter would rely on chat memory instead of wiki state.
