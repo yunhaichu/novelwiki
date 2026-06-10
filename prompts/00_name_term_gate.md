@@ -25,6 +25,8 @@ This gate applies to:
 - ability labels;
 - status labels;
 - recurring slang;
+- civilization-level terms;
+- macro-faction names;
 - chapter-critical objects.
 
 ## Why This Exists
@@ -34,6 +36,38 @@ The model often turns ordinary descriptions into compact genre-looking labels.
 That creates fake terms that sound like setting but have no real user, no workflow, no social source, and no reason to exist.
 
 A term is allowed only if the world itself would create it.
+
+## Macro Civilization Term Rule
+
+For macro modern-to-cosmic stories:
+
+```text
+Function before name.
+```
+
+Do not introduce a long title-chain term before the reader sees what the thing does.
+
+Bad early prose:
+
+```text
+The Taiyuan Star Alliance Low-Dimensional Civilization Observation Bureau Seventh Inspection Sequence arrived.
+```
+
+Better early prose:
+
+```text
+The woman said she was only responsible for observing civilizations that had not entered the star routes yet.
+```
+
+Later, after function is visible, the formal name may enter through dialogue, document, screen, academy registration, or faction conflict.
+
+Macro term limits:
+
+- one new macro term per scene unless absolutely required;
+- avoid chain titles in early chapters;
+- use ordinary description until function is clear;
+- do not name every civilization, office, rank, artifact, law, and protocol at first mention;
+- distinguish official names, slang, translations, Earth-side nicknames, and protagonist's modern analogy.
 
 ## People Name Check
 
@@ -59,12 +93,13 @@ For an organization or place name, answer:
 
 ```text
 Candidate:
-Type: organization / place / district / facility / route / room
+Type: organization / place / district / facility / route / room / civilization / faction / star region / dimensional zone
 Who named it:
 Why this name exists:
 What function it performs:
 Who uses the name in speech:
 Can a simpler description replace it:
+First prose use should show:
 Decision: ALLOW / REVISE
 ```
 
@@ -77,9 +112,10 @@ For every new term, answer:
 ```text
 Candidate term:
 Ordinary description:
-Type: object / process / status / ability / job / slang / other
+Type: object / process / status / ability / job / slang / civilization term / faction term / other
 Who says it:
 Official term or slang:
+Earth translation / protagonist analogy if any:
 Why people would shorten or name it this way:
 What first prose use must show:
 Can ordinary description be clearer:
@@ -92,7 +128,8 @@ Reject the term if:
 - nobody in the world would actually say it;
 - it appears before the reader sees what it does;
 - ordinary description is clearer;
-- it compresses a normal color, status, object, job, or process into an invented label without need.
+- it compresses a normal color, status, object, job, civilization process, or energy behavior into an invented label without need;
+- it chains too many titles together before the reader has a reason to care.
 
 ## Approved Output
 
@@ -107,7 +144,7 @@ The registry must include:
 - approved names;
 - approved terms;
 - who uses each term;
-- whether each term is official or slang;
+- whether each term is official, slang, translation, or protagonist analogy;
 - first-use rule;
 - rejected names and reasons;
 - rejected terms and reasons.
@@ -123,6 +160,8 @@ The gate showed yellow.
 The board had been marked as scrap.
 The upstairs compliance clerk came down.
 The gray response had no official name yet.
+The woman said Earth had not been registered as a star-route civilization.
+The object behaved less like a sword and more like a small engine with a blade-shaped shell.
 ```
 
 Do not replace these with invented short labels unless the gate has approved the label.
