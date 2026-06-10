@@ -2,7 +2,11 @@
 
 Use this template during chapter planning, after chapter drafting, and before chapter state update.
 
-The purpose is to ensure controlled emergence remains readable, satisfying, protagonist-centered, paced for long-form continuation, and aligned with the protagonist's irreversible final form.
+The purpose is to record reusable protagonist assets, reader rewards, reader debt, pressure clocks, and repetition risks. It ensures controlled emergence remains readable, satisfying, protagonist-centered, paced for long-form continuation, and aligned with the protagonist's irreversible final form.
+
+This file records what the protagonist can use again.
+
+It does not design the face-slapping structure. Use `prompts/00_webnovel_pleasure_ladder.md` to design visible reader pleasure before chapter planning.
 
 Emergence alone does not guarantee a good story. If the plot system only reacts naturally, the protagonist may be crushed by larger forces and the reader may receive only pressure. This ledger prevents that.
 
@@ -44,7 +48,10 @@ Final-form assets may include:
 - defensive method;
 - resource control;
 - ability control;
-- responsibility threshold.
+- responsibility threshold;
+- cross-system translation method;
+- Earth-status leverage;
+- civilization-level negotiation asset.
 
 If the chapter gives only a mystery, a clue, or a status change that does not move toward final form, mark `REVISE`.
 
@@ -179,16 +186,36 @@ Chapter number:
 
 ## Irreversible Anchor Reference
 
-World irreversible trend:
+World / civilization irreversible trend:
+-
+
+Earth civilization pressure if relevant:
 -
 
 Protagonist irreversible final form:
 -
 
-Current world trend stage:
+Current world / civilization trend stage:
+-
+
+Current Earth status stage if relevant:
 -
 
 Current protagonist final-form stage:
+-
+
+## Reader Pleasure Reference
+
+Pleasure designed by Webnovel Pleasure Ladder:
+-
+
+Who was underestimated:
+-
+
+What visible correction occurred:
+-
+
+Visible reward:
 -
 
 ## Starting Protagonist Assets
@@ -218,6 +245,9 @@ Record-based assets:
 -
 
 Final-form assets already owned:
+-
+
+Earth / civilization assets already owned if relevant:
 -
 
 ## Chapter Cost
@@ -263,6 +293,9 @@ Skill / understanding gained:
 -
 
 Record-based asset gained, if any:
+-
+
+Earth / civilization asset gained, if relevant:
 -
 
 ## Final-Form Asset Gained
@@ -373,6 +406,7 @@ Mark `REVISE` if:
 - no final-form asset is gained or strengthened;
 - the gain is a random clue unrelated to protagonist final form;
 - the reader receives only a new mystery;
+- visible pleasure was planned but did not produce reusable gain;
 - the chapter creates danger but no leverage;
 - prior reader debt is ignored for too long;
 - no pressure clock advances in a plot segment that should be moving;
@@ -420,6 +454,7 @@ Do record:
 - damaged relationships;
 - new labels other actors attach to the protagonist;
 - final-form assets gained or strengthened;
+- Earth / civilization assets gained or strengthened if relevant;
 - pending reader debts;
 - pressure clocks that moved closer;
 - repetition risks that the next chapter must avoid;
