@@ -2,21 +2,24 @@
 
 Use this prompt after emergent chapter design and before scene expression state, dialogue intent, and drafting.
 
-The purpose is to ensure scene plot emerges from multiple characters and organizations genuinely acting from their own limited local worlds, rather than from narration explaining the situation.
+The purpose is to ensure scene plot emerges from multiple characters and organizations genuinely acting from their own limited local worlds under the current irreversible trend, rather than from narration explaining the situation or from a preselected event.
 
 ## Core Principle
 
 A scene should not be organized by narrator explanation.
 
-A scene should be organized by:
+A scene should not begin from `an event happens, now characters react`.
+
+A scene should begin from:
 
 ```text
-convergence object / person / route / room / risk
-+ scene function in the world
-+ multiple limited viewpoints
+current trend pressure
 + each actor's local goal
-+ each actor's misread
-+ environmental modulation of each actor's default behavior
++ each actor's limited knowledge
++ convergence object / person / route / room / risk
++ scene function in the world
++ misreadings
++ environmental modulation
 + organization packaging and embodied agents when organizations act
 + physical action collision
 + visible consequence
@@ -26,7 +29,7 @@ Each character acts from what they see, hear, think, want, fear, misunderstand, 
 
 Each organization acts through agents, packaging language, action ladders, public legitimacy, and responsibility boundaries.
 
-The scene becomes story when those actions meet at the same person, object, route, decision, or risk point.
+The scene becomes story when local choices collide at the same person, object, route, decision, or risk point, while the irreversible trend pushes the result forward.
 
 If the scene is built around labor, ritual, process, task, exam, mission, repair, medical handling, sect work, business workflow, legal procedure, or institutional routine, the scene must also have a world function. It must produce, recover, sort, protect, transfer, test, consume, hide, or risk something that matters in the world.
 
@@ -35,6 +38,7 @@ If the scene is built around labor, ritual, process, task, exam, mission, repair
 Read:
 
 - emergent chapter design;
+- irreversible trend anchor or current chapter trend convergence;
 - dramatic arena;
 - actor cognition cards;
 - character behavior models if available;
@@ -56,6 +60,26 @@ Chapter number:
 Scene ID:
 Scene location:
 Source files read:
+
+## Trend Pressure In This Scene
+
+Current world irreversible trend pressure:
+-
+
+Current protagonist final-form pressure:
+-
+
+Which actor is trying to avoid, deny, hide, profit from, or adapt to the trend:
+-
+
+Which actor unknowingly carries the trend into the scene:
+-
+
+Which ordinary action exposes the trend in this scene:
+-
+
+What trend result must the scene move toward:
+-
 
 ## Scene Function In World
 
@@ -155,6 +179,7 @@ What they can physically do:
 What they will try first:
 What they will not say openly:
 How they package their action if organization:
+How current trend pressure shapes their choice:
 
 ### Actor 2
 Character / organization:
@@ -177,6 +202,7 @@ What they can physically do:
 What they will try first:
 What they will not say openly:
 How they package their action if organization:
+How current trend pressure shapes their choice:
 
 ### Actor 3
 ...
@@ -190,6 +216,7 @@ What changes physically:
 What changes in relationship / trust / suspicion:
 Who is forced to choose:
 Organization packaging exposed or challenged:
+How trend pressure advances:
 
 ### Collision 2
 Actor action:
@@ -198,6 +225,7 @@ What changes physically:
 What changes in relationship / trust / suspicion:
 Who is forced to choose:
 Organization packaging exposed or challenged:
+How trend pressure advances:
 
 ## Performance Beats
 
@@ -208,18 +236,21 @@ List the scene beats as actions, not narrator summaries.
    Visible action:
    Immediate reaction:
    Scene change:
+   Trend pressure movement:
 
 2. Beat:
    Actor:
    Visible action:
    Immediate reaction:
    Scene change:
+   Trend pressure movement:
 
 3. Beat:
    Actor:
    Visible action:
    Immediate reaction:
    Scene change:
+   Trend pressure movement:
 
 ## Dialogue Need
 
@@ -261,6 +292,12 @@ Organization legitimacy / cover changed:
 Scene function result changed:
 -
 
+World trend progress:
+-
+
+Protagonist final-form progress:
+-
+
 Next forced action:
 -
 
@@ -278,6 +315,9 @@ What must be shown through organization agents instead of abstract organization 
 What world-function explanation should be left out or reduced to one concrete line?
 -
 
+What trend pressure should be shown through action instead of explanation?
+-
+
 ## Pass / Fail
 
 ALLOW / REVISE
@@ -287,7 +327,10 @@ ALLOW / REVISE
 
 Mark `REVISE` if:
 
+- the scene begins from a preselected event instead of actors acting under trend pressure;
 - the scene depends on narrator explanation instead of character action;
+- current world trend pressure is absent;
+- protagonist final-form pressure is absent in a protagonist-centered scene;
 - actors do not have distinct local worlds;
 - actors all seem to know the same information;
 - no convergence point exists;
@@ -295,7 +338,7 @@ Mark `REVISE` if:
 - the scene exists only to let the protagonist touch a plot object or trigger an ability;
 - the task has no output, beneficiary, cost of error, or reason it belongs to this status level;
 - no environmental variable changes any actor's default behavior;
-- a character behaves according to a static label instead of current risk, audience, power difference, escape route, or protected object;
+- a character behaves according to a static label instead of current risk, audience, power difference, escape route, protected object, or trend pressure;
 - an organization acts as an abstract force without an embodied agent;
 - an organization states naked interest without packaging when it should preserve public legitimacy;
 - an organization jumps action-ladder levels without trigger;
@@ -312,7 +355,8 @@ If a scene feels distant or AI-flavored, do not add more narration.
 
 Instead:
 
-- give each actor a more specific local goal;
+- identify current world trend pressure;
+- identify each actor's local goal under that pressure;
 - define the environmental variable that changes their default behavior;
 - choose one concrete convergence point;
 - define the scene's world function and the cost of doing it wrong;
