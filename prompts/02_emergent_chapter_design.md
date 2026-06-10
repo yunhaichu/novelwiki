@@ -16,6 +16,7 @@ irreversible world trend
 -> current stage pressure
 -> local choices available to characters
 -> trend convergence node
+-> reader hook / payoff
 -> scene action
 -> cost / leverage / reader reward
 -> consequence chain
@@ -26,6 +27,8 @@ The author controls the world trend and protagonist final form.
 Characters control local choices.
 
 Plot emerges when different local choices are pulled toward the same trend node.
+
+Reader retention does not always mean face-slapping. It may come from a concrete question, danger, choice, relationship tension, world reveal, mechanism reveal, resource gain, status shift, or earned face-slapping when appropriate.
 
 Records, reports, systems, logs, screens, case numbers, archives, and notifications may support the scene, but must not be the main plot carrier.
 
@@ -53,7 +56,9 @@ Read:
 - dramatic arena;
 - protagonist growth track;
 - actor cognition cards for important characters / organizations;
+- `governance/agent_state_rules.md` when simulating multi-actor choices;
 - current protagonist advantage ledger if present;
+- current reader hook / payoff ladder if present;
 - current reader reward / unresolved questions if present;
 - previous chapter state;
 - current volume attractors;
@@ -76,7 +81,10 @@ Reality-causal preflight decision:
 World irreversible trend:
 -
 
-Current stage of world trend:
+Earth status pressure if relevant:
+-
+
+Current stage of world / civilization trend:
 -
 
 Protagonist irreversible final form:
@@ -85,7 +93,10 @@ Protagonist irreversible final form:
 Current protagonist growth stage toward final form:
 -
 
-This chapter advances world trend by:
+This chapter advances world / civilization trend by:
+-
+
+This chapter advances Earth status by, if relevant:
 -
 
 This chapter advances protagonist final form by:
@@ -126,7 +137,35 @@ What result cannot vary:
 Why this is not a random event:
 -
 
-## 2. Reality-Causal Fit
+## 2. Reader Hook / Payoff
+
+Primary hook type:
+- question / crisis / identity / relationship / world reveal / mechanism / choice / resource / qualification / face-slapping / tactical / mystery-payoff
+
+Specific question or pressure:
+-
+
+Small payoff delivered in this chapter:
+-
+
+New question or pressure opened:
+-
+
+Visible gain, if any:
+-
+
+Is face-slapping necessary? yes / no
+
+If yes, why is the target naturally wrong:
+-
+
+If no, what retains readers instead:
+-
+
+Why this hook is tied to protagonist pressure, not abstract mystery:
+-
+
+## 3. Reality-Causal Fit
 
 What normal process makes this event possible?
 -
@@ -152,7 +191,7 @@ What body, resource, time, food, qi, money, access, or institution cost must be 
 What would be unnatural or forced here?
 -
 
-## 3. Pressure Event
+## 4. Pressure Event
 
 What pressure enters the arena?
 -
@@ -169,7 +208,7 @@ Why now?
 What must not escalate yet?
 -
 
-## 4. Large Trend / Growth Fit
+## 5. Large Trend / Growth Fit
 
 What larger trend is hard to resist here?
 -
@@ -189,7 +228,7 @@ What growth lesson is available but not guaranteed?
 What stage must the protagonist not skip?
 -
 
-## 5. Level Activation
+## 6. Level Activation
 
 Major-force pressure, if any:
 -
@@ -203,7 +242,7 @@ Character-level actors activated:
 Why these levels are enough for this chapter:
 -
 
-## 6. Scene-First Plot Carrier
+## 7. Scene-First Plot Carrier
 
 The main chapter turn must be carried by scene action, not a record/status/system.
 
@@ -233,7 +272,7 @@ Why the record/system is not the main carrier:
 What physical object, person, relationship, access, or cultivation state changes immediately:
 -
 
-## 7. Organization Reaction
+## 8. Organization Reaction
 
 Organization:
 What it wants:
@@ -241,6 +280,9 @@ What it fears:
 What concrete person / object / access / rule it uses:
 Likely embodied action:
 What it hides:
+What it knows directly:
+What it only infers:
+What it misreads:
 
 Organization:
 What it wants:
@@ -248,8 +290,11 @@ What it fears:
 What concrete person / object / access / rule it uses:
 Likely embodied action:
 What it hides:
+What it knows directly:
+What it only infers:
+What it misreads:
 
-## 8. Character Cognition
+## 9. Character Cognition
 
 Character:
 Directly knows:
@@ -259,6 +304,8 @@ Misreads:
 Most trusted evidence:
 Fear:
 Cannot afford:
+Local rational choice:
+Why this may be globally wrong:
 
 Character:
 Directly knows:
@@ -268,8 +315,10 @@ Misreads:
 Most trusted evidence:
 Fear:
 Cannot afford:
+Local rational choice:
+Why this may be globally wrong:
 
-## 9. Protagonist Immediate Problem
+## 10. Protagonist Immediate Problem
 
 What does the protagonist want right now?
 -
@@ -283,7 +332,7 @@ What information does the protagonist lack?
 What information does the protagonist misread?
 -
 
-## 10. Bad Options
+## 11. Bad Options
 
 At least three options are required.
 
@@ -317,7 +366,7 @@ Why tempting:
 Why dangerous:
 Which trend node it still leads toward:
 
-## 11. Chosen Action
+## 12. Chosen Action
 
 Chosen option:
 -
@@ -331,7 +380,7 @@ Why this is not author convenience:
 What desire, fear, loyalty, secret, or misjudgment shapes it:
 -
 
-## 12. Protagonist Growth Result
+## 13. Protagonist Growth Result
 
 Cost paid:
 -
@@ -354,12 +403,12 @@ What remains unsolved:
 Why this does not skip a growth stage:
 -
 
-## 13. Protagonist Advantage Ledger
+## 14. Protagonist Advantage Ledger
 
 Protagonist pays this cost:
 -
 
-Protagonist gains at least one usable advantage. Prioritize genre-appropriate person/object/access/capability advantages over pure record advantages.
+Protagonist gains at least one usable advantage when the chapter structure requires a gain. Prioritize genre-appropriate person/object/access/capability advantages over pure record advantages.
 
 - Relationship:
 - Physical object:
@@ -373,10 +422,11 @@ Protagonist gains at least one usable advantage. Prioritize genre-appropriate pe
 - Skill / understanding:
 - Cultivation / bodily / spiritual / genre-specific change:
 - Final-form asset:
+- Earth / civilization asset if relevant:
 
 If the only gain is a status change, report submission, log entry, case number, archive, vague insight, or a random clue unrelated to final form, revise the chapter.
 
-## 14. Reader Reward Ledger
+## 15. Reader Reward Ledger
 
 Reader expectation entering this chapter:
 -
@@ -393,14 +443,17 @@ Emotional reward:
 Concrete memory point:
 -
 
-If the chapter only adds mystery and answers nothing, revise it.
+If the chapter only adds mystery and answers nothing, revise it unless the immediate crisis or choice hook is strong and concrete.
 
-## 15. Scene Engine
+## 16. Scene Engine
 
 Scene location:
 -
 
 Trend pressure present in scene:
+-
+
+Hook / payoff movement present in scene:
 -
 
 Present forces:
@@ -418,15 +471,21 @@ What each side pretends:
 What each side really wants:
 -
 
-## 16. Immediate Result
+## 17. Immediate Result
 
 Visible result:
 -
 
-World trend progress:
+World / civilization trend progress:
+-
+
+Earth status progress if relevant:
 -
 
 Protagonist final-form progress:
+-
+
+Reader hook/payoff delivered:
 -
 
 Cost paid:
@@ -444,7 +503,7 @@ Object / person / route / access / cultivation state changed:
 Supporting record changed, if any:
 -
 
-## 17. Consequence Chain
+## 18. Consequence Chain
 
 Which organization must react next?
 -
@@ -458,7 +517,10 @@ Which major conflict front becomes sharper?
 What is the next chapter's forced pressure?
 -
 
-## 18. Decision
+What is the next chapter's reader hook/payoff direction?
+-
+
+## 19. Decision
 
 ALLOW / REVISE
 ```
@@ -469,7 +531,9 @@ Pass only if all are true:
 
 - The chapter fits genre mode.
 - Irreversible trend anchor exists and is used.
-- The chapter advances world trend, protagonist final form, or their coupling.
+- The chapter advances world trend, Earth status when relevant, protagonist final form, or their coupling.
+- The chapter has a concrete reader hook/payoff.
+- Face-slapping, if used, is necessary and natural to the scene.
 - Local choices can vary, but all plausible choices pull toward a shared trend node.
 - Reality-causal preflight supports the event.
 - The chapter touches a major conflict front.
@@ -479,13 +543,12 @@ Pass only if all are true:
 - Important actors act from limited knowledge.
 - A protagonist growth stage toward final form is active.
 - The pressure tests the protagonist's current weakness.
-- The protagonist faces bad options.
+- The protagonist faces bad options when the chapter hinges on choice.
 - The chosen action has a cost.
-- The protagonist gains a usable advantage.
-- The advantage can be used in the next scene.
+- The protagonist gains a usable advantage when the chapter's promise requires a gain.
+- The advantage can be used in a future scene.
 - The growth does not skip stages.
 - The large trend remains larger than the protagonist.
-- The reader receives a reward, not only a new mystery.
 - The result changes the arena.
 - The next chapter is forced by consequence.
 - The climax is not a report, popup, log, archive, case status, database state, or automatic workflow change.
@@ -496,7 +559,9 @@ Mark `REVISE` if:
 
 - the chapter starts from a random event and then asks characters to perform inside it;
 - the event could happen anywhere to anyone without damaging the long story;
-- the protagonist only suffers and gains nothing;
+- the chapter has no concrete reason for readers to continue;
+- face-slapping is forced into a scene that should be driven by fear, discovery, grief, or survival;
+- the protagonist only suffers and gains nothing when the chapter promise requires gain;
 - the protagonist receives vague insight instead of usable leverage;
 - the only protagonist gain is a record or system status;
 - protagonist growth is random, unearned, or jumps stages;
@@ -510,6 +575,6 @@ Mark `REVISE` if:
 - all actors know too much;
 - a major faction directly solves a local chapter problem too early;
 - the chapter contains exciting events but no state variable changes;
-- the chapter ends with danger only, without a protagonist asset;
-- the reader gets only new mystery and no payoff;
+- the chapter ends with danger only, without a next-action path;
+- the reader gets only vague mystery and no payoff, crisis, choice, or concrete pressure;
 - the same chapter engine repeats too often.
