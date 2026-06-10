@@ -7,10 +7,11 @@ Use `docs/workflow_layers.md` as the authoritative full version and `docs/file_r
 ## Non-Negotiable Order
 
 ```text
-Name & Term Gate
+Irreversible Trend Anchor
+-> Name & Term Gate
 -> Wiki Bootstrap
 -> Actor Setup
--> Chapter Preflight
+-> Chapter Trend Convergence
 -> Scene Design
 -> Drafting
 -> Review
@@ -19,7 +20,32 @@ Name & Term Gate
 
 Do not skip forward.
 
-## 1. Name & Term Gate
+## 1. Irreversible Trend Anchor
+
+Required file:
+
+```text
+prompts/00_irreversible_trend_anchor.md
+```
+
+Run once during new-novel setup, before chapter planning.
+
+This defines:
+
+- world irreversible trend;
+- protagonist irreversible final form;
+- how the two lines force each other;
+- stage map for world trend and protagonist growth.
+
+Hard rule:
+
+```text
+No irreversible trend anchor, no chapter design.
+```
+
+The author controls the world trend and protagonist final form. Characters control local choices. Plot emerges when local choices are pulled back into the irreversible trend.
+
+## 2. Name & Term Gate
 
 Required file:
 
@@ -47,18 +73,9 @@ No Name & Term Gate, no new named entity or invented term.
 
 If a term has not passed the gate, use ordinary description.
 
-Examples of ordinary description:
-
-```text
-The gate showed yellow.
-The board had been marked as scrap.
-The upstairs compliance clerk came down.
-The gray reaction had no official name yet.
-```
-
 Do not compress ordinary things into new terms just because they sound genre-specific.
 
-## 2. Wiki Bootstrap
+## 3. Wiki Bootstrap
 
 Required file:
 
@@ -76,6 +93,13 @@ novels/<novel_id>/wiki/name_registry.md
 novels/<novel_id>/wiki/protagonist_growth.md
 ```
 
+The project wiki must include or reference:
+
+- world irreversible trend;
+- protagonist irreversible final form;
+- current stage map;
+- approved names and terms.
+
 Create character / world / organization files as needed before those actors or places enter chapter planning.
 
 Hard rule:
@@ -84,7 +108,7 @@ Hard rule:
 No wiki bootstrap, no draft.
 ```
 
-## 3. Actor Setup
+## 4. Actor Setup
 
 Required for recurring major actors.
 
@@ -100,7 +124,7 @@ Temporary characters may remain role labels.
 
 If a temporary character repeatedly changes the plot, creates debt, becomes a relationship pressure, or appears across chapters, run Name & Term Gate and create a character file.
 
-## 4. Chapter Preflight
+## 5. Chapter Trend Convergence
 
 Required files for important chapters:
 
@@ -110,11 +134,24 @@ prompts/02_emergent_chapter_design.md
 prompts/02_advantage_reward_ledger.md
 ```
 
-The chapter event must grow from the world model.
+A chapter must not begin from a random event.
+
+It must begin from:
+
+- current stage of world irreversible trend;
+- current stage of protagonist final form;
+- local choices available to the protagonist;
+- how different choices are pulled toward the same trend node.
+
+Hard rule:
+
+```text
+No trend convergence, no chapter draft.
+```
 
 Do not create an event just to trigger a goldfinger, reveal a clue, or show a workflow.
 
-## 5. Scene Design
+## 6. Scene Design
 
 Required for major scenes:
 
@@ -126,13 +163,16 @@ prompts/02_dialogue_intent.md
 
 The scene must have:
 
+- trend pressure in this scene;
 - convergence point;
 - actors with different local goals;
 - scene function in the world;
 - visible action collision;
 - concrete result.
 
-## 6. Drafting
+The scene should not begin from a preselected event. It should begin from actor goals under trend pressure.
+
+## 7. Drafting
 
 Required file:
 
@@ -160,7 +200,7 @@ Do not reward concise abstract conclusions.
 
 It is allowed to be a little verbose when the extra sentences show action, hesitation, repeated attempt, misunderstanding, object movement, or relationship pressure.
 
-## 7. Review
+## 8. Review
 
 Use targeted reviews, not every file every time.
 
@@ -189,7 +229,7 @@ Use when object logic matters:
 governance/object_function_review.md
 ```
 
-## 8. Wiki Sync
+## 9. Wiki Sync
 
 Required after each approved chapter:
 
@@ -207,6 +247,8 @@ novels/<novel_id>/wiki/chapter_states/chapter_<number>.md
 Chapter state must include:
 
 - confirmed events;
+- world trend progress;
+- protagonist final-form progress;
 - protagonist state;
 - character / organization / object state;
 - reader reward;
@@ -225,11 +267,15 @@ Approved chapter -> wiki sync -> next chapter.
 
 Stop if any are true:
 
-1. New name or term appears without Name & Term Gate.
-2. Prose uses invented shorthand where ordinary description is clearer.
-3. Draft uses summary voice instead of action/dialogue.
-4. Main scene has no convergence point.
-5. Key object has no world function.
-6. Protagonist only suffers and gains no usable leverage.
-7. Chapter ends on abstract realization instead of concrete consequence.
-8. Next chapter would rely on chat memory instead of wiki state.
+1. Irreversible trend anchor is missing.
+2. New name or term appears without Name & Term Gate.
+3. Chapter begins from a random event instead of trend convergence.
+4. Local choices do not pull toward a shared trend node.
+5. Prose uses invented shorthand where ordinary description is clearer.
+6. Draft uses summary voice instead of action/dialogue.
+7. Main scene has no convergence point.
+8. Key object has no world function.
+9. Protagonist only suffers and gains no usable final-form asset.
+10. Chapter does not advance world trend or protagonist final form.
+11. Chapter ends on abstract realization instead of concrete consequence.
+12. Next chapter would rely on chat memory instead of wiki state.
