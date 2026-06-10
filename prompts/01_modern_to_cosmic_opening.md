@@ -2,7 +2,7 @@
 
 Use this prompt for chapter one of modern-Earth-to-cosmic stories.
 
-Purpose: open with modern reader identification, immediate life pressure, high-civilization intrusion, small earned face-slapping, and one glimpse of the macro arena.
+Purpose: open with modern reader identification, immediate life pressure, high-civilization intrusion, psychological realism, one small macro-world crack, and a clear reason to continue.
 
 ## Core Rule
 
@@ -13,10 +13,11 @@ Chapter one should make the reader feel:
 ```text
 This is a modern person like me.
 The world is much bigger than Earth.
-A high civilization underestimated him.
-He just proved they were wrong in a small but visible way.
-Now Earth's status may change.
+The protagonist reacts like a real person under shock.
+A concrete question, danger, choice, or reevaluation makes me want the next chapter.
 ```
+
+A small earned win, status shift, or correction is useful, but not mandatory. Do not force face-slapping into first contact if fear, confusion, and discovery should dominate.
 
 ## Required Inputs
 
@@ -26,7 +27,7 @@ Read:
 - `prompts/00_earth_civilization_value.md` output;
 - `prompts/00_unified_power_logic.md` output;
 - `prompts/00_modern_chinese_entry_bridge.md` output;
-- `prompts/00_webnovel_pleasure_ladder.md` output;
+- `prompts/00_webnovel_pleasure_ladder.md` output as Reader Hook / Payoff Ladder;
 - Name & Term Gate output.
 
 ## Output Format
@@ -69,7 +70,38 @@ Why protagonist notices it:
 What modern tool / knowledge / habit is involved:
 -
 
-## 3. High-Civilization Contact
+## 3. First Contact Psychological Realism
+
+What the protagonist first believes:
+- equipment failure / sleep deprivation / prank / hallucination / crime / weather / other
+
+First body reaction:
+- freeze / heartbeat / hand shake / nausea / sweat / dry throat / stumble / breath change / other
+
+First ordinary action:
+- check data / call someone / take photo / step back / hide / deny / search online / other
+
+Does the protagonist want to run, call police, record, or get help?
+-
+
+Why the protagonist does not immediately collapse or become omniscient:
+-
+
+What familiar field does the protagonist grab onto to stay rational:
+-
+
+Where the protagonist misreads the situation first:
+-
+
+How the protagonist corrects the misread:
+-
+
+What the protagonist says under pressure:
+-
+
+Does this speech sound like a frightened modern person, not an abstract analyst? yes / no
+
+## 4. High-Civilization Contact
 
 Who appears:
 -
@@ -77,7 +109,7 @@ Who appears:
 What they want:
 -
 
-Why they underestimate the protagonist:
+Why they underestimate or misclassify the protagonist:
 -
 
 What they think Earth is:
@@ -86,15 +118,24 @@ What they think Earth is:
 What they are about to do to protagonist:
 - ignore / threaten / wipe memory / confiscate object / classify him / treat as sample / other
 
-## 4. Protagonist Small Win
-
-What protagonist notices that high-civilization actor misses:
+Why they allow the protagonist any action at all:
 -
 
-What modern analogy or model helps him understand it:
+What would make them stop or hesitate:
+-
+
+## 5. Protagonist Small Action
+
+What protagonist notices:
+-
+
+What modern analogy, tool, or habit helps him:
 -
 
 What action does protagonist take:
+-
+
+Where does he hesitate, panic, or make a mistake:
 -
 
 Why this action is earned and not author convenience:
@@ -103,24 +144,32 @@ Why this action is earned and not author convenience:
 Visible result:
 -
 
-## 5. Face-Slapping / Status Shift
+## 6. Hook / Payoff
 
-Who is corrected:
+Primary hook type:
+- question / crisis / identity / relationship / world reveal / mechanism / choice / resource / qualification / face-slapping / tactical / mystery-payoff
+
+Specific question or pressure:
 -
 
-What exact belief is proven wrong:
+Small payoff delivered:
 -
 
-How visible is the correction:
+New question or pressure opened:
 -
 
-What reward or new qualification does protagonist gain:
+Visible gain, if any:
 -
 
-What line or action shows the high-civilization actor taking him seriously:
+Is face-slapping necessary? yes / no
+
+If yes, why is it natural here:
 -
 
-## 6. Macro World Glimpse
+If no, what retains the reader instead:
+-
+
+## 7. Macro World Glimpse
 
 Reveal only one or two of these:
 
@@ -138,7 +187,7 @@ Chosen glimpse:
 Do not reveal yet:
 -
 
-## 7. Chapter Ending Hook
+## 8. Chapter Ending Hook
 
 Concrete changed condition:
 -
@@ -152,7 +201,7 @@ Reader question:
 Final line function:
 - invitation / threat / reevaluation / transport / test / memory decision / other
 
-## 8. Pass / Fail
+## 9. Pass / Fail
 
 ALLOW / REVISE
 ```
@@ -163,9 +212,11 @@ Mark `REVISE` if:
 
 - chapter one starts with cosmic exposition;
 - modern identity is only a label and not felt through scene action;
-- no high-civilization actor underestimates protagonist;
-- protagonist does not earn a visible small win;
+- protagonist sees alien / supernatural contact and reacts like a calm expert immediately;
+- protagonist instantly understands everything;
+- protagonist uses abstract AI-like phrases under fear when short human speech would be natural;
+- no specific reader-retention hook exists;
 - the first contact is pure coincidence with no modern-life trigger;
-- the protagonist instantly understands everything;
+- high-civilization actor acts stupid only to make protagonist look good;
 - Earth stakes are absent;
-- there is no status shift, reward, invitation, threat, or reevaluation at the end.
+- there is no concrete changed condition at the end.
