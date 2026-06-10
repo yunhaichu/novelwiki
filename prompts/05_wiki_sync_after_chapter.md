@@ -1,16 +1,18 @@
 # Wiki Sync After Chapter Prompt
 
-Use this prompt immediately after a chapter draft is approved and before planning the next chapter.
+Use this prompt immediately after a formal chapter draft is approved and before planning the next chapter.
 
 The purpose is to keep the per-novel wiki synchronized with approved prose, so the next chapter reads canon rather than relying on chat memory.
+
+Fast Trial sketches are non-canon and must not use this prompt.
 
 ## Core Principle
 
 ```text
-Approved chapter -> wiki sync -> next chapter.
+Approved formal chapter -> wiki sync -> next chapter.
 ```
 
-Do not plan or draft the next chapter until chapter state and relevant wiki updates are written or explicitly rejected by the user.
+Do not plan or draft the next formal chapter until chapter state and relevant wiki updates are written or explicitly rejected by the user.
 
 ## Required Inputs
 
@@ -26,7 +28,7 @@ Read:
 - relevant organization / world files;
 - `style.md`;
 - `name_registry.md`;
-- `prompts/00_webnovel_pleasure_ladder.md` output if available;
+- `prompts/00_webnovel_pleasure_ladder.md` output as Reader Hook / Payoff Ladder if available;
 - `prompts/02_advantage_reward_ledger.md` output if available;
 - `governance/wiki_write_rules.md`.
 
@@ -64,7 +66,7 @@ Each `chapter_<number>.md` must include:
 - world / civilization trend progress;
 - Earth status progress when relevant;
 - protagonist final-form progress;
-- reader pleasure delivered;
+- reader hook / payoff delivered;
 - protagonist state;
 - organization state;
 - character state;
@@ -102,7 +104,7 @@ Distinguish:
 - world trend progress vs worldbuilding exposition;
 - Earth status progress vs Earth nostalgia;
 - protagonist final-form progress vs ordinary clue gain;
-- reader pleasure delivered vs reusable protagonist asset;
+- reader hook/payoff delivered vs reusable protagonist asset;
 - reader debt vs confirmed canon;
 - pressure clock vs completed event;
 - repetition risk vs style preference.
@@ -164,22 +166,23 @@ This can be small:
 
 Do not record random clues as final-form progress unless they change future action.
 
-## Reader Pleasure Sync Rules
+## Reader Hook / Payoff Sync Rules
 
-Reader pleasure is planning state, not hidden canon.
+Reader hook/payoff is planning state, not hidden canon.
 
-It must be recorded so the next chapter does not repeat the same low-level face-slapping pattern without escalation.
+It must be recorded so the next chapter does not repeat the same hook, delay payoff too long, or force face-slapping where another hook would be more natural.
 
 Record:
 
-- who underestimated the protagonist;
-- what belief was corrected;
-- where the correction was visible;
-- what resource / qualification / status / ally / tool / tactical win the protagonist gained;
-- what pleasure type was delivered;
-- what the next pleasure escalation should be.
+- primary hook type;
+- specific question, crisis, choice, relationship tension, world reveal, mechanism reveal, or visible gain;
+- small payoff delivered;
+- new question or pressure opened;
+- whether face-slapping was used;
+- if face-slapping was used, who was corrected and why it was natural;
+- what the next hook/payoff escalation should be.
 
-Do not count vague praise, secret admiration, or exposition as delivered reader pleasure.
+Do not count vague praise, secret admiration, exposition, or broad mystery as delivered hook/payoff.
 
 ## Reader Debt / Pressure / Repetition Rules
 
@@ -223,7 +226,8 @@ Record repeated scene patterns that must be upgraded or avoided next:
 - same consequence pattern;
 - same chapter ending shape;
 - same face-slapping target type;
-- same reward type.
+- same reward type;
+- same hook type.
 
 The next chapter constraint should say what must change if repetition risk remains.
 
@@ -251,7 +255,7 @@ Required fields in content draft:
 - world / civilization trend progress:
 - Earth status progress if relevant:
 - protagonist final-form progress:
-- reader pleasure delivered:
+- reader hook / payoff delivered:
 - protagonist state:
 - organization state:
 - character state:
@@ -302,14 +306,16 @@ Coupling among trend, Earth, and protagonist:
 What became irreversible this chapter:
 What must carry into next chapter:
 
-## 6. Reader Pleasure Delivered
+## 6. Reader Hook / Payoff Delivered
 
-Pleasure type:
-Who underestimated protagonist:
-What belief was corrected:
-Where correction was visible:
-Resource / qualification / status / ally / tool / tactical win gained:
-Next pleasure escalation:
+Primary hook type:
+Specific question / crisis / choice / relationship / reveal:
+Small payoff delivered:
+New question or pressure opened:
+Visible gain, if any:
+Was face-slapping used? yes / no
+If yes, who was corrected and why it was natural:
+Next hook/payoff escalation:
 
 ## 7. Timeline / Relationship / Foreshadowing Updates
 
@@ -337,7 +343,7 @@ Must not escalate yet:
 Required unresolved pressure:
 Required structural upgrade:
 Suggested next attractor:
-Required reader pleasure escalation:
+Required hook/payoff escalation:
 
 ## 10. Missing / Unsafe Updates
 
@@ -353,11 +359,11 @@ Mark `REVISE` if:
 - world / civilization trend progress is missing from an important chapter state;
 - Earth status progress is missing from a relevant macro chapter state;
 - protagonist final-form progress is missing from a protagonist-centered chapter state;
-- reader pleasure delivered is missing from an important chapter state;
+- reader hook/payoff delivered is missing from an important chapter state;
 - updates include speculation or inferred secrets;
 - protagonist growth is recorded without concrete cost or usable leverage;
 - final-form progress is recorded as a random clue with no next-action value;
-- reader pleasure is recorded as vague praise, secret admiration, or exposition;
+- reader hook/payoff is recorded as vague praise, secret admiration, broad mystery, or exposition;
 - reader debt / pressure clock / repetition risk are missing from an important chapter state;
 - a one-time action is written as a permanent trait;
 - an organization agent's local action is written as full organization policy without proof;
