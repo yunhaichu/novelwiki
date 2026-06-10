@@ -2,7 +2,11 @@
 
 Use this prompt before volume planning and chapter design.
 
-Purpose: guarantee visible reader pleasure. Large trends and deep themes are not enough. A webnovel chapter needs readable surface reward: face-slapping, reversal, resource gain, status change, qualification, recognition, or tactical win.
+Purpose: design visible reader pleasure before chapter planning. Large trends and deep themes are not enough. A webnovel chapter needs readable surface reward: face-slapping, reversal, resource gain, status change, qualification, recognition, or tactical win.
+
+This file designs the pleasure structure.
+
+It does not replace `prompts/02_advantage_reward_ledger.md`. The advantage ledger records reusable protagonist / reader assets after chapter design or draft.
 
 ## Core Rule
 
