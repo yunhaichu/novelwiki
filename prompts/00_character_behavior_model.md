@@ -20,6 +20,43 @@ Do not invent dramatic behavior, heroic override, breakdown, courage, cowardice,
 
 If the source is insufficient, write `behavior_gap` instead of filling it silently.
 
+## Name Gate Rule
+
+When creating a new character, do not generate the character name directly from model preference.
+
+Before writing `Character name`, run a small Name Gate using the current novel's `wiki/name_registry.md` and the naming rules in `prompts/00_wiki_bootstrap.md`.
+
+For new characters, produce:
+
+```text
+## Character Name Gate
+
+Character function:
+Social layer / occupation:
+Legal-name system:
+Nickname / handle / work-ID system:
+Name candidates:
+Rejected names and reasons:
+Selected legal name:
+Selected work name / handle / nickname if any:
+Why selected name fits this world and social layer:
+AI-default risk: low / medium / high
+Previously used in this repository or current conversation: yes / no
+Name gate decision: ALLOW / REVISE
+```
+
+If the character has no approved name yet, use a functional placeholder such as `recycling_shift_supervisor_01` instead of inventing a polished name.
+
+For minor temporary characters, a role label is allowed until the character becomes recurring:
+
+```text
+night-shift guard
+left-hand sorter
+debt clinic clerk
+```
+
+Do not write a new named character file if the Name Gate is missing or fails.
+
 ## Core Principle
 
 ```text
@@ -43,6 +80,7 @@ This is not out-of-character when the modulation is grounded.
 
 Character ID:
 Character name:
+Name Gate source / result:
 Source files read:
 Behavior confidence: high / medium / low
 
@@ -242,6 +280,8 @@ Typical thought under threshold pressure:
 
 Mark `REVISE` if:
 
+- Name Gate is missing for a new named character;
+- the selected name has high AI-default risk without explicit approval;
 - the character is reduced to one adjective;
 - the default behavior has no conditions;
 - the character behaves the same toward weak, equal, strong, public, private, known, unknown, human, and non-human pressure;
