@@ -21,6 +21,7 @@ Read:
 - current `project.md`;
 - current `base_settings.md`;
 - current `protagonist_growth.md`;
+- irreversible trend anchor from project wiki or `prompts/00_irreversible_trend_anchor.md` output;
 - relevant character files;
 - relevant organization / world files;
 - `style.md`;
@@ -59,6 +60,8 @@ Each `chapter_<number>.md` must include:
 - chapter title;
 - chapter function;
 - confirmed events;
+- world trend progress;
+- protagonist final-form progress;
 - protagonist state;
 - organization state;
 - character state;
@@ -93,9 +96,49 @@ Distinguish:
 - public status vs private knowledge;
 - known fact vs unresolved question;
 - foreshadowing object vs ordinary detail;
+- world trend progress vs worldbuilding exposition;
+- protagonist final-form progress vs ordinary clue gain;
 - reader debt vs confirmed canon;
 - pressure clock vs completed event;
 - repetition risk vs style preference.
+
+## Irreversible Trend Sync Rules
+
+World trend progress and protagonist final-form progress are planning / structure state. They are written into chapter state to keep long-form direction stable.
+
+They must not be treated as character knowledge unless the approved prose confirms that a character knows it.
+
+### World Trend Progress
+
+Record how the chapter moves the world closer to the irreversible trend.
+
+This can be small:
+
+- a symptom becomes visible;
+- a normal institution fails to explain something;
+- an organization begins reacting;
+- ordinary life changes slightly;
+- a hidden pressure reaches the protagonist's level;
+- public denial becomes harder.
+
+Do not record vague worldbuilding. Record concrete movement.
+
+### Protagonist Final-Form Progress
+
+Record how the chapter moves the protagonist toward the final form.
+
+This can be small:
+
+- gains a verification method;
+- gains a relationship or debt;
+- learns a rule;
+- preserves a person/object/route;
+- pays a cost for helping;
+- becomes slightly more responsible;
+- gains a team seed;
+- understands that personal survival is not enough.
+
+Do not record random clues as final-form progress unless they change future action.
 
 ## Reader Debt / Pressure / Repetition Rules
 
@@ -158,6 +201,24 @@ Path:
 
 Content draft:
 
+Required fields in content draft:
+- chapter title:
+- chapter function:
+- confirmed events:
+- world trend progress:
+- protagonist final-form progress:
+- protagonist state:
+- organization state:
+- character state:
+- key object / resource state:
+- reader reward delivered:
+- reader debt:
+- pressure clock:
+- repetition risk:
+- unresolved questions:
+- next chapter constraints:
+- useful next-chapter attractor:
+
 ## 2. Character Updates
 
 Character:
@@ -179,13 +240,22 @@ Should update file? yes / no
 Active stage:
 Cost paid:
 Usable leverage gained:
+Final-form asset gained or strengthened:
 Capability changed? yes / no
 Access changed? yes / no
 Relationship changed? yes / no
 Forbidden jump avoided? yes / no
 Should update `protagonist_growth.md`? yes / no
 
-## 5. Timeline / Relationship / Foreshadowing Updates
+## 5. Irreversible Trend Updates
+
+World trend progress:
+Protagonist final-form progress:
+Coupling between the two:
+What became irreversible this chapter:
+What must carry into next chapter:
+
+## 6. Timeline / Relationship / Foreshadowing Updates
 
 Timeline update:
 Relationship update:
@@ -193,7 +263,7 @@ Foreshadowing update:
 Name registry update:
 Style update:
 
-## 6. Reader Debt / Pressure / Repetition Updates
+## 7. Reader Debt / Pressure / Repetition Updates
 
 Reader debt paid or partially paid:
 Reader debt created or carried:
@@ -203,7 +273,7 @@ Pressure that worsened:
 Repetition risk from this chapter:
 Required structural change next chapter:
 
-## 7. Next Chapter Constraints
+## 8. Next Chapter Constraints
 
 Must continue from:
 Must not contradict:
@@ -212,7 +282,7 @@ Required unresolved pressure:
 Required structural upgrade:
 Suggested next attractor:
 
-## 8. Missing / Unsafe Updates
+## 9. Missing / Unsafe Updates
 
 - candidate update:
   reason not written:
@@ -223,12 +293,16 @@ Suggested next attractor:
 Mark `REVISE` if:
 
 - chapter state is missing;
+- world trend progress is missing from an important chapter state;
+- protagonist final-form progress is missing from a protagonist-centered chapter state;
 - updates include speculation or inferred secrets;
 - protagonist growth is recorded without concrete cost or usable leverage;
+- final-form progress is recorded as a random clue with no next-action value;
 - reader debt / pressure clock / repetition risk are missing from an important chapter state;
 - a one-time action is written as a permanent trait;
 - an organization agent's local action is written as full organization policy without proof;
 - a reference-setting idea is written as canon without appearing in the approved chapter;
 - next chapter constraints are missing;
 - the next chapter has no required structural upgrade after repeated scene pattern;
+- the next chapter does not carry forward the irreversible trend;
 - the next chapter would need to rely on chat memory rather than wiki state.
