@@ -2,7 +2,7 @@
 
 Use this checklist after drafting and final polish.
 
-The purpose is to remove AI-flavored expression and unnecessary explanatory prose that survives plot, scene, and dialogue planning.
+The purpose is to remove AI-flavored expression, summary voice, ungrounded invented terms, and unnecessary explanatory prose that survives plot, scene, and dialogue planning.
 
 This review focuses on prose-level symptoms:
 
@@ -17,7 +17,9 @@ This review focuses on prose-level symptoms:
 - dialogue that sounds like narration;
 - record-driven narration;
 - explanatory proof lines;
-- optional sentences that weaken subtext.
+- optional sentences that weaken subtext;
+- unapproved coined terms;
+- overly concise conclusion lines.
 
 ## Required Inputs
 
@@ -28,13 +30,15 @@ Read:
 - scene expression states;
 - dialogue intent;
 - current novel style file;
+- current novel `wiki/name_registry.md`;
+- `prompts/00_name_term_gate.md`;
 - anti-AI taste rules if present;
 - relevant character wiki files;
 - `governance/anti_record_driven_plot.md` when relevant.
 
 ## Hard Principle
 
-Do not improve prose by making it more literary.
+Do not improve prose by making it more literary or more concise.
 
 Improve prose by making it more grounded in:
 
@@ -51,9 +55,29 @@ current consequence
 
 Records, screens, reports, and systems can support pressure, but they should not be the emotional or narrative center of the scene.
 
+## Xiaobai Review Principle
+
+For Chinese webnovel prose, default to xiaobai readability.
+
+Do not reward summary voice just because it is concise.
+
+A paragraph can be slightly longer if it shows:
+
+- a repeated attempt;
+- a practical question;
+- a small hesitation;
+- a visible object movement;
+- a concrete misunderstanding;
+- a relationship shift;
+- someone refusing, delaying, or changing position.
+
+Mark `REVISE` if prose compresses a scene into a conclusion.
+
 ## Narrative Economy Principle
 
-If a sentence can be removed without losing action, necessary information, pressure, relationship change, object state, or reader hook, remove it.
+Narrative economy does not mean terse prose.
+
+It means every extra sentence must do concrete story work.
 
 The prose should not repeat what the reader can infer from:
 
@@ -65,7 +89,7 @@ The prose should not repeat what the reader can infer from:
 - a character's silence;
 - a scene consequence.
 
-Logic belongs in planning and wiki. The draft should show only the smallest amount of explanation needed for the reader to follow the scene.
+Logic belongs in planning and wiki. The draft should show only the explanation needed for the reader to follow the scene, and should prefer action/dialogue over abstract summary.
 
 ## Hard Checks
 
@@ -227,11 +251,51 @@ Examples:
 
 Keep the functional minimum and cut the rest.
 
-### 12. Source Support Check
+### 12. Ungrounded Term Check
 
-If an expressive habit, metaphor style, repeated gesture, speech quirk, or emotional display is not supported by wiki or expression card, remove or mark an expression gap.
+Mark `REVISE` if the draft introduces a new compact term that is not approved in `wiki/name_registry.md` and not passed through `prompts/00_name_term_gate.md`.
 
-### 13. Record-Centered Expression Check
+This includes new labels for:
+
+- colors / lights / warning states;
+- scrap categories;
+- ability reactions;
+- organization shorthand;
+- procedure names;
+- status names;
+- resource names;
+- worker slang.
+
+Repair by replacing with ordinary description unless the term is approved.
+
+Ask:
+
+```text
+Who says this term?
+Would that person really say it?
+What ordinary thing does it replace?
+Has the reader seen its function before the term appears?
+```
+
+### 13. Summary Voice Check
+
+Mark `REVISE` if a sentence tells the reader the conclusion instead of letting the scene play.
+
+Weak:
+
+```text
+The conflict between them had changed.
+He had gained a new kind of leverage.
+The pressure was now on him.
+```
+
+Repair by expanding into xiaobai-style action, dialogue, or repeated attempts.
+
+### 14. Source Support Check
+
+If an expressive habit, metaphor style, repeated gesture, speech quirk, emotional display, name, or term is not supported by wiki or expression card, remove or mark a gap.
+
+### 15. Record-Centered Expression Check
 
 Mark `REVISE` if paragraphs repeatedly center on:
 
@@ -292,6 +356,8 @@ Expression checks:
 - Scene utility:
 - Optional sentence / leave-blank:
 - Explanation leakage:
+- Ungrounded term:
+- Summary voice:
 - Source support:
 - Record-centered expression:
 
@@ -314,9 +380,9 @@ Required fixes if REVISE:
 
 ## Repair Method
 
-First try deletion.
+First try ordinary description.
 
-If deletion makes the scene unclear, replace with one of:
+If the problem is summary voice, expand into:
 
 - visible object state;
 - specific permission boundary;
@@ -327,10 +393,10 @@ If deletion makes the scene unclear, replace with one of:
 - person-to-person action;
 - physical object being moved, hidden, protected, taken, damaged, or exposed;
 - relationship change;
-- a smaller, less polished line.
+- a simple xiaobai line that says what happened without sounding polished.
 
 ## Review Standard
 
 A line can be plain and still strong.
 
-The target is not literary polish. The target is believable pressure carried by people, objects, actions, relationships, and consequences.
+The target is not literary polish. The target is readable pressure carried by people, objects, actions, relationships, and consequences.
