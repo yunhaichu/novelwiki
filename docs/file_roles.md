@@ -152,6 +152,19 @@ Required: yes
 
 Role: defines controlled protagonist growth stages, current weakness, growth asset ladder, forbidden jumps, and what the author's invisible hand may or may not do.
 
+### `prompts/00_name_term_gate.md`
+
+Scope: per-novel / per-character / per-term
+Required: yes before new named entities or invented terms
+
+Role: checks names and terms before they enter project files, character files, organization files, world files, drafts, or canon.
+
+It covers people, organizations, places, objects, tools, resources, jobs, ranks, procedures, status labels, ability labels, recurring slang, and chapter-critical objects.
+
+Hard rule: no Name And Term Gate, no new named entity or invented term.
+
+If a term is not approved, use ordinary description instead.
+
 ### `prompts/00_wiki_bootstrap.md`
 
 Scope: per-novel
@@ -176,6 +189,8 @@ Scope: per-novel, per major character
 Required: conditional; yes for recurring major characters
 
 Role: defines default behavior, environmental modulation, core protected object, threshold behavior, extreme reaction, aftermath, and inner monologue mode.
+
+New named characters must pass Name Gate / Name And Term Gate before a named character file is written.
 
 ### `prompts/00_character_expression_card.md`
 
@@ -267,9 +282,11 @@ Role: converts an approved scene simulation or action log into prose. Should ret
 Scope: per-chapter
 Required: yes
 
-Role: writes chapter draft from current novel wiki, chapter design, scene convergence, and relevant governance rules.
+Role: writes chapter draft from current novel wiki, chapter design, scene convergence, approved names/terms, and relevant governance rules.
 
-Do not use it before setup, wiki bootstrap, preflight, and chapter design are clear.
+It enforces xiaobai prose: clear action, dialogue, reaction, and process. It forbids summary voice and does not reward concise abstract conclusions.
+
+Do not use it before setup, wiki bootstrap, preflight, chapter design, and Name And Term Gate are clear.
 
 ## Review Governance
 
@@ -313,7 +330,7 @@ Role: checks source-grounded character voice, listener-specific mode, environmen
 Scope: per-chapter
 Required: conditional
 
-Role: removes pretty summaries, unsupported metaphors, generic body reactions, identity-label sentences, psychological summaries, dialogue-as-narration, same rhythm, and record-centered expression.
+Role: removes pretty summaries, unsupported metaphors, generic body reactions, identity-label sentences, psychological summaries, dialogue-as-narration, same rhythm, record-centered expression, summary voice, and ungrounded invented terms.
 
 ### `governance/anti_record_driven_plot.md`
 
@@ -364,14 +381,14 @@ Role: defines what canon files must be read before writing and prevents referenc
 Scope: per-canon update
 Required: yes
 
-Role: defines what can and cannot be written into a novel wiki, including character behavior, organization behavior, protagonist growth, and scene performance distinctions.
+Role: defines what can and cannot be written into a novel wiki, including character behavior, organization behavior, protagonist growth, scene performance distinctions, and approved/rejected names and terms.
 
 ### `prompts/05_wiki_sync_after_chapter.md`
 
 Scope: per-chapter / per-canon update
 Required: yes after every approved chapter
 
-Role: creates or updates `chapter_states/chapter_<number>.md` and synchronizes confirmed character, organization, world, growth, timeline, relationship, foreshadowing, style, and name changes before the next chapter is planned.
+Role: creates or updates `chapter_states/chapter_<number>.md` and synchronizes confirmed character, organization, world, growth, timeline, relationship, foreshadowing, style, name, and term changes before the next chapter is planned.
 
 Hard rule: approved chapter -> wiki sync -> next chapter.
 
