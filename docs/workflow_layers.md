@@ -73,6 +73,22 @@ Required files:
 
 For macro modern-to-cosmic stories, Layer 1B must read the outputs of Layer 1A.
 
+Macro boundary rule:
+
+```text
+Layer 1B must not shrink the arena created by Layer 1A.
+```
+
+For macro stories, base settings, major conflict, dramatic arena, and protagonist growth must derive from:
+
+- cosmic civilization arena;
+- Earth civilization value;
+- unified power logic;
+- modern Chinese entry bridge;
+- webnovel pleasure ladder.
+
+Do not let standard setup collapse a cosmic story back into a small sect, city, island, or single-country conflict unless the story intentionally starts local while preserving the larger arena.
+
 Supporting reference files:
 
 - `reference_settings/usage_contract.md`
@@ -234,6 +250,8 @@ Files:
 - `governance/reader_entry_review.md` if present
 - `governance/opening_chapter_brief_review.md` if present
 
+For modern-to-cosmic chapter one, `prompts/01_modern_to_cosmic_opening.md` is primary. Other opening files are optional review aids, not required execution steps.
+
 If these files are missing, use the same checks manually:
 
 - protagonist is clear;
@@ -357,6 +375,7 @@ Chapter state must track:
 - Earth status progress when relevant;
 - protagonist final-form progress;
 - reader reward delivered;
+- reader pleasure delivered;
 - reader debt;
 - pressure clock;
 - repetition risk;
@@ -380,6 +399,12 @@ For a standard new novel:
 
 ```text
 Layer 1B including irreversible trend anchor, Name & Term Gate, and wiki bootstrap -> Layer 2 -> Layer 3 -> Layer 4 -> Layer 5 -> Layer 6 -> Layer 7 -> Layer 8 -> Layer 9 wiki sync
+```
+
+For a macro modern-to-cosmic fast trial:
+
+```text
+Layer 1A core files -> Layer 5 modern-to-cosmic opening -> Draft / outline chapter one -> decide whether to build full wiki
 ```
 
 For a normal later chapter:
@@ -426,7 +451,8 @@ Do not plan the next chapter if any of these are unresolved:
 3. Earth status progress was not recorded when relevant.
 4. Protagonist final-form progress was not recorded.
 5. Reader reward delivered was not recorded.
-6. New confirmed character / organization / world facts were not synchronized.
-7. Newly approved or rejected terms were not synchronized into the name registry.
-8. Next chapter constraints are missing.
-9. The next chapter would need to rely on chat memory rather than wiki state.
+6. Reader pleasure delivered was not recorded for an important chapter.
+7. New confirmed character / organization / world facts were not synchronized.
+8. Newly approved or rejected terms were not synchronized into the name registry.
+9. Next chapter constraints are missing.
+10. The next chapter would need to rely on chat memory rather than wiki state.
