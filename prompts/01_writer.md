@@ -17,6 +17,7 @@ Read the current novel wiki before writing:
 - previous chapter state
 - relevant open questions
 - `governance/wiki_retrieval_rules.md`
+- `prompts/00_name_term_gate.md`
 - `governance/anti_record_driven_plot.md` when the chapter involves systems, reports, logs, files, workflows, institutions, or records
 - `prompts/02_scene_convergence.md` output if available
 
@@ -30,11 +31,12 @@ Expected locations:
 Expected objects:
 Relevant organizations or processes:
 Relevant base setting rules:
+Relevant approved names and terms:
 Relevant open questions:
 Files read:
 ```
 
-Do not write detailed claims about a character, object, place, organization, process, rule, or unresolved question if the matching wiki file was not read.
+Do not write detailed claims about a character, object, place, organization, process, rule, term, or unresolved question if the matching wiki file was not read.
 
 Reference settings under `reference_settings/` are not canon. Use the novel-specific `wiki/base_settings.md` and approved wiki files as canon.
 
@@ -52,9 +54,102 @@ Recurring side characters should have their own pressure, desire, fear, possible
 
 Temporary characters may be functional, but their lines should not feel like forced prompts for the protagonist.
 
+## Xiaobai Prose Rule
+
+Default prose should be Chinese webnovel xiaobai style unless the user explicitly asks otherwise.
+
+Xiaobai style here means:
+
+- clear subject, clear action, clear consequence;
+- short and medium sentences are allowed;
+- simple words over elegant words;
+- dialogue and action carry the scene;
+- emotional pressure is shown through repeated small actions and concrete trouble;
+- the reader should not need to reread a sentence to understand what happened.
+
+Do not write like a report, essay, commentary, trailer, or final summary.
+
+Do not pursue concise elegance.
+
+It is allowed to be a little verbose if the extra words are concrete:
+
+- a character asks one more question;
+- someone hesitates before answering;
+- someone repeats a practical concern;
+- a physical action takes two or three steps;
+- a misunderstanding is played out in dialogue;
+- a small object is moved, lost, hidden, or checked;
+- pressure lands on a visible person.
+
+Bad compression:
+
+```text
+他意识到自己已经没有退路。
+```
+
+Better xiaobai expansion:
+
+```text
+他看着门口的红灯。
+
+红灯没有变。
+
+他又刷了一次工牌。
+
+还是红的。
+
+身后有人开始催。
+
+他把工牌攥进手心，才发现掌心全是汗。
+```
+
+Bad summary:
+
+```text
+这件事让所有人的关系都发生了变化。
+```
+
+Better xiaobai expansion:
+
+```text
+左手分拣工没有再叫他二一九。
+
+她把工具盒往自己那边挪了半寸。
+
+马宽伸手去拿胶带时，摸了个空。
+
+她低头干活，像没看见。
+```
+
+## Anti-Summary Rule
+
+Do not replace story with conclusion.
+
+Avoid narrator summary lines such as:
+
+```text
+这意味着他再也回不到从前。
+他终于明白了这个世界的残酷。
+真正的麻烦才刚刚开始。
+所有人都被卷了进来。
+命运的齿轮开始转动。
+```
+
+If the sentence is a conclusion, turn it into:
+
+- a line of dialogue;
+- a blocked action;
+- a repeated attempt;
+- a small failure;
+- a visible reaction;
+- an object or route changing hands;
+- someone refusing to answer.
+
 ## Narrative Economy Rule
 
-The draft should not prove the workflow. The workflow, wiki, and preflight prove the logic. The prose only needs to carry action, consequence, pressure, and necessary information.
+Narrative economy does not mean terse prose.
+
+It means every extra sentence must do real work.
 
 Do not explain a rule, motive, resource, or mechanism in prose merely because it exists in planning.
 
@@ -69,28 +164,54 @@ A sentence should usually do at least one of the following:
 - produce a visible consequence;
 - preserve or sharpen a reader hook.
 
-Cut or compress sentences that only:
+Cut or rewrite sentences that only:
 
 - summarize what the reader already understands;
 - explain the protagonist's psychology after the choice already shows it;
-- repeat the same cost, limitation, or rule;
+- repeat the same cost, limitation, or rule without new scene pressure;
 - announce why a moment matters;
 - turn subtext into text;
 - prove that the setting is logical.
 
+When in doubt, do not compress into an abstract line. Expand into concrete action.
+
+## Name And Term Grounding Rule
+
+Do not invent compact genre-looking labels in prose unless they are approved in `wiki/name_registry.md` or passed through `prompts/00_name_term_gate.md`.
+
+This applies to:
+
+- people names;
+- organization names;
+- place names;
+- object names;
+- status labels;
+- process names;
+- ability names;
+- anomaly names;
+- worker slang;
+- system-state labels;
+- color/status shorthand.
+
+If a term has not passed the gate, use ordinary description.
+
 Prefer:
 
 ```text
-choice -> action -> consequence
+门口的灯变成黄色。
+那块板被机器标成报废件。
+楼上的合规员下来了。
+那股灰色反应还没有名字。
 ```
 
-over:
+over unapproved compact terms.
 
-```text
-choice -> action -> explanation of why the choice matters
-```
+A term is allowed only when:
 
-When a line is optional, leave it out.
+- a real group in the story uses it;
+- its function has already appeared;
+- the first use makes sense to the reader;
+- `name_registry.md` records who uses it and why.
 
 ## Character Performance Rule
 
@@ -151,7 +272,7 @@ Use `wiki/base_settings.md` to check:
 
 Do not import unused reference-setting material directly into prose.
 
-If the chapter needs a new institution, process, resource, power function, anomaly rule, or social rule not covered by base settings, flag the gap rather than silently inventing it.
+If the chapter needs a new institution, process, resource, power function, anomaly rule, social rule, name, or term not covered by base settings / name registry, flag the gap rather than silently inventing it.
 
 ## Scene-First Plot Rule
 
@@ -210,7 +331,7 @@ Do not explain the full system. Reveal only the smallest visible function needed
 Prefer one concrete line from an actor or one visible consequence:
 
 ```text
-"Black ash goes to the field. Medicine mud gets boiled again. Mix them and the bucket is dead."
+"黑灰送灵田，药泥明早有人来熬。掺错一桶，三天白干。"
 ```
 
 over a paragraph explaining the whole supply chain.
