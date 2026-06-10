@@ -2,7 +2,7 @@
 
 Use this template during chapter planning, after chapter drafting, and before chapter state update.
 
-The purpose is to ensure controlled emergence remains readable, satisfying, protagonist-centered, and paced for long-form continuation.
+The purpose is to ensure controlled emergence remains readable, satisfying, protagonist-centered, paced for long-form continuation, and aligned with the protagonist's irreversible final form.
 
 Emergence alone does not guarantee a good story. If the plot system only reacts naturally, the protagonist may be crushed by larger forces and the reader may receive only pressure. This ledger prevents that.
 
@@ -10,16 +10,43 @@ Emergence alone does not guarantee a good story. If the plot system only reacts 
 
 The protagonist may pay costs, but must not only pay costs.
 
-Every meaningful chapter should give the protagonist at least one usable advantage and the reader at least one concrete reward.
+Every meaningful chapter should give the protagonist at least one usable advantage, one concrete reader reward, and one step toward the protagonist's irreversible final form.
 
 Best chapter state:
 
 ```text
 The protagonist is in more danger,
-but owns more leverage than before.
+but owns more leverage than before,
+and that leverage moves them closer to the final form.
 ```
 
 The chapter should also manage reader debt: answer one smaller question, sharpen one larger pressure, and avoid repeating the same scene structure without upgrade.
+
+## Final-Form Asset Rule
+
+A chapter advantage is not enough if it is only a random clue.
+
+The chapter should give the protagonist at least one asset that can eventually support the final form defined in `prompts/00_irreversible_trend_anchor.md` or the novel wiki.
+
+Final-form assets may include:
+
+- detection / perception method;
+- verification method;
+- survival method;
+- concrete relationship trust;
+- small-team coordination;
+- organization experience;
+- knowledge of rules / monsters / systems / institutions;
+- access route;
+- public credibility;
+- protection motive;
+- sacrifice boundary;
+- defensive method;
+- resource control;
+- ability control;
+- responsibility threshold.
+
+If the chapter gives only a mystery, a clue, or a status change that does not move toward final form, mark `REVISE`.
 
 ## Anti Record-Driven Advantage Rule
 
@@ -34,7 +61,8 @@ A record-based advantage counts only if it immediately changes one of:
 - control over a physical object;
 - an opponent’s action or misjudgment;
 - a scene’s visible conditions;
-- the protagonist’s next available choice.
+- the protagonist’s next available choice;
+- the protagonist's path toward final form.
 
 ## Advantage Priority
 
@@ -149,6 +177,20 @@ Examples of structural upgrade:
 Novel ID:
 Chapter number:
 
+## Irreversible Anchor Reference
+
+World irreversible trend:
+-
+
+Protagonist irreversible final form:
+-
+
+Current world trend stage:
+-
+
+Current protagonist final-form stage:
+-
+
 ## Starting Protagonist Assets
 
 Relationships:
@@ -175,6 +217,9 @@ Enemy misjudgments:
 Record-based assets:
 -
 
+Final-form assets already owned:
+-
+
 ## Chapter Cost
 
 What does the protagonist lose, risk, expose, owe, damage, or misunderstand?
@@ -186,9 +231,12 @@ Which actor or organization becomes more dangerous to the protagonist?
 What safety is reduced?
 -
 
+What final-form path becomes harder?
+-
+
 ## New Protagonist Advantage
 
-The chapter must add at least one Tier 1-4 advantage.
+The chapter must add at least one Tier 1-4 advantage and at least one final-form asset.
 
 Relationship gained or changed:
 -
@@ -215,6 +263,20 @@ Skill / understanding gained:
 -
 
 Record-based asset gained, if any:
+-
+
+## Final-Form Asset Gained
+
+Which future-final-form asset is gained or strengthened?
+-
+
+How can this asset eventually support the protagonist's final form?
+-
+
+Why is this not a random clue?
+-
+
+What still prevents the protagonist from using it well?
 -
 
 ## Usability Test
@@ -308,6 +370,8 @@ Mark `REVISE` if:
 - the only gain is vague insight;
 - the only gain is a record, status, case number, report, popup, log, or database entry;
 - the gain cannot affect the next scene;
+- no final-form asset is gained or strengthened;
+- the gain is a random clue unrelated to protagonist final form;
 - the reader receives only a new mystery;
 - the chapter creates danger but no leverage;
 - prior reader debt is ignored for too long;
@@ -342,7 +406,7 @@ The protagonist's mistaken assumption fails, but the failure teaches a rule that
 
 ## Use With State Update
 
-After a chapter is approved, carry forward only usable assets, reader debt, pressure clocks, and repetition risk into chapter state.
+After a chapter is approved, carry forward only usable assets, final-form assets, reader debt, pressure clocks, and repetition risk into chapter state.
 
 Do not record vague mood changes as assets.
 
@@ -355,6 +419,7 @@ Do record:
 - changed suspicions;
 - damaged relationships;
 - new labels other actors attach to the protagonist;
+- final-form assets gained or strengthened;
 - pending reader debts;
 - pressure clocks that moved closer;
 - repetition risks that the next chapter must avoid;
