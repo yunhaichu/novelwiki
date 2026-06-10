@@ -17,11 +17,45 @@ Files:
 
 - `docs/backups/workflow_snapshot_2026-06-09.md`
 
-## Layer 1: New Novel Setup
+## Layer 1A: Macro Modern-To-Cosmic Setup
+
+Run once before normal new-novel setup when the target story is a macro-scale story involving modern Earth, cosmic civilizations, multiverse stages, cultivation + technology + magic, or civilization war.
+
+Purpose: establish the large arena, Earth value, unified power logic, modern Chinese reader entry, and surface webnovel pleasure before building ordinary wiki files.
+
+Required files:
+
+1. `prompts/00_cosmic_civilization_arena.md`
+2. `prompts/00_earth_civilization_value.md`
+3. `prompts/00_unified_power_logic.md`
+4. `prompts/00_modern_chinese_entry_bridge.md`
+5. `prompts/00_webnovel_pleasure_ladder.md`
+
+Required order:
+
+```text
+cosmic civilization arena
+-> Earth civilization value
+-> unified power logic
+-> modern Chinese entry bridge
+-> webnovel pleasure ladder
+```
+
+Hard rules:
+
+```text
+No cosmic civilization arena, no macro story.
+No Earth value, no Earth protection story.
+No unified power logic, no multi-system power story.
+No modern entry bridge, no modern-reader self-insertion.
+No pleasure ladder, no commercial webnovel execution.
+```
+
+## Layer 1B: New Novel Setup
 
 Run once per novel, before any chapter planning.
 
-Purpose: define the novel's genre, irreversible world trend, protagonist final form, operating world, base boundaries, macro pressure, major actors, protagonist growth path, Name & Term Gate, and initial wiki.
+Purpose: define the novel's genre, irreversible world / civilization trend, protagonist final form, operating world, base boundaries, macro pressure, major actors, protagonist growth path, Name & Term Gate, and initial wiki.
 
 Required files:
 
@@ -37,6 +71,8 @@ Required files:
 10. `prompts/00_name_term_gate.md`
 11. `prompts/00_wiki_bootstrap.md`
 
+For macro modern-to-cosmic stories, Layer 1B must read the outputs of Layer 1A.
+
 Supporting reference files:
 
 - `reference_settings/usage_contract.md`
@@ -44,7 +80,7 @@ Supporting reference files:
 - selected files under `reference_settings/genre_common/`
 - selected files under `reference_settings/power_system_common/` only if the novel explicitly contains powers, anomalies, or goldfingers.
 
-Required order inside Layer 1:
+Required order inside Layer 1B:
 
 ```text
 premise / type promise
@@ -60,7 +96,7 @@ premise / type promise
 -> other wiki bootstrap files
 ```
 
-Irreversible Trend Anchor must run before chapter planning. It defines the world trend the author controls and the protagonist final form the author controls.
+Irreversible Trend Anchor must run before chapter planning. For macro stories, it must include cosmic civilization trend, Earth civilization pressure, and protagonist final form.
 
 Name & Term Gate must run before `project.md`, character files, organization files, world files, city names, object names, process names, status labels, ability labels, slang, or key terms are written.
 
@@ -72,6 +108,14 @@ Required wiki outputs:
 - `novels/<novel_id>/wiki/name_registry.md`
 - `novels/<novel_id>/wiki/protagonist_growth.md`
 - organization and character files as needed.
+
+Macro stories should also persist or reference:
+
+- cosmic civilization arena;
+- Earth civilization value;
+- unified power logic;
+- modern Chinese entry bridge;
+- webnovel pleasure ladder.
 
 Hard rules:
 
@@ -101,32 +145,36 @@ Guidance:
 - Major forces need organization behavior models.
 - Important recurring characters need behavior models and expression cards.
 - Temporary characters do not need full models, but their role, knowledge, goal, and scene function must be clear.
+- Macro stories need behavior models for high-civilization observers, evaluators, academy factions, military factions, and Earth-side stakeholders once they become recurring.
 
 ## Layer 3: Volume / Arc Planning
 
 Run once per volume, arc, or large stage.
 
-Purpose: define the current stage of the irreversible world trend, active protagonist final-form growth stage, stage pressure, and recurring consequence pattern.
+Purpose: define the current stage of the irreversible world / civilization trend, active protagonist final-form growth stage, visible pleasure ladder, stage pressure, and recurring consequence pattern.
 
 Files:
 
 - `prompts/00_volume_state_plan.md`
-- `prompts/00_chapter_pressure_card.md` for upcoming chapter pressure when needed.
+- `prompts/00_chapter_pressure_card.md` for upcoming chapter pressure when needed
+- `prompts/00_webnovel_pleasure_ladder.md` for pleasure progression when a new volume starts or the story loses surface reward.
 
 Outputs:
 
-- current world trend stage;
+- current world / civilization trend stage;
 - active protagonist final-form stage;
+- current Earth evaluation / protection / exploitation status when relevant;
 - volume attractor;
 - organization pressure map;
 - reader promise for the arc;
+- face-slapping / resource / status ladder;
 - constraints on what must not escalate yet.
 
-## Layer 4: Chapter Trend Convergence / Preflight
+## Layer 4: Chapter Trend + Pleasure Convergence / Preflight
 
 Run before designing a chapter.
 
-Purpose: prove that the chapter grows from the irreversible trend and that the event can naturally exist in the selected genre world before writing it.
+Purpose: prove that the chapter grows from irreversible trend, gives visible reader pleasure, and can naturally exist in the selected genre world before writing it.
 
 Required files:
 
@@ -134,18 +182,28 @@ Required files:
 2. `prompts/00_reality_causal_preflight.md`
 3. `prompts/02_emergent_chapter_design.md`
 4. `prompts/02_advantage_reward_ledger.md`
+5. `prompts/00_webnovel_pleasure_ladder.md` when the chapter is important or the previous draft feels flat.
+
+For chapter one of modern-to-cosmic stories, also use:
+
+- `prompts/01_modern_to_cosmic_opening.md`
 
 Use when:
 
 - designing any important chapter;
 - the chapter introduces a new event type;
 - the chapter depends on an institution, craft, workflow, spell, resource, body cost, legal rule, sect rule, or industry process;
-- earlier drafts produced logic errors.
+- the chapter needs a face-slapping, resource gain, qualification, status shift, or visible reward;
+- earlier drafts produced logic errors or low desire to continue.
 
 Outputs:
 
-- current world trend pressure;
+- current world / civilization trend pressure;
 - current protagonist final-form pressure;
+- current reader pleasure target;
+- who underestimates the protagonist;
+- what the protagonist proves;
+- visible reward / qualification / resource / status shift;
 - local choices available to the protagonist;
 - how different choices are pulled toward the same trend node;
 - event feasibility;
@@ -159,6 +217,7 @@ Hard rule:
 
 ```text
 No trend convergence, no chapter draft.
+No visible reader pleasure, no important chapter.
 ```
 
 ## Layer 5: Reader Entry / Opening Control
@@ -169,6 +228,7 @@ Purpose: make the reader understand the immediate situation without requiring pr
 
 Files:
 
+- `prompts/01_modern_to_cosmic_opening.md` for modern-to-cosmic chapter one
 - `prompts/00_reader_entry_gate.md` if present
 - `prompts/02_opening_chapter_brief.md` if present
 - `governance/reader_entry_review.md` if present
@@ -181,7 +241,9 @@ If these files are missing, use the same checks manually:
 - reader knows what can be lost now;
 - unfamiliar terms are limited;
 - function appears before formal name;
-- the chapter has a concrete reader itch.
+- the chapter has a concrete reader itch;
+- chapter one reveals only a small crack of the macro world;
+- protagonist earns a small visible win.
 
 ## Layer 6: Scene Design
 
@@ -199,6 +261,7 @@ Required files for major scenes:
 Outputs:
 
 - scene trend pressure;
+- reader pleasure movement in the scene;
 - convergence point;
 - actor local worlds;
 - environmental modulation;
@@ -225,6 +288,8 @@ Rules:
 - Do not import reference settings directly into prose.
 - Do not introduce unapproved names or terms; use ordinary description until the Name & Term Gate approves them.
 - Do not start from a random event; draft from trend convergence and actor local choices.
+- Do not replace visible reader pleasure with exposition.
+- For modern-to-cosmic stories, keep the modern Chinese viewpoint active.
 
 ## Layer 8: Review / Revision
 
@@ -260,6 +325,14 @@ Do not run every review on every minor scene. Use the review matrix below.
 - `governance/wiki_retrieval_rules.md`
 - `governance/wiki_write_rules.md`
 
+For macro modern-to-cosmic stories, also manually check:
+
+- Earth value remains active;
+- modern viewpoint remains active;
+- macro world is hinted, not dumped;
+- reader pleasure is visible;
+- protagonist gain helps personal growth, Earth status, or cross-system capability.
+
 ## Layer 9: Wiki Sync / Canon Update
 
 Run immediately after the chapter is approved and before planning the next chapter.
@@ -280,8 +353,10 @@ Update relevant character, organization, world, growth, timeline, relationship, 
 
 Chapter state must track:
 
-- world trend progress;
+- world / civilization trend progress;
+- Earth status progress when relevant;
 - protagonist final-form progress;
+- reader reward delivered;
 - reader debt;
 - pressure clock;
 - repetition risk;
@@ -295,49 +370,63 @@ Approved chapter -> wiki sync -> next chapter.
 
 ## Required Execution Order
 
-For a new novel:
+For a macro modern-to-cosmic new novel:
 
 ```text
-Layer 1 including irreversible trend anchor, Name & Term Gate, and wiki bootstrap -> Layer 2 -> Layer 3 -> Layer 4 -> Layer 5 -> Layer 6 -> Layer 7 -> Layer 8 -> Layer 9 wiki sync
+Layer 1A -> Layer 1B including irreversible trend anchor, Name & Term Gate, and wiki bootstrap -> Layer 2 -> Layer 3 -> Layer 4 -> Layer 5 -> Layer 6 -> Layer 7 -> Layer 8 -> Layer 9 wiki sync
+```
+
+For a standard new novel:
+
+```text
+Layer 1B including irreversible trend anchor, Name & Term Gate, and wiki bootstrap -> Layer 2 -> Layer 3 -> Layer 4 -> Layer 5 -> Layer 6 -> Layer 7 -> Layer 8 -> Layer 9 wiki sync
 ```
 
 For a normal later chapter:
 
 ```text
-Read wiki -> Layer 3 check -> Layer 4 trend convergence -> Layer 6 -> Layer 7 -> Layer 8 -> Layer 9 wiki sync
+Read wiki -> Layer 3 check -> Layer 4 trend + pleasure convergence -> Layer 6 -> Layer 7 -> Layer 8 -> Layer 9 wiki sync
 ```
 
 For a simple low-stakes transition chapter:
 
 ```text
-Read wiki -> Layer 3 check -> Layer 4 light trend check -> Layer 7 -> Layer 8 light -> Layer 9 wiki sync
+Read wiki -> Layer 3 check -> Layer 4 light trend + pleasure check -> Layer 7 -> Layer 8 light -> Layer 9 wiki sync
 ```
 
 ## Non-Negotiable Gates
 
 Do not draft if any of these are unresolved:
 
-1. Genre mode is unclear.
-2. Genre operating model is missing or too vague.
-3. Irreversible trend anchor is missing or weak.
-4. Name & Term Gate is missing or failed.
-5. Initial wiki bootstrap is missing.
-6. Base settings for the active novel are missing.
-7. Reality-causal preflight says the core event is unnatural.
-8. Chapter trend convergence is missing.
-9. The protagonist has no active growth stage toward final form.
-10. The chapter has no usable protagonist gain.
-11. The main scene has no convergence point.
-12. The key object has no natural function.
-13. Unapproved invented terms appear where ordinary description would be clearer.
-14. The story relies on system/report/log/status change as climax.
+1. Macro story lacks cosmic civilization arena.
+2. Earth-entry story lacks Earth civilization value.
+3. Multi-system story lacks unified power logic.
+4. Modern-entry story lacks modern Chinese entry bridge.
+5. Genre mode is unclear.
+6. Genre operating model is missing or too vague.
+7. Irreversible trend anchor is missing or weak.
+8. Webnovel pleasure ladder is missing for commercial long-form execution.
+9. Name & Term Gate is missing or failed.
+10. Initial wiki bootstrap is missing.
+11. Base settings for the active novel are missing.
+12. Reality-causal preflight says the core event is unnatural.
+13. Chapter trend convergence is missing.
+14. Important chapter has no visible reader pleasure.
+15. The protagonist has no active growth stage toward final form.
+16. The chapter has no usable protagonist gain.
+17. The main scene has no convergence point.
+18. The key object has no natural function.
+19. Unapproved invented terms appear where ordinary description would be clearer.
+20. The story relies on system/report/log/status change as climax.
 
 Do not plan the next chapter if any of these are unresolved:
 
 1. Approved chapter has no chapter state file.
-2. World trend progress was not recorded.
-3. Protagonist final-form progress was not recorded.
-4. New confirmed character / organization / world facts were not synchronized.
-5. Newly approved or rejected terms were not synchronized into the name registry.
-6. Next chapter constraints are missing.
-7. The next chapter would need to rely on chat memory rather than wiki state.
+2. World / civilization trend progress was not recorded.
+3. Earth status progress was not recorded when relevant.
+4. Protagonist final-form progress was not recorded.
+5. Reader reward delivered was not recorded.
+6. New confirmed character / organization / world facts were not synchronized.
+7. Newly approved or rejected terms were not synchronized into the name registry.
+8. Next chapter constraints are missing.
+9. The next chapter would need to rely on chat memory rather than wiki state.
