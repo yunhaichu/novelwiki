@@ -21,7 +21,7 @@ Files:
 
 Run once per novel, before any chapter planning.
 
-Purpose: define the novel's genre, operating world, base boundaries, macro pressure, major actors, protagonist growth path, Name Gate, and initial wiki.
+Purpose: define the novel's genre, operating world, base boundaries, macro pressure, major actors, protagonist growth path, Name & Term Gate, and initial wiki.
 
 Required files:
 
@@ -33,7 +33,8 @@ Required files:
 6. `prompts/00_major_conflict_engine.md`
 7. `prompts/00_dramatic_arena.md`
 8. `prompts/00_protagonist_growth_track.md`
-9. `prompts/00_wiki_bootstrap.md`
+9. `prompts/00_name_term_gate.md`
+10. `prompts/00_wiki_bootstrap.md`
 
 Supporting reference files:
 
@@ -49,13 +50,13 @@ premise / type promise
 -> genre mode
 -> genre operating model
 -> base setting boundaries
--> Name Gate
+-> Name & Term Gate
 -> project.md
 -> name_registry.md
 -> other wiki bootstrap files
 ```
 
-Name Gate must run before `project.md`, character files, organization files, city names, or key term names are written.
+Name & Term Gate must run before `project.md`, character files, organization files, world files, city names, object names, process names, status labels, ability labels, slang, or key terms are written.
 
 Required wiki outputs:
 
@@ -69,7 +70,7 @@ Required wiki outputs:
 Hard rules:
 
 ```text
-No Name Gate, no project file.
+No Name & Term Gate, no project file.
 No wiki bootstrap, no chapter draft.
 ```
 
@@ -201,6 +202,7 @@ Rules:
 - Apply genre mode before universal workflow rules.
 - Use current novel wiki as canon.
 - Do not import reference settings directly into prose.
+- Do not introduce unapproved names or terms; use ordinary description until the Name & Term Gate approves them.
 
 ## Layer 8: Review / Revision
 
@@ -223,7 +225,7 @@ Do not run every review on every minor scene. Use the review matrix below.
 
 - `governance/anti_record_driven_plot.md`
 
-### Run when character voice, dialogue, or AI flavor is a concern
+### Run when character voice, dialogue, AI flavor, or invented terms are a concern
 
 - `governance/character_voice_review.md`
 - `governance/anti_ai_expression_review.md`
@@ -252,7 +254,7 @@ Always create or update:
 
 - `novels/<novel_id>/wiki/chapter_states/chapter_<number>.md`
 
-Update relevant character, organization, world, growth, timeline, relationship, foreshadowing, style, and name files only when approved prose confirms new facts.
+Update relevant character, organization, world, growth, timeline, relationship, foreshadowing, style, name, and term files only when approved prose confirms new facts.
 
 Hard rule:
 
@@ -265,7 +267,7 @@ Approved chapter -> wiki sync -> next chapter.
 For a new novel:
 
 ```text
-Layer 1 including Name Gate and wiki bootstrap -> Layer 2 -> Layer 3 -> Layer 4 -> Layer 5 -> Layer 6 -> Layer 7 -> Layer 8 -> Layer 9 wiki sync
+Layer 1 including Name & Term Gate and wiki bootstrap -> Layer 2 -> Layer 3 -> Layer 4 -> Layer 5 -> Layer 6 -> Layer 7 -> Layer 8 -> Layer 9 wiki sync
 ```
 
 For a normal later chapter:
@@ -286,7 +288,7 @@ Do not draft if any of these are unresolved:
 
 1. Genre mode is unclear.
 2. Genre operating model is missing or too vague.
-3. Name Gate is missing or failed.
+3. Name & Term Gate is missing or failed.
 4. Initial wiki bootstrap is missing.
 5. Base settings for the active novel are missing.
 6. Reality-causal preflight says the core event is unnatural.
@@ -294,11 +296,13 @@ Do not draft if any of these are unresolved:
 8. The chapter has no usable protagonist gain.
 9. The main scene has no convergence point.
 10. The key object has no natural function.
-11. The story relies on system/report/log/status change as climax.
+11. Unapproved invented terms appear where ordinary description would be clearer.
+12. The story relies on system/report/log/status change as climax.
 
 Do not plan the next chapter if any of these are unresolved:
 
 1. Approved chapter has no chapter state file.
 2. New confirmed character / organization / world facts were not synchronized.
-3. Next chapter constraints are missing.
-4. The next chapter would need to rely on chat memory rather than wiki state.
+3. Newly approved or rejected terms were not synchronized into the name registry.
+4. Next chapter constraints are missing.
+5. The next chapter would need to rely on chat memory rather than wiki state.
