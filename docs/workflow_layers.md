@@ -21,20 +21,21 @@ Files:
 
 Run once per novel, before any chapter planning.
 
-Purpose: define the novel's genre, operating world, base boundaries, macro pressure, major actors, protagonist growth path, Name & Term Gate, and initial wiki.
+Purpose: define the novel's genre, irreversible world trend, protagonist final form, operating world, base boundaries, macro pressure, major actors, protagonist growth path, Name & Term Gate, and initial wiki.
 
 Required files:
 
 1. `prompts/00_novel_spine.md`
 2. `prompts/00_genre_mode_contract.md`
 3. `prompts/00_genre_operating_model.md`
-4. `prompts/00_reality_causal_preflight.md` for first major premise / opening event family
-5. `prompts/00_base_settings_builder.md`
-6. `prompts/00_major_conflict_engine.md`
-7. `prompts/00_dramatic_arena.md`
-8. `prompts/00_protagonist_growth_track.md`
-9. `prompts/00_name_term_gate.md`
-10. `prompts/00_wiki_bootstrap.md`
+4. `prompts/00_irreversible_trend_anchor.md`
+5. `prompts/00_reality_causal_preflight.md` for first major premise / opening event family
+6. `prompts/00_base_settings_builder.md`
+7. `prompts/00_major_conflict_engine.md`
+8. `prompts/00_dramatic_arena.md`
+9. `prompts/00_protagonist_growth_track.md`
+10. `prompts/00_name_term_gate.md`
+11. `prompts/00_wiki_bootstrap.md`
 
 Supporting reference files:
 
@@ -49,12 +50,17 @@ Required order inside Layer 1:
 premise / type promise
 -> genre mode
 -> genre operating model
+-> irreversible trend anchor
 -> base setting boundaries
+-> major conflict / dramatic arena
+-> protagonist growth track
 -> Name & Term Gate
 -> project.md
 -> name_registry.md
 -> other wiki bootstrap files
 ```
+
+Irreversible Trend Anchor must run before chapter planning. It defines the world trend the author controls and the protagonist final form the author controls.
 
 Name & Term Gate must run before `project.md`, character files, organization files, world files, city names, object names, process names, status labels, ability labels, slang, or key terms are written.
 
@@ -70,6 +76,7 @@ Required wiki outputs:
 Hard rules:
 
 ```text
+No irreversible trend anchor, no chapter design.
 No Name & Term Gate, no project file.
 No wiki bootstrap, no chapter draft.
 ```
@@ -99,7 +106,7 @@ Guidance:
 
 Run once per volume, arc, or large stage.
 
-Purpose: define the current large trend, stage pressure, protagonist growth stage, and recurring consequence pattern.
+Purpose: define the current stage of the irreversible world trend, active protagonist final-form growth stage, stage pressure, and recurring consequence pattern.
 
 Files:
 
@@ -108,38 +115,51 @@ Files:
 
 Outputs:
 
+- current world trend stage;
+- active protagonist final-form stage;
 - volume attractor;
-- active protagonist growth stage;
 - organization pressure map;
 - reader promise for the arc;
 - constraints on what must not escalate yet.
 
-## Layer 4: Chapter Preflight
+## Layer 4: Chapter Trend Convergence / Preflight
 
 Run before designing a chapter.
 
-Purpose: prove that the chapter event can naturally exist in the selected genre world before writing it.
+Purpose: prove that the chapter grows from the irreversible trend and that the event can naturally exist in the selected genre world before writing it.
 
 Required files:
 
-1. `prompts/00_reality_causal_preflight.md`
-2. `prompts/02_emergent_chapter_design.md`
-3. `prompts/02_advantage_reward_ledger.md`
+1. `prompts/00_irreversible_trend_anchor.md`
+2. `prompts/00_reality_causal_preflight.md`
+3. `prompts/02_emergent_chapter_design.md`
+4. `prompts/02_advantage_reward_ledger.md`
 
 Use when:
 
+- designing any important chapter;
 - the chapter introduces a new event type;
 - the chapter depends on an institution, craft, workflow, spell, resource, body cost, legal rule, sect rule, or industry process;
 - earlier drafts produced logic errors.
 
 Outputs:
 
+- current world trend pressure;
+- current protagonist final-form pressure;
+- local choices available to the protagonist;
+- how different choices are pulled toward the same trend node;
 - event feasibility;
 - normal process;
 - key actors and their natural roles;
 - key object function;
-- protagonist cost and usable leverage;
+- protagonist cost and usable final-form leverage;
 - result attractor.
+
+Hard rule:
+
+```text
+No trend convergence, no chapter draft.
+```
 
 ## Layer 5: Reader Entry / Opening Control
 
@@ -167,7 +187,7 @@ If these files are missing, use the same checks manually:
 
 Run for each important scene. For simple transition scenes, this can be shortened.
 
-Purpose: make the scene emerge from multiple actors acting around a shared convergence point.
+Purpose: make the scene emerge from multiple actors acting around a shared convergence point under current trend pressure.
 
 Required files for major scenes:
 
@@ -178,6 +198,7 @@ Required files for major scenes:
 
 Outputs:
 
+- scene trend pressure;
 - convergence point;
 - actor local worlds;
 - environmental modulation;
@@ -203,6 +224,7 @@ Rules:
 - Use current novel wiki as canon.
 - Do not import reference settings directly into prose.
 - Do not introduce unapproved names or terms; use ordinary description until the Name & Term Gate approves them.
+- Do not start from a random event; draft from trend convergence and actor local choices.
 
 ## Layer 8: Review / Revision
 
@@ -256,6 +278,15 @@ Always create or update:
 
 Update relevant character, organization, world, growth, timeline, relationship, foreshadowing, style, name, and term files only when approved prose confirms new facts.
 
+Chapter state must track:
+
+- world trend progress;
+- protagonist final-form progress;
+- reader debt;
+- pressure clock;
+- repetition risk;
+- next chapter constraints.
+
 Hard rule:
 
 ```text
@@ -267,19 +298,19 @@ Approved chapter -> wiki sync -> next chapter.
 For a new novel:
 
 ```text
-Layer 1 including Name & Term Gate and wiki bootstrap -> Layer 2 -> Layer 3 -> Layer 4 -> Layer 5 -> Layer 6 -> Layer 7 -> Layer 8 -> Layer 9 wiki sync
+Layer 1 including irreversible trend anchor, Name & Term Gate, and wiki bootstrap -> Layer 2 -> Layer 3 -> Layer 4 -> Layer 5 -> Layer 6 -> Layer 7 -> Layer 8 -> Layer 9 wiki sync
 ```
 
 For a normal later chapter:
 
 ```text
-Read wiki -> Layer 3 check -> Layer 4 -> Layer 6 -> Layer 7 -> Layer 8 -> Layer 9 wiki sync
+Read wiki -> Layer 3 check -> Layer 4 trend convergence -> Layer 6 -> Layer 7 -> Layer 8 -> Layer 9 wiki sync
 ```
 
 For a simple low-stakes transition chapter:
 
 ```text
-Read wiki -> Layer 4 light -> Layer 7 -> Layer 8 light -> Layer 9 wiki sync
+Read wiki -> Layer 3 check -> Layer 4 light trend check -> Layer 7 -> Layer 8 light -> Layer 9 wiki sync
 ```
 
 ## Non-Negotiable Gates
@@ -288,21 +319,25 @@ Do not draft if any of these are unresolved:
 
 1. Genre mode is unclear.
 2. Genre operating model is missing or too vague.
-3. Name & Term Gate is missing or failed.
-4. Initial wiki bootstrap is missing.
-5. Base settings for the active novel are missing.
-6. Reality-causal preflight says the core event is unnatural.
-7. The protagonist has no active growth stage.
-8. The chapter has no usable protagonist gain.
-9. The main scene has no convergence point.
-10. The key object has no natural function.
-11. Unapproved invented terms appear where ordinary description would be clearer.
-12. The story relies on system/report/log/status change as climax.
+3. Irreversible trend anchor is missing or weak.
+4. Name & Term Gate is missing or failed.
+5. Initial wiki bootstrap is missing.
+6. Base settings for the active novel are missing.
+7. Reality-causal preflight says the core event is unnatural.
+8. Chapter trend convergence is missing.
+9. The protagonist has no active growth stage toward final form.
+10. The chapter has no usable protagonist gain.
+11. The main scene has no convergence point.
+12. The key object has no natural function.
+13. Unapproved invented terms appear where ordinary description would be clearer.
+14. The story relies on system/report/log/status change as climax.
 
 Do not plan the next chapter if any of these are unresolved:
 
 1. Approved chapter has no chapter state file.
-2. New confirmed character / organization / world facts were not synchronized.
-3. Newly approved or rejected terms were not synchronized into the name registry.
-4. Next chapter constraints are missing.
-5. The next chapter would need to rely on chat memory rather than wiki state.
+2. World trend progress was not recorded.
+3. Protagonist final-form progress was not recorded.
+4. New confirmed character / organization / world facts were not synchronized.
+5. Newly approved or rejected terms were not synchronized into the name registry.
+6. Next chapter constraints are missing.
+7. The next chapter would need to rely on chat memory rather than wiki state.
