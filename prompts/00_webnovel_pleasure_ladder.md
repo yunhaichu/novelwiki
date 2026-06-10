@@ -1,38 +1,62 @@
-# Webnovel Pleasure Ladder
+# Reader Hook And Payoff Ladder
 
 Use this prompt before volume planning and chapter design.
 
-Purpose: design visible reader pleasure before chapter planning. Large trends and deep themes are not enough. A webnovel chapter needs readable surface reward: face-slapping, reversal, resource gain, status change, qualification, recognition, or tactical win.
+Purpose: guarantee reader continuation desire. Large trends and deep themes are not enough, but visible pleasure is also not the only way to retain readers. A webnovel chapter needs a clear reason for the reader to continue: a question, danger, choice, relationship tension, world reveal, mechanism reveal, resource gain, status shift, or earned face-slapping when appropriate.
 
-This file designs the pleasure structure.
+This file designs the chapter's retention structure.
 
 It does not replace `prompts/02_advantage_reward_ledger.md`. The advantage ledger records reusable protagonist / reader assets after chapter design or draft.
 
 ## Core Rule
 
-No chapter without visible reader pleasure.
+Every important chapter must give the reader a reason to continue.
 
-A chapter may be deep, but the surface must still be satisfying.
+A chapter may use face-slapping or reversal, but only when the scene, role relationship, and character logic naturally support it.
 
-## Pleasure Types
+Do not force face-slapping into first contact, tragedy, major mystery, life-threatening shock, or scenes where the protagonist should be confused, frightened, or information-poor.
+
+## Retention Hook Types
 
 Use at least one major type per important chapter:
 
-- face-slapping: someone underestimates the protagonist and is proven wrong;
-- hidden value: others discard or misread something the protagonist recognizes;
-- qualification gain: protagonist gets entry, exam pass, provisional status, license, rank, seat, token, invitation;
-- resource gain: protagonist gains tool, method, ally, access, currency, credit, material, data, technique;
-- status shift: a higher-status actor begins to take protagonist seriously;
-- tactical win: protagonist solves immediate danger with limited tools;
-- knowledge superiority: protagonist understands a cross-system relation others miss;
-- survival reversal: protagonist avoids erasure, memory wipe, expulsion, punishment, or exploitation;
-- public correction: a wrong judgment is corrected in front of witnesses;
-- opponent loss: arrogant party pays a visible price.
+- question hook: a specific answerable question is raised;
+- crisis hook: a near-term danger or deadline forces the next action;
+- identity hook: someone's identity, status, tag, origin, or evaluation becomes suspect;
+- relationship hook: a bond, debt, distrust, obligation, or power imbalance changes;
+- world-reveal hook: a small concrete piece of the larger world becomes visible;
+- mechanism hook: a rule, power interaction, or system behavior is discovered;
+- choice hook: protagonist must choose between costly options;
+- resource hook: protagonist gains, loses, or competes for a concrete resource;
+- qualification hook: protagonist gains or risks entry, license, rank, seat, token, invitation, or evaluation;
+- face-slapping hook: someone underestimates the protagonist and is naturally corrected;
+- tactical hook: protagonist solves immediate danger with limited tools;
+- mystery-payoff hook: one small question is answered while a larger one opens.
+
+## Face-Slapping Use Rule
+
+Face-slapping is optional.
+
+Use it only if:
+
+- there is a clear status gap, institutional judgment, social prejudice, or practical misreading;
+- the target's wrong belief is understandable, not just stupidity;
+- the protagonist proves something through action, evidence, or choice, not speech alone;
+- the result gives protagonist space, status, resource, qualification, or safety;
+- reactions remain proportionate.
+
+Do not use it if:
+
+- the protagonist is seeing the supernatural / alien / cosmic world for the first time;
+- a life-threatening scene requires fear, confusion, or survival focus;
+- the event is a tragedy, disappearance, or major mystery reveal;
+- the protagonist lacks enough information to act confidently;
+- it would make high-status characters stupid only to flatter the protagonist.
 
 ## Required Output
 
 ```text
-# Webnovel Pleasure Ladder
+# Reader Hook And Payoff Ladder
 
 Novel ID:
 Arc / volume:
@@ -40,18 +64,21 @@ Decision: ALLOW / REVISE
 
 ## 1. Reader Promise
 
-What surface pleasure does this story repeatedly deliver?
+What continuing desire should the story repeatedly create?
 -
 
-What long-term depth is hidden under the pleasure?
+What surface rewards can appear naturally?
+-
+
+What long-term depth is hidden under the hooks?
 -
 
 ## 2. Starting Low Position
 
-Why is the protagonist underestimated?
+Why is the protagonist underestimated or information-poor?
 -
 
-Who underestimates the protagonist first?
+Who or what initially misreads the protagonist?
 -
 
 What label is attached to the protagonist?
@@ -63,21 +90,23 @@ Why is this label partially reasonable?
 Why is it incomplete or wrong?
 -
 
-## 3. Early Face-Slapping Targets
+## 3. Early Retention Hooks
 
-Target:
-What they believe:
-Why readers want them corrected:
-How protagonist proves them wrong:
-Visible reward:
+Hook:
+Type:
+Specific question / danger / choice / relationship / reveal:
+Why readers want continuation:
+Small payoff timing:
+Visible consequence:
 
-Target:
-What they believe:
-Why readers want them corrected:
-How protagonist proves them wrong:
-Visible reward:
+Hook:
+Type:
+Specific question / danger / choice / relationship / reveal:
+Why readers want continuation:
+Small payoff timing:
+Visible consequence:
 
-## 4. Resource Ladder
+## 4. Resource / Status / Knowledge Ladder
 
 First small resource:
 -
@@ -94,35 +123,47 @@ First ally / observer:
 First personal tool:
 -
 
-First Earth-level benefit:
+First Earth-level benefit if relevant:
 -
 
-## 5. Chapter Pleasure Plan
+First concrete answer:
+-
+
+## 5. Chapter Hook / Payoff Plan
 
 ### Chapter 1
-Who underestimates protagonist:
-What protagonist proves:
-Reader pleasure:
-Visible gain:
+Primary hook type:
+Specific question or pressure:
+Small payoff delivered:
+New question or pressure opened:
+Visible gain, if any:
+Is face-slapping necessary? yes / no
+If yes, why natural:
 How this serves large trend:
 
 ### Chapter 2
-Who underestimates protagonist:
-What protagonist proves:
-Reader pleasure:
-Visible gain:
+Primary hook type:
+Specific question or pressure:
+Small payoff delivered:
+New question or pressure opened:
+Visible gain, if any:
+Is face-slapping necessary? yes / no
+If yes, why natural:
 How this serves large trend:
 
 ### Chapter 3
-Who underestimates protagonist:
-What protagonist proves:
-Reader pleasure:
-Visible gain:
+Primary hook type:
+Specific question or pressure:
+Small payoff delivered:
+New question or pressure opened:
+Visible gain, if any:
+Is face-slapping necessary? yes / no
+If yes, why natural:
 How this serves large trend:
 
-## 6. Anti-False-Pleasure Checks
+## 6. Anti-False-Hook Checks
 
-Do not count as sufficient pleasure:
+Do not count as sufficient retention:
 
 - vague mystery only;
 - protagonist only suffers;
@@ -130,7 +171,9 @@ Do not count as sufficient pleasure:
 - exposition about how grand the world is;
 - someone secretly praising protagonist without the protagonist gaining anything;
 - overpowered win with no setup;
-- humiliation with payoff delayed too long.
+- humiliation with payoff delayed too long;
+- face-slapping forced into a scene where fear, confusion, or discovery should dominate;
+- a question so broad that it creates no next action.
 
 ## 7. Pass / Fail
 
@@ -141,9 +184,10 @@ ALLOW / REVISE
 
 Mark `REVISE` if:
 
-- the chapter advances worldbuilding but gives no reader pleasure;
-- the protagonist is underestimated but no visible correction happens within a reasonable time;
-- the protagonist gains no resource, qualification, status, ally, or tool;
-- the pleasure is disconnected from long-term protagonist growth;
+- the chapter advances worldbuilding but gives no reason to continue;
+- the chapter creates only vague mystery and answers no small question;
+- the protagonist gains no resource, qualification, status, ally, tool, knowledge, safety, or next-action path when the chapter structure requires a gain;
+- the hook is disconnected from long-term protagonist growth or world trend;
 - the story is only serious, heavy, or explanatory;
-- face-slapping happens by author cheat instead of earned observation, choice, or action.
+- face-slapping happens by author cheat instead of earned observation, choice, or action;
+- face-slapping is used where psychological realism should dominate.
