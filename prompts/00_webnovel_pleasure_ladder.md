@@ -6,7 +6,7 @@ Purpose: guarantee reader continuation desire. Large trends and deep themes are 
 
 This file designs the chapter's retention structure.
 
-It does not replace `prompts/02_advantage_reward_ledger.md`. The advantage ledger records reusable protagonist / reader assets after chapter design or draft.
+It does not replace `prompts/02_advantage_reward_ledger.md`. The advantage ledger evaluates whether a planned or drafted chapter actually delivered reusable gain and payoff.
 
 ## Core Rule
 
@@ -15,6 +15,68 @@ Every important chapter must give the reader a reason to continue.
 A chapter may use face-slapping or reversal, but only when the scene, role relationship, and character logic naturally support it.
 
 Do not force face-slapping into first contact, tragedy, major mystery, life-threatening shock, or scenes where the protagonist should be confused, frightened, or information-poor.
+
+## Reader Retention Terms
+
+Use these definitions consistently across chapter design, ledger, review, and wiki sync.
+
+### Reader Hook
+
+A reader hook is the concrete reason the reader wants to continue.
+
+It may be a question, crisis, choice, relationship tension, world reveal, mechanism reveal, promised resource, threatened status, or unresolved pressure.
+
+A hook must be specific enough to imply a next action.
+
+Bad:
+
+```text
+What is the truth of the universe?
+```
+
+Better:
+
+```text
+Why did the alien device display Chinese before the protagonist told it his language?
+```
+
+### Reader Payoff
+
+A reader payoff is the partial or full answer, consequence, reveal, emotional shift, tactical result, or status movement that satisfies an earlier hook.
+
+A payoff does not need to close the large mystery. It should close or advance one smaller pressure.
+
+### Reader Reward
+
+A reader reward is the concrete satisfaction the reader gets from the chapter.
+
+It can be:
+
+- an answer;
+- a visible consequence;
+- a memorable image;
+- a relationship shift;
+- a small win;
+- a painful but meaningful choice;
+- a new ability to act;
+- a status change;
+- a tactical reversal;
+- a new arena opening.
+
+### Reader Debt
+
+Reader debt is an unpaid promise that the story has created and must later pay.
+
+It is not every mystery.
+
+Only record a debt if delaying it affects reader trust, pacing, protagonist pressure, or promised payoff.
+
+Reader debt should specify:
+
+- what was promised;
+- who or what it is tied to;
+- why it cannot be delayed indefinitely;
+- what kind of payoff is expected.
 
 ## Retention Hook Types
 
@@ -97,6 +159,8 @@ Type:
 Specific question / danger / choice / relationship / reveal:
 Why readers want continuation:
 Small payoff timing:
+Expected reward:
+Potential reader debt if delayed:
 Visible consequence:
 
 Hook:
@@ -104,6 +168,8 @@ Type:
 Specific question / danger / choice / relationship / reveal:
 Why readers want continuation:
 Small payoff timing:
+Expected reward:
+Potential reader debt if delayed:
 Visible consequence:
 
 ## 4. Resource / Status / Knowledge Ladder
@@ -136,6 +202,8 @@ Primary hook type:
 Specific question or pressure:
 Small payoff delivered:
 New question or pressure opened:
+Reader reward:
+Reader debt created or carried:
 Visible gain, if any:
 Is face-slapping necessary? yes / no
 If yes, why natural:
@@ -146,6 +214,8 @@ Primary hook type:
 Specific question or pressure:
 Small payoff delivered:
 New question or pressure opened:
+Reader reward:
+Reader debt created or carried:
 Visible gain, if any:
 Is face-slapping necessary? yes / no
 If yes, why natural:
@@ -156,6 +226,8 @@ Primary hook type:
 Specific question or pressure:
 Small payoff delivered:
 New question or pressure opened:
+Reader reward:
+Reader debt created or carried:
 Visible gain, if any:
 Is face-slapping necessary? yes / no
 If yes, why natural:
@@ -189,5 +261,6 @@ Mark `REVISE` if:
 - the protagonist gains no resource, qualification, status, ally, tool, knowledge, safety, or next-action path when the chapter structure requires a gain;
 - the hook is disconnected from long-term protagonist growth or world trend;
 - the story is only serious, heavy, or explanatory;
+- reader debt is created but has no expected payoff type;
 - face-slapping happens by author cheat instead of earned observation, choice, or action;
 - face-slapping is used where psychological realism should dominate.
