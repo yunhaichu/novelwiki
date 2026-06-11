@@ -46,6 +46,10 @@ novels/<novel_id>/wiki/volume_XX_rhythm_tracker.md (if volume plan exists)
 novels/<novel_id>/wiki/chapter_states/chapter_<number>.md
 ```
 
+## Wiki File Updates (always run, never skip)
+
+The following files must be checked every sync. If new confirmed information exists, update them. If nothing changed, write "No new confirmed information to add." Do not skip these files.
+
 Update when new confirmed information appears:
 
 ```text
