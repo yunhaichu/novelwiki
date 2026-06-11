@@ -111,7 +111,21 @@ Treat these names and similar polished literary names as high risk unless the us
 阮清
 夏禾
 许栀
+云无尘
+谢玄微
+顾长渊
+沈照霜
 ```
+
+### Character-Level Risk Markers
+
+If a name contains any of these characters, it should be flagged and reviewed:
+
+```text
+砚 澈 言 知 棠 芷 栀 辞 珩 璟 宸 玦 弈 晏 清 沉 辰 川 行 述 晚 玄 微 渊 照 霜
+```
+
+This is a broad filter. A flagged name can still pass if it has a strong family/world explanation. This list is synchronized with `tools/name_gate.py` — `POLISHED_RISK_CHARS` contains the same characters.
 
 Also treat these patterns as high risk:
 

@@ -95,7 +95,7 @@ XIANXIA_RURAL_CHARS: Sequence[str] = (
 )
 
 # Characters that often push a name toward overly polished literary-protagonist style.
-POLISHED_RISK_CHARS: Set[str] = set("砚澈言知棠芷栀辞珩璟宸玦弈晏清沉")
+POLISHED_RISK_CHARS: Set[str] = set("砚澈言知棠芷栀辞珩璟宸玦弈晏清沉辰川行述晚玄微渊照霜")
 
 
 @dataclass(frozen=True)

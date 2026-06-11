@@ -76,6 +76,16 @@ Why high risk:
 - often appears as model-default protagonist or love-interest naming;
 - does not reveal region, family expectation, occupation, class, or institution.
 
+### Character-Level Risk Check
+
+The `tools/name_gate.py` tool performs automated checking using character-level risk markers. If a name contains any of these characters, it triggers a high-risk flag:
+
+```text
+砚 澈 言 知 棠 芷 栀 辞 珩 璟 宸 玦 弈 晏 清 沉 辰 川 行 述 晚 玄 微 渊 照 霜
+```
+
+This is a broad net — not every occurrence of these characters in every name is automatically disqualifying. The purpose is to catch names that feel genre-generic rather than world-specific. A name with one of these characters can still be approved if it has a strong family/world explanation (see the Name Gate Justification example in `name_registry.md`).
+
 ### Lower-Risk Grounded Names
 
 Lower-risk examples are usually plain, socially legible, and easy to explain:
