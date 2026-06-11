@@ -469,6 +469,14 @@ Role: creates or updates chapter state and synchronizes confirmed character, org
 
 ### `prompts/06_chapter_state_update.md`
 
+### `novels/<novel_id>/wiki/reader_debt_tracker.md`
+
+Tracks all outstanding reader debts across chapters. Each entry has priority (P0/P1/P2), age, and status. Updated by wiki sync after each chapter. If a P0 debt is >= 3 chapters old or P1 >= 6, the next chapter must address it.
+
+### `novels/<novel_id>/wiki/volume_XX_rhythm_tracker.md`
+
+Tracks volume-level rhythm across chapters. Includes breathing chapter budget, chapter-by-chapter state movement log, and 7 hard checks (consecutive stateless chapters, mystery-without-payoff streaks, hook repetition, breather ratio, debt aging). Updated by wiki sync and volume state plan.
+
 Status: deprecated
 
 Role: legacy compatibility only. Do not use for current workflow.

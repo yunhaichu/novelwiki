@@ -39,6 +39,7 @@ Read:
 
 Always create or update:
 novels/<novel_id>/wiki/reader_debt_tracker.md
+novels/<novel_id>/wiki/volume_XX_rhythm_tracker.md (if volume plan exists)
 
 ```text
 novels/<novel_id>/wiki/chapter_states/chapter_<number>.md
@@ -373,6 +374,20 @@ Oldest P1 debt age after update: (must not be >= 6)
 Checkpoint: Next review at ch<next>
 
 
+
+## 8.6. Volume Rhythm Tracker Update
+
+If a volume rhythm tracker exists:
+
+Tracker path: novels/<novel_id>/wiki/volume_XX_rhythm_tracker.md
+Tracker read: yes / no
+Chapter state movement logged: (chapter number + movement type)
+Mini-turn delivered this chapter? yes / no
+P0 debt addressed? (if yes, list by #)
+Breather chapter? yes / no
+Hard check results: (pass/fail for each of the 7 checks)
+If any check failed: specify what the next chapter must do to correct it
+
 ## 9. Next Chapter Constraints
 
 Must continue from:
@@ -411,5 +426,6 @@ Mark `REVISE` if:
 - the next chapter does not carry forward the irreversible trend;
 - the next chapter would need to rely on chat memory rather than wiki state;
 - planned advantages were not compared against actual draft delivery;
+- volume rhythm tracker was not updated when it exists;
 - reader debt tracker was not updated after chapter sync;
 - unplanned advantages that appeared in the draft were not recorded.

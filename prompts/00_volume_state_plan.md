@@ -273,4 +273,8 @@ Do not pre-answer all of them.
 
 ## Output
 
-Output only the volume state plan.
+
+Output two artifacts:
+
+1. The volume state plan (as defined above).
+2. A volume rhythm tracker at `novels/<novel_id>/wiki/volume_<number>_rhythm_tracker.md` initialized with the chapter log table, breathing chapter budget, and hard checks. Populate row 001 and 002 if the volume has started.
