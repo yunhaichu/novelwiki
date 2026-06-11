@@ -222,6 +222,7 @@ governance/
   wiki retrieval and write rules
   base setting reviews
   reality / object / plot / growth / voice / AI-expression reviews
+  review priority and conflict resolution (review_priority.md)
 
 novels/
   <novel_id>/

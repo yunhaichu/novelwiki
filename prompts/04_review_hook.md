@@ -18,6 +18,19 @@ Read:
 - `governance/review_checklist.md`
 - `governance/base_settings_review.md` when a setting boundary is involved
 - `governance/anti_ai_taste_check.md`
+- `governance/review_priority.md` — always read this to determine review priority and conflict resolution
+
+## Priority Rule
+
+All review checks are categorized into four priority levels.
+Read `governance/review_priority.md` for the full priority definitions and conflict resolution rules.
+
+- **P0 — Block**: reality logic, base settings, name gate, wiki write rules, protagonist growth, wiki retrieval. Hard stop.
+- **P1 — Must fix before canon**: reader hook/payoff, reader debt enforcement, consequence chain, scene convergence, protagonist advantage, wiki conflict.
+- **P2 — Should fix**: AI expression, AI taste, character voice, writing style, narrative economy.
+- **P3 — Observation only**: volume rhythm, wiki drift, name registry.
+
+When conflicts arise between review findings, resolve them using the priority system in `review_priority.md`.
 
 ## Decision
 
@@ -101,45 +114,33 @@ Do not apply every conditional check as a hard rule to every chapter.
 
 ## Output Format
 
+When all review checks are complete, produce a prioritized summary:
+
 ```text
-Decision: ALLOW / REVISE
+Review Summary
 
-Main reason:
+P0 Issues (block):
+1. [file] description — action needed
 
-Reader-entry hard gates:
-- Protagonist identifiable:
-- Visible immediate desire:
-- Immediate trouble:
-- Cost of no action:
-- Active choice:
-- Visible consequence:
-- Reader itch:
-- One-sentence recap:
-- Blocking gaps:
+P1 Issues (must fix):
+1. [file] description — action needed
 
-Base-setting check:
-- Reference-setting misuse:
-- Authority issue:
-- Process issue:
-- Resource / object issue:
-- Power / anomaly issue if any:
-- Knowledge boundary issue:
+P2 Issues (should fix):
+1. [file] description — action needed
 
-Story movement check:
-- Main drive:
-- Long-form movement:
-- Concrete memory point:
+P3 Issues (observation):
+1. [file] description — note only
 
-Style / anti-AI check:
-- Process exposition:
-- Adjacent template reuse:
-- Ending over-summary:
-- Other issue:
+Decision: BLOCK / REVISE / ALLOW
+Blocking reason (if any):
 
 Required fixes if REVISE:
-1.
-2.
-3.
+1. [P1 or higher] description
+2. [P1 or higher] description
 ```
 
-List only the most important fixes.
+- P0 issues always produce a BLOCK decision.
+- If only P1 issues exist, use REVISE but explain which are critical vs. optional.
+- If only P2/P3 issues exist, use ALLOW but note what should be improved.
+- List only fixes at P1 or above in the "Required fixes" section.
+- Use the conflict resolution rules in `governance/review_priority.md` when findings disagree.

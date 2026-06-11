@@ -416,6 +416,13 @@ Required: yes when base settings are built or updated
 
 Role: reviews scope, source support, reference/canon boundary, authority/process/resource rules, and pending gaps.
 
+### `governance/review_priority.md`
+
+Scope: global
+Required: yes
+
+Role: defines priority levels (P0-block, P1-must-fix, P2-should-fix, P3-observation), conflict resolution rules, and execution order when multiple review files are triggered simultaneously. Read this first when running multiple reviews.
+
 ### `governance/review_checklist.md`
 
 Scope: per-chapter
