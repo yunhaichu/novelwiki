@@ -19,14 +19,15 @@ If no debt meets the threshold, the next chapter must add at least one new debt 
 
 | # | Debt description | Source chapter | Age (chapters) | Priority | Status | Notes |
 |---|-----------------|----------------|-----------------|----------|--------|-------|
-| 1 | What is the pulse? | ch001 | 2 | P0 | active | Core hook — must resolve or escalate soon |
-| 2 | Why does a dead board pulse? | ch001 | 2 | P0 | active | Core hook — must resolve or escalate soon |
-| 3 | Can 马宽 keep access to the board? | ch001 | 2 | P1 | active | Depends on wet residual classification outcome |
-| 4 | What is 马小禾's condition? | ch001 | 2 | P1 | active | Medication pressure anchor |
-| 5 | What is inside the yellow bag's board? | ch002 | 1 | P0 | active | Core hook — must resolve or escalate soon |
-| 6 | Why does it pulse only near 马宽? | ch002 | 1 | P1 | active | Ties to protagonist's implant |
-| 7 | Will the left-hand sorter ask for repayment? | ch002 | 1 | P1 | active | Relationship/consequence thread |
-| 8 | How long can medication pressure stay contained? | ch002 | 1 | P1 | active | Parallel pressure clock |
+| 1 | What does the one/two/one rhythm mean? | ch001 | 3 | P0 | partially_paid | Core hook — partially paid: ch003 gave concrete pattern, still undecoded |
+| 2 | Why does a dead board pulse? | ch001 | 3 | P0 | active | Core hook — must resolve or escalate in ch004 |
+| 3 | Can 马宽 keep access to the board? | ch001 | 3 | P1 | active | Overtime block makes access harder |
+| 4 | What is 马小禾's condition? | ch001 | 3 | P1 | active | Medication pressure anchor |
+| 5 | What is inside the yellow bag's board? | ch002 | 2 | P0 | partially_paid | ch003: saw unbroken interface pin, but bag contents still sealed |
+| 6 | Why does it pulse only near 马宽? | ch002 | 2 | P1 | active | Ties to protagonist's implant |
+| 7 | What does the left-hand sorter want from two-position access? | ch002 | 2 | P1 | active | Converted from tape debt, now a shift-position demand |
+| 8 | Will contamination review escalate? | ch003 | 1 | P1 | active | New debt from ch003 |
+| 9 | Can 马宽 keep medication if overtime is blocked? | ch003 | 1 | P1 | active | Parallel pressure clock from ch003 |
 
 ## Abandoned Debts
 
@@ -36,7 +37,7 @@ If no debt meets the threshold, the next chapter must add at least one new debt 
 
 ## Checkpoint
 
-Last reviewed: ch002
-Next review: ch003
-Oldest P0 debt age: 2
-Oldest P1 debt age: 2
+Last reviewed: ch003
+Next review: ch004
+Oldest P0 debt age: 3
+Oldest P1 debt age: 3
