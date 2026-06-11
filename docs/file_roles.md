@@ -296,9 +296,12 @@ Face-slapping is optional and must be justified by scene logic.
 ### `prompts/02_advantage_reward_ledger.md`
 
 Scope: per-chapter
-Required: yes for important chapters
+Required: **deprecated**
 
-Role: records reusable protagonist assets, reader rewards, reader debt, pressure clocks, and repetition risks. It does not design the face-slapping / hook structure.
+Role: [DEPRECATED] Function merged into `prompts/05_wiki_sync_after_chapter.md`.
+Read the chapter design's "Planned Advantages" from `prompts/02_emergent_chapter_design.md`.
+The wiki_sync prompt now handles both planned and actual advantage tracking.
+See `prompts/02_advantage_reward_ledger.md` for migration guide.
 
 ### `prompts/02_opening_chapter_brief.md`
 

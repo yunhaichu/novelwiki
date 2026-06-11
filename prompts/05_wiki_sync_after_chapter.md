@@ -14,30 +14,12 @@ Approved formal chapter -> wiki sync -> next chapter.
 
 Do not plan or draft the next formal chapter until chapter state and relevant wiki updates are written or explicitly rejected by the user.
 
-## Chapter State File Status Rule
-
-Only this file unlocks the next formal chapter:
-
-```text
-novels/<novel_id>/wiki/chapter_states/chapter_<number>.md
-```
-
-Pending or review-state files do not unlock the next chapter:
-
-```text
-chapter_<number>_pending.md
-chapter_<number>_review.md
-chapter_<number>_revise.md
-```
-
-If a pending state exists, it must be converted into `chapter_<number>.md` only after the chapter is formally approved and this sync prompt has passed.
-
 ## Required Inputs
 
 Read:
 
 - approved chapter draft;
-- previous approved chapter state if present;
+- previous chapter state if present;
 - current `project.md`;
 - current `base_settings.md`;
 - current `protagonist_growth.md`;
@@ -47,30 +29,11 @@ Read:
 - `style.md`;
 - `name_registry.md`;
 - `prompts/00_webnovel_pleasure_ladder.md` output as Reader Hook / Payoff Ladder if available;
-- `prompts/02_advantage_reward_ledger.md` evaluation summary if available;
+- `prompts/02_emergent_chapter_design.md` output (to read "Planned Advantages" from the design phase);
 - `governance/wiki_write_rules.md`.
 
-## Responsibility Boundary
-
-```text
-Advantage And Reward Ledger = evaluates whether gain / payoff / debt / pressure / repetition exist.
-Wiki Sync = copies confirmed results into canonical wiki state.
-```
-
-Do not redo the full ledger here.
-
-If the ledger exists, use its `Carry Forward To Wiki Sync` section as the source for:
-
-- confirmed usable advantage;
-- confirmed final-form asset;
-- confirmed reader hook/payoff;
-- confirmed reader reward;
-- confirmed reader debt;
-- confirmed pressure clock;
-- confirmed repetition risk;
-- confirmed Earth / civilization asset.
-
-If the ledger is absent, create only the minimal confirmed state from the approved chapter. Do not infer unshown rewards or debts.
+> Note: `prompts/02_advantage_reward_ledger.md` has been deprecated. Its function is merged into this prompt.
+> Read the chapter design's "Planned Advantages" from the emergent chapter design to compare planned vs. actual advantage delivery.
 
 ## Output Targets
 
@@ -98,7 +61,7 @@ Only update `base_settings.md` when the approved chapter establishes a durable w
 
 ## Chapter State Required Content
 
-Each approved `chapter_<number>.md` must include:
+Each `chapter_<number>.md` must include:
 
 - chapter title;
 - chapter function;
@@ -106,8 +69,6 @@ Each approved `chapter_<number>.md` must include:
 - world / civilization trend progress;
 - Earth status progress when relevant;
 - protagonist final-form progress;
-- confirmed usable advantage;
-- confirmed final-form asset;
 - reader hook / payoff delivered;
 - protagonist state;
 - organization state;
@@ -203,47 +164,50 @@ This can be small:
 - becomes slightly more responsible;
 - gains a team seed;
 - gains a cross-system translation insight;
-- gains a resource, qualification, or status that can matter later;
-- understands that personal survival is not enough.
+- gains a resource, quality score boost, or audit margin;
+- gains an opponent's misjudgment that can be leveraged later.
 
-Do not record random clues as final-form progress unless they change future action.
+## Protagonist Advantage Tracking (merged from advantage_reward_ledger)
 
-## Reader Hook / Payoff Sync Rules
+### Planned Advantages (from design phase)
 
-Reader hook/payoff is planning state, not hidden canon.
+Read the "Planned Advantages" section from the chapter design (`prompts/02_emergent_chapter_design.md`) and compare with actual delivery.
 
-It must be recorded so the next chapter does not repeat the same hook, delay payoff too long, or force face-slapping where another hook would be more natural.
+Record whether the chapter delivered:
 
-Record:
+- Relationship gained or changed:
+- Physical object / witness gained or preserved:
+- Access / route / time / operational space gained:
+- Enemy misjudgment gained:
+- Information / evidence gained:
+- Identity / status changed:
+- Skill / understanding gained:
+- Final-form asset gained or strengthened:
 
-- primary hook type;
-- specific question, crisis, choice, relationship tension, world reveal, mechanism reveal, or visible gain;
-- small payoff delivered;
-- new question or pressure opened;
-- whether face-slapping was used;
-- if face-slapping was used, who was corrected and why it was natural;
-- what the next hook/payoff escalation should be.
+### Actual Advantages Gained (from approved draft)
 
-Do not count vague praise, secret admiration, exposition, or broad mystery as delivered hook/payoff.
+For each planned advantage, mark: DELIVERED / PARTIALLY DELIVERED / NOT DELIVERED.
 
-## Reader Debt / Pressure / Repetition Rules
+If a planned advantage is NOT DELIVERED, explain why (e.g., draft diverged from design, or the chapter is intentionally a breather chapter).
 
-Reader debt, pressure clock, and repetition risk are planning state, not hidden canon.
+If an unplanned advantage was gained (not in the design but present in the draft), record it as well.
 
-They may be written into chapter state because they guide the next chapter, but they must not be treated as in-world facts known by characters.
+## Reader Debt Definition
 
-### Reader Debt
+Reader debt is the set of specific questions, promises, pressures, and emotional needs that the story has created but has not yet paid off. It is different from:
 
-Record only story-facing debts that affect future pacing:
+- **reader hook**: a hook is what pushes the reader into the next chapter. debt is what the story owes the reader from earlier chapters.
+- **reader reward**: a reward is what the reader receives in this chapter. debt is what the reader is still waiting for.
+- **unresolved questions**: not all unresolved questions are reader debt. Only questions that were explicitly set up as promises or pressures count as debt.
 
-- unanswered protagonist-bound questions;
-- promises created by prior chapters;
-- emotional or relationship expectations;
-- ability / resource / status questions that need payoff.
+Track reader debt as:
 
-Do not record vague mysteries such as `the truth of the world` unless they create a concrete next action.
+- Prior reader debt paid or partially paid this chapter:
+- Prior reader debt carried forward (not paid this chapter):
+- Debt that cannot be delayed more than 2-3 chapters:
+- New reader debt created this chapter:
 
-### Pressure Clock
+## Pressure Clock
 
 Record only pressures that will force action if ignored:
 
@@ -256,7 +220,7 @@ Record only pressures that will force action if ignored:
 - exposure risk;
 - pursuit or escalation.
 
-### Repetition Risk
+## Repetition Risk
 
 Record repeated scene patterns that must be upgraded or avoided next:
 
@@ -281,8 +245,7 @@ The next chapter constraint should say what must change if repetition risk remai
 Novel ID:
 Chapter number:
 Approved draft source:
-Previous approved chapter state read: yes / no
-Ledger summary read: yes / no
+Previous chapter state read: yes / no
 Sync decision: ALLOW / REVISE
 
 ## 1. Chapter State File
@@ -298,8 +261,6 @@ Required fields in content draft:
 - world / civilization trend progress:
 - Earth status progress if relevant:
 - protagonist final-form progress:
-- confirmed usable advantage:
-- confirmed final-form asset:
 - reader hook / payoff delivered:
 - protagonist state:
 - organization state:
@@ -333,8 +294,8 @@ Should update file? yes / no
 
 Active stage:
 Cost paid:
-Confirmed usable leverage gained:
-Confirmed final-form asset gained or strengthened:
+Usable leverage gained:
+Final-form asset gained or strengthened:
 Capability changed? yes / no
 Access changed? yes / no
 Relationship changed? yes / no
@@ -351,34 +312,39 @@ Coupling among trend, Earth, and protagonist:
 What became irreversible this chapter:
 What must carry into next chapter:
 
-## 6. Reader Hook / Payoff Delivered
+## 6. Protagonist Advantage Tracking
 
-Primary hook type:
-Specific question / crisis / choice / relationship / reveal:
-Small payoff delivered:
-New question or pressure opened:
-Visible gain, if any:
-Was face-slapping used? yes / no
-If yes, who was corrected and why it was natural:
-Next hook/payoff escalation:
+Planned advantages (from design phase):
+- Relationship: PLANNED [X], DELIVERED [yes/no], details:
+- Physical object / witness: PLANNED [X], DELIVERED [yes/no], details:
+- Access / route / operational space: PLANNED [X], DELIVERED [yes/no], details:
+- Enemy misjudgment: PLANNED [X], DELIVERED [yes/no], details:
+- Information / evidence: PLANNED [X], DELIVERED [yes/no], details:
+- Identity / status: PLANNED [X], DELIVERED [yes/no], details:
+- Skill / understanding: PLANNED [X], DELIVERED [yes/no], details:
+- Final-form asset: PLANNED [X], DELIVERED [yes/no], details:
 
-## 7. Timeline / Relationship / Foreshadowing Updates
+Unplanned advantages gained in draft:
+- (record any advantage that was not in the design but appeared in the approved draft)
+
+## 7. Reader Debt / Pressure / Repetition Updates
+
+Prior reader debt paid or partially paid:
+Prior reader debt carried forward:
+Debt that cannot be delayed much longer:
+New reader debt created:
+Pressure clock advanced:
+Pressure that worsened:
+Repetition risk from this chapter:
+Required structural change next chapter:
+
+## 8. Timeline / Relationship / Foreshadowing Updates
 
 Timeline update:
 Relationship update:
 Foreshadowing update:
 Name registry update:
 Style update:
-
-## 8. Reader Debt / Pressure / Repetition Updates
-
-Reader debt paid or partially paid:
-Reader debt created or carried:
-Debt that cannot be delayed much longer:
-Pressure clock advanced:
-Pressure that worsened:
-Repetition risk from this chapter:
-Required structural change next chapter:
 
 ## 9. Next Chapter Constraints
 
@@ -400,14 +366,10 @@ Required hook/payoff escalation:
 
 Mark `REVISE` if:
 
-- chapter state path is not `chapter_<number>.md` for an approved formal chapter;
 - chapter state is missing;
-- a pending / review / revise state is used to unlock next chapter;
 - world / civilization trend progress is missing from an important chapter state;
 - Earth status progress is missing from a relevant macro chapter state;
 - protagonist final-form progress is missing from a protagonist-centered chapter state;
-- confirmed usable advantage is missing when the chapter requires protagonist gain;
-- confirmed final-form asset is missing from a protagonist-centered chapter;
 - reader hook/payoff delivered is missing from an important chapter state;
 - updates include speculation or inferred secrets;
 - protagonist growth is recorded without concrete cost or usable leverage;
@@ -420,4 +382,6 @@ Mark `REVISE` if:
 - next chapter constraints are missing;
 - the next chapter has no required structural upgrade after repeated scene pattern;
 - the next chapter does not carry forward the irreversible trend;
-- the next chapter would need to rely on chat memory rather than wiki state.
+- the next chapter would need to rely on chat memory rather than wiki state;
+- planned advantages were not compared against actual draft delivery;
+- unplanned advantages that appeared in the draft were not recorded.

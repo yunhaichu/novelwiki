@@ -232,7 +232,7 @@ Required files:
 1. `prompts/00_irreversible_trend_anchor.md`
 2. `prompts/00_reality_causal_preflight.md`
 3. `prompts/02_emergent_chapter_design.md`
-4. `prompts/02_advantage_reward_ledger.md`
+4. (deprecated - function merged into `prompts/05_wiki_sync_after_chapter.md`)
 5. `prompts/00_webnovel_pleasure_ladder.md` as Reader Hook / Payoff Ladder when the chapter is important or the previous draft feels flat.
 
 For chapter one of modern-to-cosmic stories, also use:
