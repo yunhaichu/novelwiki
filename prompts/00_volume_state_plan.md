@@ -2,7 +2,7 @@
 
 Use this prompt after the novel spine is approved and before chapter pressure cards.
 
-The purpose is to define the state movement of one volume without locking specific chapter events.
+The purpose is to define the state movement and rhythm of one volume without locking specific chapter events.
 
 ## Core Principle
 
@@ -30,15 +30,34 @@ Examples of control progress:
 
 Pressure should make the protagonist more alert, better positioned, or more dangerous in a specific way. It should not become repeated passive abuse.
 
+## Cross-Chapter Rhythm Principle
+
+A volume must manage rhythm across chapters, not only chapter-by-chapter logic.
+
+Do not let the story become:
+
+- continuous mystery with no payoff;
+- continuous pressure with no breathing space;
+- continuous breathing space with no escalation;
+- repeated same-hook chapters;
+- repeated protagonist suffering without leverage;
+- repeated face-slapping without larger state movement.
+
+Use state movement, not mechanical beat-counting, as the main rhythm measure.
+
 ## Inputs
 
 Read:
 
-- novel spine
-- current wiki project file if present
-- current character and world state if continuing an existing novel
-- previous volume state if any
-- known user constraints
+- novel spine;
+- current wiki project file if present;
+- irreversible trend anchor;
+- protagonist growth track;
+- Reader Hook / Payoff Ladder;
+- previous chapter states if continuing an existing novel;
+- current character and world state if continuing an existing novel;
+- previous volume state if any;
+- known user constraints.
 
 ## Output Object
 
@@ -68,6 +87,11 @@ Relationships likely to change:
 Known boundaries:
 Forbidden shortcuts:
 Open questions for emergence:
+Rhythm plan:
+Reader debt limits:
+Breather chapter rule:
+Mini-turn schedule:
+Stage-turn schedule:
 ```
 
 ## Field Guidance
@@ -124,6 +148,79 @@ Examples:
 - a known fear;
 - a documented inconsistency.
 
+### Rhythm plan
+
+Define rhythm by required state movement, not exact events.
+
+Include:
+
+```text
+Every 1-3 chapters: at least one concrete state movement.
+Every 3 chapters: at least one mini-turn, small payoff, relationship shift, resource change, or new forced choice.
+Every 8-12 chapters: one stage-turn, goal payoff/failure, status shift, arena expansion, or irreversible loss.
+No 2 consecutive important chapters may only add mystery without payoff.
+No 3 consecutive chapters may leave protagonist state unchanged.
+No repeated hook type may appear 3 times without structural upgrade.
+```
+
+Adjust numbers by genre and chapter length, but explain why.
+
+### Reader debt limits
+
+Define how long key debts may remain unpaid.
+
+Output:
+
+```text
+Debt:
+Expected payoff type:
+Maximum delay:
+What happens if delayed too long:
+```
+
+### Breather chapter rule
+
+A breather chapter is allowed, but it must still change state.
+
+Allowed breather functions:
+
+- relationship reset;
+- emotional processing;
+- aftermath cost;
+- information organization;
+- preparation;
+- route change;
+- quiet world reveal;
+- low-stakes choice.
+
+A breather chapter must not be filler.
+
+### Mini-turn schedule
+
+Do not script chapter events. Define possible mini-turn types:
+
+- new leverage appears;
+- old assumption fails;
+- relationship changes;
+- small question gets answered;
+- new choice becomes forced;
+- object/resource changes hands;
+- organization notices protagonist;
+- pressure clock advances.
+
+### Stage-turn schedule
+
+Define possible stage-turn types:
+
+- stage goal succeeds;
+- stage goal fails but reveals larger route;
+- protagonist earns or loses status;
+- arena expands;
+- major actor changes behavior;
+- Earth / civilization status changes if relevant;
+- irreversible loss occurs;
+- final-form asset upgrades.
+
 ### Force moment if any
 
 A volume may include direct action.
@@ -146,13 +243,13 @@ These are possibilities, not requirements.
 
 Examples:
 
-- a minor office rule
-- a weak alliance
-- a local map
-- a repeated route
-- a debt
-- a token
-- a witness
+- a minor office rule;
+- a weak alliance;
+- a local map;
+- a repeated route;
+- a debt;
+- a token;
+- a witness.
 
 ### Open questions for emergence
 
@@ -168,8 +265,10 @@ Do not pre-answer all of them.
 - Do not define exact scene endings.
 - Keep the volume pointed toward the novel spine.
 - Track control growth as state change, not as guaranteed victories.
+- Track reader debt and payoff timing.
 - Avoid using repeated suffering as the main measure of progress.
 - Avoid using pure strength growth as the only measure of progress.
+- Avoid consecutive chapters that only add mysteries.
 - Leave room for multi-agent scene simulation.
 
 ## Output
