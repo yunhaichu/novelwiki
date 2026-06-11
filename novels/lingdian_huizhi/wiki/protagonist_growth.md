@@ -9,6 +9,7 @@ Status: initialized
 - **Starting useful skill:** —
 - **Starting misconception:** —
 - **Starting fear:** —
+- **Starting dependency:** — (What or who does the protagonist depend on to survive or progress?)
 - **What the protagonist cannot do at the start:** —
 
 ## Growth Stages

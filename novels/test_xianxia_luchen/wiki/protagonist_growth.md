@@ -36,6 +36,10 @@ Starting fear:
 
 - being declared useless and sent back to a life with no path.
 
+Starting dependency:
+
+- (not yet defined. What or who does the protagonist depend on to survive or progress? Add once the story establishes a dependency.)
+
 What he cannot do at the start:
 
 - draw qi into the body;

@@ -36,6 +36,10 @@ Starting fear:
 
 - losing medication access for 马小禾.
 
+Starting dependency:
+
+- sister 马小禾's medical subscription requires continuous employment and regular payment of the medical device lease. If he loses his job or is flagged as unreliable, his sister loses medication access. This dependency is the primary reason he cannot simply quit or openly rebel.
+
 What he cannot do at the start:
 
 - hack systems;
