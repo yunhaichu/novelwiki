@@ -54,6 +54,16 @@ sect hierarchy and resource scarcity
 - Not protagonist solving sect-level conflict in the opening.
 - Not a story where documents, ledgers, or tokens drive the plot.
 
+
+## Genre Mode
+
+Genre mode: traditional xianxia / mortal-to-cultivator
+Subgenre: low-status trial worker, marginal cultivation channel
+Primary pressure carrier: sect hierarchy, resource scarcity, body/time cost of cultivation, public standing
+What scenes make readers continue: usable cracks in harsh system, slow costly reusable growth, tension between weak power and real opportunity
+What scenes feel off-genre: instant treasure inheritance, system-interface cultivation, office-process fiction in sect clothing, early face-slapping against major elders
+Key forbidden moves: protagonist solving sect-level conflict in opening, documents/ledgers/tokens driving the plot
+
 ## Current Development Goal
 
 Use this project to test the layered workflow:

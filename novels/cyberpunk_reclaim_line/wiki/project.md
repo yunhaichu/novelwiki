@@ -63,6 +63,16 @@ medical subscription debt
 - Not system-interface fiction.
 - Not a detective story carried by reports instead of physical objects and people.
 
+## Genre Mode
+
+Genre mode: cyberpunk
+Subgenre: lower-city labor / cyberpunk realism
+Primary pressure carrier: medical subscription debt, corporate credit, job security, bodily exposure
+What scenes make readers continue: physical workflows, small interventions in process, tense moments where a wrong move costs the protagonist real resources
+What scenes feel off-genre: terminal-command hacking victories, system-panel power fantasies, neon decoration without material cost, detective exposition
+Key forbidden moves: protagonist defeats corporations by hacking, instant AI awakening, superhero capabilities
+
+
 ## First Arc Direction
 
 马宽 must keep his sister's medication subscription active while handling a returned neural implant that should have been erased but still pulses offline.

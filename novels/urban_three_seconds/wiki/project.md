@@ -67,6 +67,16 @@ This ability has no approved name in the first three chapters.
 - 不是主角马上无敌。
 - 不是玄乎设定名词堆砌。
 
+
+## Genre Mode
+
+Genre mode: 都市异能
+Subgenre: 普通城市、普通人、普通工作，异能从一件小事开始
+Primary pressure carrier: 误会、身体不适、现实麻烦，每次能力使用带来的代价
+What scenes make readers continue: 老小区、便利店、派出所、学校周边的日常场景，主角用普通方法帮人
+What scenes feel off-genre: 系统流、修炼体系、异能组织开局、警方破案外挂、主角马上无敌、玄乎设定名词堆砌
+Key forbidden moves: 前期能力主动控制、看未来、读心、破案如神、能力不命名不进入体系
+
 ## First Arc Direction
 
 周成在夜班时捡到一部手机，碰到手机后看见一个女孩在便利店后巷被人拽住包带。

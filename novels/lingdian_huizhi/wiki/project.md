@@ -48,6 +48,16 @@ The anomaly is not a full prophecy system. It gives incomplete service-facing in
 - Not an omniscient prediction story.
 - Not a workplace process log with no emotional or causal turn.
 
+
+## Genre Mode
+
+Genre mode: modern urban suspense
+Subgenre: urban realism with light anomaly mechanism
+Primary pressure carrier: platform audit risk, service quality penalties, customer complaints, time pressure
+What scenes make readers continue: narrow questions, preserved records, timing games, higher-authority reactions
+What scenes feel off-genre: omniscient prediction, system-panel power fantasy, police procedural
+Key forbidden moves: protagonist wins through omniscience or direct authority, full prophecy system, workplace process log without emotional turn
+
 ## Current Workflow State
 
 Project initialized. Base settings drafted before reader-entry testing.

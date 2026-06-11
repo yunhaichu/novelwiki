@@ -275,10 +275,9 @@ Optional review aids when present:
 
 - `prompts/00_reader_entry_gate.md`
 - `prompts/02_opening_chapter_brief.md`
-- `governance/reader_entry_review.md`
-- `governance/opening_chapter_brief_review.md`
 
 If optional review files are absent, do not block execution.
+For opening chapter review, also consult `prompts/04_review_hook.md` (Reader-Entry Hard Checks section).
 
 Opening checks:
 
