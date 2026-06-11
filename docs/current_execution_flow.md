@@ -14,7 +14,7 @@ File responsibilities belong in `docs/file_roles.md`.
 Use for ordinary long-form projects: xianxia, urban fantasy, cyberpunk, single-world fantasy, standard rebirth, or other non-cosmic stories.
 
 ```text
-Run Layer 1B New Novel Setup
+Run Layer 1B New Novel Setup, including Project Viability Gate
 -> Run Layer 2 Actor Setup
 -> Run Layer 3 Volume / Arc Planning
 -> Run Layer 4 Chapter Trend + Hook/Payoff Convergence
@@ -31,7 +31,7 @@ Use when the target story has modern Earth, cosmic civilizations, multiverse sta
 
 ```text
 Run Layer 1A Macro Modern-To-Cosmic Setup
--> Run Layer 1B New Novel Setup
+-> Run Layer 1B New Novel Setup, including Project Viability Gate
 -> Run Layer 2 Actor Setup
 -> Run Layer 3 Volume / Arc Planning
 -> Run Layer 4 Chapter Trend + Hook/Payoff Convergence
@@ -73,7 +73,7 @@ Cosmic Civilization Arena
 
 If the non-canon opening sketch has no desire to continue, do not build the full wiki yet.
 
-Formal drafting still requires Layer 1B + Wiki Bootstrap.
+Formal drafting still requires Layer 1B, Project Viability Gate pass, and Wiki Bootstrap.
 
 ## Core Essence To Preserve
 
@@ -82,6 +82,7 @@ Never remove these principles:
 ```text
 large arena first
 modern reader entry when applicable
+project viability before formal wiki
 reader hook/payoff every important chapter
 irreversible trend, not random event
 local character choice, not author puppetry
@@ -95,19 +96,20 @@ xiaobai readable prose
 
 Stop if any are true:
 
-1. Irreversible trend anchor is missing.
-2. Name & Term Gate is missing for new names or invented terms.
-3. Wiki bootstrap is missing before formal drafting.
-4. Chapter begins from a random event instead of trend convergence.
-5. Important chapter has no reader hook/payoff.
-6. Local choices do not pull toward a shared trend node.
-7. Prose uses invented shorthand where ordinary description is clearer.
-8. Draft uses summary voice instead of action/dialogue.
-9. Main scene has no convergence point.
-10. Active actors know things outside their position, evidence, or private knowledge boundary.
-11. Protagonist only suffers and gains no usable final-form asset.
-12. Chapter ends on abstract realization instead of concrete consequence.
-13. Next chapter would rely on chat memory instead of wiki state.
+1. Project Viability Gate has not passed before formal wiki bootstrap.
+2. Irreversible trend anchor is missing.
+3. Name & Term Gate is missing for new names or invented terms.
+4. Wiki bootstrap is missing before formal drafting.
+5. Chapter begins from a random event instead of trend convergence.
+6. Important chapter has no reader hook/payoff.
+7. Local choices do not pull toward a shared trend node.
+8. Prose uses invented shorthand where ordinary description is clearer.
+9. Draft uses summary voice instead of action/dialogue.
+10. Main scene has no convergence point.
+11. Active actors know things outside their position, evidence, or private knowledge boundary.
+12. Protagonist only suffers and gains no usable final-form asset.
+13. Chapter ends on abstract realization instead of concrete consequence.
+14. Next chapter would rely on chat memory instead of wiki state.
 
 ## Macro Story Stop Conditions
 
