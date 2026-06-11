@@ -14,12 +14,30 @@ Approved formal chapter -> wiki sync -> next chapter.
 
 Do not plan or draft the next formal chapter until chapter state and relevant wiki updates are written or explicitly rejected by the user.
 
+## Chapter State File Status Rule
+
+Only this file unlocks the next formal chapter:
+
+```text
+novels/<novel_id>/wiki/chapter_states/chapter_<number>.md
+```
+
+Pending or review-state files do not unlock the next chapter:
+
+```text
+chapter_<number>_pending.md
+chapter_<number>_review.md
+chapter_<number>_revise.md
+```
+
+If a pending state exists, it must be converted into `chapter_<number>.md` only after the chapter is formally approved and this sync prompt has passed.
+
 ## Required Inputs
 
 Read:
 
 - approved chapter draft;
-- previous chapter state if present;
+- previous approved chapter state if present;
 - current `project.md`;
 - current `base_settings.md`;
 - current `protagonist_growth.md`;
@@ -29,8 +47,30 @@ Read:
 - `style.md`;
 - `name_registry.md`;
 - `prompts/00_webnovel_pleasure_ladder.md` output as Reader Hook / Payoff Ladder if available;
-- `prompts/02_advantage_reward_ledger.md` output if available;
+- `prompts/02_advantage_reward_ledger.md` evaluation summary if available;
 - `governance/wiki_write_rules.md`.
+
+## Responsibility Boundary
+
+```text
+Advantage And Reward Ledger = evaluates whether gain / payoff / debt / pressure / repetition exist.
+Wiki Sync = copies confirmed results into canonical wiki state.
+```
+
+Do not redo the full ledger here.
+
+If the ledger exists, use its `Carry Forward To Wiki Sync` section as the source for:
+
+- confirmed usable advantage;
+- confirmed final-form asset;
+- confirmed reader hook/payoff;
+- confirmed reader reward;
+- confirmed reader debt;
+- confirmed pressure clock;
+- confirmed repetition risk;
+- confirmed Earth / civilization asset.
+
+If the ledger is absent, create only the minimal confirmed state from the approved chapter. Do not infer unshown rewards or debts.
 
 ## Output Targets
 
@@ -58,7 +98,7 @@ Only update `base_settings.md` when the approved chapter establishes a durable w
 
 ## Chapter State Required Content
 
-Each `chapter_<number>.md` must include:
+Each approved `chapter_<number>.md` must include:
 
 - chapter title;
 - chapter function;
@@ -66,6 +106,8 @@ Each `chapter_<number>.md` must include:
 - world / civilization trend progress;
 - Earth status progress when relevant;
 - protagonist final-form progress;
+- confirmed usable advantage;
+- confirmed final-form asset;
 - reader hook / payoff delivered;
 - protagonist state;
 - organization state;
@@ -239,7 +281,8 @@ The next chapter constraint should say what must change if repetition risk remai
 Novel ID:
 Chapter number:
 Approved draft source:
-Previous chapter state read: yes / no
+Previous approved chapter state read: yes / no
+Ledger summary read: yes / no
 Sync decision: ALLOW / REVISE
 
 ## 1. Chapter State File
@@ -255,6 +298,8 @@ Required fields in content draft:
 - world / civilization trend progress:
 - Earth status progress if relevant:
 - protagonist final-form progress:
+- confirmed usable advantage:
+- confirmed final-form asset:
 - reader hook / payoff delivered:
 - protagonist state:
 - organization state:
@@ -288,8 +333,8 @@ Should update file? yes / no
 
 Active stage:
 Cost paid:
-Usable leverage gained:
-Final-form asset gained or strengthened:
+Confirmed usable leverage gained:
+Confirmed final-form asset gained or strengthened:
 Capability changed? yes / no
 Access changed? yes / no
 Relationship changed? yes / no
@@ -355,10 +400,14 @@ Required hook/payoff escalation:
 
 Mark `REVISE` if:
 
+- chapter state path is not `chapter_<number>.md` for an approved formal chapter;
 - chapter state is missing;
+- a pending / review / revise state is used to unlock next chapter;
 - world / civilization trend progress is missing from an important chapter state;
 - Earth status progress is missing from a relevant macro chapter state;
 - protagonist final-form progress is missing from a protagonist-centered chapter state;
+- confirmed usable advantage is missing when the chapter requires protagonist gain;
+- confirmed final-form asset is missing from a protagonist-centered chapter;
 - reader hook/payoff delivered is missing from an important chapter state;
 - updates include speculation or inferred secrets;
 - protagonist growth is recorded without concrete cost or usable leverage;
