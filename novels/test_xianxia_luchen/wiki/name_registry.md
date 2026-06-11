@@ -39,6 +39,15 @@ Canon status: approved test setup.
 - 尾泉
 - 灵粥锅底水
 
+## Name Gate Justification
+
+- **Name:** 陆沉
+- **AI-default risk:** medium — while it appears on the risk list, the character is a low-status sect apprentice who has never stood out; the name is ordinary within the sect context
+- **Family / region logic:** The surname 陆 is a common earth-attribute family name in the world; the character 沉 means "still / calm" — the protagonist's parents wanted him to be quiet and steady after a difficult pregnancy, not a literary or heroic choice
+- **Can it be explained by world context?** Yes — it reflects a humble family's hope, not a signal of special destiny
+- **Decision:** ACCEPT with this justification
+
+
 ## Naming Rules
 
 - Keep names simple and memorable.
