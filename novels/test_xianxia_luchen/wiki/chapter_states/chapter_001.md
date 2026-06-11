@@ -116,6 +116,36 @@ Physical / survival state:
 - Can he survive trial-worker labor while preserving the response?
 - Can he create measurable qi trace before the deadline?
 
+
+## Reader Debt
+
+Prior reader debt paid or partially paid:
+- (none — first chapter)
+
+Prior reader debt carried forward:
+- "What is gray response?" — P0, active.
+- "Can 陆沉 survive trial-worker labor while preserving the response?" — P0, active.
+
+Debt that cannot be delayed much longer:
+- "What is gray response?" — age will reach 3 by ch004. Must address by then.
+
+New reader debt created:
+- "Can 陆沉 create measurable qi trace before the deadline?" (ch001)
+
+## Pressure Clock
+
+- Trial-worker status is temporary — survival pressure is immediate.
+- Food reserve limited (one dry food reserve mentioned).
+- Gray response is not yet functional — need to discover if it can be activated.
+- 赵明川's outer sect acceptance creates a status gap pressure.
+
+## Repetition Risk
+
+- First chapter established 药渣房 as the key location.
+- ch002 continues in the same location.
+- Risk of location fatigue: ch002 and ch003 should vary the work environment or introduce a new pressure point.
+
+
 ## Chapter 002 Constraints
 
 Chapter 002 should begin from 药渣房 or first labor assignment.
