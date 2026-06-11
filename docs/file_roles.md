@@ -26,6 +26,7 @@ world irreversible trend
 + local character choices
 + trend convergence
 + reader hook/payoff
++ project viability before formal wiki
 ```
 
 Macro modern-to-cosmic flow additionally runs on:
@@ -38,7 +39,7 @@ cosmic civilization arena
 + reader hook/payoff ladder
 ```
 
-The author controls the large trend and protagonist final form. Characters control local choices. Plot emerges when local choices are pulled back toward the large trend. Important chapters must give the reader a concrete reason to continue.
+The author controls the large trend and protagonist final form. Characters control local choices. Plot emerges when local choices are pulled back toward the large trend. Important chapters must give the reader a concrete reason to continue. Formal projects must prove they can sustain long-form execution before wiki bootstrap.
 
 ## Docs
 
@@ -188,6 +189,19 @@ Required: yes
 
 Role: defines controlled protagonist growth stages, current weakness, growth asset ladder, forbidden jumps, and route toward final form. For macro stories, include cross-civilization growth and Earth-facing assets.
 
+### `prompts/00_project_viability_gate.md`
+
+Scope: per-novel
+Required: yes before formal wiki bootstrap
+
+Role: blocks weak concepts from entering formal wiki. It checks whether the project can sustain long-form escalation, whether the protagonist final form is stronger than good person / witness / helper, whether the first three chapters create retention and reusable growth assets, and whether reader return matches type-webnovel expectations.
+
+Hard rule:
+
+```text
+No Project Viability Gate pass, no formal wiki bootstrap.
+```
+
 ### `prompts/00_name_term_gate.md`
 
 Scope: per-novel / per-character / per-term
@@ -200,7 +214,7 @@ Role: checks names and terms before they enter project files, character files, o
 Scope: per-novel
 Required: yes before formal drafting
 
-Role: creates initial per-novel wiki after setup approval. Required core files now include:
+Role: creates initial per-novel wiki after setup approval and Project Viability Gate pass. Required core files now include:
 
 ```text
 project.md
@@ -259,7 +273,7 @@ Role: ensures characters act from local pressure and partial knowledge, not outl
 Scope: per-volume
 Required: yes for long stories
 
-Role: defines volume state movement under irreversible trend and protagonist final-form trajectory.
+Role: defines volume state movement under irreversible trend and protagonist-final-form trajectory.
 
 ### `prompts/00_chapter_pressure_card.md`
 
