@@ -19,7 +19,11 @@ If no debt meets the threshold, the next chapter must add at least one new debt 
 
 | # | Debt description | Source chapter | Age (chapters) | Priority | Status | Notes |
 |---|-----------------|----------------|-----------------|----------|--------|-------|
-| *(No chapters yet — populate on first chapter sync)* | | | | | | |
+| 1 | What is the gray response? | ch001 | 3 | P0 | active | Core hook — must resolve or escalate soon |
+| 2 | Can 陆沉 survive the trial period? | ch001 | 3 | P0 | active | Medication/food pressure anchor |
+| 3 | How costly is gray response? | ch002 | 2 | P1 | partially_paid | ch003: confirmed as costly; causes chest tightness/fatigue |
+| 4 | Will 马全 notice 陆沉's unusual judgment? | ch003 | 1 | P1 | active | |
+| 5 | Will 方远 or 宋满 become assets or liabilities? | ch003 | 1 | P1 | active | Transactional relationship established |
 
 ## Abandoned Debts
 
@@ -29,7 +33,7 @@ If no debt meets the threshold, the next chapter must add at least one new debt 
 
 ## Checkpoint
 
-Last reviewed: pre-ch001
-Next review: ch001
-Oldest P0 debt age: N/A
-Oldest P1 debt age: N/A
+Last reviewed: ch003
+Next review: ch004
+Oldest P0 debt age: 3
+Oldest P1 debt age: 3

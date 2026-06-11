@@ -127,6 +127,36 @@ Usable leverage gained:
 - Will 方远 or 宋满 become assets or liabilities?
 - How can gray response become measurable qi trace before trial ends?
 
+
+## Reader Debt
+
+Prior reader debt paid or partially paid:
+- ch002 debt "How costly is gray response?" partially paid: confirmed as costly, causes chest tightness and fatigue.
+
+Prior reader debt carried forward:
+- ch001 debt "What is the gray response?" — still active, age now 3 chapters.
+- ch001 debt "Can 陆沉 survive the trial period?" — still active, age now 3 chapters.
+
+Debt that cannot be delayed much longer:
+- "What is the gray response?" — P0, age 3. Must address in ch004 or ch005.
+
+New reader debt created:
+- "Will 马全 notice 陆沉's unusual judgment?" (ch003)
+- "Will 方远 or 宋满 become assets or liabilities?" (ch003)
+
+## Pressure Clock
+
+- Trial period approaching (first ten-day rhythm mentioned in ch004 constraints).
+- 马全's scrutiny increasing.
+- 陆沉's physical cost from gray response (chest tightness, fatigue) creates bodily pressure.
+- 宋满's mistake created a small but real debt.
+
+## Repetition Risk
+
+- 药渣房 remains the location for three consecutive chapters.
+- Structural upgrade: ch003 introduces a new work type (exploded-furnace waste) and a new character dynamic (宋满's mistake and redemption).
+- ch004 should introduce a new pressure or location to avoid pattern fatigue.
+
 ## Chapter 004 Constraints
 
 Chapter 004 should not jump to stable cultivation.
