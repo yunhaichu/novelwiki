@@ -31,6 +31,7 @@ Read:
 - `prompts/00_webnovel_pleasure_ladder.md` output as Reader Hook / Payoff Ladder if available;
 - `prompts/02_emergent_chapter_design.md` output (to read "Planned Advantages" from the design phase);
 - `governance/wiki_write_rules.md`.
+- `governance/draft_quality_review.md` (optional quality scoring; run if chapter count >= 2)
 
 > Note: `prompts/02_advantage_reward_ledger.md` has been deprecated. Its function is merged into this prompt.
 > Read the chapter design's "Planned Advantages" from the emergent chapter design to compare planned vs. actual advantage delivery.
@@ -403,6 +404,20 @@ Required hook/payoff escalation:
 - candidate update:
   reason not written:
 ```
+
+
+## 10.5. Draft Quality Review
+
+Run if chapter count >= 2:
+
+Quality decision: ALLOW / REVISE / BLOCK
+Scene grounding: PASS / FLAG / FAIL
+Prose quality: PASS / FLAG / FAIL
+Chapter structure: PASS / FLAG / FAIL
+Character presence: PASS / FLAG / FAIL
+Reader engagement: PASS / FLAG / FAIL
+Quality log entry: Ch <number>: [status] — [note]
+Quality trend so far: improving / stable / declining
 
 ## Hard Checks
 

@@ -403,6 +403,7 @@ Name gate decision: ALLOW / REVISE
 - relationships.md placeholder created / updated: yes / no
 - foreshadowing.md placeholder created / updated: yes / no
 - reader_debt_tracker.md placeholder created / updated: yes / no
+- draft_quality_log.md placeholder created / updated: yes / no
 - initial character files created / updated: yes / no
 - initial organization / world files created / updated: yes / no
 - chapter_states directory ready: yes / no

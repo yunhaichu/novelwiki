@@ -425,6 +425,10 @@ Role: defines priority levels (P0-block, P1-must-fix, P2-should-fix, P3-observat
 
 ### `governance/review_checklist.md`
 
+### `governance/draft_quality_review.md`
+
+Evaluates draft quality across five dimensions (scene grounding, prose, chapter structure, character presence, reader engagement) using PASS/FLAG/FAIL scoring. Includes a chapter quality log table for tracking quality trends across chapters.
+
 Scope: per-chapter
 Required: optional fallback
 
