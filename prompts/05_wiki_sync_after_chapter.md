@@ -38,6 +38,7 @@ Read:
 ## Output Targets
 
 Always create or update:
+novels/<novel_id>/wiki/reader_debt_tracker.md
 
 ```text
 novels/<novel_id>/wiki/chapter_states/chapter_<number>.md
@@ -359,6 +360,19 @@ Foreshadowing update:
 Name registry update:
 Style update:
 
+## 8.5. Reader Debt Tracker Update
+
+Debt tracker path: novels/<novel_id>/wiki/reader_debt_tracker.md
+Debt tracker read: yes / no
+Debts paid this chapter: (list by #)
+Debts partially paid this chapter: (list by #)
+New debts created this chapter: (list with source chapter and priority)
+Debts abandoned this chapter: (list with reason)
+Oldest P0 debt age after update: (must not be >= 3)
+Oldest P1 debt age after update: (must not be >= 6)
+Checkpoint: Next review at ch<next>
+
+
 ## 9. Next Chapter Constraints
 
 Must continue from:
@@ -397,4 +411,5 @@ Mark `REVISE` if:
 - the next chapter does not carry forward the irreversible trend;
 - the next chapter would need to rely on chat memory rather than wiki state;
 - planned advantages were not compared against actual draft delivery;
+- reader debt tracker was not updated after chapter sync;
 - unplanned advantages that appeared in the draft were not recorded.

@@ -159,6 +159,7 @@ novels/<novel_id>/wiki/protagonist_growth.md
 novels/<novel_id>/wiki/timeline.md
 novels/<novel_id>/wiki/relationships.md
 novels/<novel_id>/wiki/foreshadowing.md
+novels/<novel_id>/wiki/reader_debt_tracker.md
 ```
 
 Create these directories / files as needed:
@@ -401,6 +402,7 @@ Name gate decision: ALLOW / REVISE
 - timeline.md placeholder created / updated: yes / no
 - relationships.md placeholder created / updated: yes / no
 - foreshadowing.md placeholder created / updated: yes / no
+- reader_debt_tracker.md placeholder created / updated: yes / no
 - initial character files created / updated: yes / no
 - initial organization / world files created / updated: yes / no
 - chapter_states directory ready: yes / no
