@@ -51,6 +51,12 @@ Not by becoming:
 - master of a power system;
 - fearless hero.
 
+## Current Stage
+
+Active growth stage: Stage 1 — Think It Is Dizziness.
+
+(Updated by wiki sync when a stage transition occurs or when the current stage needs refinement based on chapter events.)
+
 ## Growth Stages
 
 ### Stage 1: Think It Is Dizziness
