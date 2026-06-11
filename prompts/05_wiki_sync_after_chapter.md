@@ -86,6 +86,18 @@ Each `chapter_<number>.md` must include:
 
 Write only confirmed facts from approved prose.
 
+Every wiki entry must include a source. Do not write any fact without attributing it.
+
+Required format for each wiki entry:
+
+```text
+Fact: <the confirmed fact>
+Source: <chapter_XXX / setup_output / chapter_state / user_instruction>
+Status: confirmed / claim / observation / inference / unknown
+```
+
+If no approved source exists for an entry, it must not be written to the wiki.
+
 Do not write:
 
 - speculation;
@@ -94,7 +106,8 @@ Do not write:
 - temporary options not chosen;
 - possible future twists;
 - reference-setting ideas not used in the prose;
-- model assumptions.
+- model assumptions;
+- any fact without a source.
 
 Distinguish:
 

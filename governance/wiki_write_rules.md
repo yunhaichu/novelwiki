@@ -94,14 +94,26 @@ Do not write:
 
 ## Source Discipline
 
-Every important canon update should be traceable to one of:
+Every canon entry in the wiki must include a source. This is mandatory, not optional.
 
-- approved setup output;
-- approved chapter prose;
-- approved chapter state;
-- direct user instruction.
+Each entry must contain the following fields:
+
+```text
+Fact: <the confirmed fact>
+Source: <approved chapter number / setup output / chapter state / direct user instruction>
+Status: confirmed / claim / observation / inference / unknown / reference_candidate
+```
+
+The Source field must always be one of:
+
+- approved setup output (e.g., `project.md`, `base_settings.md`, `genre_mode_contract`)
+- approved chapter prose (e.g., `chapter_003`)
+- approved chapter state (e.g., `chapter_003.md` in chapter_states)
+- direct user instruction (record as `user_instruction` with brief context)
 
 If the source is uncertain, write it as pending or unresolved, not confirmed.
+
+If no approved source exists, the entry must not enter the wiki.
 
 ## Character Pages
 

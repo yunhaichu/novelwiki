@@ -141,15 +141,17 @@ If new text conflicts with existing wiki:
 
 ## Source Requirement
 
-Important facts should include a source when possible.
+Every canon entry in the wiki must include a source. This is mandatory, not optional.
 
-Recommended format:
+Required format:
 
 ```text
-Fact:
-Source: chapter_002
+Fact: <the confirmed fact>
+Source: <chapter_XXX / setup_output / chapter_state / user_instruction>
 Status: confirmed / claim / observation / inference / unknown / reference_candidate
 ```
+
+If no approved source exists for an entry, it must not enter the wiki. Do not use "I remember" or "it fits the story" as a source.
 
 ## Character Knowledge Boundary
 
