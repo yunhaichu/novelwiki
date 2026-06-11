@@ -50,6 +50,13 @@ What he cannot do at the start:
 - understand alchemy residue;
 - gain elder attention.
 
+
+## Current Stage
+
+Active growth stage: between Stage 1 and early Stage 2 — Keep the Spark / Distinguish Dead From Not Dead.
+
+(Updated by wiki sync when a stage transition occurs or when the current stage needs refinement based on chapter events.)
+
 ## Large Trend Pressure
 
 青岚宗 is resource-conscious and hierarchy-driven.
