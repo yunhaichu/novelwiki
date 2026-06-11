@@ -12,6 +12,12 @@ Status: initialized
 - **Starting dependency:** — (What or who does the protagonist depend on to survive or progress?)
 - **What the protagonist cannot do at the start:** —
 
+## Current Stage
+
+Active growth stage: Stage 1 — initial position.
+
+(Updated by wiki sync when a stage transition occurs or when the current stage needs refinement based on chapter events.)
+
 ## Growth Stages
 
 | Stage | Trigger | Change | Cost |
