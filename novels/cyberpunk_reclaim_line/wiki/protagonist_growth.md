@@ -201,6 +201,13 @@ Cost paid:
 - higher-level attention;
 - personal/family risk.
 
+
+## Current Stage
+
+Active growth stage: late Stage 2 — Preserve Without Owning.
+
+(Updated by wiki sync when a stage transition occurs or when the current stage needs refinement based on chapter events.)
+
 ## Current Asset Ladder
 
 ```text
