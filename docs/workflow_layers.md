@@ -66,8 +66,9 @@ Required files:
 7. `prompts/00_major_conflict_engine.md`
 8. `prompts/00_dramatic_arena.md`
 9. `prompts/00_protagonist_growth_track.md`
-10. `prompts/00_name_term_gate.md`
-11. `prompts/00_wiki_bootstrap.md`
+10. `prompts/00_project_viability_gate.md`
+11. `prompts/00_name_term_gate.md`
+12. `prompts/00_wiki_bootstrap.md`
 
 For macro modern-to-cosmic stories, Layer 1B must read Layer 1A outputs.
 
@@ -77,7 +78,7 @@ Macro boundary rule:
 Layer 1B must not shrink the arena created by Layer 1A.
 ```
 
-For macro stories, base settings, major conflict, dramatic arena, and protagonist growth must derive from:
+For macro stories, base settings, major conflict, dramatic arena, protagonist growth, and project viability must derive from:
 
 - cosmic civilization arena;
 - Earth civilization value;
@@ -97,8 +98,17 @@ premise / type promise
 -> base setting boundaries
 -> major conflict / dramatic arena
 -> protagonist growth track
+-> Project Viability Gate
 -> Name & Term Gate
 -> wiki bootstrap
+```
+
+Project Viability Gate is the final stop before formal wiki bootstrap.
+
+Hard rule:
+
+```text
+No Project Viability Gate pass, no formal wiki bootstrap.
 ```
 
 Supporting reference files:
@@ -124,6 +134,7 @@ Hard rules:
 
 ```text
 No irreversible trend anchor, no chapter design.
+No Project Viability Gate pass, no formal wiki bootstrap.
 No Name & Term Gate, no project file.
 No wiki bootstrap, no formal draft.
 ```
@@ -147,7 +158,7 @@ Forbidden outputs:
 - chapter two plan;
 - canon wiki update.
 
-Formal drafting still requires Layer 1B and Wiki Bootstrap.
+Formal drafting still requires Layer 1B, Project Viability Gate pass, and Wiki Bootstrap.
 
 For macro modern-to-cosmic trial:
 
@@ -420,13 +431,13 @@ Approved formal chapter -> wiki sync -> next chapter.
 For a macro modern-to-cosmic new novel:
 
 ```text
-Layer 1A -> Layer 1B -> Layer 2 -> Layer 3 -> Layer 4 -> Layer 5 -> Layer 6 -> Layer 7 -> Layer 8 -> Layer 9
+Layer 1A -> Layer 1B including Project Viability Gate -> Layer 2 -> Layer 3 -> Layer 4 -> Layer 5 -> Layer 6 -> Layer 7 -> Layer 8 -> Layer 9
 ```
 
 For a standard new novel:
 
 ```text
-Layer 1B -> Layer 2 -> Layer 3 -> Layer 4 -> Layer 5 -> Layer 6 -> Layer 7 -> Layer 8 -> Layer 9
+Layer 1B including Project Viability Gate -> Layer 2 -> Layer 3 -> Layer 4 -> Layer 5 -> Layer 6 -> Layer 7 -> Layer 8 -> Layer 9
 ```
 
 For a macro modern-to-cosmic fast trial:
@@ -468,19 +479,20 @@ Do not formal draft if any of these are unresolved:
 7. Genre operating model is missing or too vague.
 8. Irreversible trend anchor is missing or weak.
 9. Reader Hook / Payoff Ladder is missing for commercial long-form execution.
-10. Name & Term Gate is missing or failed.
-11. Initial wiki bootstrap is missing.
-12. Base settings for the active novel are missing.
-13. Reality-causal preflight says the core event is unnatural.
-14. Chapter trend convergence is missing.
-15. Important chapter has no concrete reader hook/payoff.
-16. Actor cognition boundary is missing for an important actor who drives chapter logic.
-17. The protagonist has no active growth stage toward final form.
-18. The chapter has no usable protagonist gain when gain is required.
-19. The main scene has no convergence point.
-20. The key object has no natural function.
-21. Unapproved invented terms appear where ordinary description would be clearer.
-22. The story relies on system/report/log/status change as climax.
+10. Project Viability Gate has not passed.
+11. Name & Term Gate is missing or failed.
+12. Initial wiki bootstrap is missing.
+13. Base settings for the active novel are missing.
+14. Reality-causal preflight says the core event is unnatural.
+15. Chapter trend convergence is missing.
+16. Important chapter has no concrete reader hook/payoff.
+17. Actor cognition boundary is missing for an important actor who drives chapter logic.
+18. The protagonist has no active growth stage toward final form.
+19. The chapter has no usable protagonist gain when gain is required.
+20. The main scene has no convergence point.
+21. The key object has no natural function.
+22. Unapproved invented terms appear where ordinary description would be clearer.
+23. The story relies on system/report/log/status change as climax.
 
 Do not plan the next formal chapter if any of these are unresolved:
 
