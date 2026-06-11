@@ -115,6 +115,37 @@ Usable leverage gained:
 - Can 方远 or 宋满 become useful without becoming burdens?
 - Can this help 陆沉 leave a trace on testing paper before the deadline?
 
+
+## Reader Debt
+
+Prior reader debt paid or partially paid:
+- ch001 debt "What is gray response?" partially paid: first function revealed — can sense not-fully-dead residue, but each use costs energy.
+
+Prior reader debt carried forward:
+- "What is gray response?" — P0, active, age now 2.
+- "Can 陆沉 survive trial-worker labor while preserving the response?" — P0, active, age now 2.
+
+Debt that cannot be delayed much longer:
+- "What is gray response?" — age reaches 3 by ch004. Must address by then.
+
+New reader debt created:
+- "Can 陆沉 use not-fully-dead residue without harming himself?" (ch002)
+- "Which residue types are safer?" (ch002)
+
+## Pressure Clock
+
+- 陆沉 must hide his abnormal perception from 马全.
+- Each gray response sensing costs energy or causes chest tightness.
+- Trial-worker status is temporary — deadline pressure exists.
+- 方远 has a claim on 陆沉 (half grain cake for a warning), creating a relationship debt.
+
+## Repetition Risk
+
+- 药渣房 remains the location for two consecutive chapters.
+- Both chapters focus on waste sorting and gray response sensing.
+- Risk of pattern fatigue: ch003 must introduce a new variable (new waste type, new rule, new character dynamic) to avoid flat repetition.
+
+
 ## Chapter 003 Constraints
 
 Chapter 003 should stay in 药渣房 / trial-worker survival logic.
