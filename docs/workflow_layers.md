@@ -447,9 +447,6 @@ Governance:
 
 - `governance/wiki_write_rules.md`
 
-Optional review aid if present:
-
-- `governance/chapter_state_update_review.md`
 
 Deprecated old prompt:
 
