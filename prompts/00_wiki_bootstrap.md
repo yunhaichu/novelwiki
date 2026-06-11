@@ -1,17 +1,19 @@
 # Wiki Bootstrap Prompt
 
-Use this prompt immediately after new-novel setup outputs are approved and before any chapter drafting.
+Use this prompt immediately after formal new-novel setup outputs are approved and before any formal chapter drafting.
 
 The purpose is to create the initial per-novel wiki in the same workflow run as project setup, instead of relying on later manual patching.
+
+Fast Trial sketches are non-canon and must not use this prompt unless the user decides to build the full novel wiki.
 
 ## Core Principle
 
 ```text
-No wiki, no draft.
+No wiki, no formal draft.
 No name gate, no project file.
 ```
 
-A new novel must not move into chapter design until its core setup has been written into `novels/<novel_id>/wiki/`.
+A new formal novel must not move into chapter design until its core setup has been written into `novels/<novel_id>/wiki/`.
 
 A new novel must not write `project.md` with protagonist, organization, city, or key term names until the names pass the Name Gate.
 
@@ -22,13 +24,15 @@ Read:
 - novel spine;
 - genre mode contract;
 - genre operating model;
+- irreversible trend anchor;
 - reality-causal preflight for opening event family;
 - base settings;
 - major conflict engine;
 - dramatic arena;
 - protagonist growth track;
+- Reader Hook / Payoff Ladder if available;
 - organization behavior models for major organizations;
-- character behavior models and expression cards for major recurring characters;
+- character behavior models, expression cards, and cognition cards for major recurring characters;
 - style / name constraints if present;
 - existing `novels/*/wiki/name_registry.md` files when available;
 - existing project names and recurring names in this repository when available.
@@ -130,7 +134,7 @@ Mark `REVISE` if:
 
 ## Required Output Files
 
-Create or update these files for every new novel:
+Create or update these files for every formal new novel:
 
 ```text
 novels/<novel_id>/wiki/project.md
@@ -138,6 +142,9 @@ novels/<novel_id>/wiki/base_settings.md
 novels/<novel_id>/wiki/style.md
 novels/<novel_id>/wiki/name_registry.md
 novels/<novel_id>/wiki/protagonist_growth.md
+novels/<novel_id>/wiki/timeline.md
+novels/<novel_id>/wiki/relationships.md
+novels/<novel_id>/wiki/foreshadowing.md
 ```
 
 Create these directories / files as needed:
@@ -183,6 +190,7 @@ Must include:
 - protagonist;
 - core contradiction;
 - story engine;
+- irreversible trend anchor reference;
 - what this story is not;
 - current development goal.
 
@@ -230,6 +238,7 @@ Must include:
 - language rules;
 - dialogue rules;
 - special ability / goldfinger presentation if applicable;
+- first-contact psychological realism if applicable;
 - anti-AI notes.
 
 ### `name_registry.md`
@@ -246,6 +255,70 @@ Must include:
 - naming rules;
 - pending / not-yet-canon names.
 
+### `timeline.md`
+
+Must start as a placeholder even if no chapters exist yet.
+
+Must include:
+
+```text
+# Timeline
+
+Status: initialized
+
+## Confirmed Timeline
+
+- None yet.
+
+## Pending / Not Yet Canon
+
+- None yet.
+```
+
+### `relationships.md`
+
+Must start as a placeholder even if no relationship state exists yet.
+
+Must include:
+
+```text
+# Relationships
+
+Status: initialized
+
+## Confirmed Relationships
+
+- None yet.
+
+## Tension / Debt / Trust Pending
+
+- None yet.
+```
+
+### `foreshadowing.md`
+
+Must start as a placeholder even if no foreshadowing exists yet.
+
+Must include:
+
+```text
+# Foreshadowing
+
+Status: initialized
+
+## Active Questions
+
+- None yet.
+
+## Planted Objects / Lines / Events
+
+- None yet.
+
+## Answered / Closed
+
+- None yet.
+```
+
 ### Actor / Organization Files
 
 Each important character / organization file must include:
@@ -254,6 +327,7 @@ Each important character / organization file must include:
 - story function;
 - current status;
 - default behavior;
+- cognition boundary if relevant;
 - environmental modulation;
 - voice / presentation rules;
 - confirmed state;
@@ -288,6 +362,21 @@ Name gate decision: ALLOW / REVISE
   source material:
   canon confidence:
 
+## Required Core Files Checklist
+
+- project.md created / updated: yes / no
+- base_settings.md created / updated: yes / no
+- style.md created / updated: yes / no
+- name_registry.md created / updated: yes / no
+- protagonist_growth.md created / updated: yes / no
+- timeline.md placeholder created / updated: yes / no
+- relationships.md placeholder created / updated: yes / no
+- foreshadowing.md placeholder created / updated: yes / no
+- initial character files created / updated: yes / no
+- initial organization / world files created / updated: yes / no
+- chapter_states directory ready: yes / no
+- drafts directory ready: yes / no
+
 ## Missing Setup Inputs
 
 - missing:
@@ -299,19 +388,6 @@ Name gate decision: ALLOW / REVISE
 - reference setting ideas not yet canon:
 - inferred secrets not to write:
 - pending names / terms:
-
-## Completion Checklist
-
-- name gate completed before project.md: yes / no
-- project.md created / updated: yes / no
-- base_settings.md created / updated: yes / no
-- style.md created / updated: yes / no
-- name_registry.md created / updated: yes / no
-- protagonist_growth.md created / updated: yes / no
-- initial character files created / updated: yes / no
-- initial organization / world files created / updated: yes / no
-- chapter_states directory ready: yes / no
-- drafts directory ready: yes / no
 ```
 
 ## Hard Checks
@@ -325,6 +401,7 @@ Mark `REVISE` if:
 - genre operating model is absent;
 - protagonist growth stages are absent;
 - style / name rules are absent;
+- timeline.md, relationships.md, or foreshadowing.md are missing from formal wiki bootstrap;
 - important actors appear in chapter planning without wiki files;
 - reference settings are copied as canon without novel-specific acceptance;
 - inferred secrets are written as confirmed canon.
