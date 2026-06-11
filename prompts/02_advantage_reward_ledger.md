@@ -1,20 +1,38 @@
 # Protagonist Advantage And Reader Reward Ledger
 
-Use this template during chapter planning, after chapter drafting, and before chapter state update.
+Use this template during chapter planning, after chapter drafting, and before wiki sync.
 
-The purpose is to record reusable protagonist assets, reader rewards, reader debt, pressure clocks, and repetition risks. It ensures controlled emergence remains readable, satisfying, protagonist-centered, paced for long-form continuation, and aligned with the protagonist's irreversible final form.
+Purpose: evaluate whether the chapter gives the protagonist usable leverage, final-form movement, and reader payoff.
 
-This file records what the protagonist can use again.
+This file is an evaluation and confirmation tool.
 
-It does not design the face-slapping structure. Use `prompts/00_webnovel_pleasure_ladder.md` to design visible reader pleasure before chapter planning.
+It does not replace:
 
-Emergence alone does not guarantee a good story. If the plot system only reacts naturally, the protagonist may be crushed by larger forces and the reader may receive only pressure. This ledger prevents that.
+- `prompts/00_webnovel_pleasure_ladder.md` for designing Reader Hook / Payoff;
+- `prompts/05_wiki_sync_after_chapter.md` for writing confirmed state into the wiki.
+
+## Responsibility Boundary
+
+```text
+Reader Hook / Payoff Ladder = designs the intended retention structure.
+Advantage And Reward Ledger = checks whether the chapter actually delivers usable gain and payoff.
+Wiki Sync = copies only confirmed results into chapter_state and related wiki files.
+```
+
+Do not duplicate full chapter state here.
+
+Do not maintain timeline, relationship state, foreshadowing state, or full pressure clocks here. Only identify what the wiki sync should carry forward.
 
 ## Core Principle
 
 The protagonist may pay costs, but must not only pay costs.
 
-Every meaningful chapter should give the protagonist at least one usable advantage, one concrete reader reward, and one step toward the protagonist's irreversible final form.
+Every meaningful chapter should give at least one of:
+
+- usable protagonist advantage;
+- final-form asset;
+- concrete reader payoff;
+- stronger forced next action.
 
 Best chapter state:
 
@@ -24,52 +42,14 @@ but owns more leverage than before,
 and that leverage moves them closer to the final form.
 ```
 
-The chapter should also manage reader debt: answer one smaller question, sharpen one larger pressure, and avoid repeating the same scene structure without upgrade.
+## Reader Terms
 
-## Final-Form Asset Rule
+Use the definitions from `prompts/00_webnovel_pleasure_ladder.md`:
 
-A chapter advantage is not enough if it is only a random clue.
-
-The chapter should give the protagonist at least one asset that can eventually support the final form defined in `prompts/00_irreversible_trend_anchor.md` or the novel wiki.
-
-Final-form assets may include:
-
-- detection / perception method;
-- verification method;
-- survival method;
-- concrete relationship trust;
-- small-team coordination;
-- organization experience;
-- knowledge of rules / monsters / systems / institutions;
-- access route;
-- public credibility;
-- protection motive;
-- sacrifice boundary;
-- defensive method;
-- resource control;
-- ability control;
-- responsibility threshold;
-- cross-system translation method;
-- Earth-status leverage;
-- civilization-level negotiation asset.
-
-If the chapter gives only a mystery, a clue, or a status change that does not move toward final form, mark `REVISE`.
-
-## Anti Record-Driven Advantage Rule
-
-A protagonist advantage must be usable in a scene.
-
-Records, reports, logs, archives, case numbers, workflow states, database status, and system prompts do not count by themselves.
-
-A record-based advantage counts only if it immediately changes one of:
-
-- a person’s trust, suspicion, debt, fear, or willingness to help;
-- access to a place, witness, object, or route;
-- control over a physical object;
-- an opponent’s action or misjudgment;
-- a scene’s visible conditions;
-- the protagonist’s next available choice;
-- the protagonist's path toward final form.
+- Reader Hook = reason to continue.
+- Reader Payoff = partial or full answer / consequence delivered.
+- Reader Reward = concrete satisfaction from the chapter.
+- Reader Debt = unpaid promise that must later be paid.
 
 ## Advantage Priority
 
@@ -80,7 +60,6 @@ Use this priority order:
 - someone starts trusting the protagonist;
 - someone owes the protagonist;
 - someone misjudges the protagonist;
-- someone becomes willing to open a door, delay action, hide someone, or tell a name;
 - a stronger actor must negotiate instead of ignoring the protagonist.
 
 ### Tier 2: Physical Object / Witness Advantages
@@ -114,283 +93,166 @@ Use this priority order:
 
 Tier 5 advantages cannot stand alone.
 
-## Reader Reward Types
+A record-based advantage counts only if it immediately changes:
 
-Reader rewards include:
+- trust, suspicion, debt, fear, or willingness to help;
+- access to a place, witness, object, or route;
+- control over a physical object;
+- opponent action or misjudgment;
+- scene conditions;
+- the protagonist's next available choice.
 
-```text
-answered question
-partial truth
-proof of danger
-clever use of limited resource
-visible consequence
-relationship shift
-local victory
-new usable clue
-villain / opponent mistake
-protagonist status change
-memorable object / scene image
-emotionally legible choice
-```
+## Final-Form Asset Rule
 
-A chapter should not only add new mysteries.
+A chapter advantage is not enough if it is only a random clue.
 
-Good rhythm:
+It should strengthen at least one future-final-form asset when the chapter is protagonist-centered.
 
-```text
-answer one smaller question
-create one larger question
-```
+Final-form assets may include:
 
-## Long-Form Pacing Checks
+- detection / perception method;
+- verification method;
+- survival method;
+- concrete relationship trust;
+- small-team coordination;
+- organization experience;
+- rule / system / institution knowledge;
+- access route;
+- public credibility;
+- protection motive;
+- sacrifice boundary;
+- defensive method;
+- resource control;
+- ability control;
+- responsibility threshold;
+- cross-system translation method;
+- Earth-status leverage;
+- civilization-level negotiation asset.
 
-### Reader Debt
-
-Reader debt is the set of questions, promises, pressures, and emotional needs the story has created but not yet paid.
-
-Each chapter should identify:
-
-- which prior reader debt it pays, partially pays, or postpones;
-- which new reader debt it creates;
-- which debt cannot be delayed much longer without flattening the story.
-
-### Pressure Clock
-
-Pressure clock is any deadline, resource drain, bodily deterioration, institutional review, relationship limit, pursuit, public exposure, or scheduled event that should keep the story moving.
-
-A chapter should ideally advance at least one pressure clock.
-
-### Repetition Risk
-
-If this chapter uses the same location, task, conflict shape, ability trigger, conversation rhythm, or consequence pattern as a recent chapter, it must add a structural upgrade.
-
-Examples of structural upgrade:
-
-- new task type;
-- higher cost of error;
-- different actor watching;
-- changed role for the protagonist;
-- new resource output;
-- relationship consequence;
-- deadline pressure;
-- restricted ability use;
-- scene function changes.
-
-## Ledger Format
+## Evaluation Format
 
 ```text
 # Advantage And Reward Ledger
 
 Novel ID:
 Chapter number:
+Evaluation timing: planning / post-draft / pre-sync
+Decision: ALLOW / REVISE
 
-## Irreversible Anchor Reference
+## 1. Anchor Reference
 
-World / civilization irreversible trend:
+World / civilization trend stage:
 -
 
-Earth civilization pressure if relevant:
+Earth status stage if relevant:
 -
 
-Protagonist irreversible final form:
+Protagonist final-form stage:
 -
 
-Current world / civilization trend stage:
+## 2. Intended Hook / Payoff
+
+Primary hook type:
 -
 
-Current Earth status stage if relevant:
+Specific reader hook:
 -
 
-Current protagonist final-form stage:
+Intended payoff:
 -
 
-## Reader Pleasure Reference
+Was face-slapping intended? yes / no
 
-Pleasure designed by Webnovel Pleasure Ladder:
+If yes, why it was situationally justified:
 -
 
-Who was underestimated:
--
-
-What visible correction occurred:
--
-
-Visible reward:
--
-
-## Starting Protagonist Assets
-
-Relationships:
--
-
-Physical objects / witnesses:
--
-
-Access / operational space:
--
-
-Information / evidence:
--
-
-Identity / status:
--
-
-Resources:
--
-
-Enemy misjudgments:
--
-
-Record-based assets:
--
-
-Final-form assets already owned:
--
-
-Earth / civilization assets already owned if relevant:
--
-
-## Chapter Cost
-
-What does the protagonist lose, risk, expose, owe, damage, or misunderstand?
--
-
-Which actor or organization becomes more dangerous to the protagonist?
--
-
-What safety is reduced?
--
-
-What final-form path becomes harder?
--
-
-## New Protagonist Advantage
-
-The chapter must add at least one Tier 1-4 advantage and at least one final-form asset.
-
-Relationship gained or changed:
--
-
-Physical object / witness gained or preserved:
--
-
-Access / time / route / operational space gained:
--
-
-Enemy misjudgment gained:
--
-
-Information / evidence gained:
--
-
-Identity / status changed:
--
-
-Resource gained:
--
-
-Skill / understanding gained:
--
-
-Record-based asset gained, if any:
--
-
-Earth / civilization asset gained, if relevant:
--
-
-## Final-Form Asset Gained
-
-Which future-final-form asset is gained or strengthened?
--
-
-How can this asset eventually support the protagonist's final form?
--
-
-Why is this not a random clue?
--
-
-What still prevents the protagonist from using it well?
--
-
-## Usability Test
-
-How can this advantage change the protagonist's next scene action?
--
-
-Who else wants this advantage?
--
-
-Who is harmed if the protagonist uses it?
--
-
-What cost comes with using it?
--
-
-If the advantage is record-based, what person/object/access consequence makes it usable?
--
-
-## Reader Reward
+## 3. Delivered Payoff Check
 
 Question answered or partially answered:
 -
 
-Concrete proof shown:
+Concrete consequence shown:
 -
 
-Emotional payoff:
--
-
-Memorable scene image / object:
--
-
-What reader now understands better:
--
-
-## Reader Debt
-
-Prior reader debt paid or partially paid:
--
-
-Prior reader debt postponed:
+Emotional / relationship / status / tactical reward:
 -
 
 New reader debt created:
 -
 
-Which debt cannot be delayed much longer?
+Debt that cannot be delayed much longer:
 -
 
-## Pressure Clock
+## 4. Protagonist Cost
 
-What deadline / resource drain / bodily cost / institutional review / relationship limit / exposure risk moved closer?
+Cost paid:
 -
 
-What pressure is now worse than before?
+Safety reduced:
 -
 
-What must the next chapter not ignore?
+Relationship / status / resource risk created:
 -
 
-## Repetition Risk
+## 5. Usable Advantage Confirmed
 
-What location, task, conflict shape, ability use, conversation rhythm, or consequence pattern repeats from recent chapters?
+Confirmed usable advantage:
 -
 
-What structural upgrade makes this chapter different?
+Advantage tier: 1 / 2 / 3 / 4 / 5
+
+Why this can change a future scene:
 -
 
-What must the next chapter change if repetition risk remains?
+Who else wants it or is affected by it:
 -
 
-## New Reader Itch
-
-What should the reader want to know next?
+If record-based, what person/object/access consequence makes it usable:
 -
 
-Why is this question tied to protagonist pressure instead of abstract mystery?
+## 6. Final-Form Asset Confirmed
+
+Final-form asset gained or strengthened:
 -
 
-## Pass / Fail
+How it supports final form:
+-
+
+Why this is not a random clue:
+-
+
+What still limits its use:
+-
+
+## 7. Carry Forward To Wiki Sync
+
+Copy these confirmed items into `prompts/05_wiki_sync_after_chapter.md` output:
+
+Confirmed usable advantage:
+-
+
+Confirmed final-form asset:
+-
+
+Confirmed reader hook/payoff:
+-
+
+Confirmed reader reward:
+-
+
+Confirmed reader debt:
+-
+
+Confirmed pressure clock, if any:
+-
+
+Confirmed repetition risk, if any:
+-
+
+Confirmed Earth / civilization asset, if any:
+-
+
+## 8. Pass / Fail
 
 ALLOW / REVISE
 ```
@@ -399,24 +261,22 @@ ALLOW / REVISE
 
 Mark `REVISE` if:
 
-- the protagonist only suffers and gains no usable asset;
+- the protagonist only suffers and gains no usable leverage when gain is required;
 - the only gain is vague insight;
 - the only gain is a record, status, case number, report, popup, log, or database entry;
-- the gain cannot affect the next scene;
-- no final-form asset is gained or strengthened;
+- the gain cannot affect a future scene;
+- no final-form asset is gained or strengthened in a protagonist-centered chapter;
 - the gain is a random clue unrelated to protagonist final form;
-- the reader receives only a new mystery;
-- visible pleasure was planned but did not produce reusable gain;
-- the chapter creates danger but no leverage;
-- prior reader debt is ignored for too long;
-- no pressure clock advances in a plot segment that should be moving;
-- a repeated scene structure has no upgrade;
-- the protagonist is rescued by external force without making a meaningful choice;
-- the chapter's reward is only worldbuilding information, not story movement.
+- the reader receives only a new mystery and no payoff, crisis, choice, or concrete pressure;
+- intended hook/payoff was not actually delivered;
+- the chapter creates danger but no leverage or forced next action;
+- face-slapping was used where fear, discovery, grief, or survival should dominate;
+- protagonist is rescued by external force without making a meaningful choice;
+- chapter reward is only worldbuilding information, not story movement.
 
-## Chapter Outcome Patterns
+## Outcome Patterns
 
-Use these patterns to keep emergence satisfying.
+Use these patterns to keep emergence satisfying:
 
 ### Small Win, Larger Danger
 
@@ -437,25 +297,3 @@ The protagonist is no longer invisible. This creates danger but also forces stro
 ### Misjudgment, Then Cognitive Upgrade
 
 The protagonist's mistaken assumption fails, but the failure teaches a rule that expands future strategy.
-
-## Use With State Update
-
-After a chapter is approved, carry forward only usable assets, final-form assets, reader debt, pressure clocks, and repetition risk into chapter state.
-
-Do not record vague mood changes as assets.
-
-Do record:
-
-- people who now trust, suspect, owe, or misjudge the protagonist;
-- physical objects preserved, hidden, damaged, contested, or moved;
-- witnesses still available or lost;
-- access paths;
-- changed suspicions;
-- damaged relationships;
-- new labels other actors attach to the protagonist;
-- final-form assets gained or strengthened;
-- Earth / civilization assets gained or strengthened if relevant;
-- pending reader debts;
-- pressure clocks that moved closer;
-- repetition risks that the next chapter must avoid;
-- documents or records only when they have scene-usable consequences.
