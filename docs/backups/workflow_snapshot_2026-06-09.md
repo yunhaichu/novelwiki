@@ -74,7 +74,7 @@ git show 2cfe5d803b18b298977b2afdc4819b390dd1f9eb:<path>
 - `prompts/01_writer.md`
 - `prompts/01_scene_log_to_draft.md`
 - `prompts/02_emergent_chapter_design.md`
-- `prompts/02_advantage_reward_ledger.md`
+- `prompts/02_deprecated_advantage_reward_ledger.md`
 - `prompts/02_scene_convergence.md`
 - `prompts/02_scene_expression_state.md`
 - `prompts/02_dialogue_intent.md`

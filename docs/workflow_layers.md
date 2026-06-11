@@ -29,7 +29,7 @@ Required files:
 2. `prompts/00_earth_civilization_value.md`
 3. `prompts/00_unified_power_logic.md`
 4. `prompts/00_modern_chinese_entry_bridge.md`
-5. `prompts/00_webnovel_pleasure_ladder.md` as Reader Hook / Payoff Ladder
+5. `prompts/00_webnovel_reader_hook_payoff_ladder.md` as Reader Hook / Payoff Ladder
 
 Required order:
 
@@ -210,7 +210,7 @@ Files:
 
 - `prompts/00_volume_state_plan.md`
 - `prompts/00_chapter_pressure_card.md` when chapter pressure needs isolation
-- `prompts/00_webnovel_pleasure_ladder.md` as Reader Hook / Payoff Ladder when a new volume starts or the story loses continuation desire
+- `prompts/00_webnovel_reader_hook_payoff_ladder.md` as Reader Hook / Payoff Ladder when a new volume starts or the story loses continuation desire
 
 Outputs:
 
@@ -233,7 +233,7 @@ Required files:
 2. `prompts/00_reality_causal_preflight.md`
 3. `prompts/02_emergent_chapter_design.md`
 4. (deprecated - function merged into `prompts/05_wiki_sync_after_chapter.md`)
-5. `prompts/00_webnovel_pleasure_ladder.md` as Reader Hook / Payoff Ladder when the chapter is important or the previous draft feels flat.
+5. `prompts/00_webnovel_reader_hook_payoff_ladder.md` as Reader Hook / Payoff Ladder when the chapter is important or the previous draft feels flat.
 
 For chapter one of modern-to-cosmic stories, also use:
 

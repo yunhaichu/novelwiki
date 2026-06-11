@@ -28,12 +28,12 @@ Read:
 - relevant organization / world files;
 - `style.md`;
 - `name_registry.md`;
-- `prompts/00_webnovel_pleasure_ladder.md` output as Reader Hook / Payoff Ladder if available;
+- `prompts/00_webnovel_reader_hook_payoff_ladder.md` output as Reader Hook / Payoff Ladder if available;
 - `prompts/02_emergent_chapter_design.md` output (to read "Planned Advantages" from the design phase);
 - `governance/wiki_write_rules.md`.
 - `governance/draft_quality_review.md` (optional quality scoring; run if chapter count >= 2)
 
-> Note: `prompts/02_advantage_reward_ledger.md` has been deprecated. Its function is merged into this prompt.
+> Note: `prompts/02_deprecated_advantage_reward_ledger.md` has been deprecated. Its function is merged into this prompt.
 > Read the chapter design's "Planned Advantages" from the emergent chapter design to compare planned vs. actual advantage delivery.
 
 ## Output Targets

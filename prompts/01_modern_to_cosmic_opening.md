@@ -27,7 +27,7 @@ Read:
 - `prompts/00_earth_civilization_value.md` output;
 - `prompts/00_unified_power_logic.md` output;
 - `prompts/00_modern_chinese_entry_bridge.md` output;
-- `prompts/00_webnovel_pleasure_ladder.md` output as Reader Hook / Payoff Ladder;
+- `prompts/00_webnovel_reader_hook_payoff_ladder.md` output as Reader Hook / Payoff Ladder;
 - Name & Term Gate output.
 
 ## Output Format

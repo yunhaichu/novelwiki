@@ -108,7 +108,7 @@ Required: yes when protagonist comes from modern China / modern Earth
 
 Role: defines modern identity, reader-laoxiang feeling, modern knowledge structure, first contact mode, modern-thinking viewpoint, and Earth emotional anchor.
 
-### `prompts/00_webnovel_pleasure_ladder.md`
+### `prompts/00_webnovel_reader_hook_payoff_ladder.md`
 
 Scope: per-novel / per-volume / per-chapter
 Required: yes for commercial webnovel execution
@@ -293,7 +293,7 @@ Role: designs a chapter through trend convergence, actor limited choices, reader
 
 Face-slapping is optional and must be justified by scene logic.
 
-### `prompts/02_advantage_reward_ledger.md`
+### `prompts/02_deprecated_advantage_reward_ledger.md`
 
 Scope: per-chapter
 Required: **deprecated**
@@ -301,7 +301,7 @@ Required: **deprecated**
 Role: [DEPRECATED] Function merged into `prompts/05_wiki_sync_after_chapter.md`.
 Read the chapter design's "Planned Advantages" from `prompts/02_emergent_chapter_design.md`.
 The wiki_sync prompt now handles both planned and actual advantage tracking.
-See `prompts/02_advantage_reward_ledger.md` for migration guide.
+See `prompts/02_deprecated_advantage_reward_ledger.md` for migration guide.
 
 ### `prompts/02_opening_chapter_brief.md`
 
