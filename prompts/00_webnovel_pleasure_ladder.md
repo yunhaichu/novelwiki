@@ -6,7 +6,7 @@ Purpose: guarantee reader continuation desire. Large trends and deep themes are 
 
 This file designs the chapter's retention structure.
 
-It does not replace `prompts/02_advantage_reward_ledger.md`. The advantage ledger evaluates whether a planned or drafted chapter actually delivered reusable gain and payoff.
+It does not replace `prompts/05_wiki_sync_after_chapter.md`, which handles advantage evaluation, reader reward/debt tracking, and canonical wiki sync.
 
 ## Core Rule
 
