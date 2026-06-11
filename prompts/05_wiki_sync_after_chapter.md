@@ -361,10 +361,26 @@ Required structural change next chapter:
 ## 8. Timeline / Relationship / Foreshadowing Updates
 
 Timeline update:
+- List any chapter events that should be added to the timeline.
+- If no new events to record, write: "No new timeline events this chapter."
+
 Relationship update:
+- List any new or changed relationships.
+- If no change, write: "No new or changed relationships this chapter."
+
 Foreshadowing update:
+- List any elements introduced that may pay off later.
+- If no foreshadowing to record, write: "No new foreshadowing elements this chapter."
+
 Name registry update:
+- List any new names or terms from the chapter.
+- If no new names/terms, write: "No new names or terms this chapter."
+
 Style update:
+- Note any style deviation or reinforcement observed in the chapter.
+- If no notable style observation, write: "No notable style deviation."
+
+**Hard rule**: Do not leave these fields blank. Write content or the explicit "no change" statement above for each field. Empty fields will be treated as skipped and must be retried.
 
 ## 8.5. Reader Debt Tracker Update
 
