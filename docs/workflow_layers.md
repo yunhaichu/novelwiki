@@ -345,37 +345,88 @@ Rules:
 
 Run after draft.
 
-Do not run every review on every minor scene. Use the review matrix below.
+Do not run every review on every chapter. Select reviews by route.
 
-Always for important chapters:
+### Review Routing Matrix
 
-- `governance/emergent_plot_review.md`
-- `governance/protagonist_growth_review.md`
-- `governance/review_checklist.md`
+#### Low-Stakes Transition
 
-When genre / reality / object logic is involved:
+Use when the chapter mainly moves characters, resets location, breathes between conflicts, or prepares the next pressure.
 
-- `governance/reality_logic_review.md`
-- `governance/object_function_review.md`
+Run:
 
-When systems, records, reports, logs, workflows, or documents appear:
+- light self-check against current chapter state;
+- `governance/anti_ai_expression_review.md` if prose feels generic;
+- `governance/wiki_write_rules.md` before sync.
 
-- `governance/anti_record_driven_plot.md`
+Required checks:
 
-When character voice, dialogue, AI flavor, or invented terms are a concern:
+- no canon contradiction;
+- no unapproved names or terms;
+- at least one small hook/payoff or state movement;
+- no summary-only prose;
+- next chapter constraint remains clear.
 
-- `governance/character_voice_review.md`
-- `governance/anti_ai_expression_review.md`
-- `governance/anti_ai_taste_check.md`
-- `governance/ai_taste_language_grounding.md`
+#### Important Chapter
 
-When base settings or canon consistency is involved:
+Use when the chapter changes protagonist state, resolves or creates major pressure, introduces a key actor/object, or moves the irreversible trend.
 
-- `governance/base_settings_review.md`
-- `governance/wiki_retrieval_rules.md`
-- `governance/wiki_write_rules.md`
+Run:
 
-For macro modern-to-cosmic stories, also manually check:
+- `governance/emergent_plot_review.md`;
+- `governance/protagonist_growth_review.md`;
+- `governance/anti_ai_expression_review.md`;
+- `governance/wiki_write_rules.md` before sync.
+
+Add `governance/review_checklist.md` only if a general final pass is needed.
+
+#### System / Record Heavy Chapter
+
+Use when records, reports, logs, workflows, screens, archives, system prompts, or database statuses appear.
+
+Run:
+
+- `governance/anti_record_driven_plot.md`;
+- `governance/reality_logic_review.md` if process / authority / institution logic matters;
+- `governance/anti_ai_expression_review.md`.
+
+#### Object-Centered Chapter
+
+Use when a physical object, resource, artifact, document, weapon, medicine, body trace, token, or clue drives the chapter.
+
+Run:
+
+- `governance/object_function_review.md`;
+- `governance/reality_logic_review.md` if object use depends on process, cost, timing, or authority.
+
+#### Voice / Relationship Heavy Chapter
+
+Use when the chapter depends on dialogue, emotional tension, negotiation, trust, suspicion, authority, or first contact.
+
+Run:
+
+- `governance/character_voice_review.md`;
+- `governance/anti_ai_expression_review.md`.
+
+For first-contact or high-pressure scenes, also check:
+
+- psychological realism;
+- no calm abstract AI-like speech under fear;
+- actor cognition limits.
+
+#### Setup / Canon Change Chapter
+
+Use when base settings, durable world rules, protagonist growth stage, organization behavior, or wiki structure may change.
+
+Run:
+
+- `governance/base_settings_review.md` when durable settings are touched;
+- `governance/wiki_retrieval_rules.md` before drafting;
+- `governance/wiki_write_rules.md` before sync.
+
+### Macro Modern-To-Cosmic Extra Checks
+
+For macro modern-to-cosmic stories, always check:
 
 - Earth value remains active;
 - modern viewpoint remains active;
@@ -449,13 +500,13 @@ Layer 1A core files -> Layer 5 modern-to-cosmic opening -> non-canon sketch / ou
 For a normal later chapter:
 
 ```text
-Read wiki -> Layer 3 check -> Layer 4 trend + hook/payoff convergence -> Layer 6 -> Layer 7 -> Layer 8 -> Layer 9
+Read wiki -> Layer 3 check -> Layer 4 trend + hook/payoff convergence -> Layer 6 -> Layer 7 -> Layer 8 by route -> Layer 9
 ```
 
 For a simple low-stakes transition chapter:
 
 ```text
-Read wiki -> Layer 3 check -> Layer 4 light trend + hook/payoff check -> Layer 7 -> Layer 8 light -> Layer 9
+Read wiki -> Layer 3 check -> Layer 4 light trend + hook/payoff check -> Layer 7 -> Layer 8 low-stakes route -> Layer 9
 ```
 
 ## Existing Legacy Chapter States
