@@ -1,6 +1,10 @@
 # Novel Wiki
 
-This repository is the canonical memory, reference-setting, and governance store for long-form Chinese webnovel creation with ChatGPT as the primary writer.
+NovelWiki is a Wiki-centered human-AI collaborative novel creation system.
+
+It is not a one-way generator that turns an outline into chapters. Its primary purpose is to help the author and AI share the same structured story memory while they discuss, decide, update, and only then generate content when needed.
+
+The core asset of a project is the evolving story knowledge base: entities, events, time-aware states, relationships, rules, decisions, and approved narrative facts. Draft prose is an output of that knowledge base, not the center of the system.
 
 ## Core Principle
 
@@ -9,10 +13,10 @@ Each novel must have its own independent wiki.
 The repository stores three kinds of material:
 
 1. Global governance and reusable prompts.
-2. Reusable reference settings for genre, authority, process, resource, object, space, social life, and power-system boundaries.
-3. Per-novel canonical wiki, drafts, chapter states, and update records.
+2. Reusable reference settings for genre, authority, process, resource, object, space, social life, and rule-system boundaries.
+3. Per-novel canonical wiki, drafts, narrative states, collaboration sessions, and update records.
 
-ChatGPT is responsible for planning, base-setting construction, name-and-term gate checking, interactive drafting, local review assistance, wiki bootstrap, and wiki sync after approved formal chapters. The wiki is responsible for long-term memory. The user remains the final approver.
+The author remains the creative authority. The AI retrieves relevant wiki material, points out possible conflicts, proposes options, helps refine scenes and facts, and updates the wiki only when the user approves a change as canon.
 
 ## Current Workflow Entry
 
@@ -20,60 +24,115 @@ Use these files in this order:
 
 ```text
 1. docs/current_execution_flow.md
-2. docs/workflow_layers.md
-3. docs/interactive_writing_flow.md
-4. docs/file_roles.md
+2. docs/narrative_model.md
+3. docs/workflow_layers.md
+4. docs/interactive_writing_flow.md
+5. docs/file_roles.md
 ```
 
-`docs/current_execution_flow.md` is a short path-selection card. It tells you whether to use the standard flow, macro modern-to-cosmic flow, or non-canon fast trial mode, and it defines the current stop conditions.
+`docs/current_execution_flow.md` is the short operating card. It explains the current collaboration loop and stop conditions.
 
-`docs/workflow_layers.md` is the authoritative full execution-order index.
+`docs/narrative_model.md` defines the generic story-memory model: Entity, Event, Timepoint, State, Relationship, Session, Mutation, and Consistency Check.
 
-`docs/interactive_writing_flow.md` defines the default interactive protocol: discuss, approve, draft bounded unit, local self-check, user canon approval, then wiki sync.
+`docs/workflow_layers.md` is the full execution-order index for setup, planning, discussion, generation, and wiki update.
+
+`docs/interactive_writing_flow.md` defines the default human-AI collaboration protocol.
 
 `docs/file_roles.md` explains what each file is responsible for.
 
 `docs/emergent_plot_workflow.md` is conceptual background, not the execution authority.
 
+## Default Collaboration Loop
+
+The default formal loop is:
+
+```text
+retrieve relevant wiki knowledge
+-> discuss the creative problem with the user
+-> propose options and identify conflicts
+-> user decides, redirects, or asks for revision
+-> record approved decisions and mutations
+-> generate prose or design output only when needed
+-> sync only user-approved canon back into the wiki
+```
+
+Hard rule:
+
+```text
+No user-approved decision, no canon mutation.
+```
+
+This rule applies to characters, organizations, locations, rule systems, plot arcs, scenes, events, names, terms, relationships, and generated prose.
+
+## Narrative Model
+
+NovelWiki uses a light structured model and leaves most rich creative information in natural-language summaries.
+
+### Entity
+
+A persistent story object.
+
+Typical entity types include character, organization, location, rule system, item, creature, social group, title, institution, and other reusable narrative objects.
+
+### Event
+
+A story fact anchored in time.
+
+An event records who participated, when it happened, where it happened, what occurred, who or what was affected, what changed, and what earlier facts caused or enabled it.
+
+### Timepoint
+
+A named point or span in the story timeline. Timepoints allow the same entity to have different states at different moments.
+
+### State
+
+The state of an entity at a specific timepoint. A character, organization, location, rule system, or other entity may have multiple states across the story.
+
+### Relationship
+
+A link between entities, optionally time-aware. Relationships describe association, dependency, conflict, alliance, hierarchy, influence, ownership, kinship, obligation, or other story-relevant connections.
+
+### Session
+
+A human-AI collaboration record. Sessions preserve what was discussed, what the user decided, what alternatives were rejected, and which wiki mutations followed.
+
+### Mutation
+
+An approved change to the wiki. A mutation may create, update, supersede, or deprecate an entity, event, state, relationship, timepoint, or session note.
+
 ## Current Flow Types
 
 ### Standard Long-Form Flow
 
-Use for ordinary long-form projects: xianxia, urban fantasy, cyberpunk, single-world fantasy, standard rebirth, or other non-cosmic stories.
+Use for ordinary long-form projects.
 
 ```text
-Run Layer 1B New Novel Setup
--> Run Layer 2 Actor Setup
--> Run Layer 3 Volume / Arc Planning
--> Run Layer 4 Chapter Trend + Hook/Payoff Convergence
--> Interactive Approval Gate A: chapter intent
--> Run Layer 5 Reader Entry / Opening Control when needed
--> Run Layer 6 Scene Design
--> Interactive Approval Gate B: scene plan
--> Run Layer 7 Drafting in approved units
--> Layer 8 Local Self-Check / Targeted Review only when triggered
--> User Canon Approval
--> Run Layer 9 Wiki Sync
+Run new-novel setup
+-> bootstrap the initial wiki
+-> retrieve relevant narrative model records
+-> discuss arc / chapter / scene direction with the user
+-> record approved decisions
+-> design or generate only the approved unit when needed
+-> run consistency check
+-> user canon approval
+-> wiki sync
 ```
 
-### Macro Modern-To-Cosmic Flow
+### Extended Arena Flow
 
-Use when the target story has modern Earth, cosmic civilizations, multiverse stages, cultivation + technology + magic, or civilization war.
+Use when the story requires a large arena, multiple rule systems, complex social structures, broad historical pressure, or multi-stage escalation.
 
 ```text
-Run Layer 1A Macro Modern-To-Cosmic Setup
--> Run Layer 1B New Novel Setup
--> Run Layer 2 Actor Setup
--> Run Layer 3 Volume / Arc Planning
--> Run Layer 4 Chapter Trend + Hook/Payoff Convergence
--> Interactive Approval Gate A: chapter intent
--> Run Layer 5 Modern-To-Cosmic Opening / Reader Entry
--> Run Layer 6 Scene Design
--> Interactive Approval Gate B: scene plan
--> Run Layer 7 Drafting in approved units
--> Layer 8 Local Self-Check / Targeted Review only when triggered
--> User Canon Approval
--> Run Layer 9 Wiki Sync
+Run extended arena setup
+-> run new-novel setup
+-> bootstrap the initial wiki
+-> retrieve relevant narrative model records
+-> discuss current pressure, actors, rules, and consequences
+-> record approved decisions
+-> design or generate only the approved unit when needed
+-> run consistency check
+-> user canon approval
+-> wiki sync
 ```
 
 ### Fast Trial Mode
@@ -83,54 +142,33 @@ Fast Trial output is non-canon.
 It may produce only:
 
 ```text
+non-canon concept sketch
 non-canon opening sketch
-non-canon chapter-one outline
+non-canon scene sketch
 non-canon desire test draft
 ```
 
-It must not be treated as an approved chapter draft. It must not create chapter state. It must not plan chapter two.
+It must not be treated as an approved chapter draft. It must not create canonical story facts. It must not plan canon-dependent later units.
 
-Formal drafting still requires Layer 1B and Wiki Bootstrap.
+Formal drafting still requires wiki bootstrap and user-approved canon decisions.
 
-## Interactive Approval Rule
+## Name & Term Rule
 
-The default formal writing loop is:
+A formal new novel must run Name & Term Gate before recurring names, key invented terms, organization names, location names, rule-system terms, project files, entity records, event records, or formal drafts rely on them.
 
-```text
-read canon wiki
--> propose chapter / scene intent
--> wait for user approval or correction
--> design approved scene beat
--> wait for user approval or correction
--> draft only the approved unit
--> perform local self-check only
--> user approves / revises / rejects
--> sync only approved canon
-```
+Names and recurring terms are part of the story model. They must be grounded in in-world logic: period, region, class, family practice, job, registration system, nickname use, official wording, visible function, social role, or other story-specific cause.
 
 Hard rule:
 
 ```text
-No user approval, no canon expansion.
-```
-
-## Name & Term Gate Rule
-
-A formal new novel must run Name & Term Gate before writing protagonist names, organization names, city names, key terms, `project.md`, character files, organization files, world files, or chapter drafts.
-
-Names and recurring terms are part of the world model. They must be grounded in period, region, class, family practice, job, registration system, nickname use, official wording, visible function, or other in-world logic.
-
-Hard rule:
-
-```text
-No Name & Term Gate, no project file.
+No Name & Term Gate, no recurring invented name or term enters canon.
 ```
 
 Use `prompts/00_name_term_gate.md` for the full Name & Term Gate format.
 
 ## Wiki Bootstrap Rule
 
-A formal new novel must create or update its initial wiki before any formal chapter draft.
+A formal new novel must create or update its initial wiki before any formal canon-dependent draft.
 
 Required prompt:
 
@@ -138,30 +176,34 @@ Required prompt:
 prompts/00_wiki_bootstrap.md
 ```
 
-Required initial wiki files:
+Recommended initial wiki files:
 
 ```text
 novels/<novel_id>/wiki/project.md
 novels/<novel_id>/wiki/base_settings.md
 novels/<novel_id>/wiki/style.md
 novels/<novel_id>/wiki/name_registry.md
-novels/<novel_id>/wiki/protagonist_growth.md
 novels/<novel_id>/wiki/timeline.md
 novels/<novel_id>/wiki/relationships.md
 novels/<novel_id>/wiki/foreshadowing.md
+novels/<novel_id>/wiki/entities/
+novels/<novel_id>/wiki/events/
+novels/<novel_id>/wiki/states/
+novels/<novel_id>/wiki/sessions/
+novels/<novel_id>/wiki/mutations/
 ```
 
-Add character, organization, and world files as needed before those actors appear in chapter planning.
+Add specialized files only when a project needs them. Do not force every project into a large schema before the story requires it.
 
 Hard rule:
 
 ```text
-No wiki bootstrap, no formal draft.
+No wiki bootstrap, no formal canon-dependent draft.
 ```
 
 ## Wiki Sync Rule
 
-Every approved formal chapter must be synchronized into the novel wiki before the next formal chapter is planned.
+Every approved canon change must be synchronized into the novel wiki before the next canon-dependent discussion, scene design, or draft.
 
 Required prompt:
 
@@ -169,63 +211,44 @@ Required prompt:
 prompts/05_wiki_sync_after_chapter.md
 ```
 
-Always create or update:
+For approved formal chapters, update the relevant chapter state or event records.
 
-```text
-novels/<novel_id>/wiki/chapter_states/chapter_<number>.md
-```
-
-Update character, organization, world, growth, timeline, relationship, foreshadowing, style, name, and term files only when approved prose confirms new facts.
+For approved partial scenes, design decisions, character changes, organization changes, location changes, rule-system changes, relationship changes, or timeline changes, update the relevant Entity, Event, State, Relationship, Session, or Mutation records.
 
 Hard rule:
 
 ```text
-User-approved canon -> wiki sync -> next canon-dependent planning step.
+User-approved canon -> wiki sync -> next canon-dependent step.
 ```
 
 `prompts/06_chapter_state_update.md` is deprecated. Do not use it in the current workflow.
 
-## Non-Negotiable Gates
+## Non-Negotiable Stop Conditions
 
-Do not formal draft if any of these are unresolved:
+Stop if any are true:
 
-1. Fast Trial is being mistaken for canon draft.
-2. Macro story lacks cosmic civilization arena.
-3. Earth-entry story lacks Earth civilization value.
-4. Multi-system story lacks unified power logic.
-5. Modern-entry story lacks modern Chinese entry bridge.
-6. Genre mode is unclear.
-7. Genre operating model is missing or too vague.
-8. Irreversible trend anchor is missing or weak.
-9. Reader Hook / Payoff Ladder is missing for commercial long-form execution.
-10. Name & Term Gate is missing or failed.
-11. Initial wiki bootstrap is missing.
-12. Base settings for the active novel are missing.
-13. Reality-causal preflight says the core event is unnatural.
-14. Chapter trend convergence is missing.
-15. Gate A chapter intent has not been approved.
-16. Important scene has no approved Gate B scene plan.
-17. Actor cognition boundary is missing for an important actor who drives chapter logic.
-18. The protagonist has no active growth stage toward final form.
-19. The chapter has no usable protagonist gain when gain is required.
-20. The main scene has no convergence point.
-21. Unapproved invented terms appear where ordinary description would be clearer.
-22. The story relies on system/report/log/status change as climax.
-23. The user has not approved the current unit as canon.
+1. Fast Trial is being mistaken for canon.
+2. Genre mode is unclear.
+3. Genre operating model is missing or too vague.
+4. Initial wiki bootstrap is missing.
+5. Required base settings for the active novel are missing.
+6. Name & Term Gate is missing for recurring names or invented terms.
+7. Relevant wiki material has not been retrieved before discussion.
+8. A proposed change affects existing canon but no conflict check has been made.
+9. A discussion decision is being treated as canon before user approval.
+10. A draft changes canon without explicit user approval.
+11. A scene or chapter depends on facts stored only in chat memory rather than the wiki.
+12. Time-aware state is needed but the relevant timepoint or state record is missing.
+13. A major entity acts with knowledge, ability, authority, or motivation not supported by its current state.
+14. A generated unit replaces story action with abstract explanation, interface text, report text, or summary-only prose.
 
-Do not plan the next formal chapter if any of these are unresolved:
+Do not plan the next canon-dependent unit if any are true:
 
-1. Approved chapter has no current-format chapter state file.
-2. World / civilization trend progress was not recorded.
-3. Earth status progress was not recorded when relevant.
-4. Protagonist final-form progress was not recorded.
-5. Reader hook/payoff delivered was not recorded for an important chapter.
-6. Reader reward delivered was not recorded when relevant.
-7. New confirmed character / organization / world facts were not synchronized.
-8. Newly approved or rejected terms were not synchronized into the name registry.
-9. Next chapter constraints are missing.
-10. The next chapter would need to rely on chat memory instead of wiki state.
-11. The previous draft unit was not explicitly approved as canon.
+1. Approved changes were not synchronized.
+2. New confirmed entity, event, state, relationship, name, or term facts were not recorded.
+3. Important consequences were not recorded as Event or State changes.
+4. The next unit would rely on chat memory instead of wiki state.
+5. The previous generated unit was not explicitly approved as canon.
 
 ## Repository Layout
 
@@ -239,6 +262,7 @@ reference_settings/
 
 docs/
   current_execution_flow.md
+  narrative_model.md
   workflow_layers.md
   interactive_writing_flow.md
   file_roles.md
@@ -249,14 +273,14 @@ prompts/
   00_*.md   setup / operating model / name and term gate / wiki bootstrap / planning prompts
   01_*.md   opening and drafting prompts
   02_*.md   chapter / scene prompts
-  04_*.md   review hooks
+  04_*.md   consistency and targeted review hooks
   05_*.md   wiki sync / canon update prompts
 
 governance/
   wiki retrieval and write rules
   base setting reviews
-  reality / object / plot / growth / voice / AI-expression reviews
-  review priority and conflict resolution (review_priority.md)
+  reality / object / plot / growth / voice / AI-expression checks
+  review priority and conflict resolution
 
 novels/
   <novel_id>/
@@ -268,9 +292,10 @@ novels/
       timeline.md
       relationships.md
       foreshadowing.md
-      protagonist_growth.md
-      characters/
-      world/
-      organizations/
+      entities/
+      events/
+      states/
+      sessions/
+      mutations/
       chapter_states/
 ```
