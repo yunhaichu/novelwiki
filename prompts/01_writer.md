@@ -1,54 +1,56 @@
 # Writer Prompt
 
-Use this prompt to draft an approved prose unit for any novel in this repository.
+Use this prompt to generate an approved bounded prose or narrative unit for any novel in this repository.
 
-This prompt no longer defaults to writing a full chapter. In the interactive workflow, drafting happens only after Gate A chapter intent approval and Gate B scene plan approval.
+This prompt does not default to writing a full chapter. In the collaborative workflow, generation happens only after relevant wiki retrieval, user discussion, and user-approved output scope.
 
 ## Required Inputs
 
 Read the current novel wiki before writing:
 
-- project direction
-- type contract if present
-- base settings
-- style rules
-- name registry
-- protagonist file
-- planned character files
-- relevant world, location, item, organization, process, or relationship files
-- previous chapter state
-- relevant open questions
-- `governance/wiki_retrieval_rules.md`
-- `prompts/00_name_term_gate.md`
-- approved Gate A chapter intent
-- approved Gate B scene plan
-- `governance/anti_record_driven_plot.md` when the unit involves systems, reports, logs, files, workflows, institutions, or records
-- `prompts/02_scene_convergence.md` output if available
+- project direction;
+- genre or type contract if present;
+- base settings;
+- style rules;
+- name registry;
+- relevant Entity records;
+- relevant Timepoint records;
+- relevant State records;
+- relevant Relationship records;
+- relevant Event records;
+- relevant Session / Mutation records when the current output depends on previous user decisions;
+- relevant open questions;
+- `docs/narrative_model.md`;
+- `docs/interactive_writing_flow.md`;
+- `governance/wiki_retrieval_rules.md` if present;
+- `prompts/00_name_term_gate.md` when names or recurring terms are involved;
+- `governance/anti_record_driven_plot.md` when the unit involves systems, reports, logs, files, workflows, institutions, or records;
+- `prompts/02_scene_convergence.md` output if available.
 
 ## Retrieval Plan
 
 Before writing, prepare a short retrieval plan for internal use or for the user when requested:
 
 ```text
-Expected characters:
-Expected locations:
-Expected objects:
-Relevant organizations or processes:
-Relevant base setting rules:
+Expected entities:
+Relevant timepoint:
+Relevant states:
+Relevant relationships:
+Relevant events:
+Relevant rule-system or base-setting constraints:
 Relevant approved names and terms:
 Relevant open questions:
 Files read:
-Approved Gate A source:
-Approved Gate B source:
+User-approved output scope:
 ```
 
-Do not write detailed claims about a character, object, place, organization, process, rule, term, or unresolved question if the matching wiki file was not read.
+Do not write detailed claims about an entity, event, place, organization, process, rule, term, relationship, or unresolved question if the matching wiki record was not read.
 
-Reference settings under `reference_settings/` are not canon. Use the novel-specific `wiki/base_settings.md` and approved wiki files as canon.
+Reference settings under `reference_settings/` are not canon. Use the novel-specific wiki and approved records as canon.
 
-## Interactive Drafting Boundary
+## Generation Boundary
 
-Draft only the approved unit.
+Generate only the approved unit.
 
 A unit may be:
 
@@ -56,44 +58,48 @@ A unit may be:
 - one subscene;
 - one bounded chapter segment;
 - one transition passage;
-- one dialogue sequence.
+- one dialogue sequence;
+- one scene sketch;
+- one event summary;
+- one entity card;
+- one wiki-ready update draft.
 
-Do not continue into the next scene, solve the next design question, add a new unapproved character, or create a durable canon fact that was not allowed by Gate A / Gate B.
+Do not continue into the next scene, solve the next design question, add a new unapproved entity, or create a durable canon fact outside the approved scope.
 
-If the approved plan is structurally weak, output `REVISE PLAN` with the smallest reason instead of writing around the weakness.
+If the approved scope is structurally weak, output `REVISE SCOPE` with the smallest reason instead of writing around the weakness.
 
-If required canon is missing, output `MISSING CANON` with the missing file or fact instead of inventing it.
+If required canon is missing, output `MISSING CANON` with the missing record or fact instead of inventing it.
 
-If the unit needs a new name or term, stop for Name & Term Gate unless the user explicitly asks for ordinary descriptive placeholder language.
+If the unit needs a new name or recurring term, stop for Name & Term Gate unless the user explicitly asks for ordinary descriptive placeholder language.
 
-## Drafting Rules
+## Generation Rules
 
-The unit should move the story toward the approved pressure, status change, relationship change, resource change, knowledge change, access change, or irreversible consequence.
+The unit should move the story toward the approved pressure, status change, relationship change, resource change, knowledge change, access change, event consequence, or reader-facing movement.
 
-The protagonist should stay within known authority, ability, resource, knowledge, and access boundaries.
+Entities should stay within known authority, ability, resource, knowledge, access, and time-aware state boundaries.
 
-The protagonist should not solve every problem cleanly. Hesitation, misunderstanding, partial success, cost, missed chance, trace left behind, or increased suspicion can be more believable than perfect action.
+A central actor should not solve every problem cleanly unless the approved design specifically requires it. Hesitation, misunderstanding, partial success, cost, missed chance, trace left behind, increased suspicion, or delayed consequence can be more believable than perfect action.
 
-Recurring side characters should have their own pressure, desire, fear, possible loss, role limit, or institutional pressure. They should not exist only to make the protagonist look calm, clever, or funny.
+Recurring secondary entities should have their own pressure, desire, fear, possible loss, role limit, social position, or institutional pressure. They should not exist only to make the central actor look calm, clever, funny, righteous, or impressive.
 
-Temporary characters may be functional, but their lines should not feel like forced prompts for the protagonist.
+Temporary entities may be functional, but their dialogue and action should still be grounded in the scene.
 
-## Xiaobai Prose Rule
+## Clear Prose Rule
 
-Default prose should be Chinese webnovel xiaobai style unless the user explicitly asks otherwise.
+Default prose should be clear and readable unless the user explicitly asks for another style.
 
-Xiaobai style here means:
+Clear prose means:
 
 - clear subject, clear action, clear consequence;
 - short and medium sentences are allowed;
-- simple words over elegant words;
+- concrete words over decorative abstraction;
 - dialogue and action carry the scene;
-- emotional pressure is shown through repeated small actions and concrete trouble;
+- emotional pressure is shown through visible behavior, repeated attempts, changed access, blocked action, or concrete trouble;
 - the reader should not need to reread a sentence to understand what happened.
 
 Do not write like a report, essay, commentary, trailer, or final summary.
 
-Do not pursue concise elegance.
+Do not pursue concise elegance at the cost of scene clarity.
 
 It is allowed to be a little verbose if the extra words are concrete:
 
@@ -105,59 +111,11 @@ It is allowed to be a little verbose if the extra words are concrete:
 - a small object is moved, lost, hidden, or checked;
 - pressure lands on a visible person.
 
-Bad compression:
-
-```text
-他意识到自己已经没有退路。
-```
-
-Better xiaobai expansion:
-
-```text
-他看着门口的红灯。
-
-红灯没有变。
-
-他又刷了一次工牌。
-
-还是红的。
-
-身后有人开始催。
-
-他把工牌攥进手心，才发现掌心全是汗。
-```
-
-Bad summary:
-
-```text
-这件事让所有人的关系都发生了变化。
-```
-
-Better xiaobai expansion:
-
-```text
-左手分拣工没有再叫他二一九。
-
-她把工具盒往自己那边挪了半寸。
-
-马宽伸手去拿胶带时，摸了个空。
-
-她低头干活，像没看见。
-```
-
 ## Anti-Summary Rule
 
 Do not replace story with conclusion.
 
-Avoid narrator summary lines such as:
-
-```text
-这意味着他再也回不到从前。
-他终于明白了这个世界的残酷。
-真正的麻烦才刚刚开始。
-所有人都被卷了进来。
-命运的齿轮开始转动。
-```
+Avoid narrator summary lines that merely announce a realization, a fate, a relationship change, a world truth, or an abstract escalation.
 
 If the sentence is a conclusion, turn it into:
 
@@ -167,7 +125,8 @@ If the sentence is a conclusion, turn it into:
 - a small failure;
 - a visible reaction;
 - an object or route changing hands;
-- someone refusing to answer.
+- someone refusing to answer;
+- someone changing position, access, or behavior.
 
 ## Narrative Economy Rule
 
@@ -191,7 +150,7 @@ A sentence should usually do at least one of the following:
 Cut or rewrite sentences that only:
 
 - summarize what the reader already understands;
-- explain the protagonist's psychology after the choice already shows it;
+- explain psychology after the choice already shows it;
 - repeat the same cost, limitation, or rule without new scene pressure;
 - announce why a moment matters;
 - turn subtext into text;
@@ -213,22 +172,12 @@ This applies to:
 - process names;
 - ability names;
 - anomaly names;
-- worker slang;
+- slang;
 - system-state labels;
-- color/status shorthand.
+- color/status shorthand;
+- recurring invented terms.
 
 If a term has not passed the gate, use ordinary description.
-
-Prefer:
-
-```text
-门口的灯变成黄色。
-那块板被机器标成报废件。
-楼上的合规员下来了。
-那股灰色反应还没有名字。
-```
-
-over unapproved compact terms.
 
 A term is allowed only when:
 
@@ -252,28 +201,21 @@ what they fear
 what they misread
 what they can physically do
 what they will not say openly
+what their current state allows
 ```
 
-Before writing an important scene, identify the convergence point: the person, object, route, room, witness, decision, or risk that multiple characters want to move, protect, take, hide, block, expose, or control.
+Before writing an important scene, identify the convergence point: the person, object, route, room, witness, decision, resource, rule, or risk that multiple entities want to move, protect, take, hide, block, expose, control, or reinterpret.
 
 Then write the scene through characters acting around that convergence point.
 
-Avoid narrator summaries such as:
-
-```text
-everyone realized the situation had changed
-the case was no longer simple
-all sides began to compete for the child
-the real conflict had just begun
-he understood that he had crossed a line
-```
+Avoid narrator summaries that announce everyone understood the situation, the real conflict began, the case changed, fate shifted, or the world revealed itself.
 
 Replace them with character performance:
 
-- someone blocks a doorway;
+- someone blocks a route;
 - someone hides an object;
 - someone changes testimony;
-- someone refuses to hand over a person;
+- someone refuses to hand over a person or item;
 - someone looks at a different target;
 - someone moves closer or steps back;
 - someone stops answering;
@@ -291,12 +233,12 @@ Use `wiki/base_settings.md` to check:
 - what visible support a process requires;
 - what resources, documents, tools, or access rights exist;
 - what knowledge each party can plausibly have;
-- what mechanisms, powers, anomalies, or goldfingers can do at the current stage if any;
+- what mechanisms, powers, anomalies, or special rules can do at the current stage if any;
 - what setting moves are forbidden.
 
 Do not import unused reference-setting material directly into prose.
 
-If the unit needs a new institution, process, resource, power function, anomaly rule, social rule, name, or term not covered by base settings / name registry, flag the gap rather than silently inventing it.
+If the unit needs a new institution, process, resource, rule function, anomaly rule, social rule, name, or term not covered by base settings / name registry, flag the gap rather than silently inventing it.
 
 ## Scene-First Plot Rule
 
@@ -315,17 +257,17 @@ Can the same plot effect be carried by a person or object instead?
 
 If the answer is unclear, remove the system/record beat or demote it to background.
 
-The unit climax should not be clicking, submitting, uploading, approving, filing, logging, receiving a popup, or watching status change.
+The unit climax should not be clicking, submitting, uploading, approving, filing, logging, receiving a popup, or watching status change unless the user explicitly approves that as the story form.
 
 Prefer climax carried by:
 
 - one person blocking another;
-- someone trying to take a child, witness, object, or key person away;
+- someone trying to take a person, witness, object, or key resource away;
 - someone hiding, protecting, swapping, refusing, or exposing a physical object;
 - someone changing testimony in front of another person;
 - someone arriving in person and changing access;
 - a relationship visibly shifting;
-- a protagonist using a scene object or relationship as leverage.
+- a central actor using a scene object or relationship as leverage.
 
 ## Process Expression Rule
 
@@ -348,67 +290,69 @@ Avoid consecutive paragraphs explaining how the process works unless the explana
 
 ## World Function In Prose Rule
 
-If a scene involves labor, ritual, process, institution, task, exam, mission, repair, medical handling, sect work, business workflow, or similar recurring activity, prose must show enough functional purpose for the scene to feel real.
+If a scene involves labor, ritual, process, institution, task, exam, mission, repair, medical handling, business workflow, official procedure, group duty, or similar recurring activity, prose must show enough functional purpose for the scene to feel real.
 
 Do not explain the full system. Reveal only the smallest visible function needed for the reader to understand why the task exists and why errors matter.
 
-Prefer one concrete line from an actor or one visible consequence:
+Prefer one concrete line from an actor or one visible consequence over a paragraph explaining the whole supply chain.
 
-```text
-"黑灰送灵田，药泥明早有人来熬。掺错一桶，三天白干。"
-```
-
-over a paragraph explaining the whole supply chain.
-
-If the task has no world function beyond giving the protagonist something to touch, redesign the scene.
+If the task has no world function beyond giving the central actor something to touch, redesign the scene.
 
 ## Reader Itch Rule
 
-For opening chapters and major arc starts, make the reader's next question concrete and protagonist-bound.
+For opening units and major arc starts, make the reader's next question concrete and tied to the active scene.
 
-Bad:
+Avoid broad questions such as abstract truth, destiny, origin, or ultimate world secret unless the approved genre and scene specifically require them.
 
-```text
-What is the truth of this world?
-```
-
-Better:
-
-```text
-Can the protagonist keep the key person or object in the room long enough to stop a stronger organization from taking it?
-```
+Prefer a concrete question about whether an actor can keep, reach, hide, prove, protect, expose, escape, persuade, survive, or change something under immediate pressure.
 
 ## Hard Anti-AI Taste Rules
 
 When two similar events appear close together, do not use the same narrative sequence twice. The second pass must change focus, such as bodily sensation, visible detail, social reaction, mistake, hesitation, consequence, or missing information.
 
-Chapter endings should usually land on action, object, bodily sensation, unfinished choice, concrete consequence, or changed relationship.
+Unit endings should usually land on action, object, bodily sensation, unfinished choice, concrete consequence, or changed relationship.
 
 Avoid defaulting to polished, symmetrical, aphoristic, or explanatory closing lines.
 
 ## Conditional Anti-AI Taste Rules
 
-Do not overuse the same joke, object, phrase, or reaction in a single unit unless each repetition adds new information, a new cost, a new choice, or a relationship change.
+Do not overuse the same joke, object, phrase, or reaction in a single unit unless each repetition adds new information, a new cost, a new choice, or a changed relationship.
 
-Do not let recurring-character dialogue become repeated setup-and-response rhythm.
+Do not turn every intense moment into silence, coldness, stillness, breath, pulse, light, shadow, or temperature.
 
-Each chapter should ideally have one concrete memory point that belongs to this story, especially for first chapters, new arcs, and major turning chapters.
+Do not make every competent character speak in short cryptic lines.
 
-## Output
+Do not make every organization sound like a villain, teacher, judge, or puzzle box unless the wiki supports it.
 
-By default, output only the approved prose unit.
+## Output Format
 
-If the user asks for workflow output, add this after the prose:
+Return only the requested output.
+
+If the user requests prose, return prose.
+
+If the user requests a scene sketch, return a scene sketch.
+
+If the user requests a wiki-ready update, return the update.
+
+When the output may change canon, append a short status card unless the user explicitly asks for prose only:
 
 ```text
 Canon changes if approved:
 - ...
 
-Unresolved reader debt:
+Affected entities:
+- ...
+
+Possible state changes:
 - ...
 
 Next decision point:
 - ...
 ```
 
-Do not output wiki sync content unless the user explicitly approves the unit as canon and asks for sync.
+If no canon change is introduced, say:
+
+```text
+Canon changes if approved:
+- None.
+```
