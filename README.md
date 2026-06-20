@@ -12,7 +12,7 @@ The repository stores three kinds of material:
 2. Reusable reference settings for genre, authority, process, resource, object, space, social life, and power-system boundaries.
 3. Per-novel canonical wiki, drafts, chapter states, and update records.
 
-ChatGPT is responsible for planning, base-setting construction, name-and-term gate checking, writing, revision, review assistance, wiki bootstrap, and wiki sync after approved formal chapters. The wiki is responsible for long-term memory. The user remains the final approver.
+ChatGPT is responsible for planning, base-setting construction, name-and-term gate checking, interactive drafting, local review assistance, wiki bootstrap, and wiki sync after approved formal chapters. The wiki is responsible for long-term memory. The user remains the final approver.
 
 ## Current Workflow Entry
 
@@ -21,12 +21,15 @@ Use these files in this order:
 ```text
 1. docs/current_execution_flow.md
 2. docs/workflow_layers.md
-3. docs/file_roles.md
+3. docs/interactive_writing_flow.md
+4. docs/file_roles.md
 ```
 
-`docs/current_execution_flow.md` is a short path-selection card. It tells you whether to use the standard flow, macro modern-to-cosmic flow, or non-canon fast trial mode.
+`docs/current_execution_flow.md` is a short path-selection card. It tells you whether to use the standard flow, macro modern-to-cosmic flow, or non-canon fast trial mode, and it defines the current stop conditions.
 
 `docs/workflow_layers.md` is the authoritative full execution-order index.
+
+`docs/interactive_writing_flow.md` defines the default interactive protocol: discuss, approve, draft bounded unit, local self-check, user canon approval, then wiki sync.
 
 `docs/file_roles.md` explains what each file is responsible for.
 
@@ -43,10 +46,13 @@ Run Layer 1B New Novel Setup
 -> Run Layer 2 Actor Setup
 -> Run Layer 3 Volume / Arc Planning
 -> Run Layer 4 Chapter Trend + Hook/Payoff Convergence
+-> Interactive Approval Gate A: chapter intent
 -> Run Layer 5 Reader Entry / Opening Control when needed
 -> Run Layer 6 Scene Design
--> Run Layer 7 Drafting
--> Run Layer 8 Review
+-> Interactive Approval Gate B: scene plan
+-> Run Layer 7 Drafting in approved units
+-> Layer 8 Local Self-Check / Targeted Review only when triggered
+-> User Canon Approval
 -> Run Layer 9 Wiki Sync
 ```
 
@@ -60,10 +66,13 @@ Run Layer 1A Macro Modern-To-Cosmic Setup
 -> Run Layer 2 Actor Setup
 -> Run Layer 3 Volume / Arc Planning
 -> Run Layer 4 Chapter Trend + Hook/Payoff Convergence
+-> Interactive Approval Gate A: chapter intent
 -> Run Layer 5 Modern-To-Cosmic Opening / Reader Entry
 -> Run Layer 6 Scene Design
--> Run Layer 7 Drafting
--> Run Layer 8 Review
+-> Interactive Approval Gate B: scene plan
+-> Run Layer 7 Drafting in approved units
+-> Layer 8 Local Self-Check / Targeted Review only when triggered
+-> User Canon Approval
 -> Run Layer 9 Wiki Sync
 ```
 
@@ -82,6 +91,28 @@ non-canon desire test draft
 It must not be treated as an approved chapter draft. It must not create chapter state. It must not plan chapter two.
 
 Formal drafting still requires Layer 1B and Wiki Bootstrap.
+
+## Interactive Approval Rule
+
+The default formal writing loop is:
+
+```text
+read canon wiki
+-> propose chapter / scene intent
+-> wait for user approval or correction
+-> design approved scene beat
+-> wait for user approval or correction
+-> draft only the approved unit
+-> perform local self-check only
+-> user approves / revises / rejects
+-> sync only approved canon
+```
+
+Hard rule:
+
+```text
+No user approval, no canon expansion.
+```
 
 ## Name & Term Gate Rule
 
@@ -149,7 +180,7 @@ Update character, organization, world, growth, timeline, relationship, foreshado
 Hard rule:
 
 ```text
-Approved formal chapter -> wiki sync -> next chapter.
+User-approved canon -> wiki sync -> next canon-dependent planning step.
 ```
 
 `prompts/06_chapter_state_update.md` is deprecated. Do not use it in the current workflow.
@@ -172,14 +203,15 @@ Do not formal draft if any of these are unresolved:
 12. Base settings for the active novel are missing.
 13. Reality-causal preflight says the core event is unnatural.
 14. Chapter trend convergence is missing.
-15. Important chapter has no concrete reader hook/payoff.
-16. Actor cognition boundary is missing for an important actor who drives chapter logic.
-17. The protagonist has no active growth stage toward final form.
-18. The chapter has no usable protagonist gain when gain is required.
-19. The main scene has no convergence point.
-20. The key object has no natural function.
+15. Gate A chapter intent has not been approved.
+16. Important scene has no approved Gate B scene plan.
+17. Actor cognition boundary is missing for an important actor who drives chapter logic.
+18. The protagonist has no active growth stage toward final form.
+19. The chapter has no usable protagonist gain when gain is required.
+20. The main scene has no convergence point.
 21. Unapproved invented terms appear where ordinary description would be clearer.
 22. The story relies on system/report/log/status change as climax.
+23. The user has not approved the current unit as canon.
 
 Do not plan the next formal chapter if any of these are unresolved:
 
@@ -192,7 +224,8 @@ Do not plan the next formal chapter if any of these are unresolved:
 7. New confirmed character / organization / world facts were not synchronized.
 8. Newly approved or rejected terms were not synchronized into the name registry.
 9. Next chapter constraints are missing.
-10. The next chapter would need to rely on chat memory rather than wiki state.
+10. The next chapter would need to rely on chat memory instead of wiki state.
+11. The previous draft unit was not explicitly approved as canon.
 
 ## Repository Layout
 
@@ -207,6 +240,7 @@ reference_settings/
 docs/
   current_execution_flow.md
   workflow_layers.md
+  interactive_writing_flow.md
   file_roles.md
   emergent_plot_workflow.md
   backups/
@@ -239,44 +273,4 @@ novels/
       world/
       organizations/
       chapter_states/
-    drafts/
 ```
-
-## Reference Settings Rule
-
-Files under `reference_settings/` are reusable references, not canon.
-
-They may provide boundaries for identity, authority, process, resource, object, space, social life, language register, and power or anomaly rules. They must not be copied into a novel wiki as confirmed facts.
-
-A reference-setting idea becomes usable canon only after it is accepted into the current novel's own `wiki/base_settings.md` or another approved canon file.
-
-Existing test novels under `novels/` are regression examples and workflow tests. They must not define global system direction.
-
-Legacy chapter state files may predate the current template. They should not block new workflow tests unless the user explicitly resumes that novel.
-
-## Novel Rule
-
-Do not mix multiple novels in one wiki.
-
-A new formal novel must be created under:
-
-```text
-novels/<novel_id>/
-```
-
-Each formal novel has its own:
-
-- project direction;
-- genre mode contract;
-- genre operating model or equivalent reality model;
-- base settings;
-- protagonist growth track;
-- style rules;
-- name registry;
-- character files;
-- organization files;
-- world rules;
-- timeline;
-- relationship state;
-- foreshadowing state;
-- chapter states.
