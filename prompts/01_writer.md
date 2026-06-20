@@ -1,6 +1,8 @@
 # Writer Prompt
 
-Use this prompt to draft the next chapter of any novel in this repository.
+Use this prompt to draft an approved prose unit for any novel in this repository.
+
+This prompt no longer defaults to writing a full chapter. In the interactive workflow, drafting happens only after Gate A chapter intent approval and Gate B scene plan approval.
 
 ## Required Inputs
 
@@ -18,12 +20,14 @@ Read the current novel wiki before writing:
 - relevant open questions
 - `governance/wiki_retrieval_rules.md`
 - `prompts/00_name_term_gate.md`
-- `governance/anti_record_driven_plot.md` when the chapter involves systems, reports, logs, files, workflows, institutions, or records
+- approved Gate A chapter intent
+- approved Gate B scene plan
+- `governance/anti_record_driven_plot.md` when the unit involves systems, reports, logs, files, workflows, institutions, or records
 - `prompts/02_scene_convergence.md` output if available
 
 ## Retrieval Plan
 
-Before writing, prepare a short retrieval plan:
+Before writing, prepare a short retrieval plan for internal use or for the user when requested:
 
 ```text
 Expected characters:
@@ -34,21 +38,41 @@ Relevant base setting rules:
 Relevant approved names and terms:
 Relevant open questions:
 Files read:
+Approved Gate A source:
+Approved Gate B source:
 ```
 
 Do not write detailed claims about a character, object, place, organization, process, rule, term, or unresolved question if the matching wiki file was not read.
 
 Reference settings under `reference_settings/` are not canon. Use the novel-specific `wiki/base_settings.md` and approved wiki files as canon.
 
-## Chapter Drafting Rules
+## Interactive Drafting Boundary
 
-Write one chapter with one clear drive.
+Draft only the approved unit.
 
-The chapter should normally move the story toward the current novel project's long-term pressure, status change, relationship change, resource change, knowledge change, access change, or irreversible consequence. Breather chapters are allowed when the novel wiki supports that pacing.
+A unit may be:
+
+- one scene;
+- one subscene;
+- one bounded chapter segment;
+- one transition passage;
+- one dialogue sequence.
+
+Do not continue into the next scene, solve the next design question, add a new unapproved character, or create a durable canon fact that was not allowed by Gate A / Gate B.
+
+If the approved plan is structurally weak, output `REVISE PLAN` with the smallest reason instead of writing around the weakness.
+
+If required canon is missing, output `MISSING CANON` with the missing file or fact instead of inventing it.
+
+If the unit needs a new name or term, stop for Name & Term Gate unless the user explicitly asks for ordinary descriptive placeholder language.
+
+## Drafting Rules
+
+The unit should move the story toward the approved pressure, status change, relationship change, resource change, knowledge change, access change, or irreversible consequence.
 
 The protagonist should stay within known authority, ability, resource, knowledge, and access boundaries.
 
-The protagonist should not solve every problem cleanly over time. Hesitation, misunderstanding, partial success, cost, missed chance, trace left behind, or increased suspicion can be more believable than perfect action.
+The protagonist should not solve every problem cleanly. Hesitation, misunderstanding, partial success, cost, missed chance, trace left behind, or increased suspicion can be more believable than perfect action.
 
 Recurring side characters should have their own pressure, desire, fear, possible loss, role limit, or institutional pressure. They should not exist only to make the protagonist look calm, clever, or funny.
 
@@ -120,213 +144,6 @@ Better xiaobai expansion:
 
 她低头干活，像没看见。
 ```
-
-
-
-## Xiaobai Writing Examples
-
-The following examples show what xiaobai prose looks like in practice. Use them as reference, not as templates to copy.
-
-### Compression vs Expansion
-
-Bad — compressed into a single abstract line:
-
-```text
-他意识到自己已经没有退路。
-```
-
-Better — show the impossibility through action:
-
-```text
-他看着门口的红灯。
-
-红灯没有变。
-
-他又刷了一次工牌。
-
-还是红的。
-
-身后有人开始催。
-
-他把工牌攥进手心，才发现掌心全是汗。
-```
-
-### Summary vs Scene
-
-Bad — summary that tells the reader what happened:
-
-```text
-这件事让所有人的关系都发生了变化。
-```
-
-Better — show the change through behavior:
-
-```text
-左手分拣工没有再叫他二一九。
-
-她把工具盒往自己那边挪了半寸。
-
-马宽伸手去拿胶带时，摸了个空。
-
-她低头干活，像没看见。
-```
-
-### Dialogue
-
-Bad — dialogue that serves the narrator instead of the character:
-
-```text
-"你不懂，"他说，"这个系统的风险太高了，我不能让它继续运转。"
-```
-
-Better — dialogue that serves the character's goal:
-
-```text
-"把权限交出来。"
-
-他把平板递过去。
-
-对方没接。
-
-"不是给你看，"他把平板按在桌面上，屏幕朝上，"是你去跟上面说，这条线今天停了。"
-
-对方看了他一眼，没说话。
-```
-
-### Process Showing vs Process Explaining
-
-Bad — process explained as background:
-
-```text
-分拣系统采用三级分拣机制：一级为初步分类，二级为深度检测，三级为人工复核。每一级都会自动记录分拣结果，当三级判定异常时，工单会被标记并转交质检部门。
-```
-
-Better — process shown through friction:
-
-```text
-他扫了工单。
-
-一级通过。
-
-他刚要放行，屏幕跳了一下，变成黄色。
-
-二级检测标了异常。
-
-他翻到质检栏，负责的那个人不在工位上。
-
-他按了转交。
-
-屏幕显示：质检员未响应，工单滞留。
-```
-
-### Chapter Ending
-
-Bad — polished, explanatory ending:
-
-```text
-他终于明白了，这一切才刚刚开始。
-```
-
-Better — concrete consequence or unfinished action:
-
-```text
-门外的脚步声远了。
-
-他坐在地上，背靠着墙，手里的手机屏幕还亮着。
-
-上面是一条未发送的消息："我知道你在哪。"
-
-他没有点发送。
-
-也没有关机。
-```
-
-### Pressure Through Object
-
-Bad — pressure described as emotion:
-
-```text
-他很紧张，手心不断出汗，心跳加速，呼吸也变得急促。
-```
-
-Better — pressure shown through interaction with objects:
-
-```text
-他把工牌翻过来又翻过去。
-
-边缘的塑料裂了一条缝。
-
-他试图把裂口对准手指，好像这样就能捏得更紧一些。
-
-裂口还是开了。
-
-塑料片掉在地上。
-
-他没去捡。
-```
-
-### Relationship Shift Through Behavior
-
-Bad — narrator states a change:
-
-```text
-她开始对他产生了好感。
-```
-
-Better — show the shift through behavior change:
-
-```text
-她把水递过去的时候，手停在半秒。
-
-然后递到了他面前。
-
-"喝。"
-
-他没接。
-
-"不喝我扔了。"
-
-他把水接过去，喝了一口，放在桌上。
-
-她看了那口水的位置，没说话。
-```
-
-### World Function Through Character Line
-
-Bad — explaining the system:
-
-```text
-灵粥锅底水是炼药后的废料，通常用于浇灌灵田。因为含有微量残余灵气，掺入土壤后能使普通作物增产一成左右。
-```
-
-Better — one line from a character:
-
-```text
-"黑灰送灵田，药泥明早有人来熬。掺错一桶，三天白干。"
-```
-
-### Habitual Behavior Under Different Pressure
-
-Bad — same reaction in every situation:
-
-```text
-他皱起眉头，感到一阵不安，握紧了拳头。
-```
-
-Better — different reactions based on the specific situation:
-
-```text
-【面对上级时】
-"明白。"他点了点头，把记录本合上。
-
-【面对同辈时】
-"这事不对。"他把本子推过去，"你看这段。"
-
-【面对下限时】
-"按流程走，"他没说为什么，"别问。"
-```
-
-Use these examples as reference for the style. Do not copy them directly — replace the specific details with your scene's characters, objects, and setting.
 
 ## Anti-Summary Rule
 
@@ -479,7 +296,7 @@ Use `wiki/base_settings.md` to check:
 
 Do not import unused reference-setting material directly into prose.
 
-If the chapter needs a new institution, process, resource, power function, anomaly rule, social rule, name, or term not covered by base settings / name registry, flag the gap rather than silently inventing it.
+If the unit needs a new institution, process, resource, power function, anomaly rule, social rule, name, or term not covered by base settings / name registry, flag the gap rather than silently inventing it.
 
 ## Scene-First Plot Rule
 
@@ -498,7 +315,7 @@ Can the same plot effect be carried by a person or object instead?
 
 If the answer is unclear, remove the system/record beat or demote it to background.
 
-The chapter climax should not be clicking, submitting, uploading, approving, filing, logging, receiving a popup, or watching status change.
+The unit climax should not be clicking, submitting, uploading, approving, filing, logging, receiving a popup, or watching status change.
 
 Prefer climax carried by:
 
@@ -571,7 +388,7 @@ Avoid defaulting to polished, symmetrical, aphoristic, or explanatory closing li
 
 ## Conditional Anti-AI Taste Rules
 
-Do not overuse the same joke, object, phrase, or reaction in a single chapter unless each repetition adds new information, a new cost, a new choice, or a relationship change.
+Do not overuse the same joke, object, phrase, or reaction in a single unit unless each repetition adds new information, a new cost, a new choice, or a relationship change.
 
 Do not let recurring-character dialogue become repeated setup-and-response rhythm.
 
@@ -579,4 +396,19 @@ Each chapter should ideally have one concrete memory point that belongs to this 
 
 ## Output
 
-Output only the chapter draft unless the user asks for planning notes.
+By default, output only the approved prose unit.
+
+If the user asks for workflow output, add this after the prose:
+
+```text
+Canon changes if approved:
+- ...
+
+Unresolved reader debt:
+- ...
+
+Next decision point:
+- ...
+```
+
+Do not output wiki sync content unless the user explicitly approves the unit as canon and asks for sync.
