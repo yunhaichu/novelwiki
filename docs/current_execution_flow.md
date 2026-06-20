@@ -1,125 +1,72 @@
 # Current Execution Flow
 
-This is the short operational checklist for the current novel-generation workflow.
+This is the short operational checklist for the current human-AI collaborative novel workflow.
 
-Use this file only to choose the execution path, identify interactive checkpoints, and check stop conditions.
+Use this file to choose the execution path, identify required wiki retrieval, and check stop conditions.
 
+Detailed story-memory concepts belong in `docs/narrative_model.md`.
 Detailed layer logic belongs in `docs/workflow_layers.md`.
 File responsibilities belong in `docs/file_roles.md`.
-The interactive approval protocol belongs in `docs/interactive_writing_flow.md`.
+The interaction protocol belongs in `docs/interactive_writing_flow.md`.
 
 ## Operating Mode
 
-The default mode is now interactive.
+The default mode is collaborative and wiki-centered.
 
-Do not produce a full formal chapter in one uninterrupted pass unless the user explicitly asks for batch mode.
+Do not treat NovelWiki as a one-way batch generation pipeline. Do not produce a full formal chapter in one uninterrupted pass unless the user explicitly asks for batch mode.
 
-The normal chapter loop is:
+The normal loop is:
 
 ```text
-read canon wiki
--> propose chapter / scene intent
--> wait for user approval or correction
--> design approved scene beat
--> wait for user approval or correction
--> draft only the approved unit
--> perform local self-check only
--> user approves / revises / rejects
--> sync only approved canon
+retrieve relevant wiki records
+-> discuss the creative issue with the user
+-> propose options and expose conflicts
+-> user decides or redirects
+-> record approved decisions / mutations
+-> generate the requested bounded output when needed
+-> run consistency check
+-> user canon approval
+-> sync approved canon into the wiki
 ```
 
-The old heavy review layer is no longer the default. Most structural review must happen before drafting through interactive checkpoints. After drafting, use only the smallest review needed to catch contradictions, prose failure, or wiki-sync risk.
+Heavy review is not the default. Most structural problems should be handled during discussion and consistency checking before canon mutation or generation.
 
 ## Choose Flow
 
 ### Standard Long-Form Flow
 
-Use for ordinary long-form projects: xianxia, urban fantasy, cyberpunk, single-world fantasy, standard rebirth, or other non-cosmic stories.
+Use for ordinary long-form projects.
 
 ```text
-Run Layer 1B New Novel Setup, including Project Viability Gate
--> Run Layer 2 Actor Setup
--> Run Layer 3 Volume / Arc Planning
--> Run Layer 4 Chapter Trend + Hook/Payoff Convergence
--> Interactive Approval Gate A: chapter intent
--> Run Layer 5 Reader Entry / Opening Control when needed
--> Run Layer 6 Scene Design
--> Interactive Approval Gate B: scene plan
--> Run Layer 7 Drafting in approved units
--> Local Self-Check / Targeted Review only when triggered
+Run New Novel Setup
+-> Run Wiki Bootstrap
+-> Retrieve relevant Entity / Event / State / Relationship records
+-> Discuss arc, chapter, scene, or object design with the user
+-> Record approved decisions as Session / Mutation records when needed
+-> Generate only the approved unit when needed
+-> Run Consistency Check
 -> User Canon Approval
--> Run Layer 9 Wiki Sync
+-> Run Wiki Sync
 ```
 
-### Macro Modern-To-Cosmic Flow
+### Extended Arena Flow
 
-Use when the target story has modern Earth, cosmic civilizations, multiverse stages, cultivation + technology + magic, or civilization war.
+Use when the target story requires broad arenas, multiple rule systems, large social structures, long historical pressure, or multi-stage escalation.
 
 ```text
-Run Layer 1A Macro Modern-To-Cosmic Setup
--> Run Layer 1B New Novel Setup, including Project Viability Gate
--> Run Layer 2 Actor Setup
--> Run Layer 3 Volume / Arc Planning
--> Run Layer 4 Chapter Trend + Hook/Payoff Convergence
--> Interactive Approval Gate A: chapter intent
--> Run Layer 5 Modern-To-Cosmic Opening / Reader Entry
--> Run Layer 6 Scene Design
--> Interactive Approval Gate B: scene plan
--> Run Layer 7 Drafting in approved units
--> Local Self-Check / Targeted Review only when triggered
+Run Extended Arena Setup
+-> Run New Novel Setup
+-> Run Wiki Bootstrap
+-> Retrieve relevant Entity / Event / State / Relationship records
+-> Discuss pressure, rule systems, actors, consequences, and time-aware states with the user
+-> Record approved decisions as Session / Mutation records when needed
+-> Generate only the approved unit when needed
+-> Run Consistency Check
 -> User Canon Approval
--> Run Layer 9 Wiki Sync
+-> Run Wiki Sync
 ```
 
-## Interactive Approval Gates
-
-### Gate A: Chapter Intent
-
-Before scene design, present only:
-
-```text
-- chapter role in current volume / arc
-- current pressure
-- reader hook / payoff
-- protagonist usable gain or state movement
-- forbidden escalations
-- candidate scenes
-- open decision points for user choice
-```
-
-Do not write prose at Gate A.
-
-### Gate B: Scene Plan
-
-Before prose, present only:
-
-```text
-- scene objective
-- active actors and cognition limits
-- location / object anchors
-- beat list
-- dialogue intent if needed
-- expected payoff
-- canon facts that may be updated after approval
-```
-
-Do not write prose at Gate B.
-
-### Gate C: Draft Unit Approval
-
-Draft only the approved unit: one scene, one subscene, or one clearly bounded chapter segment.
-
-After each unit, provide:
-
-```text
-- what changed in canon if approved
-- unresolved reader debt
-- next decision point
-```
-
-Do not continue into the next unit without user approval unless the user explicitly switches to batch mode.
-
-## Fast Trial Mode
+### Fast Trial Mode
 
 Use this before committing to a full new-novel wiki when testing whether a concept has reader desire.
 
@@ -128,87 +75,143 @@ Fast Trial output is not canon.
 It may produce only:
 
 ```text
+non-canon concept sketch
 non-canon opening sketch
-non-canon chapter-one outline
+non-canon scene sketch
 non-canon desire test draft
 ```
 
 It must not be treated as an approved chapter draft.
-It must not create chapter state.
-It must not plan chapter two.
+It must not create canonical story facts.
+It must not create canon-dependent later planning.
 
-For macro modern-to-cosmic trial chapters, run only:
+If the non-canon test has no desire to continue, do not build the full wiki yet.
+
+Formal drafting still requires wiki bootstrap and user-approved canon decisions.
+
+## Required Collaboration Steps
+
+### Step 1: Retrieve Wiki Records
+
+Before any canon-dependent discussion or generation, retrieve relevant records:
 
 ```text
-Cosmic Civilization Arena
--> Earth Civilization Value
--> Unified Power Logic
--> Modern Chinese Entry Bridge
--> Reader Hook And Payoff Ladder
--> Modern-To-Cosmic Opening
--> Interactive Trial Approval
+- involved entities
+- current states at the relevant timepoint
+- recent or causal events
+- important relationships
+- applicable rule systems
+- approved names and terms
+- relevant prior sessions and mutations
 ```
 
-If the non-canon opening sketch has no desire to continue, do not build the full wiki yet.
+Do not rely on chat memory for durable facts.
 
-Formal drafting still requires Layer 1B, Project Viability Gate pass, and Wiki Bootstrap.
+### Step 2: Discuss
+
+The assistant may discuss characters, organizations, locations, rule systems, time-aware states, relationships, events, scene direction, dialogue direction, plot consequence, naming, or prose rendering.
+
+The assistant should show only the relevant retrieved constraints and then offer options or identify the unresolved decision.
+
+### Step 3: Decide
+
+The user decides.
+
+The assistant must not treat its own proposal as canon. The user may accept, reject, combine, redirect, or request another proposal.
+
+### Step 4: Record Approved Change
+
+When the user approves a durable change, record it in the smallest sufficient place:
+
+```text
+Entity
+Event
+Timepoint
+State
+Relationship
+Session
+Mutation
+name registry
+style record
+chapter state
+other project-specific wiki file
+```
+
+### Step 5: Generate When Needed
+
+Generate prose or design output only when the user asks for a concrete output.
+
+The output must stay inside the approved scope.
+
+### Step 6: Consistency Check
+
+Before canon mutation or canon-dependent generation, check:
+
+```text
+- no contradiction with retrieved wiki records
+- no unapproved names or terms
+- no entity acting outside its time-aware state
+- no actor omniscience
+- no unsupported rule-system change
+- important consequences are recorded as Event or State movement
+- no durable fact exists only in chat memory
+```
+
+### Step 7: Canon Approval And Sync
+
+```text
+user-approved canon -> consistency check -> wiki sync -> next canon-dependent step
+```
 
 ## Core Essence To Preserve
 
 Never remove these principles:
 
 ```text
-large arena first
-modern reader entry when applicable
-project viability before formal wiki
-reader hook/payoff every important chapter
-irreversible trend, not random event
+wiki state before canon-dependent discussion
+user decision before canon mutation
+time-aware states for durable changes
+facts recorded as events when they matter later
 local character choice, not author puppetry
 limited cognition, not omniscient actors
-Name & Term Gate before new terms
-wiki state before next chapter
-user approval before canon expansion
-xiaobai readable prose
+Name & Term Gate before recurring invented terms
+reader hook/payoff for important generated units
+clear prose through action, dialogue, reaction, process, and consequence
 ```
 
 ## Standard Stop Conditions
 
 Stop if any are true:
 
-1. Project Viability Gate has not passed before formal wiki bootstrap.
-2. Irreversible trend anchor is missing.
-3. Name & Term Gate is missing for new names or invented terms.
-4. Wiki bootstrap is missing before formal drafting.
-5. Chapter intent has not passed Gate A.
-6. Scene plan has not passed Gate B for an important scene.
-7. Chapter begins from a random event instead of trend convergence.
-8. Important chapter has no reader hook/payoff.
-9. Local choices do not pull toward a shared trend node.
-10. Prose uses invented shorthand where ordinary description is clearer.
-11. Draft uses summary voice instead of action/dialogue.
-12. Main scene has no convergence point.
-13. Active actors know things outside their position, evidence, or private knowledge boundary.
-14. Protagonist only suffers and gains no usable final-form asset.
-15. Chapter ends on abstract realization instead of concrete consequence.
-16. Next chapter would rely on chat memory instead of wiki state.
-17. A draft unit changes canon without explicit user approval.
+1. Fast Trial is being mistaken for canon.
+2. Genre mode is unclear.
+3. Genre operating model is missing or too vague.
+4. Name & Term Gate is missing for recurring names or invented terms.
+5. Wiki bootstrap is missing before formal canon-dependent work.
+6. Relevant wiki records have not been retrieved.
+7. A proposed change affects existing canon but no consistency check has been made.
+8. A discussion point is being treated as canon before user approval.
+9. A draft changes canon without explicit user approval.
+10. The next step would rely on chat memory instead of wiki state.
+11. Time-aware state is needed but the relevant timepoint or state record is missing.
+12. A major entity acts outside its current state, knowledge, authority, motivation, or ability.
+13. A generated unit uses summary voice instead of action, dialogue, reaction, process, and consequence.
+14. A generated unit replaces story action with interface, report, log, archive, status, or abstract explanation.
+15. A generated unit has no clear consequence, hook, or next decision point when the unit requires one.
 
-## Macro Story Stop Conditions
+## Extended Arena Stop Conditions
 
-For macro modern-to-cosmic stories, also stop if any are true:
+For stories with large arenas, multiple rule systems, or broad escalation, also stop if any are true:
 
-1. Cosmic civilization arena is missing.
-2. Earth is only a hometown and has no civilization value.
-3. Multiple power systems lack unified power logic.
-4. Modern protagonist loses modern identity after entry.
-5. Macro setup gets narrowed back into a small sect / city / island story without reason.
-6. Chapter one explains the whole universe instead of showing one small crack.
-7. Chapter one ignores first-contact psychological realism.
-8. No concrete question, crisis, choice, relationship tension, world reveal, mechanism reveal, or earned visible gain makes the reader continue.
-9. Earth status progress is not tracked after relevant formal chapters.
+1. The largest story arena is missing.
+2. The active rule systems lack shared operating logic or clear boundaries.
+3. Major organizations or social structures act without incentives, costs, or authority boundaries.
+4. The opening or current unit explains the whole world instead of presenting one concrete pressure point.
+5. A major change lacks affected entities, state changes, or event consequences.
+6. The story narrows into a smaller arena without user-approved reason.
 
 ## Canon Rule
 
 ```text
-User-approved draft unit -> local self-check -> user canon approval -> wiki sync -> next unit / next chapter
+User-approved decision or generated unit -> consistency check -> wiki sync -> next canon-dependent discussion / design / generation
 ```
