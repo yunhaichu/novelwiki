@@ -1,19 +1,19 @@
 # Interactive Writing Flow
 
-This file defines the default interaction protocol for formal novel writing.
+This file defines the default human-AI collaboration protocol for formal novel creation.
 
-It exists because the workflow should no longer depend on a full-chapter draft followed by a large review pass. The review burden should move earlier, into small approval gates before prose is written.
+NovelWiki should not operate as a batch drafting pipeline followed by heavy review. The normal process is discussion-first and wiki-centered: retrieve relevant story knowledge, discuss the creative problem, make a user-approved decision, update the wiki when needed, and generate content only when the user wants a concrete output.
 
 ## Core Rule
 
 ```text
-Discuss -> approve -> draft bounded unit -> local self-check -> user canon approval -> sync
+retrieve wiki knowledge -> discuss -> decide -> mutate wiki if approved -> generate when needed -> sync approved canon
 ```
 
 Do not invert this into:
 
 ```text
-Draft everything -> review everything -> repair everything
+draft everything -> review everything -> repair everything
 ```
 
 ## What Counts As Canon
@@ -21,106 +21,184 @@ Draft everything -> review everything -> repair everything
 Only these can become canon:
 
 1. User-approved setup output.
-2. User-approved chapter intent.
-3. User-approved scene plan.
-4. User-approved draft unit.
+2. User-approved entity, event, state, relationship, rule, name, or term decisions.
+3. User-approved scene or chapter design.
+4. User-approved generated prose.
 5. User-approved wiki sync.
 
 A model proposal is not canon.
-A rejected draft is not canon.
+A rejected option is not canon.
 A useful but unapproved discussion point is not canon.
 A fast-trial output is not canon.
 
-## Gate A: Chapter Intent Approval
+## Collaboration Loop
 
-Run after wiki retrieval, volume / arc check, and chapter trend + hook/payoff convergence.
+### 1. Retrieve Relevant Wiki Knowledge
 
-The assistant may output only:
+Before discussing any canon-dependent issue, retrieve the relevant wiki records.
+
+Typical retrieval targets:
 
 ```text
-- chapter function in current volume / arc
-- current trend pressure
-- protagonist pressure and usable gain
+- entities directly involved
+- states at the relevant timepoint
+- recent or causal events
+- important relationships
+- applicable rule systems
+- approved names and terms
+- prior sessions and mutations when the current issue depends on earlier user decisions
+```
+
+The assistant should surface only the relevant constraints. Do not dump the entire wiki into the discussion.
+
+### 2. Discuss The Creative Problem
+
+The user and AI may discuss any story object or story movement, including:
+
+```text
+- character behavior
+- organization behavior
+- location state
+- rule-system logic
+- time-aware state changes
+- relationships
+- scene design
+- dialogue direction
+- plot consequences
 - reader hook / payoff
-- candidate scene list
-- forbidden escalations
-- uncertain decisions requiring user choice
+- naming and terminology
+- prose rendering
 ```
 
-The assistant must not output prose at Gate A.
+The assistant's role is to clarify the current wiki state, expose possible contradictions, offer options, and ask for user choice when the direction is not determined.
 
-The user may approve, reject, narrow, expand, reorder, or replace the intent.
+### 3. Decide
 
-If the user changes the intent, treat the correction as authority for the next proposal, but do not write it into canon until later approval and sync.
+The user is the creative authority.
 
-## Gate B: Scene Plan Approval
-
-Run after Gate A passes and before prose.
-
-The assistant may output only:
+A decision may:
 
 ```text
-- scene objective
-- active actors
-- actor cognition limits
-- location / object anchors
-- beat list
-- dialogue intent when needed
-- scene hook/payoff
-- canon facts that may change if approved
+- accept one option
+- combine options
+- reject all options
+- redirect the design problem
+- request another proposal
+- approve a canon mutation
+- approve generation of a bounded output
 ```
 
-The assistant must not write prose at Gate B.
+Do not treat assistant preference as user decision.
 
-For simple low-stakes transition units, Gate B may be collapsed into a short confirmation card, but it must still identify objective, actors, and state movement.
+### 4. Mutate Wiki When Approved
 
-## Gate C: Draft Unit Approval
+When the user approves a durable change, update the smallest sufficient set of wiki records.
 
-Run after Gate B passes.
-
-A draft unit may be:
-
-- one scene;
-- one subscene;
-- one bounded chapter segment;
-- one transition passage;
-- one dialogue sequence.
-
-A draft unit must not silently continue into the next unapproved scene.
-
-After the unit, provide a local status card:
+Possible mutation targets:
 
 ```text
-Canon changes if approved:
-- ...
-
-Unresolved reader debt:
-- ...
-
-Next decision point:
-- ...
+- Entity
+- Timepoint
+- State
+- Relationship
+- Event
+- Session
+- Mutation
+- name registry
+- style record
+- chapter state
+- other project-specific wiki file
 ```
 
-The user may approve, request revision, reject, or redirect.
+Do not sync speculative consequences. Do not sync rejected options. Do not sync unapproved assistant proposals.
 
-## Local Self-Check
+### 5. Generate When Needed
 
-Every draft unit gets a lightweight check before canon sync.
+Generation is optional.
+
+A user may ask for:
+
+```text
+- scene sketch
+- scene plan
+- dialogue sequence
+- chapter segment
+- full chapter draft
+- entity card
+- event summary
+- wiki update record
+- prose revision
+```
+
+Generated prose must stay inside the approved scope. It must not silently continue into an unapproved scene, chapter, arc, or canon change.
+
+### 6. Sync Approved Canon
+
+After the user approves a generated unit or durable design decision, sync the approved canon back into the wiki before the next canon-dependent step.
+
+## Session Record
+
+When a discussion changes the story model, create or update a session record if the user wants traceability or if the decision affects future canon.
+
+A session should record:
+
+```text
+- what was discussed
+- which wiki records were relevant
+- accepted decisions
+- rejected options when important
+- approved mutations
+- unresolved questions
+```
+
+A session is not canon by itself. It points to approved mutations that change canon.
+
+## Event-Centered Memory
+
+When a story fact matters later, prefer recording it as an Event.
+
+An event should answer:
+
+```text
+who
+when
+where
+did what
+affected whom
+changed what
+caused or enabled what
+```
+
+This makes later retrieval more reliable than relying only on character notes or chapter summaries.
+
+## Time-Aware State
+
+Do not assume an entity has only one state.
+
+When a character, organization, location, rule system, or other entity changes in a way that matters later, record the state at the relevant timepoint.
+
+Use State records for durable changes. Do not create state records for trivial line-level details.
+
+## Consistency Check
+
+Consistency Check replaces heavy default review.
+
+Run it before canon mutation and before canon-dependent generation.
 
 Check:
 
-1. No contradiction with current wiki.
+1. No contradiction with retrieved wiki records.
 2. No unapproved names or terms.
-3. No actor omniscience.
-4. No summary-only prose.
-5. No interface, report, log, or status text replacing story action.
-6. Approved hook/payoff remains visible.
-7. Protagonist gain or state movement remains usable when required.
-8. The next decision point is clear.
+3. No entity acting outside its time-aware state.
+4. No actor omniscience.
+5. No rule-system violation unless the user explicitly approves a rule change.
+6. No event consequence that lacks an Event or State update when it matters later.
+7. No reliance on chat memory for durable facts.
+8. No interface, report, log, or status text replacing story action in prose.
 
-Do not run heavy review unless a trigger exists.
+Do not run heavy review unless the user asks or a specific risk requires it.
 
-## Triggered Reviews
+## Targeted Review Triggers
 
 Use targeted governance only when the risk is present.
 
@@ -138,7 +216,7 @@ canon sync is about to happen -> wiki_write_rules
 
 ## Wiki Sync Boundary
 
-Do not sync after discussion.
+Do not sync after discussion alone.
 Do not sync after an unapproved plan.
 Do not sync after a rejected draft.
 Do not sync speculative consequences.
@@ -151,9 +229,9 @@ For a full approved formal chapter, update:
 novels/<novel_id>/wiki/chapter_states/chapter_<number>.md
 ```
 
-Also update character, organization, world, growth, timeline, relationship, foreshadowing, style, name, and term files only when approved prose confirms durable facts.
+Also update relevant Entity, Event, Timepoint, State, Relationship, Session, Mutation, name, term, style, or foreshadowing records when approved canon confirms durable facts.
 
-For an approved partial scene, either wait until the chapter is approved or create a clearly marked session / draft note if the user asks for incremental tracking.
+For an approved partial scene, either wait until the chapter is approved or create a clearly marked session / event / mutation note if the user asks for incremental tracking.
 
 ## Batch Mode Exception
 
@@ -163,28 +241,26 @@ Batch mode allows longer continuous drafting, but it does not remove:
 
 - canon wiki retrieval;
 - Name & Term Gate;
-- trend convergence;
-- hook/payoff requirement;
-- local self-check;
-- user canon approval before sync.
+- relevant consistency check;
+- user canon approval before sync;
+- wiki sync before the next canon-dependent step.
 
-If the user later asks to return to interactive mode, immediately stop batch continuation and resume Gate A / Gate B / Gate C behavior.
+If the user later asks to return to interactive mode, immediately stop batch continuation and resume the collaboration loop.
 
 ## Failure Handling
 
-If a proposed chapter intent fails, revise Gate A. Do not patch prose.
+If a proposed direction conflicts with the wiki, stop and identify the conflicting record before proposing a workaround.
 
-If a scene plan fails, revise Gate B. Do not draft around the weakness.
-
-If a draft unit fails, either revise only that unit or return to Gate B if the failure is structural.
+If a generated unit fails, either revise only that unit or return to discussion if the failure is structural.
 
 If a canon contradiction appears, stop and identify:
 
 ```text
-- conflicting fact
-- source file if known
-- whether the draft or wiki likely needs correction
+- conflicting record
+- proposed or generated conflict
+- whether the draft, plan, or wiki likely needs correction
 - smallest safe next action
+- whether user decision is required
 ```
 
 ## Output Discipline
@@ -193,6 +269,8 @@ During interaction, prefer small cards over long documents.
 
 Do not bury the user decision point.
 
-Every proposal should make clear what the user is approving.
+Every proposal should make clear what the user is deciding.
 
-Every draft unit should make clear what would become canon if approved.
+Every canon mutation should make clear what would change in the wiki.
+
+Every generated unit should make clear what would become canon if approved.
