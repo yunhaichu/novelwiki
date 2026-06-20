@@ -1,22 +1,23 @@
 # Workflow File Roles
 
-This file explains the role of each major workflow file after the workflow cleanup.
+This file explains the role of each major workflow file after the interactive workflow update.
 
-Use this as the file responsibility index.
+Use this as the file responsibility index. It does not override execution order.
 
 Execution authority order:
 
 ```text
-1. docs/current_execution_flow.md   # short path-selection card
-2. docs/workflow_layers.md         # authoritative full execution-order index
-3. docs/file_roles.md              # file responsibility index
-4. specific prompt / governance file
-5. older general checklist
+1. docs/current_execution_flow.md     # short path-selection card and stop conditions
+2. docs/workflow_layers.md           # authoritative full execution-order index
+3. docs/interactive_writing_flow.md  # approval gates and interactive behavior contract
+4. docs/file_roles.md                # file responsibility index
+5. specific prompt / governance file
+6. older general checklist
 ```
 
 ## Core Execution Concept
 
-The workflow is no longer event-first.
+The workflow is no longer event-first and no longer batch-draft-first.
 
 Standard long-form flow runs on:
 
@@ -27,6 +28,7 @@ world irreversible trend
 + trend convergence
 + reader hook/payoff
 + project viability before formal wiki
++ user approval before canon expansion
 ```
 
 Macro modern-to-cosmic flow additionally runs on:
@@ -41,6 +43,17 @@ cosmic civilization arena
 
 The author controls the large trend and protagonist final form. Characters control local choices. Plot emerges when local choices are pulled back toward the large trend. Important chapters must give the reader a concrete reason to continue. Formal projects must prove they can sustain long-form execution before wiki bootstrap.
 
+The current workflow adds explicit interaction gates:
+
+```text
+Gate A: chapter intent approval
+Gate B: scene plan approval
+Gate C: draft unit approval
+Canon Approval: user approves before wiki sync
+```
+
+Layer 8 heavy review is no longer the default. Most errors should be caught before prose through Gate A and Gate B. After prose, run light self-check plus triggered specialized review only when the relevant risk exists.
+
 ## Docs
 
 ### `docs/current_execution_flow.md`
@@ -48,14 +61,21 @@ The author controls the large trend and protagonist final form. Characters contr
 Scope: global
 Required: yes
 
-Role: short operational checklist and path-selection card. It chooses standard flow, macro modern-to-cosmic flow, or non-canon fast trial mode.
+Role: short operational checklist and path-selection card. It chooses standard flow, macro modern-to-cosmic flow, or non-canon fast trial mode. It also states the default interactive loop and stop conditions.
 
 ### `docs/workflow_layers.md`
 
 Scope: global
 Required: yes
 
-Role: authoritative full execution-order index. Defines which layers and files run at setup, volume, chapter, scene, draft, review, and canon-update stages.
+Role: authoritative full execution-order index. Defines which layers and files run at setup, volume, chapter, scene, draft, local review, and canon-update stages. It is the main source for where Gate A, Gate B, Gate C, and canon approval occur.
+
+### `docs/interactive_writing_flow.md`
+
+Scope: global
+Required: yes for current workflow
+
+Role: interaction protocol. Defines what the assistant may output at each approval gate, what must not be drafted prematurely, how to handle user corrections, how to reduce review burden, and when a draft becomes canon.
 
 ### `docs/file_roles.md`
 
@@ -69,7 +89,7 @@ Role: file responsibility index. Does not override execution order.
 Scope: global
 Required: reference
 
-Role: conceptual overview. If it conflicts with current execution flow or workflow layers, prefer `docs/current_execution_flow.md` and `docs/workflow_layers.md`.
+Role: conceptual overview. If it conflicts with current execution flow, workflow layers, or interactive writing flow, prefer the current execution files.
 
 ### `docs/backups/workflow_snapshot_2026-06-09.md`
 
@@ -113,7 +133,7 @@ Role: defines modern identity, reader-laoxiang feeling, modern knowledge structu
 Scope: per-novel / per-volume / per-chapter
 Required: yes for commercial webnovel execution
 
-Role: current internal function is Reader Hook And Payoff Ladder. It designs why readers continue: question, crisis, identity, relationship, world reveal, mechanism reveal, choice, resource, qualification, tactical win, or earned face-slapping when appropriate.
+Role: designs why readers continue: question, crisis, identity, relationship, world reveal, mechanism reveal, choice, resource, qualification, tactical win, or earned face-slapping when appropriate.
 
 Face-slapping is optional, not the default.
 
@@ -214,18 +234,7 @@ Role: checks names and terms before they enter project files, character files, o
 Scope: per-novel
 Required: yes before formal drafting
 
-Role: creates initial per-novel wiki after setup approval and Project Viability Gate pass. Required core files now include:
-
-```text
-project.md
-base_settings.md
-style.md
-name_registry.md
-protagonist_growth.md
-timeline.md
-relationships.md
-foreshadowing.md
-```
+Role: creates initial per-novel wiki after setup approval and Project Viability Gate pass.
 
 Fast Trial sketches are non-canon and do not require wiki bootstrap until the user decides to build a formal novel wiki.
 
@@ -291,17 +300,16 @@ Required: yes for important chapters
 
 Role: designs a chapter through trend convergence, actor limited choices, reader hook/payoff, cost, leverage, and consequence chain.
 
+In the interactive workflow, this prompt feeds Gate A. It should produce approval-ready chapter intent, not prose.
+
 Face-slapping is optional and must be justified by scene logic.
 
 ### `prompts/02_deprecated_advantage_reward_ledger.md`
 
 Scope: per-chapter
-Required: **deprecated**
+Required: deprecated
 
-Role: [DEPRECATED] Function merged into `prompts/05_wiki_sync_after_chapter.md`.
-Read the chapter design's "Planned Advantages" from `prompts/02_emergent_chapter_design.md`.
-The wiki_sync prompt now handles both planned and actual advantage tracking.
-See `prompts/02_deprecated_advantage_reward_ledger.md` for migration guide.
+Role: legacy compatibility. Function merged into `prompts/05_wiki_sync_after_chapter.md`.
 
 ### `prompts/02_opening_chapter_brief.md`
 
@@ -318,6 +326,8 @@ Scope: per-scene
 Required: yes for major scenes
 
 Role: defines trend pressure in the scene, convergence point, actor local worlds, environmental modulation, organization packaging, collision map, and performance beats.
+
+In the interactive workflow, this prompt feeds Gate B. It should produce approval-ready scene plan, not prose.
 
 ### `prompts/02_scene_expression_state.md`
 
@@ -351,19 +361,30 @@ Role: converts an approved scene simulation or action log into prose. Should ret
 
 ### `prompts/01_writer.md`
 
-Scope: per-chapter
+Scope: per-approved unit
 Required: yes for formal drafting
 
-Role: writes chapter draft from current novel wiki, trend-converged chapter design, scene convergence, approved names/terms, and relevant governance rules.
+Role: writes prose from current novel wiki, approved chapter intent, approved scene plan, approved names/terms, and relevant governance rules.
+
+In the interactive workflow, it must draft only the approved unit. It must not continue into the next unit, add unapproved canon, or silently solve unresolved design questions.
 
 It enforces xiaobai prose: clear action, dialogue, reaction, process, and consequence. It forbids summary voice and does not reward concise abstract conclusions.
 
 ## Review Governance
 
+Layer 8 is now light and triggered by risk.
+
+### Always-on local self-check
+
+Scope: every approved draft unit
+Required: yes
+
+Role: checks canon contradiction, unapproved names/terms, actor omniscience, summary-only prose, record-driven climax, hook/payoff preservation, and next decision clarity.
+
 ### `governance/reality_logic_review.md`
 
-Scope: per-chapter
-Required: yes for important chapters
+Scope: per-chapter / per-unit when process or authority matters
+Required: conditional
 
 Role: checks whether event obeys genre reality, normal process, authority, timing, survival cost, institution logic, and role knowledge.
 
@@ -377,14 +398,14 @@ Role: checks whether a key object has earned its importance.
 ### `governance/emergent_plot_review.md`
 
 Scope: per-chapter
-Required: yes for important chapters
+Required: conditional after interactive update
 
-Role: checks major conflict connection, level frequency, organization function, scene convergence, protagonist advantage, reader hook/payoff, consequence chain, randomness, repetition, and record-driven plot.
+Role: checks major conflict connection, level frequency, organization function, scene convergence, protagonist advantage, reader hook/payoff, consequence chain, randomness, repetition, and record-driven plot. Use when drafting changed important trend logic, not automatically after every chapter.
 
 ### `governance/protagonist_growth_review.md`
 
-Scope: per-chapter
-Required: yes for protagonist-centered chapters
+Scope: per-chapter / per-unit
+Required: conditional
 
 Role: checks active growth stage, pressure-to-weakness fit, cost, usable leverage, no jump, large trend respect, final-form movement, and state update.
 
@@ -397,14 +418,14 @@ Role: checks source-grounded character voice, listener-specific mode, environmen
 
 ### `governance/anti_ai_expression_review.md`
 
-Scope: per-chapter
+Scope: per-chapter / per-unit
 Required: conditional
 
 Role: removes pretty summaries, unsupported metaphors, generic body reactions, identity-label sentences, psychological summaries, dialogue-as-narration, same rhythm, record-centered expression, summary voice, and ungrounded invented terms.
 
 ### `governance/anti_record_driven_plot.md`
 
-Scope: per-chapter
+Scope: per-chapter / per-unit
 Required: conditional
 
 Role: prevents records, reports, systems, logs, status changes, and prompts from driving the plot.
@@ -419,32 +440,21 @@ Role: reviews scope, source support, reference/canon boundary, authority/process
 ### `governance/review_priority.md`
 
 Scope: global
-Required: yes
+Required: conditional
 
-Role: defines priority levels (P0-block, P1-must-fix, P2-should-fix, P3-observation), conflict resolution rules, and execution order when multiple review files are triggered simultaneously. Read this first when running multiple reviews.
+Role: defines priority levels and conflict resolution rules when multiple targeted reviews are triggered simultaneously.
 
-### `governance/review_checklist.md`
-
-### `governance/draft_quality_review.md`
-
-Evaluates draft quality across five dimensions (scene grounding, prose, chapter structure, character presence, reader engagement) using PASS/FLAG/FAIL scoring. Includes a chapter quality log table for tracking quality trends across chapters.
+### `governance/review_checklist.md` and `governance/draft_quality_review.md`
 
 Scope: per-chapter
 Required: optional fallback
 
-Role: older general review checklist. Use as a simple review when newer specialized checks are excessive.
+Role: older general review. Use only when the lightweight self-check is insufficient and no specialized review fits.
 
-### `governance/anti_ai_taste_check.md`
+### `governance/anti_ai_taste_check.md` and `governance/ai_taste_language_grounding.md`
 
-Scope: per-chapter
-Required: conditional
-
-Role: older AI-taste review focused on template reuse, endings, repeated jokes, concrete memory points, and long-form direction.
-
-### `governance/ai_taste_language_grounding.md`
-
-Scope: global guidance
-Required: reference
+Scope: global / per-chapter reference
+Required: reference / conditional
 
 Role: explains common Chinese prose AI-taste issues and repair principles.
 
@@ -471,19 +481,21 @@ Required: yes after every approved formal chapter
 
 Role: creates or updates chapter state and synchronizes confirmed character, organization, world, growth, timeline, relationship, foreshadowing, style, name, term, world/civilization trend progress, Earth-status progress when relevant, protagonist-final-form progress, and reader hook/payoff.
 
+In the interactive workflow, sync only user-approved canon. Do not sync a rejected or merely proposed draft unit.
+
 ### `prompts/06_chapter_state_update.md`
-
-### `novels/<novel_id>/wiki/reader_debt_tracker.md`
-
-Tracks all outstanding reader debts across chapters. Each entry has priority (P0/P1/P2), age, and status. Updated by wiki sync after each chapter. If a P0 debt is >= 3 chapters old or P1 >= 6, the next chapter must address it.
-
-### `novels/<novel_id>/wiki/volume_XX_rhythm_tracker.md`
-
-Tracks volume-level rhythm across chapters. Includes breathing chapter budget, chapter-by-chapter state movement log, and 7 hard checks (consecutive stateless chapters, mystery-without-payoff streaks, hook repetition, breather ratio, debt aging). Updated by wiki sync and volume state plan.
 
 Status: deprecated
 
 Role: legacy compatibility only. Do not use for current workflow.
+
+### `novels/<novel_id>/wiki/reader_debt_tracker.md`
+
+Tracks all outstanding reader debts across chapters. Each entry has priority, age, and status. Updated by wiki sync after each chapter.
+
+### `novels/<novel_id>/wiki/volume_XX_rhythm_tracker.md`
+
+Tracks volume-level rhythm across chapters. Includes breathing chapter budget, chapter-by-chapter state movement log, and hard checks. Updated by wiki sync and volume state plan.
 
 ## Operational Governance
 
