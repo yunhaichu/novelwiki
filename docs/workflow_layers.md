@@ -2,14 +2,14 @@
 
 This is the authoritative full execution-order index for the novel workflow.
 
-Use `docs/current_execution_flow.md` only as a short path-selection card. Use `docs/file_roles.md` for file responsibilities.
+Use `docs/current_execution_flow.md` as the short path-selection card. Use `docs/interactive_writing_flow.md` for the approval protocol. Use `docs/file_roles.md` for file responsibilities.
 
 The workflow has two valid setup paths:
 
 - standard long-form setup;
 - macro modern-to-cosmic setup.
 
-Do not run every file for every chapter. Select layers according to project type and chapter importance.
+The default execution mode is interactive. Do not run every file for every chapter. Do not draft a full formal chapter before the user approves the chapter intent and scene plan.
 
 ## Layer 0: Safety Snapshot
 
@@ -70,23 +70,7 @@ Required files:
 11. `prompts/00_name_term_gate.md`
 12. `prompts/00_wiki_bootstrap.md`
 
-For macro modern-to-cosmic stories, Layer 1B must read Layer 1A outputs.
-
-Macro boundary rule:
-
-```text
-Layer 1B must not shrink the arena created by Layer 1A.
-```
-
-For macro stories, base settings, major conflict, dramatic arena, protagonist growth, and project viability must derive from:
-
-- cosmic civilization arena;
-- Earth civilization value;
-- unified power logic;
-- modern Chinese entry bridge;
-- reader hook / payoff ladder.
-
-Do not let standard setup collapse a cosmic story back into a small sect, city, island, or single-country conflict unless the story intentionally starts local while preserving the larger arena.
+For macro modern-to-cosmic stories, Layer 1B must read Layer 1A outputs and must not shrink the arena created by Layer 1A.
 
 Required order inside Layer 1B:
 
@@ -102,21 +86,6 @@ premise / type promise
 -> Name & Term Gate
 -> wiki bootstrap
 ```
-
-Project Viability Gate is the final stop before formal wiki bootstrap.
-
-Hard rule:
-
-```text
-No Project Viability Gate pass, no formal wiki bootstrap.
-```
-
-Supporting reference files:
-
-- `reference_settings/usage_contract.md`
-- `reference_settings/index.json`
-- selected `reference_settings/genre_common/` files
-- selected `reference_settings/power_system_common/` files only if the novel contains powers, anomalies, goldfingers, cultivation, magic, psychic systems, or similar mechanisms.
 
 Required wiki outputs:
 
@@ -165,6 +134,7 @@ For macro modern-to-cosmic trial:
 ```text
 Layer 1A core files
 -> Layer 5 modern-to-cosmic opening
+-> interactive trial approval
 -> non-canon sketch / outline / desire test
 -> decide whether to build full wiki
 ```
@@ -187,14 +157,6 @@ Governance rule for simulations and multi-actor scenes:
 
 - `governance/agent_state_rules.md`
 
-Guidance:
-
-- Major forces need organization behavior models.
-- Important recurring characters need behavior models and expression cards.
-- Any actor who drives important choices needs cognition boundaries.
-- Temporary characters may remain role labels, but their role, knowledge, goal, and scene function must be clear.
-- Macro stories need models for high-civilization observers, evaluators, academy factions, military factions, and Earth-side stakeholders once recurring.
-
 Hard rule:
 
 ```text
@@ -204,7 +166,7 @@ Characters act from what they know, want, fear, misunderstand, can physically do
 
 ## Layer 3: Volume / Arc Planning
 
-Run once per volume, arc, or large stage.
+Run once per volume, arc, or large stage. For later chapters, read the current volume state and update only when the volume attractor, pressure map, or rhythm budget has changed.
 
 Files:
 
@@ -232,8 +194,7 @@ Required files:
 1. `prompts/00_irreversible_trend_anchor.md`
 2. `prompts/00_reality_causal_preflight.md`
 3. `prompts/02_emergent_chapter_design.md`
-4. (deprecated - function merged into `prompts/05_wiki_sync_after_chapter.md`)
-5. `prompts/00_webnovel_reader_hook_payoff_ladder.md` as Reader Hook / Payoff Ladder when the chapter is important or the previous draft feels flat.
+4. `prompts/00_webnovel_reader_hook_payoff_ladder.md` as Reader Hook / Payoff Ladder when the chapter is important or the previous draft feels flat.
 
 For chapter one of modern-to-cosmic stories, also use:
 
@@ -255,11 +216,16 @@ Outputs:
 - cost and usable leverage;
 - result attractor.
 
+Interactive rule:
+
+After Layer 4, stop at Gate A and present the chapter intent. Do not design scenes or draft prose until the user approves or corrects the chapter intent.
+
 Hard rules:
 
 ```text
 No trend convergence, no formal chapter draft.
 No hook/payoff, no important chapter.
+No Gate A approval, no scene design.
 Face-slapping is optional and must be situationally justified.
 ```
 
@@ -277,7 +243,6 @@ Optional review aids when present:
 - `prompts/02_opening_chapter_brief.md`
 
 If optional review files are absent, do not block execution.
-For opening chapter review, also consult `prompts/04_review_hook.md` (Reader-Entry Hard Checks section).
 
 Opening checks:
 
@@ -318,9 +283,19 @@ Outputs:
 - performance beats;
 - dialogue intent.
 
+Interactive rule:
+
+After Layer 6, stop at Gate B and present the scene plan. Do not draft prose until the user approves or corrects the scene plan.
+
+Hard rule:
+
+```text
+No Gate B approval, no prose for that scene.
+```
+
 ## Layer 7: Drafting
 
-Run after chapter and scene planning.
+Run only after approved chapter intent and approved scene plan.
 
 Files:
 
@@ -329,6 +304,8 @@ Files:
 
 Rules:
 
+- Draft in approved units: scene, subscene, or bounded chapter segment.
+- Do not continue into the next unit without user approval unless the user explicitly switches to batch mode.
 - Do not let interfaces write the story.
 - Do not let narrator explanation replace character performance.
 - Apply genre mode before universal workflow rules.
@@ -340,103 +317,55 @@ Rules:
 - For modern-to-cosmic stories, keep the modern Chinese viewpoint active.
 - First-contact scenes must preserve psychological realism.
 
-## Layer 8: Review / Revision
+After each draft unit, provide a local status card:
 
-Run after draft.
+```text
+- canon changes if approved
+- unresolved reader debt
+- next decision point
+```
 
-Do not run every review on every chapter. Select reviews by route.
+## Layer 8: Local Self-Check / Targeted Review
 
-### Review Routing Matrix
+Layer 8 is no longer a mandatory heavy review after every draft.
 
-#### Low-Stakes Transition
+Most review pressure should move earlier into Gate A and Gate B. After drafting, run only the minimum check needed for the approved unit.
 
-Use when the chapter mainly moves characters, resets location, breathes between conflicts, or prepares the next pressure.
+### Always Run Light Self-Check
 
-Run:
-
-- light self-check against current chapter state;
-- `governance/anti_ai_expression_review.md` if prose feels generic;
-- `governance/wiki_write_rules.md` before sync.
-
-Required checks:
+For every draft unit, check:
 
 - no canon contradiction;
 - no unapproved names or terms;
-- at least one small hook/payoff or state movement;
+- no actor omniscience;
 - no summary-only prose;
-- next chapter constraint remains clear.
+- no interface / record / report replacing story action;
+- the unit preserves the approved hook/payoff or state movement;
+- the next decision point is clear.
 
-#### Important Chapter
+### Triggered Targeted Reviews
 
-Use when the chapter changes protagonist state, resolves or creates major pressure, introduces a key actor/object, or moves the irreversible trend.
+Run specialized reviews only when their trigger appears:
 
-Run:
+- `governance/anti_ai_expression_review.md` if prose feels generic, abstract, pretty, or summary-heavy.
+- `governance/emergent_plot_review.md` if an important chapter's trend logic changed after drafting.
+- `governance/protagonist_growth_review.md` if protagonist state, capability, qualification, or final-form progress changed.
+- `governance/character_voice_review.md` if the unit depends on dialogue, trust, fear, authority, secrecy, or first contact.
+- `governance/anti_record_driven_plot.md` if records, reports, logs, screens, prompts, archives, or system/status changes appear.
+- `governance/object_function_review.md` if a physical object, resource, artifact, document, weapon, medicine, body trace, token, or clue drives the unit.
+- `governance/reality_logic_review.md` if process, authority, institution logic, timing, survival cost, or jurisdiction matters.
+- `governance/base_settings_review.md` if durable world rules or base settings may change.
+- `governance/wiki_write_rules.md` before any canon sync.
 
-- `governance/emergent_plot_review.md`;
-- `governance/protagonist_growth_review.md`;
-- `governance/anti_ai_expression_review.md`;
-- `governance/wiki_write_rules.md` before sync.
+### User Approval Boundary
 
-Add `governance/review_checklist.md` only if a general final pass is needed.
+A draft unit is not canon until the user approves it.
 
-#### System / Record Heavy Chapter
-
-Use when records, reports, logs, workflows, screens, archives, system prompts, or database statuses appear.
-
-Run:
-
-- `governance/anti_record_driven_plot.md`;
-- `governance/reality_logic_review.md` if process / authority / institution logic matters;
-- `governance/anti_ai_expression_review.md`.
-
-#### Object-Centered Chapter
-
-Use when a physical object, resource, artifact, document, weapon, medicine, body trace, token, or clue drives the chapter.
-
-Run:
-
-- `governance/object_function_review.md`;
-- `governance/reality_logic_review.md` if object use depends on process, cost, timing, or authority.
-
-#### Voice / Relationship Heavy Chapter
-
-Use when the chapter depends on dialogue, emotional tension, negotiation, trust, suspicion, authority, or first contact.
-
-Run:
-
-- `governance/character_voice_review.md`;
-- `governance/anti_ai_expression_review.md`.
-
-For first-contact or high-pressure scenes, also check:
-
-- psychological realism;
-- no calm abstract AI-like speech under fear;
-- actor cognition limits.
-
-#### Setup / Canon Change Chapter
-
-Use when base settings, durable world rules, protagonist growth stage, organization behavior, or wiki structure may change.
-
-Run:
-
-- `governance/base_settings_review.md` when durable settings are touched;
-- `governance/wiki_retrieval_rules.md` before drafting;
-- `governance/wiki_write_rules.md` before sync.
-
-### Macro Modern-To-Cosmic Extra Checks
-
-For macro modern-to-cosmic stories, always check:
-
-- Earth value remains active;
-- modern viewpoint remains active;
-- macro world is hinted, not dumped;
-- reader hook/payoff is concrete;
-- protagonist gain helps personal growth, Earth status, or cross-system capability;
-- first-contact or high-pressure dialogue does not sound like calm abstract analysis.
+Do not synchronize, plan consequences, or build the next chapter from an unapproved draft unit.
 
 ## Layer 9: Wiki Sync / Canon Update
 
-Run immediately after the chapter is approved and before planning the next chapter.
+Run immediately after the user approves canon and before planning the next chapter or next canon-dependent unit.
 
 Primary sync file:
 
@@ -446,14 +375,15 @@ Governance:
 
 - `governance/wiki_write_rules.md`
 
-
 Deprecated old prompt:
 
 - `prompts/06_chapter_state_update.md` is deprecated. Do not use it for current workflow.
 
-Always create or update:
+Always create or update after an approved formal chapter:
 
 - `novels/<novel_id>/wiki/chapter_states/chapter_<number>.md`
+
+For partial scene approvals, write only to the appropriate draft/session note unless the user explicitly approves a canon update.
 
 Chapter state must track:
 
@@ -470,7 +400,7 @@ Chapter state must track:
 Hard rule:
 
 ```text
-Approved formal chapter -> wiki sync -> next chapter.
+User-approved canon -> wiki sync -> next canon-dependent planning step.
 ```
 
 ## Required Execution Order
@@ -478,31 +408,31 @@ Approved formal chapter -> wiki sync -> next chapter.
 For a macro modern-to-cosmic new novel:
 
 ```text
-Layer 1A -> Layer 1B including Project Viability Gate -> Layer 2 -> Layer 3 -> Layer 4 -> Layer 5 -> Layer 6 -> Layer 7 -> Layer 8 -> Layer 9
+Layer 1A -> Layer 1B including Project Viability Gate -> Layer 2 -> Layer 3 -> Layer 4 -> Gate A -> Layer 5 -> Layer 6 -> Gate B -> Layer 7 unit drafting -> Layer 8 light / targeted -> user canon approval -> Layer 9
 ```
 
 For a standard new novel:
 
 ```text
-Layer 1B including Project Viability Gate -> Layer 2 -> Layer 3 -> Layer 4 -> Layer 5 -> Layer 6 -> Layer 7 -> Layer 8 -> Layer 9
+Layer 1B including Project Viability Gate -> Layer 2 -> Layer 3 -> Layer 4 -> Gate A -> Layer 5 when needed -> Layer 6 -> Gate B -> Layer 7 unit drafting -> Layer 8 light / targeted -> user canon approval -> Layer 9
 ```
 
 For a macro modern-to-cosmic fast trial:
 
 ```text
-Layer 1A core files -> Layer 5 modern-to-cosmic opening -> non-canon sketch / outline / desire test -> decide whether to build full wiki
+Layer 1A core files -> Layer 5 modern-to-cosmic opening -> interactive trial approval -> non-canon sketch / outline / desire test -> decide whether to build full wiki
 ```
 
 For a normal later chapter:
 
 ```text
-Read wiki -> Layer 3 check -> Layer 4 trend + hook/payoff convergence -> Layer 6 -> Layer 7 -> Layer 8 by route -> Layer 9
+Read wiki -> Layer 3 check -> Layer 4 trend + hook/payoff convergence -> Gate A -> Layer 6 scene design -> Gate B -> Layer 7 approved-unit drafting -> Layer 8 light / targeted -> user canon approval -> Layer 9
 ```
 
 For a simple low-stakes transition chapter:
 
 ```text
-Read wiki -> Layer 3 check -> Layer 4 light trend + hook/payoff check -> Layer 7 -> Layer 8 low-stakes route -> Layer 9
+Read wiki -> Layer 3 check -> Layer 4 light trend + hook/payoff check -> Gate A short confirmation -> Layer 7 approved-unit drafting -> Layer 8 light self-check -> user canon approval -> Layer 9
 ```
 
 ## Existing Legacy Chapter States
@@ -511,7 +441,7 @@ Older test novels may contain chapter state files that predate the current templ
 
 They should not block new workflow tests unless the user explicitly resumes that novel.
 
-If resuming an old approved novel, migrate its latest chapter state to the current template before planning the next chapter.
+If resuming an old approved novel, migrate its latest chapter state to the current template before planning the next formal chapter.
 
 ## Non-Negotiable Gates
 
@@ -526,20 +456,20 @@ Do not formal draft if any of these are unresolved:
 7. Genre operating model is missing or too vague.
 8. Irreversible trend anchor is missing or weak.
 9. Reader Hook / Payoff Ladder is missing for commercial long-form execution.
-10. Project Viability Gate has not passed.
-11. Name & Term Gate is missing or failed.
-12. Initial wiki bootstrap is missing.
-13. Base settings for the active novel are missing.
-14. Reality-causal preflight says the core event is unnatural.
-15. Chapter trend convergence is missing.
-16. Important chapter has no concrete reader hook/payoff.
+10. Name & Term Gate is missing or failed.
+11. Initial wiki bootstrap is missing.
+12. Base settings for the active novel are missing.
+13. Reality-causal preflight says the core event is unnatural.
+14. Chapter trend convergence is missing.
+15. Gate A chapter intent has not been approved.
+16. Important scene has no approved Gate B scene plan.
 17. Actor cognition boundary is missing for an important actor who drives chapter logic.
 18. The protagonist has no active growth stage toward final form.
 19. The chapter has no usable protagonist gain when gain is required.
 20. The main scene has no convergence point.
-21. The key object has no natural function.
-22. Unapproved invented terms appear where ordinary description would be clearer.
-23. The story relies on system/report/log/status change as climax.
+21. Unapproved invented terms appear where ordinary description would be clearer.
+22. The story relies on system/report/log/status change as climax.
+23. The user has not approved the current unit as canon.
 
 Do not plan the next formal chapter if any of these are unresolved:
 
@@ -552,4 +482,5 @@ Do not plan the next formal chapter if any of these are unresolved:
 7. New confirmed character / organization / world facts were not synchronized.
 8. Newly approved or rejected terms were not synchronized into the name registry.
 9. Next chapter constraints are missing.
-10. The next chapter would need to rely on chat memory instead of wiki state.
+10. The next chapter would need to rely on chat memory rather than wiki state.
+11. The previous draft unit was not explicitly approved as canon.
