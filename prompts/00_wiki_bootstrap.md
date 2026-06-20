@@ -1,6 +1,6 @@
 # Wiki Bootstrap Prompt
 
-Use this prompt immediately after formal new-novel setup outputs are approved and before any formal chapter drafting.
+Use this prompt immediately after formal new-novel setup outputs are approved and before any formal canon-dependent discussion, design, or generation.
 
 The purpose is to create the initial per-novel wiki in the same workflow run as project setup, instead of relying on later manual patching.
 
@@ -9,13 +9,13 @@ Fast Trial sketches are non-canon and must not use this prompt unless the user d
 ## Core Principle
 
 ```text
-No wiki, no formal draft.
-No name gate, no project file.
+No wiki, no formal canon-dependent generation.
+No name gate, no recurring invented name or term enters canon.
 ```
 
-A new formal novel must not move into chapter design until its core setup has been written into `novels/<novel_id>/wiki/`.
+A new formal novel must not move into canon-dependent design until its core setup has been written into `novels/<novel_id>/wiki/`.
 
-A new novel must not write `project.md` with protagonist, organization, city, or key term names until the names pass the Name Gate.
+A new novel must not write recurring character, organization, location, rule-system, item, role, title, or key term names into canon until those names pass the Name Gate or the user explicitly approves them.
 
 ## Required Inputs
 
@@ -25,32 +25,33 @@ Read:
 - genre mode contract;
 - genre operating model;
 - irreversible trend anchor;
-- reality-causal preflight for opening event family;
+- reality-causal preflight for the first major event family when available;
 - base settings;
-- major conflict engine;
+- major conflict or pressure engine;
 - dramatic arena;
-- protagonist growth track;
+- growth track when the project depends on a central growth route;
 - Reader Hook / Payoff Ladder if available;
-- organization behavior models for major organizations;
-- character behavior models, expression cards, and cognition cards for major recurring characters;
+- behavior models for important entities when available;
+- expression or cognition cards for important speaking / acting entities when available;
 - style / name constraints if present;
+- `docs/narrative_model.md`;
 - existing `novels/*/wiki/name_registry.md` files when available;
 - existing project names and recurring names in this repository when available.
 
 ## Name Gate
 
-Run this before writing `project.md`, character files, organization files, or chapter drafts.
+Run this before writing project files, entity files, relationship files, event records, or formal drafts that rely on recurring invented names or terms.
 
-Names are not decorative labels. They are part of the world model. A name should grow from:
+Names are not decorative labels. They are part of the story model. A name should grow from:
 
 - time period;
 - region / migration background;
 - class and family education;
 - occupation;
 - registration system;
-- corporate, sect, state, clan, or platform naming rules;
+- organization, institution, clan, platform, workplace, title, or role naming rules;
 - nickname practices;
-- whether the character uses legal name, work name, handle, number, alias, or street name.
+- whether the entity uses legal name, work name, handle, number, alias, title, or public label.
 
 ### Required Name Gate Output
 
@@ -59,32 +60,30 @@ Names are not decorative labels. They are part of the world model. A name should
 
 Naming context:
 - genre:
-- region / city / social layer:
+- region / social layer:
 - naming institution or family practice:
-- legal-name vs nickname vs handle rules:
+- legal-name vs nickname vs handle vs title rules:
 
-Protagonist name candidates:
+Candidate names or terms:
 1.
 2.
 3.
 ...
 
-Rejected names:
-- name:
+Rejected names or terms:
+- name / term:
   reason:
 
-Selected protagonist name:
-Why this name fits world / family / class / job:
-AI-default risk: low / medium / high
-Previously used in this repository or current conversation: yes / no
+Selected names or terms:
+- name / term:
+  why it fits the world / function / social layer / role:
+  AI-default risk: low / medium / high
+  previously used in this repository or current conversation: yes / no
 
-Organization / city / key term candidates:
+Approved names and terms to write into name_registry.md:
 -
 
-Approved names to write into name_registry.md:
--
-
-Avoided names to record:
+Avoided names and terms to record:
 -
 ```
 
@@ -119,32 +118,32 @@ Treat these names and similar polished literary names as high risk unless the us
 
 ### Character-Level Risk Markers
 
-If a name contains any of these characters, it should be flagged and reviewed:
+If a name contains any of these characters, it should be flagged and checked:
 
 ```text
 砚 澈 言 知 棠 芷 栀 辞 珩 璟 宸 玦 弈 晏 清 沉 辰 川 行 述 晚 玄 微 渊 照 霜
 ```
 
-This is a broad filter. A flagged name can still pass if it has a strong family/world explanation. This list is synchronized with `tools/name_gate.py` — `POLISHED_RISK_CHARS` contains the same characters.
+This is a broad filter. A flagged name can still pass if it has a strong family, world, class, role, or institutional explanation. This list is synchronized with `tools/name_gate.py` — `POLISHED_RISK_CHARS` contains the same characters.
 
 Also treat these patterns as high risk:
 
 - overly polished two-character literary names with rare aesthetic characters;
-- names that sound genre-neutral and model-favored rather than class / region / family grounded;
-- protagonist names reused from earlier test novels;
-- names that could fit any modern / xianxia / cyberpunk story without change.
+- names that sound model-favored rather than class / region / family / role grounded;
+- recurring names reused from earlier test novels without reason;
+- names that could fit many unrelated genres without change.
 
 ### Name Gate Hard Rules
 
 Mark `REVISE` if:
 
-- protagonist name appears in `project.md` before the Name Gate;
-- no rejected-name list exists;
-- the selected name has no social / family / institutional explanation;
+- recurring names or terms appear in canon files before the Name Gate;
+- no rejected-name list exists for important names;
+- the selected name has no social / family / institutional / functional explanation;
 - the selected name is from the warning list without explicit user approval;
 - the name is too polished and not grounded in the world;
-- the same name or close variant already appears in another active test novel;
-- organization / city names are generic genre labels rather than functional entities.
+- the same name or close variant already appears in another active test novel without reason;
+- organization / location / role / rule-system names are generic genre labels rather than functional entities.
 
 ## Required Output Files
 
@@ -155,42 +154,36 @@ novels/<novel_id>/wiki/project.md
 novels/<novel_id>/wiki/base_settings.md
 novels/<novel_id>/wiki/style.md
 novels/<novel_id>/wiki/name_registry.md
-novels/<novel_id>/wiki/protagonist_growth.md
 novels/<novel_id>/wiki/timeline.md
 novels/<novel_id>/wiki/relationships.md
 novels/<novel_id>/wiki/foreshadowing.md
-novels/<novel_id>/wiki/reader_debt_tracker.md
 ```
 
-Create these directories / files as needed:
+Create these directories for current narrative-model records:
 
 ```text
-novels/<novel_id>/wiki/world/
-novels/<novel_id>/wiki/characters/
-novels/<novel_id>/wiki/organizations/
+novels/<novel_id>/wiki/entities/
+novels/<novel_id>/wiki/events/
+novels/<novel_id>/wiki/states/
+novels/<novel_id>/wiki/sessions/
+novels/<novel_id>/wiki/mutations/
 novels/<novel_id>/wiki/chapter_states/
 novels/<novel_id>/drafts/
 ```
 
-For important initial actors, create:
+Optional project-specific files may be added when the project needs them:
 
 ```text
-novels/<novel_id>/wiki/characters/<character_id>.md
+novels/<novel_id>/wiki/reader_debt_tracker.md
+novels/<novel_id>/wiki/growth_track.md
+novels/<novel_id>/wiki/rule_systems.md
+novels/<novel_id>/wiki/locations.md
+novels/<novel_id>/wiki/organizations.md
+novels/<novel_id>/wiki/items.md
+novels/<novel_id>/wiki/draft_quality_log.md
 ```
 
-For important initial organizations / systems, create:
-
-```text
-novels/<novel_id>/wiki/world/<system_or_place_id>.md
-```
-
-or:
-
-```text
-novels/<novel_id>/wiki/organizations/<organization_id>.md
-```
-
-Use whichever path is more consistent with the project.
+Do not force optional files into every project.
 
 ## File Content Requirements
 
@@ -202,15 +195,15 @@ Must include:
 - status;
 - type promise;
 - core reader promise;
-- protagonist;
+- central actor or viewpoint model when known;
 - core contradiction;
 - story engine;
 - irreversible trend anchor reference;
 - what this story is not;
-- genre mode contract summary (reader promise, primary pressure carrier, what scenes feel off-genre);
+- genre mode contract summary;
 - current development goal.
 
-Do not write protagonist, organization, city, or key term names here until the Name Gate has passed.
+Do not write recurring character, organization, location, rule-system, item, role, title, or key term names here until the Name Gate has passed or the user explicitly approves them.
 
 ### `base_settings.md`
 
@@ -221,29 +214,13 @@ Must include:
 - identity / authority / hierarchy rules;
 - resource rules;
 - process rules;
-- power / anomaly / goldfinger boundary if applicable;
-- opening location rules;
-- survival / body / time constraints;
+- rule-system / special-mechanism boundary if applicable;
+- opening location or initial situation rules;
+- survival / body / time constraints if relevant;
 - social behavior rules;
-- opening chapter constraints;
+- initial unit constraints;
 - forbidden setting moves;
 - pending setting gaps.
-
-### `protagonist_growth.md`
-
-Must include:
-
-- initial position;
-- current weakness;
-- useful starting skill;
-- starting misconception;
-- starting fear;
-- large trend pressure;
-- growth direction;
-- growth stages;
-- growth asset ladder;
-- invisible hand rule;
-- chapter-one contract if writing opening.
 
 ### `style.md`
 
@@ -253,8 +230,8 @@ Must include:
 - opening texture;
 - language rules;
 - dialogue rules;
-- special ability / goldfinger presentation if applicable;
-- first-contact psychological realism if applicable;
+- special mechanism presentation if applicable;
+- first-contact or unfamiliar-situation handling if applicable;
 - anti-AI notes.
 
 ### `name_registry.md`
@@ -262,18 +239,18 @@ Must include:
 Must include:
 
 - Name Gate result;
-- approved protagonist name;
+- approved recurring entity names;
 - approved organizations;
 - approved places;
-- approved recurring character names;
-- approved terms;
+- approved roles / titles;
+- approved recurring terms;
 - rejected / avoided names and reasons;
 - naming rules;
 - pending / not-yet-canon names.
 
 ### `timeline.md`
 
-Must start as a placeholder even if no chapters exist yet.
+Must start as a placeholder even if no canonical events exist yet.
 
 Must include:
 
@@ -335,33 +312,27 @@ Status: initialized
 - None yet.
 ```
 
+### Entity Records
 
-### `genre_mode` (inline in project.md)
+Each important initial entity file should include:
 
-Must include:
+```text
+id:
+type:
+name:
+summary:
+related_entities:
+source_sessions:
+notes:
+```
 
-- genre mode (from genre_mode_contract);
-- subgenre / flavor;
-- primary pressure carrier (what should carry tension in this genre);
-- what kind of scene makes readers continue;
-- what kind of scene feels off-genre;
-- key genre-specific forbidden moves.
+Use natural-language summary for most creative content. Do not split every trait, motive, resource, voice pattern, or function into narrow fields unless the project repeatedly needs to query it.
 
-This section ensures the genre constraints generated by `genre_mode_contract` are persisted in project.md and remain available to every downstream prompt.
+### Timepoint / State / Event Records
 
-### Actor / Organization Files
+Create initial timepoint, state, and event records only when they are needed for the first canon-dependent discussion or generation.
 
-Each important character / organization file must include:
-
-- identity;
-- story function;
-- current status;
-- default behavior;
-- cognition boundary if relevant;
-- environmental modulation;
-- voice / presentation rules;
-- confirmed state;
-- not-yet-confirmed boundaries.
+Do not create empty record files just to satisfy a schema.
 
 ## Output Format
 
@@ -375,14 +346,14 @@ Bootstrap decision: ALLOW / REVISE
 ## Name Gate
 
 Naming context:
-Protagonist name candidates:
-Rejected names:
-Selected protagonist name:
-Why selected name fits:
+Candidate names or terms:
+Rejected names or terms:
+Selected names or terms:
+Why selected names / terms fit:
 AI-default risk:
 Previously used in repository or current conversation:
-Approved names:
-Avoided names:
+Approved names / terms:
+Avoided names / terms:
 Name gate decision: ALLOW / REVISE
 
 ## Files To Create / Update
@@ -398,16 +369,26 @@ Name gate decision: ALLOW / REVISE
 - base_settings.md created / updated: yes / no
 - style.md created / updated: yes / no
 - name_registry.md created / updated: yes / no
-- protagonist_growth.md created / updated: yes / no
 - timeline.md placeholder created / updated: yes / no
 - relationships.md placeholder created / updated: yes / no
 - foreshadowing.md placeholder created / updated: yes / no
-- reader_debt_tracker.md placeholder created / updated: yes / no
-- draft_quality_log.md placeholder created / updated: yes / no
-- initial character files created / updated: yes / no
-- initial organization / world files created / updated: yes / no
+- entities directory ready: yes / no
+- events directory ready: yes / no
+- states directory ready: yes / no
+- sessions directory ready: yes / no
+- mutations directory ready: yes / no
 - chapter_states directory ready: yes / no
 - drafts directory ready: yes / no
+
+## Optional Files Created
+
+- path:
+  reason:
+
+## Initial Entity / Event / State Records
+
+- record:
+  reason:
 
 ## Missing Setup Inputs
 
@@ -427,13 +408,13 @@ Name gate decision: ALLOW / REVISE
 Mark `REVISE` if:
 
 - the setup has no novel ID;
-- protagonist or major organization names appear before Name Gate;
+- recurring names or terms appear before Name Gate;
 - Name Gate is missing or fails;
-- base settings are too vague to constrain chapter design;
+- base settings are too vague to constrain canon-dependent design;
 - genre operating model is absent;
-- protagonist growth stages are absent;
 - style / name rules are absent;
 - timeline.md, relationships.md, or foreshadowing.md are missing from formal wiki bootstrap;
-- important actors appear in chapter planning without wiki files;
+- important entities appear in canon-dependent planning without wiki records;
 - reference settings are copied as canon without novel-specific acceptance;
-- inferred secrets are written as confirmed canon.
+- inferred secrets are written as confirmed canon;
+- optional files are forced into the project without need.

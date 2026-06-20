@@ -1,105 +1,77 @@
-# Wiki Sync After Chapter Prompt
+# Wiki Sync After Approved Canon Prompt
 
-Use this prompt immediately after a formal chapter draft is approved and before planning the next chapter.
+Use this prompt immediately after the user approves a canon change and before planning the next canon-dependent discussion, design, or generated unit.
 
-The purpose is to keep the per-novel wiki synchronized with approved prose, so the next chapter reads canon rather than relying on chat memory.
+The purpose is to keep the per-novel wiki synchronized with approved canon so later work reads the wiki rather than relying on chat memory.
 
-Fast Trial sketches are non-canon and must not use this prompt.
+Fast Trial sketches are non-canon and must not use this prompt unless the user explicitly promotes a trial element into canon.
 
 ## Core Principle
 
 ```text
-Approved formal chapter -> wiki sync -> next chapter.
+User-approved canon -> wiki sync -> next canon-dependent step
 ```
 
-Do not plan or draft the next formal chapter until chapter state and relevant wiki updates are written or explicitly rejected by the user.
+Do not plan, discuss, or generate the next canon-dependent unit until relevant wiki updates are written or explicitly rejected by the user.
 
 ## Required Inputs
 
 Read:
 
-- approved chapter draft;
-- previous chapter state if present;
+- the approved canon source;
+- the user approval statement or instruction;
 - current `project.md`;
 - current `base_settings.md`;
-- current `protagonist_growth.md`;
-- irreversible trend anchor from project wiki or `prompts/00_irreversible_trend_anchor.md` output;
-- relevant character files;
-- relevant organization / world files;
-- `style.md`;
-- `name_registry.md`;
-- `prompts/00_webnovel_reader_hook_payoff_ladder.md` output as Reader Hook / Payoff Ladder if available;
-- `prompts/02_emergent_chapter_design.md` output (to read "Planned Advantages" from the design phase);
+- current `style.md`;
+- current `name_registry.md`;
+- relevant Entity records;
+- relevant Timepoint records;
+- relevant State records;
+- relevant Relationship records;
+- relevant Event records;
+- relevant Session / Mutation records when the approved change depends on previous design decisions;
+- `docs/narrative_model.md`;
 - `governance/wiki_write_rules.md`.
-- `governance/draft_quality_review.md` (optional quality scoring; run if chapter count >= 2)
 
-> Note: `prompts/02_deprecated_advantage_reward_ledger.md` has been deprecated. Its function is merged into this prompt.
-> Read the chapter design's "Planned Advantages" from the emergent chapter design to compare planned vs. actual advantage delivery.
+If the approved source is a chapter, also read the previous chapter state if present.
+
+If the approved source is a partial scene, event design, character decision, organization decision, location decision, rule-system decision, or relationship decision, read only the relevant records. Do not force a chapter-state update when no chapter has been approved.
 
 ## Output Targets
 
-Always create or update:
-novels/<novel_id>/wiki/reader_debt_tracker.md
-novels/<novel_id>/wiki/volume_XX_rhythm_tracker.md (if volume plan exists)
+Update the smallest sufficient set of wiki records.
+
+Possible targets:
 
 ```text
-novels/<novel_id>/wiki/chapter_states/chapter_<number>.md
-```
-
-## Wiki File Updates (always run, never skip)
-
-The following files must be checked every sync. If new confirmed information exists, update them. If nothing changed, write "No new confirmed information to add." Do not skip these files.
-
-Update when new confirmed information appears:
-
-```text
-novels/<novel_id>/wiki/characters/<character_id>.md
-novels/<novel_id>/wiki/world/<system_or_place_id>.md
-novels/<novel_id>/wiki/organizations/<organization_id>.md
-novels/<novel_id>/wiki/protagonist_growth.md
+novels/<novel_id>/wiki/entities/<entity_id>.md
+novels/<novel_id>/wiki/events/<event_id>.md
+novels/<novel_id>/wiki/states/<state_id>.md
+novels/<novel_id>/wiki/sessions/<session_id>.md
+novels/<novel_id>/wiki/mutations/<mutation_id>.md
 novels/<novel_id>/wiki/timeline.md
 novels/<novel_id>/wiki/relationships.md
 novels/<novel_id>/wiki/foreshadowing.md
 novels/<novel_id>/wiki/name_registry.md
 novels/<novel_id>/wiki/style.md
+novels/<novel_id>/wiki/chapter_states/chapter_<number>.md
 ```
 
-Only update `base_settings.md` when the approved chapter establishes a durable world rule, not a one-time event.
+Only update `base_settings.md` when the approved canon establishes a durable world rule, not a one-time event.
 
-## Chapter State Required Content
-
-Each `chapter_<number>.md` must include:
-
-- chapter title;
-- chapter function;
-- confirmed events;
-- world / civilization trend progress;
-- Earth status progress when relevant;
-- protagonist final-form progress;
-- reader hook / payoff delivered;
-- protagonist state;
-- organization state;
-- character state;
-- key object / resource state;
-- reader reward delivered;
-- reader debt;
-- pressure clock;
-- repetition risk;
-- unresolved questions;
-- next chapter constraints;
-- useful next-chapter attractor.
+Do not scatter the same fact across many files unless later retrieval genuinely needs those indexes.
 
 ## Canon Update Rules
 
-Write only confirmed facts from approved prose.
+Write only confirmed facts from approved canon.
 
-Every wiki entry must include a source. Do not write any fact without attributing it.
+Every wiki entry must include a source. Do not write any fact without attribution.
 
-Required format for each wiki entry:
+Required format for each confirmed entry:
 
 ```text
 Fact: <the confirmed fact>
-Source: <chapter_XXX / setup_output / chapter_state / user_instruction>
+Source: <approved source>
 Status: confirmed / claim / observation / inference / unknown
 ```
 
@@ -112,355 +84,258 @@ Do not write:
 - reader-only interpretation;
 - temporary options not chosen;
 - possible future twists;
-- reference-setting ideas not used in the prose;
+- reference-setting ideas not used in approved canon;
 - model assumptions;
 - any fact without a source.
 
 Distinguish:
 
-- default behavior vs one-time action;
-- environment-modulated behavior vs personality change;
-- organizational rule vs local agent action;
+- stable trait vs one-time action;
+- environment-modulated behavior vs durable change;
+- organization rule vs local agent action;
 - public status vs private knowledge;
 - known fact vs unresolved question;
 - foreshadowing object vs ordinary detail;
-- world trend progress vs worldbuilding exposition;
-- Earth status progress vs Earth nostalgia;
-- protagonist final-form progress vs ordinary clue gain;
-- reader hook/payoff delivered vs reusable protagonist asset;
-- reader debt vs confirmed canon;
+- rule-system movement vs worldbuilding exposition;
+- reader hook / payoff vs confirmed canon;
+- reader debt vs unresolved question;
 - pressure clock vs completed event;
 - repetition risk vs style preference.
 
-## Irreversible Trend Sync Rules
+## Event Record Rule
 
-World trend progress, Earth status progress, and protagonist final-form progress are planning / structure state. They are written into chapter state to keep long-form direction stable.
+When an approved fact matters later, prefer recording it as an Event.
 
-They must not be treated as character knowledge unless the approved prose confirms that a character knows it.
+An Event should answer:
 
-### World / Civilization Trend Progress
+```text
+who participated
+when it happened
+where it happened
+what occurred
+who or what was affected
+what changed
+what caused or enabled it
+what it caused or may force next
+```
 
-Record how the chapter moves the world or civilization trend forward.
+Do not create an Event for every minor line. Create one when the fact may affect later retrieval, state, relationship, timeline, rule logic, or reader memory.
 
-This can be small:
+## Time-Aware State Rule
 
-- a symptom becomes visible;
-- a normal institution fails to explain something;
-- an organization begins reacting;
-- ordinary life changes slightly;
-- a hidden pressure reaches the protagonist's level;
-- public denial becomes harder;
-- a high-civilization actor changes behavior;
-- a faction evaluation changes.
+When an entity changes in a way that matters later, update or create a State record.
 
-Do not record vague worldbuilding. Record concrete movement.
+A State should identify:
 
-### Earth Status Progress
+```text
+entity
+timepoint
+current condition
+current knowledge
+current access / authority / resource if relevant
+current relationship position if relevant
+source event or session
+```
 
-Required for Earth-entry / Earth-protection / macro modern-to-cosmic stories.
+Do not overwrite a previous state if the old state remains true at an earlier timepoint. Add a new state or supersede the old one with source attribution.
 
-Record how Earth status changes or is pressured:
+## Relationship Rule
 
-- Earth remains unregistered but is observed;
-- Earth enters a provisional evaluation;
-- Earth gains a witness, advocate, risk, score, warning, or hidden protection;
-- a faction misjudges Earth;
-- the protagonist provides evidence that Earth should be reevaluated;
-- Earth becomes more exposed to danger.
+When an approved canon change affects a relationship, update the relevant Relationship record.
 
-Do not record nostalgia as Earth status progress.
+A Relationship update should identify:
 
-### Protagonist Final-Form Progress
+```text
+source entity
+target entity
+relationship type
+current condition
+what changed
+source event or session
+```
 
-Record how the chapter moves the protagonist toward the final form.
+Do not turn a temporary interaction into a durable relationship change unless the approved source supports it.
 
-This can be small:
+## Session And Mutation Rule
 
-- gains a verification method;
-- gains a relationship or debt;
-- learns a rule;
-- preserves a person/object/route;
-- pays a cost for helping;
-- becomes slightly more responsible;
-- gains a team seed;
-- gains a cross-system translation insight;
-- gains a resource, quality score boost, or audit margin;
-- gains an opponent's misjudgment that can be leveraged later.
+If the approved change came from human-AI discussion, create or update a Session record when traceability is useful.
 
-## Protagonist Advantage Tracking (merged from advantage_reward_ledger)
+A Session should record:
 
-### Planned Advantages (from design phase)
+```text
+what was discussed
+relevant wiki records
+accepted decisions
+rejected options when important
+approved mutations
+unresolved questions
+```
 
-Read the "Planned Advantages" section from the chapter design (`prompts/02_emergent_chapter_design.md`) and compare with actual delivery.
+A Mutation should record:
 
-Record whether the chapter delivered:
+```text
+operation
+target record
+summary of change
+source session or approved source
+reason
+```
 
-- Relationship gained or changed:
-- Physical object / witness gained or preserved:
-- Access / route / time / operational space gained:
-- Enemy misjudgment gained:
-- Information / evidence gained:
-- Identity / status changed:
-- Skill / understanding gained:
-- Final-form asset gained or strengthened:
+## Reader Memory Rule
 
-### Actual Advantages Gained (from approved draft)
+For important generated units, record reader-facing obligations when they affect later structure.
 
-For each planned advantage, mark: DELIVERED / PARTIALLY DELIVERED / NOT DELIVERED.
+Track:
 
-If a planned advantage is NOT DELIVERED, explain why (e.g., draft diverged from design, or the chapter is intentionally a breather chapter).
+```text
+prior reader debt paid or partially paid
+prior reader debt carried forward
+new reader debt created
+pressure that must force later action
+repetition risk that should be avoided or upgraded
+```
 
-If an unplanned advantage was gained (not in the design but present in the draft), record it as well.
+Reader debt is the set of specific questions, promises, pressures, and emotional needs that the story has created but has not yet paid off. It is not the same as any unresolved question.
 
-## Reader Debt Definition
+## Chapter State Rule
 
-Reader debt is the set of specific questions, promises, pressures, and emotional needs that the story has created but has not yet paid off. It is different from:
+If the approved canon source is a full formal chapter, create or update:
 
-- **reader hook**: a hook is what pushes the reader into the next chapter. debt is what the story owes the reader from earlier chapters.
-- **reader reward**: a reward is what the reader receives in this chapter. debt is what the reader is still waiting for.
-- **unresolved questions**: not all unresolved questions are reader debt. Only questions that were explicitly set up as promises or pressures count as debt.
+```text
+novels/<novel_id>/wiki/chapter_states/chapter_<number>.md
+```
 
-Track reader debt as:
+A chapter state should include only fields relevant to the chapter and project:
 
-- Prior reader debt paid or partially paid this chapter:
-- Prior reader debt carried forward (not paid this chapter):
-- Debt that cannot be delayed more than 2-3 chapters:
-- New reader debt created this chapter:
+```text
+chapter title:
+chapter function:
+confirmed events:
+affected entities:
+state changes:
+relationship changes:
+rule-system changes if any:
+reader hook / payoff delivered:
+reader debt:
+pressure clock:
+repetition risk:
+unresolved questions:
+next unit constraints:
+useful next attractor:
+```
 
-## Pressure Clock
-
-Record only pressures that will force action if ignored:
-
-- deadlines;
-- resource depletion;
-- bodily deterioration;
-- institutional review;
-- scheduled test / hearing / mission / inspection;
-- relationship limit;
-- exposure risk;
-- pursuit or escalation.
-
-## Repetition Risk
-
-Record repeated scene patterns that must be upgraded or avoided next:
-
-- same location;
-- same task;
-- same conflict shape;
-- same ability trigger;
-- same conversation rhythm;
-- same consequence pattern;
-- same chapter ending shape;
-- same face-slapping target type;
-- same reward type;
-- same hook type.
-
-The next chapter constraint should say what must change if repetition risk remains.
+Do not force project-specific fields into every chapter state. If a field is irrelevant, write `Not relevant for this project / chapter.`
 
 ## Output Format
 
 ```text
-# Wiki Sync After Chapter
+# Wiki Sync After Approved Canon
 
 Novel ID:
-Chapter number:
-Approved draft source:
-Previous chapter state read: yes / no
+Approved source:
+Approved source type: setup / discussion decision / partial scene / full chapter / entity update / event design / prose unit / other
+User approval source:
 Sync decision: ALLOW / REVISE
 
-## 1. Chapter State File
+## 1. Records Read
 
-Path:
+- ...
 
-Content draft:
+## 2. Canon Facts Confirmed
 
-Required fields in content draft:
-- chapter title:
-- chapter function:
-- confirmed events:
-- world / civilization trend progress:
-- Earth status progress if relevant:
-- protagonist final-form progress:
-- reader hook / payoff delivered:
-- protagonist state:
-- organization state:
-- character state:
-- key object / resource state:
-- reader reward delivered:
-- reader debt:
-- pressure clock:
-- repetition risk:
-- unresolved questions:
-- next chapter constraints:
-- useful next-chapter attractor:
+- Fact:
+  Source:
+  Status:
 
-## 2. Character Updates
+## 3. Event Updates
 
-Character:
+Event:
 Path:
 Confirmed update:
-Type: default behavior / one-time action / relationship state / knowledge state / status state / other
+Participants:
+Timepoint:
+Location:
+Affected entities:
+State changes:
+Caused by:
+Causes:
 Should update file? yes / no
 
-## 3. Organization / World Updates
+## 4. Entity / State Updates
 
 Entity:
-Path:
+State path:
 Confirmed update:
-Type: rule / local practice / one-time action / resource state / place state / status evaluation / faction behavior / other
+Timepoint:
+Type: stable description / one-time action / knowledge state / access state / resource state / relationship state / status state / other
 Should update file? yes / no
 
-## 4. Protagonist Growth Update
+## 5. Relationship Updates
 
-Active stage:
-Cost paid:
-Usable leverage gained:
-Final-form asset gained or strengthened:
-Capability changed? yes / no
-Access changed? yes / no
-Relationship changed? yes / no
-Earth / civilization asset changed? yes / no
-Forbidden jump avoided? yes / no
-Should update `protagonist_growth.md`? yes / no
+Relationship:
+Path:
+Confirmed update:
+Timepoint if relevant:
+Should update file? yes / no
 
-## 5. Irreversible Trend Updates
+## 6. Session / Mutation Updates
 
-World / civilization trend progress:
-Earth status progress if relevant:
-Protagonist final-form progress:
-Coupling among trend, Earth, and protagonist:
-What became irreversible this chapter:
-What must carry into next chapter:
+Session:
+Mutation:
+Approved decision:
+Rejected options if important:
+Target records:
+Should update file? yes / no
 
-## 6. Protagonist Advantage Tracking
-
-Planned advantages (from design phase):
-- Relationship: PLANNED [X], DELIVERED [yes/no], details:
-- Physical object / witness: PLANNED [X], DELIVERED [yes/no], details:
-- Access / route / operational space: PLANNED [X], DELIVERED [yes/no], details:
-- Enemy misjudgment: PLANNED [X], DELIVERED [yes/no], details:
-- Information / evidence: PLANNED [X], DELIVERED [yes/no], details:
-- Identity / status: PLANNED [X], DELIVERED [yes/no], details:
-- Skill / understanding: PLANNED [X], DELIVERED [yes/no], details:
-- Final-form asset: PLANNED [X], DELIVERED [yes/no], details:
-
-Unplanned advantages gained in draft:
-- (record any advantage that was not in the design but appeared in the approved draft)
-
-## 7. Reader Debt / Pressure / Repetition Updates
-
-Prior reader debt paid or partially paid:
-Prior reader debt carried forward:
-Debt that cannot be delayed much longer:
-New reader debt created:
-Pressure clock advanced:
-Pressure that worsened:
-Repetition risk from this chapter:
-Required structural change next chapter:
-
-## 8. Timeline / Relationship / Foreshadowing Updates
-
-Timeline update:
-- List any chapter events that should be added to the timeline.
-- If no new events to record, write: "No new timeline events this chapter."
-
-Relationship update:
-- List any new or changed relationships.
-- If no change, write: "No new or changed relationships this chapter."
-
-Foreshadowing update:
-- List any elements introduced that may pay off later.
-- If no foreshadowing to record, write: "No new foreshadowing elements this chapter."
+## 7. Name / Term / Style Updates
 
 Name registry update:
-- List any new names or terms from the chapter.
-- If no new names/terms, write: "No new names or terms this chapter."
-
 Style update:
-- Note any style deviation or reinforcement observed in the chapter.
-- If no notable style observation, write: "No notable style deviation."
+Term update:
 
-**Hard rule**: Do not leave these fields blank. Write content or the explicit "no change" statement above for each field. Empty fields will be treated as skipped and must be retried.
+## 8. Reader Memory Updates
 
-## 8.5. Reader Debt Tracker Update
+Reader debt paid or partially paid:
+Reader debt carried forward:
+New reader debt created:
+Pressure clock advanced:
+Repetition risk:
+Required structural change next unit:
 
-Debt tracker path: novels/<novel_id>/wiki/reader_debt_tracker.md
-Debt tracker read: yes / no
-Debts paid this chapter: (list by #)
-Debts partially paid this chapter: (list by #)
-New debts created this chapter: (list with source chapter and priority)
-Debts abandoned this chapter: (list with reason)
-Oldest P0 debt age after update: (must not be >= 3)
-Oldest P1 debt age after update: (must not be >= 6)
-Checkpoint: Next review at ch<next>
+## 9. Chapter State Update If Relevant
 
+Chapter state path:
+Content draft:
 
-
-## 8.6. Volume Rhythm Tracker Update
-
-If a volume rhythm tracker exists:
-
-Tracker path: novels/<novel_id>/wiki/volume_XX_rhythm_tracker.md
-Tracker read: yes / no
-Chapter state movement logged: (chapter number + movement type)
-Mini-turn delivered this chapter? yes / no
-P0 debt addressed? (if yes, list by #)
-Breather chapter? yes / no
-Hard check results: (pass/fail for each of the 7 checks)
-If any check failed: specify what the next chapter must do to correct it
-
-## 9. Next Chapter Constraints
+## 10. Next Constraints
 
 Must continue from:
 Must not contradict:
 Must not escalate yet:
 Required unresolved pressure:
-Required structural upgrade:
 Suggested next attractor:
-Required hook/payoff escalation:
+Required hook/payoff movement if relevant:
 
-## 10. Missing / Unsafe Updates
+## 11. Missing / Unsafe Updates
 
 - candidate update:
   reason not written:
 ```
 
-
-## 10.5. Draft Quality Review
-
-Run if chapter count >= 2:
-
-Quality decision: ALLOW / REVISE / BLOCK
-Scene grounding: PASS / FLAG / FAIL
-Prose quality: PASS / FLAG / FAIL
-Chapter structure: PASS / FLAG / FAIL
-Character presence: PASS / FLAG / FAIL
-Reader engagement: PASS / FLAG / FAIL
-Quality log entry: Ch <number>: [status] — [note]
-Quality trend so far: improving / stable / declining
-
 ## Hard Checks
 
 Mark `REVISE` if:
 
-- chapter state is missing;
-- world / civilization trend progress is missing from an important chapter state;
-- Earth status progress is missing from a relevant macro chapter state;
-- protagonist final-form progress is missing from a protagonist-centered chapter state;
-- reader hook/payoff delivered is missing from an important chapter state;
-- updates include speculation or inferred secrets;
-- protagonist growth is recorded without concrete cost or usable leverage;
-- final-form progress is recorded as a random clue with no next-action value;
-- reader hook/payoff is recorded as vague praise, secret admiration, broad mystery, or exposition;
-- reader debt / pressure clock / repetition risk are missing from an important chapter state;
+- approved source is unclear;
+- user approval is missing;
+- update includes speculation or inferred secrets;
+- update writes a fact without a source;
+- durable state changed but no State or Event update is proposed;
+- relationship changed but no Relationship update is proposed;
+- new recurring name or term appeared but no name registry update is proposed;
+- next canon-dependent step would rely on chat memory rather than wiki state;
 - a one-time action is written as a permanent trait;
-- an organization agent's local action is written as full organization policy without proof;
-- a reference-setting idea is written as canon without appearing in the approved chapter;
-- next chapter constraints are missing;
-- the next chapter has no required structural upgrade after repeated scene pattern;
-- the next chapter does not carry forward the irreversible trend;
-- the next chapter would need to rely on chat memory rather than wiki state;
-- planned advantages were not compared against actual draft delivery;
-- volume rhythm tracker was not updated when it exists;
-- reader debt tracker was not updated after chapter sync;
-- unplanned advantages that appeared in the draft were not recorded.
+- a local action is written as full organization policy without proof;
+- a reference-setting idea is written as canon without appearing in approved canon;
+- important consequences are not recorded;
+- next constraints are missing when the approved change affects future units.
